@@ -33,6 +33,7 @@ purple        rgba(174,139,164,1)
   line-height: 24px;
   margin: 0;
   padding: 0;
+  
 }
 
 figure { margin: 0; padding: 0; }
@@ -102,7 +103,15 @@ footer, footer p {
   font-size: 15px;
 }
 
+.fineprint p {
+  color: rgba(96,103,103,1);
+  font-size: 13px;
+  line-height: 18px;
+}
 
+.fineprint p:hover {
+  color: rgba(47,41,38,1) !important;
+}
 
 
 /* 3. TYPOGRAPHY */
