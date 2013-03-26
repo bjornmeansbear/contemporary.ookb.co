@@ -36,13 +36,111 @@
   
     <header class="container">
       <div class="row">
-        <figure id="logo" class="span1"><img src="img/ookblogo.png" /></figure><!-- END LOGO -->
-        <h1 class="span6">The Office of Kristian Bj&oslash;rnard</h1><!-- END decorative SITE NAME -->
-        <h2 class="span6">The Contemporary Proposal</h2>
+        <figure id="logo" class="span1"><img src="img/ookblogo.png" class="span1 nm" /></figure><!-- END LOGO -->
+        <h1 class="span11"><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</h1><!-- END decorative SITE NAME -->
+        <h2 class="span11">A Proposal for The Contemporary</h2>
       </div>
     </header>
 
     <div id="main" role="main" class="container">
+        
+      <!-- one. splash page. -->
+      <article class="row">
+        <h1 class="span12">Initial Web placeholder</h1>
+        <section class="span8">
+          <p>I need access to the current hosting account to make any updates/edits to the site.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$500</strong></p>
+        </aside>
+      </article>
+      <!-- End Splash Page -->
+        
+      <!-- two. a mark of somekind. -->
+      <article class="row">
+        <h1 class="span12">A Mark</h1>
+        <section class="span8">
+          <p>This covers an initial plan for a greater logo system. My goal is to provide The Contemporary with the best possible solution for brand strategy. Flexibility, extendability, and a systematic approach are key to this. </p>
+          <p>A well managed graphic identity is an important tool for The Contemporary image in and around Baltimore. I think that my ideas — which look to use a reusable and reconfigurable set of forms — will do a lot to help create a unified, singular aesthetic for The Contemporary without making anything feel boring or too much the same.</p>
+          <p>Part of generating the Mark will be in creating the basis for the “system” that generates forms, etc. Some formal rules will be established … but this will not constitute final “guidelines” or “styles,” merely a starting point.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$2500</strong></p>
+        </aside>
+      </article>
+      <!-- End MARK -->
+
+      <!-- three. Business Card -->
+      <article class="row">
+        <h1 class="span12">Business Card</h1>
+        <section class="span8">
+          <p>Deanna will need a card, this will be the first use of the Mark, and the first piece that starts to help establish how to rollout and use the basic identity parts thus far.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$350</strong></p>
+        </aside>
+      </article>
+      <!-- End Business Card -->
+        
+      <!-- four. Mail Chimp Template -->
+      <article class="row">
+        <h1 class="span12">Mail Chimp Template</h1>
+        <section class="span8">
+          <p>Basic template for emails, blasts, and press releases in e-form. Will be another place to put some of the style decisions to test and help formulate rules moving forward.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$500</strong></p>
+        </aside>
+      </article>
+      <!-- End Mail Chimp -->
+
+      <!-- five. Website -->
+      <article class="row">
+        <h1 class="span12">Website Foundation</h1>
+        <section class="span8">
+          <p>Once the mark is created and some basic styles have begun to evolve and the initial content is established for The Contemporary relaunch, OOKB can also build a new website that showcases the new direction aesthetically and organizationally.</p>
+          <p>We'll build a basic shell that will at first have limited content but will easily allow for both future and past content to be added as things progress.</p>
+          <p>This will be another place to help generate aesthetic rules for the brand systems as well as showcase the mark and the new mission.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$3750</strong></p>
+        </aside>
+      </article>
+      <!-- End Website starter -->
+
+      <!-- six. Styleguide -->
+      <article class="row">
+        <h1 class="span12">Beginnings of a style guide</h1>
+        <section class="span8">
+          <p>From materials made so far and explorations during the Mark making stage, the basics of a style guide can be formulated and delivered to help maintain some consistency on bits and pieces that don't require the office of KB to actually make.</p>
+          <ol>This will be multifold:
+            <li>How to use prescribed typefaces.</li>
+            <li>How/where to use the Contemporary mark.</li>
+            <li>How the “rules” for the rest of the identity system work.</li>
+            <li>Constraints that must be adhered to so that all things look like The Contemporary.</li>
+            <li>The initial formulation of how the contemporary mark/logotype/name might work when used with other galleries, organizations, etc</li>
+            <li>Initial formulation of consistent voice of image choices, writing style, etc.</li>
+            <li>Initial formulation of “signage” styles — how to mark outside of venues, insides of venues, publications, etc</li>
+          </ol>
+          <p>This is mainly taking what we've made so far for the earlier steps and trying to refine it into real rules, guidelines, and recommendations. The outcome of this step will be a many page document that outlines how to use and how not to use the rules and elements created so as to maintain a consistent aesthetic front for The Contemporary.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>$3125</strong></p>
+        </aside>
+      </article>
+      <!-- End StyleGuide -->
+
+      <!-- seven. Mail Chimp Template -->
+      <article class="row">
+        <h1 class="span12">Other materials and recommendations as needed.</h1>
+        <section class="span8">
+          <p>The office of Kristian Bjornard proposes that we come up with a list of materials, events, etc. that will need help being designed and/or branded. We can then work out a flat rate for OOKB services over the rest of the year. We prefer to work like this: You say what budget is available, we then come up with the best possible solution both in design and manufacturing for items required with that budget.</p>
+        </section>
+        <aside class="span4">
+          <p><strong>TBD</strong></p>
+        </aside>
+      </article>
+      <!-- End More TK -->
 
     </div>
 
@@ -93,6 +191,12 @@
       $(".scroll").click(function(event){    
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $("#main article").after('<div class="container afterArticle"></div>');
       });
     </script>
 
