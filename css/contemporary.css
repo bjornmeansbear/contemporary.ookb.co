@@ -87,9 +87,12 @@ header #logo {}
 #main article aside,
 #main article aside p,
 #main article aside p strong {
+  text-align: right;
+}
+
+#main article aside p strong {
   font-size: 30px;
   font-weight: 700;
-  text-align: right;
 }
 
 footer {
