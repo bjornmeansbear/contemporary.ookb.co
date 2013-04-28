@@ -12,6 +12,14 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+  /**/
+/*
+  transition: all 50ms;
+  -webkit-transition: all 50ms;
+  -moz-transition: all 50ms;
+  -o-transition: all 50ms;
+  -ms-transition: all 50ms;
+*/
 }
 
 figure { margin: 0; padding: 0; }
@@ -53,7 +61,7 @@ footer {
 
 html, body {height: 101%;}
 body {
- padding: 30px 0 0 0;
+ padding: 20px 0 0 0;
 }
 
 article.layers {
@@ -63,15 +71,15 @@ article.layers {
 }
 
 .layers .layer {
-  height: 270px;
+  height: 220px;
   background: transparent;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   opacity: .22;
   position: relative;
 }
 
 article.teaser {
-  margin-top: 400px;
+  margin-top: 280px;
   margin-bottom: 200px;
 }
 

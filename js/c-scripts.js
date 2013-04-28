@@ -10,10 +10,10 @@ $(".scroll").click(function(event){
 $(window).scroll(function(){
   // keep "Cs" in page when scrolling down
   var s = $(window).scrollTop();
-  $('.layers').css('top', s);
+  $('.layers').css('top', s*1.123456789);
   //move "C"s into center of screen
   
-  if (s<=375) {
+  if (s<=300) {
     $('.layers .r-two').css('top', s*-.8);
     $('.layers .r-three').css('top', s*-1.6);
     $('.layers .col1').css('left', s*1.2);
@@ -21,13 +21,12 @@ $(window).scroll(function(){
     $('.layers .col3').css('right', s*.4);
     $('.layers .col4').css('right', s*1.2);
   } else {
-    $('.layers .r-two').css('top', -300);
-    $('.layers .r-three').css('top', -600);
-    $('.layers .col1').css('left', 450);
-    $('.layers .col2').css('left', 150);
-    $('.layers .col3').css('right', 150);
-    $('.layers .col4').css('right', 450);
-    
+    $('.layers .r-two').css('top', -240);
+    $('.layers .r-three').css('top', -480);
+    $('.layers .col1').css('left', 360);
+    $('.layers .col2').css('left', 120);
+    $('.layers .col3').css('right', 120);
+    $('.layers .col4').css('right', 360);
   }
 
 });
