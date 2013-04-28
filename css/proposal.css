@@ -1,0 +1,174 @@
+/* 1. @Font-Face Ñ load my google fonts... */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+
+body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+.gentium { font-family: 'Gentium Book Basic', Georgia, serif; }
+
+/* END @Font-Face */
+
+/* Color Palette */
+/*
+pink          rgba(236,64,121,1)
+brown         rgba(47,41,38,1)
+gray          rgba(132,132,120,1)
+dark gray     rgba(96,103,103,1)
+light gray    rgba(194,211,186,1)
+
+red           rgba(183,80,81,1)
+orange        rgba(195,115,99,1)
+yellow        rgba(197,192,101,1)
+green         rgba(140,165,115,1)
+blue          rgba(157,178,176,1)
+purple        rgba(174,139,164,1)
+*/
+
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+* {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+figure { margin: 0; padding: 0; }
+
+html {
+  background: rgba(132,132,120,1);
+  color: rgba(47,41,38,1) !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: rgba(132,132,120,1);
+  color: rgba(47,41,38,1) !important;
+}
+
+.nm { margin-left: 0 !important; margin-right: 0 !important; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 7.5px solid rgba(47,41,38,1); 
+  margin-top: 30px;
+  padding: 30px 0;
+}
+
+header #logo {}
+
+#main {}
+
+#main article {
+  margin-top: 30px;
+}
+
+#main .afterArticle {
+  display: block;
+  height: 1px;
+  border-bottom: 1.875px solid rgba(96,103,103,1); 
+  padding-bottom: 30px;
+}
+
+#main .afterArticle:last-child {
+  border-bottom: none; 
+  padding-bottom: 0;
+}
+
+#main article aside,
+#main article aside p,
+#main article aside p strong {
+  text-align: right;
+}
+
+#main article aside p strong {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer {
+  border-top: 7.5px solid rgba(47,41,38,1); 
+  margin-top: 45px;
+  margin-bottom: 75px;
+  padding: 30px 0;
+}
+
+footer, footer p {
+  font-size: 15px;
+}
+
+.fineprint p {
+  color: rgba(96,103,103,1);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.fineprint p:hover {
+  color: rgba(47,41,38,1) !important;
+}
+
+
+/* 3. TYPOGRAPHY */
+/* =================================================================== */
+/* =================================================================== */
+
+header h1 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-indent: -7px;
+}
+
+header h1 em { 
+  font-family: 'Gentium Book Basic', Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+}
+
+/* 4. Links and More */
+/* =================================================================== */
+/* =================================================================== */
+
+a {
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  background: rgba(132,132,120,.1);
+  border-bottom: 1px solid rgba(236,64,121,1);
+  padding: 1px 2px 1px 2px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover { 
+  background: rgba(236,64,121,1);
+  color: white;
+  text-decoration: none;
+  }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::selection {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-shadow: none;
+}
+
+
+
+
