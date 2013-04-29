@@ -37,4 +37,5 @@ $(window).scroll(function(){
 
   $('footer').height(s*1.66);
 
+
 });
