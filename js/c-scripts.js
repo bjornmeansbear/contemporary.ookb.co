@@ -9,14 +9,15 @@ $(".scroll").click(function(event){
 
 $(window).scroll(function(){
   // keep "Cs" in page when scrolling down
-  var s = $(window).scrollTop();
+  var s  = $(window).scrollTop();
+  var wh = $(window).height();
+  var dh = $(document).height();
+  
   $('.layers').css('top', s*1.123456789);
-
   if (s>676) {
     $('.layers').css('top', 760).height(220);
   } else { }
   
-
   //move "C"s into center of screen  
   if (s<=300) {
     $('.layers .r-two').css('top', s*-.8);
@@ -34,6 +35,6 @@ $(window).scroll(function(){
     $('.layers .col4').css('right', 360);
   }
 
-  $('footer').height(s);
+  $('footer').height(s*1.66);
 
 });
