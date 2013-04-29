@@ -34,4 +34,6 @@ $(window).scroll(function(){
     $('.layers .col4').css('right', 360);
   }
 
+  $('footer').height(s);
+
 });

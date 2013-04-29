@@ -53,8 +53,8 @@ header #logo {}
 }
 
 footer {
-  margin-top: 100px;
-  padding: 30px 0 130px 0;
+  margin: 0;
+  padding: 0px;
 }
 
 /* custom styles for C layering effect */
@@ -62,6 +62,41 @@ footer {
 html, body {height: 101%;}
 body {
  padding: 20px 0 0 0;
+}
+
+header {
+  background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat;
+  background-size: cover;
+  z-index: -9999;
+  overflow: hidden;
+  height:100%;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+header img, footer img {
+  height:auto;
+  width: 100% !important;
+}
+
+footer {
+  background: transparent url('../img/p1020004.jpg') center bottom no-repeat;
+  background-size: cover;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  z-index: -9998;
+}
+
+footer img {
+  position: absolute;
+  bottom:0;
+  left:0;
 }
 
 article.layers {
@@ -78,9 +113,12 @@ article.layers {
   position: relative;
 }
 
-article.teaser {
-  margin-top: 280px;
-  margin-bottom: 200px;
+article.teaser, article.copyright {
+  padding: 350px 0;
+}
+
+article.copyright {
+  padding: 150px 0;
 }
 
 
