@@ -11,8 +11,13 @@ $(window).scroll(function(){
   // keep "Cs" in page when scrolling down
   var s = $(window).scrollTop();
   $('.layers').css('top', s*1.123456789);
-  //move "C"s into center of screen
+
+  if (s>676) {
+    $('.layers').css('top', 760).height(220);
+  } else { }
   
+
+  //move "C"s into center of screen  
   if (s<=300) {
     $('.layers .r-two').css('top', s*-.8);
     $('.layers .r-three').css('top', s*-1.6);
