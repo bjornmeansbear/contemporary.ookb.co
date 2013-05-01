@@ -13,16 +13,8 @@
   margin: 0;
   padding: 0;
   /**/
-/*
-  transition: all 50ms;
-  -webkit-transition: all 50ms;
-  -moz-transition: all 50ms;
-  -o-transition: all 50ms;
-  -ms-transition: all 50ms;
-*/
+/*   transition: all 400ms; */
 }
-
-figure { margin: 0; padding: 0; }
 
 html {
   text-rendering: optimizeLegibility;
@@ -34,37 +26,44 @@ body {
   text-align: center;
 }
 
-.nm { margin-left: 0 !important; margin-right: 0 !important; }
-
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-header {
+.teaser {
+  position: relative;
+  text-align: center;
 }
 
-header #logo {}
-
-#main {}
-
-#main article {
+.teaser h1 {
+  /*fallback size*/
+  font-size: 72px;
+  line-height: 81px;
+  /**/
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  /**/
+/*   text-shadow: 3px 3px 6px rgba(151,151,151,.5); */
+  text-shadow: 0px 4px 9px rgba(56,48,8,.5);
 }
 
-footer {
-  margin: 0;
-  padding: 0px;
+.teaser p {
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: 18px;
+  text-shadow: 1px 1px 3px rgba(151,151,151,.5);
 }
+
+.copyright {font-size: 85%;}
 
 /* custom styles for C layering effect */
 
-html, body {height: 101%;}
-body {
- padding: 20px 0 0 0;
-}
-
 header {
+  background: blue;
   background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat;
   background-size: cover;
   z-index: -9999;
@@ -76,12 +75,8 @@ header {
   left:0;
 }
 
-header img, footer img {
-  height:auto;
-  width: 100% !important;
-}
-
 footer {
+  background: red;
   background: transparent url('../img/p1020004.jpg') center bottom no-repeat;
   background-size: cover;
   height: 0px;
@@ -93,34 +88,70 @@ footer {
   z-index: -9998;
 }
 
+header img, footer img {
+  height:auto;
+  width: 100% !important;
+}
+
 footer img {
   position: absolute;
   bottom:0;
   left:0;
 }
 
+/* Cs themselves */
+
+#main, #secondary {position: relative;}
+
+#main {
+  margin: 0;
+  padding: 0;
+}
+
 article.layers {
-  position: relative;
+  position: absolute;
   text-align: center;
   height: 690px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .layers .layer {
-  height: 220px;
   background: transparent;
-  margin-bottom: 20px;
-  opacity: .22;
+  margin: 0;
+  padding: 0;
+  opacity: .33;
   position: relative;
+  float:left;
 }
 
-article.teaser, article.copyright {
-  padding: 350px 0;
-}
+/* initial page-load positioning */
 
 article.copyright {
-  padding: 150px 0;
+  position: absolute;
+  bottom:20px;
 }
 
+/**/ 
+#pagedown {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  /**/
+  background: none;
+  border: none;
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0;
+  margin-left: -36px;
+  opacity: .66;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 72px;
+  z-index: 999;
+}
 
 /* TYPOGRAPHY */
 /* =================================================================== */

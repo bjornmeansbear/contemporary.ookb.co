@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <link href="css/bootstrap.css" rel="stylesheet">
-<!--     <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contemporary.css">
     <script src="js/libs/modernizr-1.7.min.js"></script>
 
@@ -36,25 +36,31 @@
 <!--       <img src="img/pedestriansincrosswalk.jpg" /> -->
     </header>
   
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="">
         
       <!-- one. splash page. -->
-      <article class="row layers">
-        <section class="span3 layer c-one r-one col1"><img src="img/logos/cs-01.png" /></section>
-        <section class="span3 layer c-two r-one col2"><img src="img/logos/cs-02.png" /></section>
-        <section class="span3 layer c-three r-one col3"><img src="img/logos/cs-03.png" /></section>
-        <section class="span3 layer c-four r-one col4"><img src="img/logos/cs-04.png" /></section>
-        <section class="span3 layer c-five r-two col1"><img src="img/logos/cs-05.png" /></section>
-        <section class="span3 layer c-six r-two col2"><img src="img/logos/cs-06.png" /></section>
-        <section class="span3 layer c-seven r-two col3"><img src="img/logos/cs-07.png" /></section>
-        <section class="span3 layer c-eight r-two col4"><img src="img/logos/cs-08.png" /></section>
-        <section class="span3 layer c-nine r-three col1"><img src="img/logos/cs-09.png" /></section>
-        <section class="span3 layer c-ten r-three col2"><img src="img/logos/cs-10.png" /></section>
-        <section class="span3 layer c-eleven r-three col3"><img src="img/logos/cs-11.png" /></section>
-        <section class="span3 layer c-twelve r-three col4"><img src="img/logos/cs-12.png" /></section>
+      <article class="layers">
+        <section class="layer r-one c-one"><img src="img/logos/cs-white-01.png" /></section>
+        <section class="layer r-one c-two"><img src="img/logos/cs-red-02.png" /></section>
+        <section class="layer r-one c-three"><img src="img/logos/cs-blue-03.png" /></section>
+        <section class="layer r-one c-four"><img src="img/logos/cs-04.png" /></section>
+        <section class="layer r-two c-one"><img src="img/logos/cs-red-05.png" /></section>
+        <section class="layer r-two c-two"><img src="img/logos/cs-06.png" /></section>
+        <section class="layer r-two c-three"><img src="img/logos/cs-white-07.png" /></section>
+        <section class="layer r-two c-four"><img src="img/logos/cs-blue-08.png" /></section>
+        <section class="layer r-three c-one"><img src="img/logos/cs-blue-09.png" /></section>
+        <section class="layer r-three c-two"><img src="img/logos/cs-red-10.png" /></section>
+        <section class="layer r-three c-three"><img src="img/logos/cs-11.png" /></section>
+        <section class="layer r-three c-four"><img src="img/logos/cs-12.png" /></section>
       </article>
       <!-- End Splash Page -->
 
+      <a class="scroll" id="pagedown" href="#secondary">&#9660;</a><!-- Pagedown button for auto scroll to content -->
+
+    </div>
+
+    <div id="secondary" class="container">
+    
       <article class="row teaser">
         <h1 class="span12">The Contemporary</h1>
         <section class="span12"><p>We're Coming...</p></section>
@@ -76,17 +82,17 @@
     
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/bootstrap.js"></script>
-
-    <!-- some of my references -->
     <script src="js/jquery.cycle.all.js"></script>
+    <script src="https://raw.github.com/davatron5000/FitText.js/master/jquery.fittext.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script src="js/c-scripts.js"></script>
-    <!-- scroll page down to elements and IDs -->
-    <script>
-      //TK if necessary
-    </script>
 
+
+    <script>
+      //fittext
+      $('.teaser h1').fitText(0.9);
+    </script>
     <!-- end scripts-->
   
   </body>
