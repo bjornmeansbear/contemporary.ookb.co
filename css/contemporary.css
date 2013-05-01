@@ -126,6 +126,9 @@ article.layers {
   float:left;
 }
 
+/* .layers .layer.twenty-two { opacity: .22; } */
+.layers .layer.forty-four { opacity: .44; }
+
 /* initial page-load positioning */
 
 article.copyright {
