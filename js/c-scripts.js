@@ -1,5 +1,14 @@
 // Some Custom JS for the site
 
+
+  var wh = $(window).height();
+
+  if (wh <=800) {
+    $('.columns').height(wh-20)
+  } else {};
+
+
+
 $(window).load(function() {
   // declaring various variables
   var wh = $(window).height();
