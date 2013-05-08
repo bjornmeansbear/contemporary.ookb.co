@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  background: rgba(213,211,207,1);
   color: white;
   text-align: center;
 }
@@ -63,8 +64,8 @@ nav ul {
 /* custom styles for C layering effect */
 
 header {
-  background: blue;
-  background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat;
+  background: rgba(213,211,207,1);
+/*   background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat; */
   background-size: cover;
   z-index: -9999;
   overflow: hidden;
@@ -76,8 +77,8 @@ header {
 }
 
 footer {
-  background: red;
-  background: transparent url('../img/p1020004.jpg') center bottom no-repeat;
+  background: rgba(213,211,207,1);
+/*   background: transparent url('../img/p1020004.jpg') center bottom no-repeat; */
   background-size: cover;
   height: 0px;
   width: 100%;
@@ -126,7 +127,6 @@ article.layers {
   float:left;
 }
 
-/* .layers .layer.twenty-two { opacity: .22; } */
 .layers .layer.forty-four { opacity: .44; }
 
 /* initial page-load positioning */
@@ -165,34 +165,13 @@ article.copyright {
 /* =================================================================== */
 
 a {
-  color: rgba(47,41,38,1);
+  display: block;
+  color: transparent;
   text-decoration: none;
-  background: rgba(132,132,120,.1);
-  border-bottom: 1px solid rgba(236,64,121,1);
-  padding: 1px 2px 1px 2px;
-  transition: all 500ms;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-a:hover { 
-  background: rgba(236,64,121,1);
-  color: white;
-  text-decoration: none;
-  }
-
-a:link {
-  -webkit-tap-highlight-color: #FF5E99;
-}
-
-::selection {
-  background: rgba(236,64,121,1);
-  color: white;
-  text-shadow: none;
-}
-
-
-
-
+a img { border: none; }
