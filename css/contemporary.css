@@ -22,8 +22,8 @@ html {
 }
 
 body {
-  background: rgba(213,211,207,1);
-  color: white;
+  background: white;
+  color: #545454;
   text-align: center;
 }
 
@@ -35,28 +35,37 @@ nav ul {
 
 .teaser {
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 .teaser h1 {
   /*fallback size*/
-  font-size: 72px;
+  font-size: 48px;
   line-height: 81px;
   /**/
+  /*
   display: inline-block;
   position: relative;
   text-align: center;
   width: 100%;
+  */
   /**/
 /*   text-shadow: 3px 3px 6px rgba(151,151,151,.5); */
-  text-shadow: 0px 4px 9px rgba(56,48,8,.5);
+/*   text-shadow: 0px 4px 9px rgba(56,48,8,.5); */
+/*   text-shadow: 1px 1px 2px #666; */
+}
+
+.teaser h2 {
+/*   text-shadow: 0px 2px 4.5px rgba(56,48,8,.5); */
+/*   text-shadow: 1px 1px 2px #666; */
 }
 
 .teaser p {
-  font-size: 36px;
-  line-height: 54px;
+  color: #545454;
+  font-size: 18px;
+  line-height: 24px;
   margin-top: 18px;
-  text-shadow: 1px 1px 3px rgba(151,151,151,.5);
+/*   text-shadow: 1px 1px 2px white; */
 }
 
 .copyright {font-size: 85%;}
@@ -64,7 +73,7 @@ nav ul {
 /* custom styles for C layering effect */
 
 header {
-  background: rgba(213,211,207,1);
+/*   background: rgba(213,211,207,1); */
 /*   background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat; */
   background-size: cover;
   z-index: -9999;
@@ -77,7 +86,7 @@ header {
 }
 
 footer {
-  background: rgba(213,211,207,1);
+/*   background: rgba(213,211,207,1); */
 /*   background: transparent url('../img/p1020004.jpg') center bottom no-repeat; */
   background-size: cover;
   height: 0px;
