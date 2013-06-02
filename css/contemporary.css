@@ -42,22 +42,9 @@ nav ul {
   /*fallback size*/
   font-size: 48px;
   line-height: 81px;
-  /**/
-  /*
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  */
-  /**/
-/*   text-shadow: 3px 3px 6px rgba(151,151,151,.5); */
-/*   text-shadow: 0px 4px 9px rgba(56,48,8,.5); */
-/*   text-shadow: 1px 1px 2px #666; */
 }
 
 .teaser h2 {
-/*   text-shadow: 0px 2px 4.5px rgba(56,48,8,.5); */
-/*   text-shadow: 1px 1px 2px #666; */
 }
 
 .teaser p {
@@ -65,7 +52,6 @@ nav ul {
   font-size: 18px;
   line-height: 24px;
   margin-top: 18px;
-/*   text-shadow: 1px 1px 2px white; */
 }
 
 .copyright {font-size: 85%;}
@@ -73,9 +59,6 @@ nav ul {
 /* custom styles for C layering effect */
 
 header {
-/*   background: rgba(213,211,207,1); */
-/*   background: transparent url('../img/pedestriansincrosswalk.jpg') center top no-repeat; */
-  background-size: cover;
   z-index: -9999;
   overflow: hidden;
   height:100%;
@@ -86,9 +69,6 @@ header {
 }
 
 footer {
-/*   background: rgba(213,211,207,1); */
-/*   background: transparent url('../img/p1020004.jpg') center bottom no-repeat; */
-  background-size: cover;
   height: 0px;
   width: 100%;
   overflow: hidden;
