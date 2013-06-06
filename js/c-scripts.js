@@ -57,15 +57,6 @@ $(window).scroll(function(){
   $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
   $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
 
-  //hide a few things when scrolling down
-  if (s>=wh*.5) {
-    $("#pagedown").fadeOut(200);
-    }
-
-});
-
-$("#pagedown").click(function() {
-  $(this).fadeOut(200);
 });
 
 // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
