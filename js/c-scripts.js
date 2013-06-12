@@ -51,9 +51,6 @@ $(window).scroll(function(){
   var ww = $(window).width();
   var dh = $(document).height();
   
-  //changing heights and positions on scrolling
-  $('footer').height(s);
-  
   //reposition Cs on scrolling so that they end up centered
   //correctly position based on heights
   $('.layer').css('top',s);
@@ -71,7 +68,17 @@ $(window).scroll(function(){
   $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
 
 });
-
+//scale up on window under 767px
+/*$(window).scroll(function(){
+	var s  = $(window).scrollTop();
+	var wh = $(window).height();
+	var lh = $('.layer').height();
+	var lw = $('.layer').width();
+	var howfar = (s/wh);
+	
+	console.log(howfar);
+	$('.layer').css('height', (lh));
+});*/
 // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
 $(".scroll").click(function(event){    
   event.preventDefault();
