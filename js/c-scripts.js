@@ -14,7 +14,20 @@ $(window).load(function() {
   $('.layers .layer').width(ww/4);
   $('#secondary .teaser').css('margin-top',(wh/2)-(th/2));
 });
-
+//vertically center images in their section
+$(window).load(function(){
+	//declaring variables
+	var lh = $('.layer').height();
+	var ih = $('.layer img').height();
+	var ww = $(window).width();
+	//only applying script under 767px body width
+	if (ww <= 767){
+	//using the variables to position images in their section
+		if (lh>ih){
+			$('.layer img').css('margin-top', (lh/2)-(ih/2));
+		}
+	}
+});
 // try to keep things correct even if there is a resizing...
 $(window).resize(function() {
   // declaring various variables
