@@ -25,6 +25,7 @@ body {
   background: white;
   color: #545454;
   text-align: center;
+  font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif;
 }
 
 nav ul {
@@ -155,7 +156,7 @@ article.copyright {
 
 a {
   display: block;
-  color: transparent;
+  color: #545454;
   text-decoration: none;
   background: transparent;
   border: none;
