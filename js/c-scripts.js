@@ -84,3 +84,9 @@ $(".scroll").click(function(event){
   event.preventDefault();
   $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
 });
+
+/* 
+helpful reference for different screen resolutions affecting JS commands:
+http://www.coalmarch.com/blog/how-to-execute-javascript-based-on-screen-size-using-jqueryhttp://stackoverflow.com/questions/7996858/running-different-javascript-at-different-screen-resolutions
+http://stackoverflow.com/questions/4811238/how-to-serve-up-different-javascript-files-by-browser-width
+*/
