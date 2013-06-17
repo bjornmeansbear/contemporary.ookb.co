@@ -74,10 +74,8 @@ $(window).scroll(function(){
 	var wh = $(window).height();
 	var lh = $('.layer').height();
 	var lw = $('.layer').width();
-	var howfar = (s/wh);
 	
-	console.log(howfar);
-	$('.layer').css('height', (lh));
+	$('.layer').css();
 });*/
 // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
 $(".scroll").click(function(event){    
