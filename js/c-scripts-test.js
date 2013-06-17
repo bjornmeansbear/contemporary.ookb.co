@@ -50,7 +50,8 @@ $(window).scroll(function(){
   var wh = $(window).height();
   var ww = $(window).width();
   var dh = $(document).height();
-  if (ww >= 430){
+  //if over 480px
+  if (ww >= 480){
   //reposition Cs on scrolling so that they end up centered
   //correctly position based on heights
   $('.layer').css('top',s);
@@ -90,8 +91,8 @@ $(window).load(function(){
   var marginfix = (ww/8);
   var howfar = (s/wh);
 
-  //if under 430px
-  if (ww <= 430){
+  //if under 480px
+  if (ww <= 480){
  	 //using the variables to stack layers on load
  	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
  	  $('.layers .layer').css('margin-top',(-lh));
@@ -111,8 +112,8 @@ $(window).scroll(function(){
 	var howfar = (s/wh)*10;
 	var lh = $('.layer').height();
 	var lw = $('.layer').width();
-	//if under 767px
-	if (ww <= 767 && ww >= 430){
+	//if under 767px and over 480px
+	if (ww <= 767 && ww >= 480){
 	//setting new margin-top for secondary
 		$('#secondary').css('margin-top', (wh-lh));
 		//if scroll top is greater then window height
