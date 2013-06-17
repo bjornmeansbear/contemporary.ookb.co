@@ -1,15 +1,5 @@
-@media screen and (max-width:430px){
+@media screen and (max-width:480px){
 	.layers .layer {
 		float: none;
 	}
-}
-@media screen and (orientation:landscape){
-  #main{
-    width: 160px;
-    float: left;
-  }
-  #secondary{
-    width: 320px;
-    float: left;
-  }
 }

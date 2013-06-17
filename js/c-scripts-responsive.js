@@ -70,15 +70,6 @@ $(window).scroll(function(){
   }
 
 });
-//scale up on window under 767px
-/*$(window).scroll(function(){
-	var s  = $(window).scrollTop();
-	var wh = $(window).height();
-	var lh = $('.layer').height();
-	var lw = $('.layer').width();
-	
-	$('.layer').css();
-});*/
 //Media Query Load functions
 $(window).load(function(){
   var wh = $(window).height();
@@ -93,7 +84,7 @@ $(window).load(function(){
 
   //if under 480px
   if (ww <= 480){
- 	 //using the variables to stack layers on load
+ 	 //Stack layers on load
  	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
  	  $('.layers .layer').css('margin-top',(-lh));
 	  $('.first').css('margin-top',(0));
@@ -129,17 +120,19 @@ $(window).scroll(function(){
 			$('.layer.r-two').css('top',mh);
 			$('.layer.r-three').css('top',mh-lh);
 		}
-		var vararray = [lh, mh, mh+lh, mh-lh];
-		console.log(vararray);
 	}
 });
-
 // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
 $(".scroll").click(function(event){    
   event.preventDefault();
   $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
 });
-
+// interactions with scroll down button
+$(window).scroll(function(){
+  var s  = $(window).scrollTop();
+  
+  $('#pagedown').css('opacity', 1 - (s/200));
+});
 /* 
 helpful reference for different screen resolutions affecting JS commands:
 http://www.coalmarch.com/blog/how-to-execute-javascript-based-on-screen-size-using-jqueryhttp://stackoverflow.com/questions/7996858/running-different-javascript-at-different-screen-resolutions

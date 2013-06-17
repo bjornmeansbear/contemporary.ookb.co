@@ -126,7 +126,7 @@ article.copyright {
   bottom:20px;
 }
 
-/**/ 
+/*Page down link*/ 
 #pagedown {
   position: fixed;
   bottom: 36px;
@@ -144,6 +144,9 @@ article.copyright {
   text-decoration: none;
   width: 72px;
   z-index: 999;
+}
+#pagedown a:hover{
+  text-decoration: none;
 }
 
 /* TYPOGRAPHY */

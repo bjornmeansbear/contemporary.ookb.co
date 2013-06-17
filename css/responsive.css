@@ -43,7 +43,7 @@
 		font-size: 15px;
 	}
 }
-@media screen and (min-width:430px) and (max-width:767px){
+@media screen and (min-width:480px) and (max-width:767px){
 	.teaser p {
 		font-size: 18px;
 		line-height: 28px;
@@ -61,7 +61,7 @@
 	#secondary {
 	}
 }
-@media screen and (max-width:430px){
+@media screen and (max-width:480px){
 	.teaser p {
 		font-size: 17px;
 		line-height: 24px;
@@ -83,5 +83,11 @@
 		margin: 0px -20px;
 	}
 	#secondary {
+	}
+	.layers .layer {
+		float: none;
+	}
+	#pagedown{
+  	display: none;
 	}
 }
