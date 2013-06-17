@@ -4,4 +4,12 @@
 	}
 }
 @media screen and (orientation:landscape){
+  #main{
+    width: 160px;
+    float: left;
+  }
+  #secondary{
+    width: 320px;
+    float: left;
+  }
 }

@@ -93,8 +93,8 @@ $(window).load(function(){
   //if under 430px
   if (ww <= 430){
  	 //using the variables to stack layers on load
-	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
-	  $('.layers .layer').css('margin-top',(-lh));
+ 	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
+ 	  $('.layers .layer').css('margin-top',(-lh));
 	  $('.first').css('margin-top',(0));
 	  $('#main').height(lh);
 	  $('.layers').width(ww);
@@ -112,7 +112,7 @@ $(window).scroll(function(){
 	var lh = $('.layer').height();
 	var lw = $('.layer').width();
 	//if under 767px
-	if (ww <= 767){
+	if (ww <= 767 && ww >= 430){
 	//setting new margin-top for secondary
 		$('#secondary').css('margin-top', (wh-lh));
 		//if scroll top is greater then window height
