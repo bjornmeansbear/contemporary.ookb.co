@@ -110,6 +110,8 @@ $(window).scroll(function(){
 	var ww = $(window).width();
 	var wh = $(window).height();
 	var howfar = (s/wh)*10;
+	var mh = $('#main').height();
+	var mw = $('#main').width();
 	var lh = $('.layer').height();
 	var lw = $('.layer').width();
 	//if under 767px and over 480px
@@ -123,9 +125,12 @@ $(window).scroll(function(){
 			$('.layer.c-two').css('left',(ww/2)-(lw+(lw/2)));
 			$('.layer.c-three').css('right',(ww/2)-(lw+(lw/2)));
 			$('.layer.c-four').css('right',(ww/2)-(lw/2));
-			$('.layer.r-one').css('top',s+lh);
-			$('.layer.r-three').css('top',s-lh);
+			$('.layer.r-one').css('top',mh+lh);
+			$('.layer.r-two').css('top',mh);
+			$('.layer.r-three').css('top',mh-lh);
 		}
+		var vararray = [lh, mh, mh+lh, mh-lh];
+		console.log(vararray);
 	}
 });
 
