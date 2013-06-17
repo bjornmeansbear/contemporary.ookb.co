@@ -50,7 +50,7 @@ $(window).scroll(function(){
   var wh = $(window).height();
   var ww = $(window).width();
   var dh = $(document).height();
-  
+  if (ww >= 430){
   //reposition Cs on scrolling so that they end up centered
   //correctly position based on heights
   $('.layer').css('top',s);
@@ -66,8 +66,68 @@ $(window).scroll(function(){
   $('.layer.c-two').css('left',((s*wr)/4)-(marginfix*howfar));
   $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
   $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
+  }
 
 });
+//scale up on window under 767px
+/*$(window).scroll(function(){
+	var s  = $(window).scrollTop();
+	var wh = $(window).height();
+	var lh = $('.layer').height();
+	var lw = $('.layer').width();
+	
+	$('.layer').css();
+});*/
+//Media Query Load functions
+$(window).load(function(){
+  var wh = $(window).height();
+  var ww = $(window).width();
+  var th = $('.teaser').height();
+  var lh = $('.layer').height();
+  var lw = $('.layer').width();
+  var s  = $(window).scrollTop();
+  var wr = (ww/wh);
+  var marginfix = (ww/8);
+  var howfar = (s/wh);
+
+  //if under 430px
+  if (ww <= 430){
+ 	 //using the variables to stack layers on load
+	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
+	  $('.layers .layer').css('margin-top',(-lh));
+	  $('.first').css('margin-top',(0));
+	  $('#main').height(lh);
+	  $('.layers').width(ww);
+	  $('html,body,.layers').height(wh+lh);
+	  $('#secondary .teaser').css('margin-top',(0));
+  }
+  
+});
+//Media Query Scroll functions
+$(window).scroll(function(){
+	var s  = $(window).scrollTop();
+	var ww = $(window).width();
+	var wh = $(window).height();
+	var howfar = (s/wh)*10;
+	var lh = $('.layer').height();
+	var lw = $('.layer').width();
+	//if under 767px
+	if (ww <= 767){
+	//setting new margin-top for secondary
+		$('#secondary').css('margin-top', (wh-lh));
+		//if scroll top is greater then window height
+		if (s >= wh){
+			//new styles for layers
+			$('.layer.c-one').css('left',(ww/2)-(lw/2));
+			$('.layer.c-two').css('left',(ww/2)-(lw+(lw/2)));
+			$('.layer.c-three').css('right',(ww/2)-(lw+(lw/2)));
+			$('.layer.c-four').css('right',(ww/2)-(lw/2));
+			$('.layer.r-one').css('top',s+lh);
+			$('.layer.r-three').css('top',s-lh);
+		}
+	}
+});
+
 // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
 $(".scroll").click(function(event){    
   event.preventDefault();

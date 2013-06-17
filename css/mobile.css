@@ -1,0 +1,7 @@
+@media screen and (max-width:430px){
+	.layers .layer {
+		float: none;
+	}
+}
+@media screen and (orientation:landscape){
+}
