@@ -8,7 +8,9 @@
 		font-size: 48px;
 		line-height: 81px;
 	}
-	.mc-field-group input{
+	article.copyright {
+    position: absolute;
+    bottom: 20px;
   }
 }
 @media screen and (min-width:980px) and (max-width:1200px){
@@ -27,7 +29,9 @@
 	strong {
 		font-size: 17px;
 	}
-	.mc-field-group input{
+	article.copyright {
+    position: absolute;
+    bottom: 20px;
   }
 }
 @media screen and (min-width:767px) and (max-width:980px){
@@ -46,7 +50,9 @@
 	strong {
 		font-size: 15px;
 	}
-	.mc-field-group input{
+	article.copyright {
+    position: absolute;
+    bottom: 20px;
   }
 }
 @media screen and (min-width:480px) and (max-width:767px){
@@ -65,6 +71,9 @@
 		margin: 0px -20px;
 	}
 	#secondary {
+	}
+	article.copyright {
+  	padding-top: 20px;
 	}
 	.mc-field-group {
     width: 100%;
@@ -98,6 +107,9 @@
 		margin: 0px -20px;
 	}
 	#secondary {
+	}
+	article.copyright {
+  	padding-top: 20px;
 	}
 	.layers .layer {
 		float: none;
