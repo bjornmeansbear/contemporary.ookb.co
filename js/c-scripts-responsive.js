@@ -51,7 +51,7 @@ $(window).scroll(function(){
   var ww = $(window).width();
   var dh = $(document).height();
   //if over 480px
-  if (ww >= 480){
+  if (ww >= 490){
   //reposition Cs on scrolling so that they end up centered
   //correctly position based on heights
   $('.layer').css('top',s);
@@ -82,8 +82,8 @@ $(window).load(function(){
   var marginfix = (ww/8);
   var howfar = (s/wh);
 
-  //if under 480px
-  if (ww <= 480){
+  //if under 490px
+  if (ww <= 490){
  	 //Stack layers on load
  	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
  	  $('.layers .layer').css('margin-top',(-lh));
@@ -93,7 +93,30 @@ $(window).load(function(){
 	  $('html,body,.layers').height(wh+lh);
 	  $('#secondary .teaser').css('margin-top',(0));
   }
-  
+});
+// try to keep things correct even if there is a resizing...
+$(window).resize(function() {
+    var wh = $(window).height();
+  var ww = $(window).width();
+  var th = $('.teaser').height();
+  var lh = $('.layer').height();
+  var lw = $('.layer').width();
+  var s  = $(window).scrollTop();
+  var wr = (ww/wh);
+  var marginfix = (ww/8);
+  var howfar = (s/wh);
+
+  //if under 490px
+  if (ww <= 490){
+ 	 //Stack layers on load
+ 	  $('.layers .layer').css('margin-left',(ww/2)-(lw/2));
+ 	  $('.layers .layer').css('margin-top',(-lh));
+	  $('.first').css('margin-top',(0));
+	  $('#main').height(lh);
+	  $('.layers').width(ww);
+	  $('html,body,.layers').height(wh+lh);
+	  $('#secondary .teaser').css('margin-top',(0));
+  }
 });
 //Media Query Scroll functions
 $(window).scroll(function(){

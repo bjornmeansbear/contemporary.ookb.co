@@ -119,11 +119,7 @@ article.layers {
 
 .layers .layer.forty-four { opacity: .44; }
 
-/* initial page-load positioning */
 
-article.copyright {
-  padding-top:20px;
-}
 /*Page Down animation*/
 @keyframes bounce{
   0% {bottom: 36px;}
