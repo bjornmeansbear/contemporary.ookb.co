@@ -108,7 +108,7 @@ $(window).scroll(function(){
 	//if under 767px and over 480px
 	if (ww <= 767 && ww >= 480){
 	//setting new margin-top for secondary
-		$('#secondary').css('margin-top', (wh-(lh+(lh/3))));
+		$('#secondary').css('margin-top', (wh-lh));
 		//if scroll top is greater then window height
 		if (s >= wh){
 			//new styles for layers

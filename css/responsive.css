@@ -8,6 +8,8 @@
 		font-size: 48px;
 		line-height: 81px;
 	}
+	.mc-field-group input{
+  }
 }
 @media screen and (min-width:980px) and (max-width:1200px){
 	.teaser p {
@@ -25,6 +27,8 @@
 	strong {
 		font-size: 17px;
 	}
+	.mc-field-group input{
+  }
 }
 @media screen and (min-width:767px) and (max-width:980px){
 	.teaser p {
@@ -42,6 +46,8 @@
 	strong {
 		font-size: 15px;
 	}
+	.mc-field-group input{
+  }
 }
 @media screen and (min-width:480px) and (max-width:767px){
 	.teaser p {
@@ -59,6 +65,15 @@
 		margin: 0px -20px;
 	}
 	#secondary {
+	}
+	.mc-field-group {
+    width: 100%;
+	}
+	.mc-field-group .input-append{
+  	width: 100%;
+	}
+	.mc-field-group .input-append input{
+  	width: 90%;
 	}
 }
 @media screen and (max-width:480px){
@@ -95,5 +110,14 @@
   	-ms-transform: scale(1.6,1.6); 
   	-webkit-transform: scale(1.6,1.6); 
   	-moz-transform: scale(1.6,1.6);
+	}
+	.mc-field-group {
+    width: 100%;
+	}
+	.mc-field-group .input-append{
+  	width: 100%;
+	}
+	.mc-field-group .input-append input{
+  	width: 90%;
 	}
 }

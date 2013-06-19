@@ -171,7 +171,30 @@ article.copyright {
 #pagedown a:hover{
   text-decoration: none;
 }
+/* FORM STYLE */
+.mc-field-group{
+}
+.mc-field-group input{
+  text-align: center;
+}
+.mc-field-group input:invalid{
+}
+::-webkit-input-placeholder{
+  color: #404040;
+}
+::-webkit-input-placeholder:after{
 
+}
+:-moz-placeholder {}
+:-moz-placeholder:after{
+  content: ' \27F6 ';}
+::-moz-placeholder {}
+::-moz-placeholder:after{
+  content: ' \27F6 ';}
+:-ms-input-placeholder {}
+:-ms-input-placeholder:after{
+  content: ' \27F6 ';
+}
 /* TYPOGRAPHY */
 /* =================================================================== */
 /* =================================================================== */
