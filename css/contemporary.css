@@ -148,8 +148,6 @@ article.copyright {
   /**/
   background: none;
   border: none;
-  font-size: 72px;
-  line-height: 72px;
   margin: 0;
   margin-left: -36px;
   opacity: .66;
@@ -166,7 +164,9 @@ article.copyright {
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-delay: 3s;
-  
+}
+#pagedown a{
+  font-size: 28px;
 }
 #pagedown a:hover{
   text-decoration: none;
