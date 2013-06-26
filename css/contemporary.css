@@ -177,19 +177,13 @@ article.layers {
 ::-webkit-input-placeholder{
   color: #404040;
 }
-::-webkit-input-placeholder:after{
+:-moz-placeholder {
+  color: #404040;
+}
+:-ms-input-placeholder {
+  color: #404040;
+}
 
-}
-:-moz-placeholder {}
-:-moz-placeholder:after{
-  content: ' \27F6 ';}
-::-moz-placeholder {}
-::-moz-placeholder:after{
-  content: ' \27F6 ';}
-:-ms-input-placeholder {}
-:-ms-input-placeholder:after{
-  content: ' \27F6 ';
-}
 /* TYPOGRAPHY */
 /* =================================================================== */
 /* =================================================================== */
