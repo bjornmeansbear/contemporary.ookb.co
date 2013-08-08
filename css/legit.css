@@ -7,6 +7,7 @@
 }
 
 footer {
+  background: #eee;
   height: 1000px;
   margin-top: 100px;
 }
@@ -25,7 +26,8 @@ footer {
   height: 270px;
 }
 
-.row div {
+.home .row div,
+.shop .row div {
   height: 100%;
 }
 
@@ -58,4 +60,8 @@ footer {
   border: 3px solid;
   margin-bottom: 30px;
   padding: 15px;
+}
+
+.progress, .progress-bar {
+  height: 30px;
 }
