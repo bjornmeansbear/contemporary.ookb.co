@@ -10,3 +10,52 @@ footer {
   height: 1000px;
   margin-top: 100px;
 }
+
+#hero {height: 450px;}
+
+.someheight-1 {
+  height: 450px;
+}
+
+.someheight-2 {
+  height: 320px;
+}
+
+.someheight-3 {
+  height: 270px;
+}
+
+.row div {
+  height: 100%;
+}
+
+.col-lg-6 p {
+  background: #DDD;
+  height: 100%;
+}
+
+.col-lg-4 p {
+  background: #CCC;
+  height: 100%;
+}
+
+.col-lg-3 p {
+  background: #BBB;
+  height: 100%;
+}
+
+.col-lg-2 p  {
+  background: #AAA;
+  height: 100%;
+}
+
+#hero {
+  background: #eee;
+  margin-bottom: 30px;
+}
+
+#emailcapture {
+  border: 3px solid;
+  margin-bottom: 30px;
+  padding: 15px;
+}
