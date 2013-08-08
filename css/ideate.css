@@ -5,10 +5,11 @@
 }
 
 .scrollcount    { top: 20px; }
-.documentheight { top: 50px; }
-.windowheight   { top: 80px; }
-.ratio          { top:110px; }
-.multiplier     { top:140px; }
+.documentheight { top: 40px; }
+.windowheight   { top: 60px; }
+.ratio          { top: 80px; }
+.multiplier     { top:100px; }
+.multiplier2    { top:120px; }
 
 
 .filler {

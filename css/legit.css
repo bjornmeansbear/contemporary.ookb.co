@@ -125,3 +125,5 @@ footer {
 .progress, .progress-bar {
   height: 30px;
 }
+
+.disabled { display: none !important; }
