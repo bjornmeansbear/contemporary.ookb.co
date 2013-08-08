@@ -127,3 +127,26 @@ footer {
 }
 
 .disabled { display: none !important; }
+
+
+
+
+
+/** goofy logo idea **/
+#logo {position: relative; z-index: 9999999999999;}
+#logo .col-lg-1 {
+  position: relative;
+  width: 146px;
+  margin: 0;
+  top:0;
+  left:6px;
+}
+
+#logo .col-lg-1 img {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top:0;
+  left: 0;
+  opacity: .33;
+}
