@@ -6,7 +6,7 @@ $(".scroll_to").click(function(event){
 
 /* craziness with the logo */
 $('#logo img').hide()
-$('#logo img:nth-child(1)').show();
+$('#logo img:nth-child(odd)').show();
 
 $(window).scroll(function() {
 
@@ -19,23 +19,17 @@ $(window).scroll(function() {
 
   if ((s>r) && (s<=(2*r))) {
     $('#logo img:nth-child(1)').fadeOut();
-    $('#logo img:nth-child(3)').fadeOut();
     $('#logo img:nth-child(2)').fadeIn();
-    $('#logo img:nth-child(13)').fadeIn();
   }
 
   if ((s>(2*r)) && (s<=(3*r))) {
     $('#logo img:nth-child(2)').fadeOut();
-    $('#logo img:nth-child(6)').fadeOut();
     $('#logo img:nth-child(3)').fadeIn();
-    $('#logo img:nth-child(14)').fadeIn();
   }
 
   if ((s>(3*r)) && (s<=(4*r))) {
     $('#logo img:nth-child(3)').fadeOut();
-    $('#logo img:nth-child(9)').fadeOut();
     $('#logo img:nth-child(4)').fadeIn();
-    $('#logo img:nth-child(15)').fadeIn();
   }
 
   if ((s>(4*r)) && (s<=(5*r))) {
@@ -49,8 +43,8 @@ $(window).scroll(function() {
   }
 
   if ((s>(6*r)) && (s<=(7*r))) {
-    $('#logo img:nth-child(5)').fadeOut();
-    $('#logo img:nth-child(6)').fadeIn();
+    $('#logo img:nth-child(6)').fadeOut();
+    $('#logo img:nth-child(7)').fadeIn();
   }
 
   if ((s>(7*r)) && (s<=(8*r))) {
@@ -77,6 +71,5 @@ $(window).scroll(function() {
     $('#logo img:nth-child(11)').fadeOut();
     $('#logo img:nth-child(12)').fadeIn();
   }
-
 
 });
