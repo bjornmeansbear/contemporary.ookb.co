@@ -133,21 +133,39 @@ footer {
 
 
 /** goofy logo idea **/
-#logo {position: relative; z-index: 9999999999999;}
+#logo {
+  position: relative;
+  z-index: 9999999999999;
+  margin-bottom: -162px;
+  }
+  
 #logo .col-lg-1 {
   position: relative;
   width: 146px;
+  height: 162px;
   margin: 0;
   top:0;
   left:6px;
+  overflow: hidden
 }
 
-#logo .col-lg-1 .multic {
-  background: transparent url(img/c-weblogo12.jpg) ;
+#logo .col-lg-1 img {
   position: absolute;
-  height: 162px;
   width: 100%;
   top:0;
   left: 0;
   opacity: 1;
 }
+
+#logo .col-lg-1 img:nth-child(1)  { margin-top:       0; }
+#logo .col-lg-1 img:nth-child(2)  { margin-top:  -162px; }
+#logo .col-lg-1 img:nth-child(3)  { margin-top:  -324px; }
+#logo .col-lg-1 img:nth-child(4)  { margin-top:  -486px; }
+#logo .col-lg-1 img:nth-child(5)  { margin-top:  -648px; }
+#logo .col-lg-1 img:nth-child(6)  { margin-top:  -810px; }
+#logo .col-lg-1 img:nth-child(7)  { margin-top:  -972px; }
+#logo .col-lg-1 img:nth-child(8)  { margin-top: -1134px; }
+#logo .col-lg-1 img:nth-child(9)  { margin-top: -1296px; }
+#logo .col-lg-1 img:nth-child(10) { margin-top: -1458px; }
+#logo .col-lg-1 img:nth-child(11) { margin-top: -1620px; }
+#logo .col-lg-1 img:nth-child(12) { margin-top: -1782px; }
