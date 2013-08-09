@@ -142,11 +142,12 @@ footer {
   left:6px;
 }
 
-#logo .col-lg-1 img {
+#logo .col-lg-1 .multic {
+  background: transparent url(img/c-weblogo12.jpg) ;
   position: absolute;
-  height: auto;
+  height: 162px;
   width: 100%;
   top:0;
   left: 0;
-  opacity: .33;
+  opacity: 1;
 }
