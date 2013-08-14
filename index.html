@@ -14,12 +14,18 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <link href="css/legit.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body class="home" style="padding-top:40px;">
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
@@ -27,70 +33,107 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">The Contemporary</a>
-        <div class="nav-collapse collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Curatorial Council</a></li>
                 <li><a href="archive.html">Past</a><li>
-                <li><a href="#">Present</a></li>
-                <li><a href="#">Future</a></li>
               </ul>
             </li>
             <li><a href="events.html">Events</a></li>
-            <li class="disabled"><a href="shop.html">Shop</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="join.html">Donate</a></li>
           </ul>
           <ul class="nav navbar-nav pull-right">
-            <li><a href="#">Baltimore, MD</a></li>
-          </ul>
-          <ul class="nav navbar-nav pull-right disabled">
-            <li><a href="#">&ldquo;BLOG&rdquo; &mdash; name TK</a></li>
+            <li><p class="muted">Baltimore, MD</p></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </nav>
 
-<!--
-    <header id="logo">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1">
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-            <img src="img/c-weblogo12.jpg" />
-          </div>
-        </div>
-      </div>
+    <header>
     </header>
--->
 
-    <div id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 fourfifty">
-            <h1>Big, Giant Type that tells you something cool</h1>
-            <p>This will big 1 big image and the appropriate accompanying text for that... The way this would work is that it pulls in just 1 thing at random from an okayed list of “Featured” things. It would then display an image, the title, and the short, teaser text for that thing. If we only have one featured thing at the time, well, then that is always up. If there are many featured things, then 1 randomly loads each time a visitor comes to (or reloads) the page — acceptable?</p>
-            <small class="btn btn-info">read more &raquo;</small>
-            <p>This becomes a slider of the three items below + the Art in America link</p>
+    <div id="slideshow">
+      <!-- prev/next links -->
+      <div class="cycle-prev"></div>
+      <div class="cycle-next"></div>
+      <!-- empty element for pager links -->
+      <div class="cycle-pager"></div>
+      <div class="cycle-slideshow"
+        data-cycle-timeout="0"
+        data-cycle-pager=".cycle-pager"
+        data-cycle-prev=".cycle-prev"
+        data-cycle-next=".cycle-next"
+        data-cycle-slides="> .slide"
+        >
+        <!-- IMAGES in the slideshow -->
+        <div class="slide">
+          <img src="http://arttattler.com/Images/NorthAmerica/Illinois/Chicago/Museum%20of%20Contemporary%20Art/Joseph%20Grigley/Drunken-Detail.jpg">
+          <div class="feature">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-6 col-lg-offset-2">
+                  <h1>Big, Giant Type that tells you something cool</h1>
+                  <p>This will big 1 big image and the appropriate accompanying text for that... The way this would work is that it pulls in just 1 thing at random from an okayed list of “Featured” things. It would then display an image, the title, and the short, teaser text for that thing. If we only have one featured thing at the time, well, then that is always up. If there are many featured things, then 1 randomly loads each time a visitor comes to (or reloads) the page — acceptable?</p>
+                  <p><small class="btn btn-info">read more &raquo;</small></p>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
+        
+        <div class="slide">
+          <img src="http://3.bp.blogspot.com/-vNDitHxg-Tg/TcvmNQoSLOI/AAAAAAAAGK4/wvetRmz-zyw/s1600/IMG_9439.jpg">
+          <div class="feature">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-6 col-lg-offset-3">
+                  <h1>Different, Giant Type</h1>
+                  <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <img src="http://farm5.staticflickr.com/4145/5017159104_59401570ff_b.jpg">
+          <div class="feature">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-6 col-lg-offset-2">
+                  <h1>A Third thing</h1>
+                  <p>Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p><small class="btn btn-info">read more &raquo;</small></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <img src="http://farm2.staticflickr.com/1294/5180445743_5f8b0c7931_b.jpg">
+          <div class="feature">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-6 col-lg-offset-5">
+                  <h1>Important Stuff Happens Here!</h1>
+                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
+    
     <div class="container">
           
       <div class="row someheight-2">
@@ -114,11 +157,13 @@
       </div>
 
       <div class="row someheight-2">
-        <div class="col-lg-4"><p>Project 20 book embed</p></div>
-        <div class="col-lg-2"><p>Something about the board</p></div>
-        <div class="col-lg-2"><p>Volunteers? <br/> Interested in volunteering? We look for volunteers to do everything... Survey for the volunteers...</p></div>
-        <div class="col-lg-2"><p>Art in America <br/> Also a press area...</p></div>
-        <div class="col-lg-2"><p>Donate</p></div>
+        <div class="col-lg-4">
+          <h2>Project 20 Book</h2>
+        </div>
+        <div class="col-lg-2"><h2>The Board</h2><p>Something about the board</p></div>
+        <div class="col-lg-2"><h2>Volunteers</h2><p>Volunteers? <br/> Interested in volunteering? We look for volunteers to do everything... Survey for the volunteers...</p></div>
+        <div class="col-lg-2"><h2>Press</h2><p>Art in America <br/> Also a press area...</p></div>
+        <div class="col-lg-2"><h2>Donate</h2><p>Donate</p></div>
       </div>
       
     </div>
@@ -138,8 +183,9 @@
     <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
-    <script src="js/jquery.js"></script>    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>    
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.cycle2.js"></script>
     <script src="js/ookb_for_tc.js"></script>
     
   </body>

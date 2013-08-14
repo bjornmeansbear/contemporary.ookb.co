@@ -144,3 +144,10 @@ $(window).scroll(function() {
   }
 
 });
+
+$(document).ready(function() {
+  // set slideshow height cleverly
+  var wh = $(window).height();
+  $('#slideshow').height(wh-300);
+});
+
