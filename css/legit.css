@@ -58,6 +58,7 @@ footer {
   background: #eee;
   height: 1000px;
   margin-top: 100px;
+  padding-top: 30px;
 }
 
 #emailcapture {
@@ -120,6 +121,7 @@ footer {
   overflow: hidden;
   position: relative;
   border-radius: 0;
+  margin-bottom: 30px;
 }
 
 #slideshow .cycle-slideshow, 
