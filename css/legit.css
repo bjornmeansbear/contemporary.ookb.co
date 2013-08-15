@@ -189,3 +189,34 @@ footer {
 .cycle-pager span:hover { color: #0799C8; }
 .cycle-pager span.cycle-pager-active { color: #77A41D;}
 .cycle-pager > * { cursor: pointer;}
+
+
+/** SECTION 4 **/
+/* Projet 20 block */
+.project20 { position: relative; }
+
+.project20, .project20 img, .project20 .overlay {height: 360px; }
+
+.project20 img, .project20 .overlay { position: absolute; }
+
+.project20 .overlay { 
+  top: 25%;
+  left:5%;
+  transform:rotate(-11.25deg);
+  -ms-transform:rotate(-11.25deg); 
+  -moz-transform:rotate(-11.25deg);
+  -webkit-transform:rotate(-11.25deg);
+  -o-transform:rotate(-11.25deg);
+}
+
+.project20 .overlay h2,
+.project20 .overlay p { 
+  background: red;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px 1px;
+}
+
+.project20 .overlay h2 {
+  padding-top: 10px;
+}
