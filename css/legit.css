@@ -72,6 +72,7 @@ footer {
 
 .disabled { display: none !important; }
 
+.btn.add-top {margin-top: 30px;}
 
 /** goofy logo idea **/
 
