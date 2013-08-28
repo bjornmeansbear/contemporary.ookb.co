@@ -20,8 +20,12 @@ $(window).scroll(function() {
   var dh = $(document).height();
   var r  = (dh-wh)/12;
 
-  if ((s>r) && (s<=(2*r))) {
+  if (s<r) {
+    $('header img:nth-child(even)').fadeOut();
     $('header img:nth-child(odd)').fadein();
+  }
+
+  if ((s>r) && (s<=(2*r))) {
     $('header img:nth-child(1)').fadeOut();
     $('header img:nth-child(15)').fadeOut();
     $('header img:nth-child(3)').fadeOut();
