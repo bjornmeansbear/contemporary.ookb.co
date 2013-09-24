@@ -1,0 +1,154 @@
+---
+layout : default
+---
+
+<div class="row course-header">
+  <h1 class="col-lg-12">{{ page.title }}</h1>
+  <h2 class="col-lg-12">{{ page.sub-title }}</h2>
+  <div class="col-lg-12 add-top border-top">
+    <div class="row">
+      <p class="col-md-3">Fall 2013, {{ page.room }}</p>
+      <p class="col-md-3">{{ page.sec1 }}</p>
+      <p class="col-md-3">{{ page.sec2 }}</p>
+      <p class="col-md-3">{{ page.sec3 }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3">
+    <nav id="scrollspy-nav" data-spy="affix" data-offset-top="206">
+      <ul class="sidenav nav">
+        <li><a href="#description" class="scroll">Catalog Description</a></li>
+        <li><a href="#addtl" class="scroll">Additional Explanation</a></li>
+        <li><a href="#outcomes" class="scroll">Learning Outcomes</a></li>
+        <li><a href="#office" class="scroll">Contact/Office Hours</a></li>
+        <li><a href="#supplies" class="scroll">Materials/Supplies</a></li>
+        <li><a href="#readings" class="scroll">Required Reading</a></li>
+        <li><a href="#projects" class="scroll">Projects</a></li>
+        <li><a href="#calendar" class="scroll">Calendar</a></li>
+        <li><a href="#grades" class="scroll">Grading Criteria</a></li>
+        <li><h6>MICA Policies</h6></li>
+        <li><a href="#attendance" class="scroll">Attendance Policy</a></li>
+        <li><a href="#ada" class="scroll">ADA</a></li>
+        <li><a href="#health" class="scroll">Health and Safety</a></li>
+        <li><a href="#plagiarism" class="scroll">Plagiarism</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-lg-9">
+    <article class="content" id="syllabus">
+      
+      <!-- Catalog Description from MICA -->
+      {{# courses.find_by_name.gd3/description }}
+      <section id="description" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.gd3/description }}
+
+      <!-- Personal desires for the class... -->
+      {{# courses.find_by_name.gd3/additions }}
+      <section id="addtl" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.gd3/additions }}
+
+      <!-- Learning Outcomes from MICA -->
+      {{# courses.find_by_name.gd3/learning-outcomes }}
+      <section id="outcomes" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.gd3/learning-outcomes }}
+
+      <!-- Contact/Office -->
+      {{# courses.find_by_name.officehours }}
+      <section id="office" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.officehours }}
+
+      <!-- Materials/Supplies -->
+      {{# courses.find_by_name.gd3/supplies }}
+      <section id="supplies" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.gd3/supplies }}
+
+      <!-- Reading List -->
+      {{# courses.find_by_name.gd3/required-reading }}
+      <section id="readings" class="">
+        <h3><a href="readinglist">{{ title }}</a></h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.gd3/required-reading }}
+
+      <!-- Projects  -->
+      {{# projects.tags.gd3 }}
+      <section id="projects" class="">
+        <h3>Projects</h3>
+        <ul>
+        {{# projects?to_projects }}
+          <li><a href="{{url}}">{{title}}</a></li>
+        {{/ projects?to_projects }}
+        </ul>
+      </section>
+      {{/ projects.tags.gd3 }} 
+
+      <!-- Calendar -->
+      {{# courses.find_by_name.gd3/calendar }}
+      <section id="calendar" class="">
+        <h3><a href="calendar">{{ title }}</a></h3>
+        {{{ content }}}
+        <p>Due to the quantity of content, this is on its own page.</p>
+      </section>
+      {{/ courses.find_by_name.gd3/calendar }}
+
+      <!-- Grading -->
+      {{# courses.find_by_name.grades }}
+      <section id="grades" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.grades }}
+
+      <!-- Attendance -->
+      {{# courses.find_by_name.attendance }}
+      <section id="attendance" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.attendance }}
+
+      <!-- ADA statement -->
+      {{# courses.find_by_name.ada }}
+      <section id="ada" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.ada }}
+      
+      <!-- Health and Safety statement -->
+      {{# courses.find_by_name.health-safety }}
+      <section id="health" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.health-safety }}
+
+      <!-- Plagarism statement -->
+      {{# courses.find_by_name.plagiarism }}
+      <section id="plagiarism" class="">
+        <h3>{{ title }}</h3>
+        {{{ content }}}
+      </section>
+      {{/ courses.find_by_name.plagiarism }}
+
+    </article>
+  </div>
+</div>
+

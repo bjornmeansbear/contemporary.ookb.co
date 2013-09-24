@@ -1,0 +1,360 @@
+/* 1. @Font-Face Ñ load my google fonts... */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+@import url("http://fonts.googleapis.com/css?family=Pathway+Gothic+One");
+
+body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+.gentium { font-family: 'Gentium Book Basic', Georgia, serif; }
+.condensed {font-family: 'Pathway Gothic One', sans-serif;}
+
+/* END @Font-Face */
+
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+/* Color Palette */
+/*
+pink          rgba(236,64,121,1)
+brown         rgba(47,41,38,1)
+gray          rgba(132,132,120,1)
+dark gray     rgba(96,103,103,1)
+light gray    rgba(194,211,186,1)
+
+red           rgba(183,80,81,1)
+orange        rgba(195,115,99,1)
+yellow        rgba(197,192,101,1)
+green         rgba(140,165,115,1)
+blue          rgba(157,178,176,1)
+purple        rgba(174,139,164,1)
+*/
+
+div.red     { background: rgba(183,80,81,1); }
+div.orange  { background: rgba(195,115,99,1); }
+div.yellow  { background: rgba(197,192,101,1); }
+div.green   { background: rgba(140,165,115,1); }
+div.blue    { background: rgba(157,178,176,1); }
+div.purple  { background: rgba(174,139,164,1); }
+
+html {
+  background: rgba(96,103,103,1);
+  color: rgba(47,41,38,1) !important;
+  min-height: 101%;
+  /**/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /**/
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+body {
+  background: rgba(132,132,120,1);
+  border: 2px solid rgba(47,41,38,1);
+  color: rgba(47,41,38,1) !important;
+  margin: 20px;
+  min-height: 101% !important;
+  padding: 0;
+  padding-top: 50px;
+}
+
+em, cite { font-style: italic; }
+strong { font-weight: 700;}
+
+header {
+  background: rgba(96,103,103,1);
+  border-bottom: 2px solid rgba(47,41,38,1) !important;
+  margin: 0 20px !important;
+}
+
+footer {
+  border-top: 4px solid rgba(47,41,38,1);
+  margin-top: 40px;
+  margin-bottom: 72px;
+  padding: 24px 0;
+}
+
+.course-header {
+  border-bottom: 2px solid rgba(47,41,38,1);
+  margin-bottom: 30px;
+}
+
+.add-top       { margin-top: 15px; }
+.add-bottom    { margin-bottom: 15px; }
+.remove-top    { margin-top: 0; }
+.remove-bottom { margin-bottom: 0; }
+.course-header.remove-bottom { margin-bottom: 0; }
+.week .remove-top h3:first-child  { margin-top: 0; }
+
+.border-top {
+  border-top: 2px solid rgba(47,41,38,1);
+  padding-top: 10px;
+}
+
+/* MAIN TOP NAV STYLES                                   */
+/* ===================================================== */
+
+.navbar a.brand,
+.navbar ul.nav a {
+  background: transparent;
+  border: none;
+  color: rgb(47, 41, 38);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar a.brand {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-left: -15px;
+  padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav .caret {
+  border-top-color: rgba(47,41,38,1);
+  border-bottom-color: rgba(47,41,38,1);
+}
+
+.nav a:hover .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+/* 3. TYPOGRAPHY */
+/* =================================================================== */
+/* =================================================================== */
+.leftside {text-align: right;}
+.rightside {text-align: left;}
+
+sup {
+  vertical-align: super;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+h1, h2 {font-weight: 800;}
+
+.course-header h2 { margin-top: 0; }
+
+/* Links and More */
+/* =================================================================== */
+
+a {
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(236,64,121,1);
+  padding: 1px 2px 1px 2px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover,
+.navbar a.brand:hover,
+ul.nav a:hover { 
+  background: rgba(236,64,121,1);
+  color: white;
+  text-decoration: none;
+  }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::selection {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-shadow: none;
+}
+
+#scrollspy-nav {
+  border-top: 1px solid rgba(236,64,121,1); 
+}
+
+#scrollspy-nav ul.sidenav li > a,
+#scrollspy-nav ul.sidenav li > h6 {
+  padding: 5px;
+}
+
+#scrollspy-nav ul.sidenav li > h6 {
+  border-bottom: 1px solid rgba(236,64,121,1); 
+  margin: 15px 0 0 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#scrollspy-nav ul.sidenav li.active {
+  background-color: rgba(47,41,38,1);
+}
+#scrollspy-nav ul.sidenav li.active,
+#scrollspy-nav ul.sidenav li.active a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #scrollspy-nav.affix {
+    top: 66px;
+    width: inherit;
+    max-width: 262px;
+  }
+}
+
+
+div.block {
+  display: table;
+  height: 300px;
+  padding: 0;
+/*   width: 100%; */
+}
+
+div.block a {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+#syllabus section {
+  border-bottom: 1px solid;
+/*   padding: 10px 0 20px 0; */
+  padding: 50px 0;
+}
+
+#syllabus section:first-child {
+  margin-top: -26px;
+}
+
+#syllabus section:last-child {
+  border-bottom: none;
+}
+
+
+
+/* Quote Style Tweak */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 3px solid rgba(96,103,103,1);
+}
+
+article h3  {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 800 !important;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.stricken, del {
+  text-decoration: line-through;
+}
+
+/*=============================================================*/
+/*=============================================================*/
+/*=============================================================*/
+
+article.calendar section {
+  border-top: 1px solid;
+  padding: 25px 0 45px;
+}
+
+article.calendar section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+article.calendar section:last-child {
+  padding-bottom: 0;
+}
+
+article.calendar .past h2 {
+  cursor: pointer;
+}
+
+article.calendar .past h2:hover {
+  color: rgba(96,103,103,1)
+}
+
+article.calendar .week .column-list > ul {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 -15px 30px;
+}
+
+/*=============================================================*/
+/*=============================================================*/
+/*=============================================================*/
+
+/* DESIGN A MATION PAGE(S) */
+
+.designamations, .designamation, .designamation img {
+  position: relative;
+  z-index: 1;
+}
+
+.designamation {
+  width: 25%;
+  margin: 0;
+  float:left;
+  overflow: hidden;
+}
+
+.designamation img {
+  width: 100%;
+}
+
+.designamation p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+.designamation:hover p {
+  display: block;
+  background: rgba(132,132,120,.66);
+}
+
+/*=============================================================*/
+/*=============================================================*/
+/*=============================================================*/
+
+/* Project pages */
+
+.project .content p:first-child {
+  font-size: 1.66rem;
+  margin-bottom: 1.66em;
+}
+
+.project .sidebar h3 {
+  font-size: 1.66rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.project pre {
+  background-color: rgba(236,64,121,.66);
+  border: none;
+  margin-bottom: 2em;
+  margin-left: -10px;
+}
+
+.project .sidebar ol {
+  padding-left: 1.22em;
+}
