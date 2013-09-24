@@ -42,17 +42,11 @@
         </div>
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="/courses/gd3/">GD3 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="/courses/gd3/">Main</a></li>
-                <li><a href="/courses/gd3/syllabus/">Syllabus</a></li>
-                <li><a href="/courses/gd3/calendar/">Calendar</a></li>
-                <li><a href="/courses/gd3/readinglist/">Readings</a></li>
-                <li><a href="/courses/gd3/projectlist/">Projects</a></li>
-                <li><a href="/courses/gd3/glossary/">Glossary</a></li>
-              </ul>
-            </li>
+            <li><a>TK</a></li>
+            <li><a>TK</a></li>
+            <li><a>TK</a></li>
+            <li><a>TK</a></li>
+            <li><a>TK</a></li>
           </ul>
         </nav>
       </div>
@@ -62,6 +56,20 @@
     ================================================== -->
     <div class="container">
         {{{ content }}}
+    </div> <!-- /container -->
+
+    <div class="container">
+      {{# bios.all }}
+        <h1>{{firstname}} {{lastname}}</h1>
+        {{{content}}}
+      {{/ bios.all }}
+    </div> <!-- /container -->
+
+    <div class="container">
+      {{# council.all }}
+        <h1>{{firstname}} {{lastname}}</h1>
+        {{{content}}}
+      {{/ council.all }}
     </div> <!-- /container -->
 
     <!-- Footer!

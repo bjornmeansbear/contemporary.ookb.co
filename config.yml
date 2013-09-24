@@ -31,6 +31,12 @@ _root:
   paginator:
     enable: false
 
+bios:
+  sort: ["lastname", "firstname", "asc"]
+
+council:
+  sort: ["lastname", "firstname", "asc"]
+
 posts:
   sort: ["date", "desc"]
   permalink: "/:categories/:title/"
