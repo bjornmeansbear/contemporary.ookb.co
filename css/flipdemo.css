@@ -1,0 +1,32 @@
+
+
+.film {
+  background: rgba(255,255,255,.66);
+  position: absolute;
+  top: 100px;
+  left:50%;
+  height: 500px;
+  width: 600px;
+  margin-left: -300px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms; /* Safari */
+  z-index: 2;
+}
+
+#sideone {
+  transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  z-index: 1;
+}
+
+button {
+  margin-left: -100px;
+  position: absolute;
+  left:50%;
+  top:30px;
+  width: 200px;
+  z-index: 9999;
+}
+
+
+
