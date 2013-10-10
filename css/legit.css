@@ -332,3 +332,65 @@ footer {
   position: absolute;
   z-index: 9;
 }
+
+
+
+
+
+/** Alternate Homepage Idea **/
+.home-2 header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.home-2 header img {
+  width: 8%;
+  height: auto;
+  margin: 0;
+  opacity: .33;
+  padding: 0;
+}
+
+#bigimage {
+  position: fixed;
+}
+
+#bigtext {
+  position: absolute;
+  top: 280px;
+}
+
+.bigdiv {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#bigimage img {
+  width: 100%;
+}
+
+#bigtext h1 {
+  font-size: 5.5em;
+  line-height: 1;
+  color: white;
+}
+
+#bigtext h1 span {
+  font-style: italic;
+}
+
+#white-wrapper {
+  background: white;
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1
+}
