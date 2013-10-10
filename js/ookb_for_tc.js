@@ -134,3 +134,12 @@ $(document).ready(function() {
   $('#slideshow').height(wh-300);
 });
 
+/** Board Bio stuff **/
+$("#board .bio p").hide();
+$("#board .bio img").click(function() {
+  $(this).parent().find("p").slideToggle(300);
+});
+$("#board .bio h2").click(function() {
+  $(this).parent().find("p").slideToggle(300);
+});
+

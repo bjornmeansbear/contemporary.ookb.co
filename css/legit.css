@@ -83,7 +83,6 @@ footer {
   height: 270px;
   width: 100%;
   top:40px;
-  z-index: 9999999999999;
 }
 
 #logo .col-lg-1 {
@@ -93,7 +92,8 @@ footer {
   margin: 0;
   top:0;
   left:6px;
-  overflow: hidden
+  overflow: hidden;
+  z-index: 1031;
 }
 
 #logo img {
@@ -244,13 +244,14 @@ footer {
 
 .about .main article {
   border-bottom: 1px solid;
-  margin-bottom: 7`0px;
+  margin-bottom: 70px;
   padding-bottom: 60px;
 }
 
 .about section img {
+  display: block;
   width: 80%;
-  margin-left: 10%;
+  margin: 0 auto;
   height: auto;
   /**/
   max-width: 300px;
@@ -304,3 +305,30 @@ footer {
   background-color: rgba(199,222,122,1);
 }
 
+#board .bio {
+  min-height: 350px;
+  position: relative;
+}
+
+#board .bio img,
+#board .bio h2 {
+  cursor: pointer;
+}
+
+#board .bio h2, 
+#board .bio h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#board .bio h2 {
+  margin-top: 15px;
+}
+
+#board .bio p {
+  background: white;
+  margin-top: 15px;
+  position: absolute;
+  z-index: 9;
+}
