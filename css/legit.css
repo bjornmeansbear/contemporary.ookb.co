@@ -54,6 +54,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 
 .noleftmargin {padding-left: 0 !important;}
 
+em, cite {font-style: italic !important;}
+
 footer {
   background: #eee;
   margin-top: 60px;
@@ -119,6 +121,18 @@ footer {
 /*********/
 
 .nav li .muted {padding-top: 15px; color: #777;}
+
+/*
+.home-2 .navbar {
+  background: none;
+  border: none;
+  color: white !important;
+}
+
+.home-2 .navbar a, .home-2 .navbar .muted {
+  color: #aebfd1 !important;
+}
+*/
 
 /*********/
 
@@ -359,6 +373,10 @@ footer {
   padding: 7px 10px 5px;
 }
 
+.press ul, .press ul a     { color:#1B2530; color:rgba(27,37,48,1); }
+.ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
+.speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
+
 .etcetera .col-lg-2 div {
   background-color: #F2F7E2;
   background-color: rgba(242,247,226,1);
@@ -416,16 +434,18 @@ footer {
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
 }
 
 .home-2 header img {
-  width: 8%;
+  display: inline-block;
   height: auto;
   margin: 0;
   opacity: .33;
   padding: 0;
+  position: relative;
+  width: 8%;
 }
 
 #bigimage {

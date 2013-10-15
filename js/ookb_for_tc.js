@@ -128,11 +128,34 @@ $(window).scroll(function() {
 /****************************/
 /****************************/
 
+
+
+
+
 $(document).ready(function() {
   // set slideshow height cleverly
   var wh = $(window).height();
+  var ww = $(window).width();
   $('#slideshow').height(wh-300);
+  $('#white-wrapper').css("margin-top",wh-400);
+  $('.home-2 .navbar').hide();
 });
+
+$(window).scroll(function() {
+
+  var s  = $(window).scrollTop();
+  var wh = $(window).height();
+
+  if ( s >= (wh-293)) { 
+    $('.home-2 .navbar').fadeIn('fast');
+    }
+  else { 
+    $('.home-2 .navbar').fadeOut('fast');
+    }
+
+});
+
+
 
 /** Board Bio stuff **/
 $("#board .bio p").hide();
@@ -143,9 +166,36 @@ $("#board .bio h2").click(function() {
   $(this).parent().find("p").slideToggle(300);
 });
 
-$(document).ready(function() {
-  // set slideshow height cleverly
-  var wh = $(window).height();
-  $('#white-wrapper').css("margin-top",wh-400);
+
+
+
+/* New Homepage C's Scrolling */
+// Scrolling grid magic
+$(window).scroll(function(){
+  // declaring various variables
+  var s         = $(window).scrollTop();
+  var wh        = $(window).height();
+  var ww        = $(window).width();
+  var sweetspot = wh-293;
+  var howfar    = (s/sweetspot);
+  var imgw      = $('header img').width();
+  var neg       = 0-1;
+
+  $('header img:nth-child(1)').css('left',((imgw*6)-(imgw/2))*howfar);
+  $('header img:nth-child(12)').css('left',((imgw*6)-(imgw/2))*howfar*neg);
+  $('header img:nth-child(2)').css('left',((imgw*5)-(imgw/2))*howfar);
+  $('header img:nth-child(11)').css('left',((imgw*5)-(imgw/2))*howfar*neg);
+  $('header img:nth-child(3)').css('left',((imgw*4)-(imgw/2))*howfar);
+  $('header img:nth-child(10)').css('left',((imgw*4)-(imgw/2))*howfar*neg);
+  $('header img:nth-child(4)').css('left',((imgw*3)-(imgw/2))*howfar);
+  $('header img:nth-child(9)').css('left',((imgw*3)-(imgw/2))*howfar*neg);
+  $('header img:nth-child(5)').css('left',((imgw*2)-(imgw/2))*howfar);
+  $('header img:nth-child(8)').css('left',((imgw*2)-(imgw/2))*howfar*neg);
+  $('header img:nth-child(6)').css('left',((imgw)-(imgw/2))*howfar);
+  $('header img:nth-child(7)').css('left',((imgw)-(imgw/2))*howfar*neg);
+
+  $('header img').css('top',s);
+
 });
+
 

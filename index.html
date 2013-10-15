@@ -77,9 +77,11 @@
             
         <div class="row triptych text-center">
           <div class="col-lg-4 trio press homepage-graphic">
-            <img src="img/press.jpg" />
+<!--             <img src="img/press.jpg" /> -->
+            <img src="img/press-cam.png" />
             <div class="overlay">
               <h2 class="text-center fraktur lowercase">Press</h2>
+              <p>Press releases, writeups, and other sundrys.</p>
             </div>
           </div>
           <div class="col-lg-4 trio ccc homepage-graphic">
@@ -92,10 +94,11 @@
             </div>
           </div>
           <div class="col-lg-4 trio speaker homepage-graphic">
-            <img src="img/speakers.jpg" />
+<!--             <img src="img/speakers.jpg" /> -->
+            <img src="img/speakers-ph.png" />
             <div class="overlay">
               <h2 class="text-center playfair">Speaker <br/>Series</h2>
-              <p>The 2013&ndash;2014 Speaker Series...</p>
+              <p>Starting Some Date in the future...</p>
             </div>
           </div>
         </div>
@@ -103,9 +106,9 @@
         <div class="row no-top link-lists">
           <div class="col-lg-4 press">
             <ul>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
+              <li><a href="#">Anouncing New Programming</a>, &mdash; <date>Nov 00, 2013</date></li>
+              <li><a href="http://www.artinamericamagazine.com/news-features/news/baltimores-contemporary-museum-reopens-with-new-director-/">Baltimore’s Contemporary Museum Reopens with New Director</a>, <cite>Art in America</cite> &mdash; <date>July 17, 2013</date></li>
+              <li><a href="http://articles.baltimoresun.com/2013-07-08/news/bs-ed-contemporary-mseum-20130708_1_contemporary-museum-george-ciscle-lisa-corrin">The Contemporary Returns</a>, <cite>Baltimore Sun</cite> &mdash; <date>July 08, 2013</date></li>
             </ul>
           </div>
           <div class="col-lg-4 ccc">
@@ -117,9 +120,10 @@
           </div>
           <div class="col-lg-4 speaker">
             <ul>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
-              <li>Lorem Ipsum Dolor Sit Amet</li>
+              <li>#1: Lorem Ipsum Dolor Sit Amet</li>
+              <li>#2: Lorem Ipsum Dolor Sit Amet</li>
+              <li>#3: Lorem Ipsum Dolor Sit Amet</li>
+              <li><small>All Speaker Series events will take place at the Baltimore Design School</li>
             </ul>
           </div>
         </div>
@@ -147,8 +151,8 @@
               <p>Excerpts will be online soon.</p>
             </div>
           </div>
-          <div class="col-lg-2"><div><h2>The Board</h2><p>Something about the board</p></div></div>
-          <div class="col-lg-2"><div><h2>Volunteers</h2><p>Volunteers? <br/> Interested in volunteering? We look for volunteers to do everything... Survey for the volunteers...</p></div></div>
+          <div class="col-lg-2"><div><h2>The Board</h2><p>What do you want to say about the board?</p></div></div>
+          <div class="col-lg-2"><div><h2>Volunteers</h2><p>Volunteers? <br/> Interested in volunteering? We look for volunteers to do everything... Survey for the volunteers... Can you get me the info for the volunteer form?</p></div></div>
           <div class="col-lg-2"><div><h2>Press</h2><p>Art in America <br/> Also a press area...</p></div></div>
           <div class="col-lg-2"><div><h2>Donate</h2><p>Donate</p></div></div>
         </div>
@@ -182,6 +186,21 @@
     <!-- OOKB JS additions -->
     <script src="js/jquery.cycle2.js"></script>
     <script src="js/ookb_for_tc.js"></script>
+    
+        <!-- make all the bios the same height with JS, not CSS -->
+    <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
+    <script>
+      $(document).ready(function() {
+        var maxHeight = -1;
+        $('.link-lists ul').each(function() {
+          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+        });
+        $('.link-lists ul').each(function() {
+          $(this).height(maxHeight);
+        });
+      });
+    </script>
+
     
   </body>
 </html>
