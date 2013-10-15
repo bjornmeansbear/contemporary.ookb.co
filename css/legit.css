@@ -52,6 +52,11 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
   margin-top: -30px;
 }
 
+.border-top {
+  border-top: 1px solid;
+  padding-top: 15px;
+}
+
 .noleftmargin {padding-left: 0 !important;}
 
 em, cite {font-style: italic !important;}
