@@ -364,14 +364,16 @@ footer {
   background-color: rgba(232,91,76,1));
 }
 
-.link-lists ul {
+.link-lists ul,
+.upcoming ul {
   border-top: 3px solid;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.link-lists ul li {
+.link-lists ul li,
+.upcoming ul li {
   border-top: 1px solid;
   list-style: none;
   margin: 0;
