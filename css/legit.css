@@ -430,12 +430,13 @@ footer {
 
 /** Alternate Homepage Idea **/
 .home-2 header {
-  text-align: center;
+  display: block;
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 9999;
+  text-align: center;
   width: 100%;
+  z-index: 9999;
 }
 
 .home-2 header img {
