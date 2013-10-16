@@ -407,7 +407,6 @@ footer {
 }
 
 #board .bio {
-  min-height: 350px;
   position: relative;
 }
 
@@ -415,6 +414,9 @@ footer {
 #board .bio h2 {
   cursor: pointer;
 }
+
+#board .bio h2 { font-size: 1.5em; }
+#board .bio h3 { font-size: 1em; }
 
 #board .bio h2, 
 #board .bio h3 {
