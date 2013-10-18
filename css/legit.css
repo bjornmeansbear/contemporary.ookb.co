@@ -96,8 +96,36 @@ footer {
 
 .btn.add-top {margin-top: 30px;}
 
-/** goofy logo idea **/
+.navbar {
+  background: #eee;
+  left:0;
+  right:0;
+}
+/* navbar override of bootstrap.css */
+.navbar-brand {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 7.5px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #777777;
+}
 
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #5e5e5e;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar-nav > li > a {
+  color: #777777;
+}
+
+
+
+/** goofy logo idea **/
 /**/
 #logo {
   position: fixed;
@@ -439,7 +467,7 @@ footer {
   position: relative;
   text-align: center;
   width: 100%;
-  z-index: 9999;
+  z-index: 0;
 }
 
 .home-2 header img {
@@ -454,6 +482,7 @@ footer {
 
 #bigimage {
   position: fixed;
+  z-index: -1;
 }
 
 #bigtext {
@@ -496,6 +525,7 @@ footer {
 }
 
 nav.affix {
+  top:0;
   right: 0;
   left: 0;
   border-width: 0 0 1px;

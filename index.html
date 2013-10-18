@@ -25,7 +25,7 @@
 
   <body class="home-2" style="padding-top:51px;">
 
-    <header>
+    <header styl="margin-top: -50px;">
       <img src="img/logos/cs-purple-01.png" />
       <img src="img/logos/cs-black-02.png" />
       <img src="img/logos/cs-red-03.png" />
@@ -50,7 +50,7 @@
     
     <div id="white-wrapper">
       <!-- Fixed navbar -->
-      <nav class="navbar" role="navigation" data-spy="affix" data-offset-top="1">
+      <nav class="navbar" role="navigation" >
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
@@ -122,7 +122,7 @@
               <li>#1: Lorem Ipsum Dolor Sit Amet</li>
               <li>#2: Lorem Ipsum Dolor Sit Amet</li>
               <li>#3: Lorem Ipsum Dolor Sit Amet</li>
-              <li><small>All Speaker Series events will take place at the Baltimore Design School</li>
+              <li><small>All Speaker Series events will take place at the Baltimore School for the Arts</li>
             </ul>
           </div>
         </div>
@@ -178,13 +178,12 @@
     <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
-<!--     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>     -->
-    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>    
     <script src="js/bootstrap.js"></script>
-    <script src="js/affix.js"></script>
 
     <!-- OOKB JS additions -->
     <script src="js/jquery.cycle2.js"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
     <script src="js/ookb_for_tc.js"></script>
     
         <!-- make all the bios the same height with JS, not CSS -->
@@ -199,6 +198,10 @@
           $(this).height(maxHeight);
         });
       });
+
+      $(document).ready(function(){
+        $("nav.navbar").sticky({topSpacing:0});
+      });    
     </script>
 
     
