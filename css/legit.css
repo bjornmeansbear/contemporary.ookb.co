@@ -52,6 +52,10 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
   margin-top: -30px;
 }
 
+.add-top {
+  margin-top: 30px;
+}
+
 .border-top {
   border-top: 1px solid;
   padding-top: 15px;
@@ -126,18 +130,6 @@ footer {
 /*********/
 
 .nav li .muted {padding-top: 15px; color: #777;}
-
-/*
-.home-2 .navbar {
-  background: none;
-  border: none;
-  color: white !important;
-}
-
-.home-2 .navbar a, .home-2 .navbar .muted {
-  color: #aebfd1 !important;
-}
-*/
 
 /*********/
 
@@ -299,13 +291,15 @@ footer {
   padding-bottom: 60px;
 }
 
+.about .main article:last-child {
+  border-bottom: none;
+}
+
 .about section img {
   display: block;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: auto;
-  /**/
-  max-width: 300px;
 }
 
 .triptych .trio {
@@ -492,8 +486,20 @@ footer {
   background: white;
   width: 100%;
   margin-top: 100px;
-  padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
   z-index: 1
 }
+
+#white-wrapper nav {
+  margin-bottom: 50px;
+}
+
+nav.affix {
+  right: 0;
+  left: 0;
+  border-width: 0 0 1px;
+}
+
+
+

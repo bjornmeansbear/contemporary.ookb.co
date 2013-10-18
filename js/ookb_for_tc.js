@@ -137,15 +137,15 @@ $(document).ready(function() {
   var ww = $(window).width();
   $('#slideshow').height(wh-300); // set slideshow height
   $('#white-wrapper').css("margin-top",wh-400);  // set homepage gap height
-  $('.home-2 .navbar').hide();
+/*   $('.home-2 .navbar').hide(); */
 });
 
 /** Board Bio stuff **/
-$("#board .bio p").hide();
-$("#board .bio img").click(function() {
+$(".toggle .bio p").hide();
+$(".toggle .bio img").click(function() {
   $(this).parent().find("p").slideToggle(300);
 });
-$("#board .bio h2").click(function() {
+$(".toggle .bio h2").click(function() {
   $(this).parent().find("p").slideToggle(300);
 });
 
@@ -180,6 +180,7 @@ $(window).scroll(function() {
 
   $('.home-2 header img').css('top',s);
 
+/*
   // show/hide navigation only when below big image area
   if ( s >= csp) { 
     $('.home-2 .navbar').fadeIn('fast');
@@ -187,5 +188,7 @@ $(window).scroll(function() {
   else { 
     $('.home-2 .navbar').fadeOut('fast'); 
   }
+*/
+
 });
 
