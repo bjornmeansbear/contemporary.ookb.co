@@ -444,30 +444,30 @@ footer {
   background-color: rgba(199,222,122,1);
 }
 
-#board .bio {
+.toggle .bio {
   position: relative;
 }
 
-#board .bio img,
-#board .bio h2 {
+.toggle .bio img,
+.toggle .bio h2 {
   cursor: pointer;
 }
 
-#board .bio h2 { font-size: 1.5em; }
-#board .bio h3 { font-size: 1em; }
+.toggle .bio h2 { font-size: 1.5em; }
+.toggle .bio h3 { font-size: 1em; }
 
-#board .bio h2, 
-#board .bio h3 {
+.toggle .bio h2, 
+.toggle .bio h3 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-#board .bio h2 {
+.toggle .bio h2 {
   margin-top: 15px;
 }
 
-#board .bio p {
+.toggle .bio p {
   background: white;
   margin-top: 15px;
   position: absolute;
