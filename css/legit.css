@@ -282,6 +282,8 @@ footer {
 .homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay {height: 360px; }
 .homepage-graphic img, .homepage-graphic .overlay { position: absolute; }
 
+.press *, .ccc *, .speaker * { cursor: pointer; }
+
 .press .overlay { 
   top: 33%;
   left:-5%;
@@ -471,9 +473,10 @@ footer {
 
 .toggle .bio p {
   background: white;
-  margin-top: 15px;
+  margin: 0 -160px;
   position: absolute;
   z-index: 9;
+  padding: 15px;
 }
 
 

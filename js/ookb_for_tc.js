@@ -136,16 +136,19 @@ $(document).ready(function() {
   var wh = $(window).height();
   var ww = $(window).width();
   $('#slideshow').height(wh-300); // set slideshow height
-  $('#white-wrapper').css("margin-top",wh-300);  // set homepage gap height
+  $('.home-2 #white-wrapper').css("margin-top",wh-300);  // set homepage gap height
+  $('.speakerseries #white-wrapper').css("margin-top",wh-150);  // set speakers gap height
 /*   $('.home-2 .navbar').hide(); */
 });
 
 /** Board Bio stuff **/
 $(".toggle .bio p").hide();
 $(".toggle .bio img").click(function() {
+  $(this).parent().siblings().find("p").slideUp(300);
   $(this).parent().find("p").slideToggle(300);
 });
 $(".toggle .bio h2").click(function() {
+  $(this).parent().siblings().find("p").slideUp(300);
   $(this).parent().find("p").slideToggle(300);
 });
 
@@ -180,15 +183,21 @@ $(window).scroll(function() {
 
   $('.home-2 header img').css('top',s);
 
-/*
-  // show/hide navigation only when below big image area
-  if ( s >= csp) { 
-    $('.home-2 .navbar').fadeIn('fast');
-  }
-  else { 
-    $('.home-2 .navbar').fadeOut('fast'); 
-  }
-*/
-
 });
 
+// Make Homepage sections link to their pages.. 
+$(".press *").click(function(event) {
+  event.preventDefault();
+  window.location = "press.html";
+});
+
+
+$(".ccc *").click(function(event) {
+  event.preventDefault();
+  window.location = "projects.html";
+});
+
+$(".speaker *").click(function(event) {
+  event.preventDefault();
+  window.location = "lectures.html";
+});
