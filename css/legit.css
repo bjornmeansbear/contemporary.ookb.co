@@ -297,7 +297,7 @@ footer {
 }
 
 .speaker .overlay { 
-  top: 25%;
+  top: 15%;
   transform:rotate(-11.25deg);
   -ms-transform:rotate(-11.25deg); 
   -moz-transform:rotate(-11.25deg);
@@ -359,6 +359,7 @@ footer {
 }
 
 .triptych .trio .overlay h2,
+.triptych .trio .overlay h3,
 .triptych .trio .overlay p { 
   color: white;
   display: inline-block;
@@ -396,6 +397,7 @@ footer {
 }
 
 .triptych .trio:nth-child(3) .overlay h2,
+.triptych .trio:nth-child(3) .overlay h3,
 .triptych .trio:nth-child(3) .overlay p,
 .link-lists .speaker ul {
   background-color: #E85B4C;
@@ -530,18 +532,13 @@ footer {
 #white-wrapper {
   background: white;
   width: 100%;
-  margin-top: 100px;
   padding-bottom: 50px;
   position: relative;
   z-index: 1
 }
 
-#white-wrapper nav {
-  margin-bottom: 50px;
-}
-
-nav.affix {
-  top:0;
+.sticky-wrapper nav,
+.is-sticky nav {
   right: 0;
   left: 0;
   border-width: 0 0 1px;

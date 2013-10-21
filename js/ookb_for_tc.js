@@ -136,7 +136,7 @@ $(document).ready(function() {
   var wh = $(window).height();
   var ww = $(window).width();
   $('#slideshow').height(wh-300); // set slideshow height
-  $('#white-wrapper').css("margin-top",wh-400);  // set homepage gap height
+  $('#white-wrapper').css("margin-top",wh-300);  // set homepage gap height
 /*   $('.home-2 .navbar').hide(); */
 });
 
