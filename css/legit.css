@@ -67,8 +67,7 @@ em, cite {font-style: italic !important;}
 
 footer {
   background: #eee;
-  margin-top: 60px;
-  padding-top: 30px;
+  padding-top: 45px;
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
@@ -508,7 +507,7 @@ footer {
 
 #bigtext {
   position: absolute;
-  top: 280px;
+  top: 0;
 }
 
 .bigdiv {
@@ -547,5 +546,39 @@ footer {
   border-width: 0 0 1px;
 }
 
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
 
+.speaker-number {
+  font-size: 8em;
+  position: relative;
+  line-height: 1;
+}
 
+.speaker-number * {
+  position: absolute;
+  text-align: center;
+}
+
+.speaker-number i {
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  top: .66em;
+}
+
+.speaker-number .shape {
+  font-size: 2.5em;
+  z-index: 1;
+  color: #E85B4C;
+  color: rgba(232,91,76,1);
+}
+
+.speakers date.lead {
+  font-size: 3em;
+}

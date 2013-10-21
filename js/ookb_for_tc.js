@@ -135,10 +135,12 @@ $(window).scroll(function() {
 $(document).ready(function() {
   var wh = $(window).height();
   var ww = $(window).width();
+  var bthfix = ($('#bigtext').height())/2;
   $('#slideshow').height(wh-300); // set slideshow height
+  $('#bigtext').css("top",((wh-150)/2)-bthfix);
   $('.home-2 #white-wrapper').css("margin-top",wh-300);  // set homepage gap height
   $('.speakerseries #white-wrapper').css("margin-top",wh-150);  // set speakers gap height
-/*   $('.home-2 .navbar').hide(); */
+
 });
 
 /** Board Bio stuff **/
@@ -191,7 +193,6 @@ $(".press *").click(function(event) {
   window.location = "press.html";
 });
 
-
 $(".ccc *").click(function(event) {
   event.preventDefault();
   window.location = "projects.html";
@@ -200,4 +201,17 @@ $(".ccc *").click(function(event) {
 $(".speaker *").click(function(event) {
   event.preventDefault();
   window.location = "lectures.html";
+});
+
+// placing number in a cool shape and then doing interesting things with it
+$( document ).ready(function() {
+  var shapeh = $(".speaker-number .shape").height();
+  var shapew = $(".speaker-number .shape").width();
+  var numw = $(".speaker-number i").width();
+  var placement = ((shapew/2)-(numw/2));
+  $('.speaker-number').height(shapeh);
+  $('.speaker-number').width(shapew);
+  $('.speaker-number').css("margin-top",((shapeh/2)*-1));
+  $('.speaker-number i').css("left",placement);
+  $('.speakers date.lead').css("margin-top",((shapeh/2)*-1));
 });
