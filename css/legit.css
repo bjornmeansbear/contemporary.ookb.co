@@ -580,5 +580,6 @@ footer {
 }
 
 .speakers date.lead {
+  display: block;
   font-size: 3em;
 }

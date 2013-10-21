@@ -213,5 +213,5 @@ $( document ).ready(function() {
   $('.speaker-number').width(shapew);
   $('.speaker-number').css("margin-top",((shapeh/2)*-1));
   $('.speaker-number i').css("left",placement);
-  $('.speakers date.lead').css("margin-top",((shapeh/2)*-1));
+  $('.speakers date.lead').css("margin-top",((shapeh/2)*-1)+30).css("margin-left",shapew+15);
 });
