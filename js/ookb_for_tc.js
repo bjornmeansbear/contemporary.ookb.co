@@ -136,11 +136,19 @@ $(document).ready(function() {
   var wh = $(window).height();
   var ww = $(window).width();
   var bthfix = ($('#bigtext').height())/2;
+  var logoimg = $('.home-2 header img');
+  var imgcorrh = ((logoimg.height())/2)*-1;
+  var imgcorrw = ((logoimg.width())/2)*-1;
   $('#slideshow').height(wh-300); // set slideshow height
   $('#bigtext').css("top",((wh-150)/2)-bthfix);
   $('.home-2 #white-wrapper').css("margin-top",wh-300);  // set homepage gap height
   $('.speakerseries #white-wrapper').css("margin-top",wh-150);  // set speakers gap height
-
+  $('.home-2 header img').css("margin-top",imgcorrh-75).css("margin-left",imgcorrw);  // set speakers gap height
+  var fs = 500; // speed in ms
+  $('.home-2 header img').hide();
+  $('.home-2 header img').each(function(index){
+    $(this).delay(index*(fs/2)).fadeIn(fs);
+  });
 });
 
 /** Board Bio stuff **/

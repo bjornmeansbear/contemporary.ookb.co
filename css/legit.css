@@ -479,7 +479,6 @@ footer {
 }
 
 /** Alternate Homepage Idea **/
-/*
 .home-2 header {
   display: block;
   margin: 0;
@@ -491,16 +490,16 @@ footer {
 }
 
 .home-2 header img {
-  display: inline-block;
-  height: auto;
+  display: block;
   margin: 0;
   opacity: .33;
   padding: 0;
-  position: relative;
-  width: 8%;
+  position: fixed;
+  top:50%;
+  left:50%;
+  z-index: 0;
 }
 
-*/
 #bigimage {
   background-color: #eee;
   height: 100%;
@@ -518,6 +517,7 @@ footer {
 
 #bigtext {
   position: fixed;
+  z-index: 1;
 }
 
 .bigdiv {
