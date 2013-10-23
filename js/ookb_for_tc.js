@@ -10,7 +10,7 @@ $(".scroll_to").click(function(event){
 /****************************/
 /****************************/
 
-$('#logo img').hide()
+$('#logo img').hide();
 $('#logo img:nth-child(odd)').show();
 
 $(window).scroll(function() {
@@ -19,7 +19,12 @@ $(window).scroll(function() {
   var dh = $(document).height();
   var r  = (dh-wh)/12;
 
-  if (s<=r) {
+  if (s<=0) {
+    $('#logo img:nth-child(even)').fadeOut();
+    $('#logo img:nth-child(odd)').fadein();
+  } 
+  
+  else if (s<=r) {
     $('#logo img:nth-child(even)').fadeOut();
     $('#logo img:nth-child(odd)').fadein();
   }
@@ -119,9 +124,14 @@ $(window).scroll(function() {
     $('#logo img:nth-child(even)').fadeIn();
   }
 
-  else {
+  else if (s>=(12*r)) {
     $('#logo img:nth-child(odd)').fadeOut();
     $('#logo img:nth-child(even)').fadeIn();
+  }
+
+  else {
+    $('#logo img:nth-child(even)').fadeOut();
+    $('#logo img:nth-child(odd)').fadeIn();
   }
     
 });
