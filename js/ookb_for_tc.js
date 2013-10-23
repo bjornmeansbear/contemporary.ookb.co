@@ -157,6 +157,7 @@ $(".toggle .bio h2").click(function() {
 
 /* New Homepage C's Scrolling */
 // Scrolling grid magic
+/*
 $(window).scroll(function() {
   // declaring various variables
   var neg  = (0-1);
@@ -186,6 +187,7 @@ $(window).scroll(function() {
   $('.home-2 header img').css('top',s);
 
 });
+*/
 
 // Make Homepage sections link to their pages.. 
 $(".press *").click(function(event) {
