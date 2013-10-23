@@ -162,41 +162,6 @@ $(".toggle .bio h2").click(function() {
   $(this).parent().find("p").slideToggle(300);
 });
 
-
-/* New Homepage C's Scrolling */
-// Scrolling grid magic
-/*
-$(window).scroll(function() {
-  // declaring various variables
-  var neg  = (0-1);
-  var s    = $(window).scrollTop();
-  var wh   = $(window).height();
-  var ww   = $(window).width();
-  var csp  = (wh-293);
-  var hfp  = s/csp;
-  var hfn  = hfp*neg;
-  var imgw = $('header img:nth-child(1)').width();
-  var ic   = imgw/2;
-  
-  // straight line of logos becoming an overlapping C
-  $('.home-2 header img:nth-child(1)').css('left',((imgw*6)-ic)*hfp);
-  $('.home-2 header img:nth-child(12)').css('left',((imgw*6)-ic)*hfn);
-  $('.home-2 header img:nth-child(2)').css('left',((imgw*5)-ic)*hfp);
-  $('.home-2 header img:nth-child(11)').css('left',((imgw*5)-ic)*hfn);
-  $('.home-2 header img:nth-child(3)').css('left',((imgw*4)-ic)*hfp);
-  $('.home-2 header img:nth-child(10)').css('left',((imgw*4)-ic)*hfn);
-  $('.home-2 header img:nth-child(4)').css('left',((imgw*3)-ic)*hfp);
-  $('.home-2 header img:nth-child(9)').css('left',((imgw*3)-ic)*hfn);
-  $('.home-2 header img:nth-child(5)').css('left',((imgw*2)-ic)*hfp);
-  $('.home-2 header img:nth-child(8)').css('left',((imgw*2)-ic)*hfn);
-  $('.home-2 header img:nth-child(6)').css('left',(imgw-ic)*hfp);
-  $('.home-2 header img:nth-child(7)').css('left',(imgw-ic)*hfn);
-
-  $('.home-2 header img').css('top',s);
-
-});
-*/
-
 // Make Homepage sections link to their pages.. 
 $(".press *").click(function(event) {
   event.preventDefault();
