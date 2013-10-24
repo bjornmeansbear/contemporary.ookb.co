@@ -204,6 +204,7 @@
       
       // REVEALS HIDDEN TEXT, HIDES MORE BUTTON
       $('.revealmore').click(function(event) {
+        alert('Alert works, why does not the rest?');
         event.preventDefault();
         $(this).slideUp(500);
         $('div.additionalbio').slideDown(500);
