@@ -201,20 +201,3 @@ $( document ).ready(function() {
   $('.speaker-number i').css("left",placement);
   $('.speakers date.lead').css("margin-top",((shapeh/2)*-1)).css("margin-left",shapew+15);
 });
-
-// INITIAL HIDING OF EVERTHING
-$('div.additionalbio').hide();
-
-// REVEALS HIDDEN TEXT, HIDES MORE BUTTON
-$('#more').click(function(event) {
-  event.preventDefault();
-  $(this).slideUp(500);
-  $('div.additionalbio').slideDown(500);
-});
-
-// RE-HIDES TEXT, SHOWS MORE BUTTON
-$('#less').click(function(event) {
-  event.preventDefault();
-  $('div.additionalbio').slideUp(500);
-  $('#more').slideDown(500);
-});
