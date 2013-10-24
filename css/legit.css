@@ -148,6 +148,7 @@ footer {
   height: 270px;
   width: 100%;
   top:40px;
+  z-index: 1031;
 }
 
 #logo .col-lg-1 {
@@ -168,6 +169,7 @@ footer {
   top:0;
   left: 0;
   opacity: .33;
+  z-index: 1031;
 }
 
 /*********/

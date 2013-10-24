@@ -19,12 +19,7 @@ $(window).scroll(function() {
   var dh = $(document).height();
   var r  = (dh-wh)/12;
 
-  if (s<=0) {
-    $('#logo img:nth-child(even)').fadeOut();
-    $('#logo img:nth-child(odd)').fadein();
-  } 
-  
-  else if (s<=r) {
+  if (s<=r) {
     $('#logo img:nth-child(even)').fadeOut();
     $('#logo img:nth-child(odd)').fadein();
   }
@@ -129,11 +124,6 @@ $(window).scroll(function() {
     $('#logo img:nth-child(even)').fadeIn();
   }
 
-  else {
-    $('#logo img:nth-child(even)').fadeOut();
-    $('#logo img:nth-child(odd)').fadeIn();
-  }
-    
 });
 
 /****************************/
@@ -154,8 +144,7 @@ $(document).ready(function() {
   // use variables to correctly position images, text, and homepage logo
   $('#slideshow').height(wh-300); // set slideshow height
   $('#bigtext').css("top",((wh-150)/2)-bthfix);
-  $('.home-2 #white-wrapper').css("margin-top",wh-300);  // set homepage gap height
-  $('.speakerseries #white-wrapper').css("margin-top",wh-150);  // set speakers gap height
+  $('#white-wrapper').css("margin-top",wh-300);  // set homepage gap height
   $('.home-2 header img').css("margin-top",imgcorrh-75).css("margin-left",imgcorrw);  // set speakers gap height
 
   // fadein homepage logo layers in sequence
