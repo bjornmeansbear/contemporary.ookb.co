@@ -151,17 +151,17 @@ $(document).ready(function() {
   });
   
   // Make Homepage sections link to their pages.. 
-  $(".press *").click(function(event) {
+  $(".home-2 .press *").click(function(event) {
     event.preventDefault();
     window.location = "press.html";
   });
   
-  $(".ccc *").click(function(event) {
+  $(".home-2 .ccc *").click(function(event) {
     event.preventDefault();
     window.location = "projects.html";
   });
   
-  $(".speaker *").click(function(event) {
+  $(".home-2 .speaker *").click(function(event) {
     event.preventDefault();
     window.location = "lectures.html";
   });

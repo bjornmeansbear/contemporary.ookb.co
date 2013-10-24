@@ -145,10 +145,10 @@ footer {
 #logo {
   position: fixed;
   margin: 0;
-  height: 270px;
   width: 100%;
   top:40px;
   z-index: 1031;
+  height: 0;
 }
 
 #logo .col-lg-1 {
@@ -600,3 +600,43 @@ footer {
   font-size: 3em;
 }
 
+h2.speakername {
+  background: #C7DE7A;
+  background: rgba(89,123,157,1);
+  color: white;
+  display: inline-block;
+  font-size: 4em;
+  line-height: 1;
+  padding: 20px .5em 3px;
+  /**/
+  position: relative;
+  top:-.5em;
+  left:-2em;
+  /**/
+  transform:rotate(11.25deg);
+  -ms-transform:rotate(11.25deg); 
+  -moz-transform:rotate(11.25deg);
+  -webkit-transform:rotate(11.25deg);
+  -o-transform:rotate(11.25deg);
+}
+
+h3.sponsorname {
+  background: #F8EF2B;
+  background: rgba(248,239,43,1);
+  color: #53510F;
+  color: rgba(83,81,15,1);
+  display: inline-block;
+  font-size: 2.75em;
+  line-height: 1;
+  padding: 10px .5em 3px;
+  /**/
+  position: relative;
+  top:-1em;
+  left:3em;
+  /**/
+  transform:rotate(-5.625deg);
+  -ms-transform:rotate(-5.625deg); 
+  -moz-transform:rotate(-5.625deg);
+  -webkit-transform:rotate(-5.625deg);
+  -o-transform:rotate(-5.625deg);
+}
