@@ -280,6 +280,7 @@ footer {
 .homepage-graphic { position: relative; }
 .homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay {height: 360px; }
 .homepage-graphic img, .homepage-graphic .overlay { position: absolute; }
+.homepage-graphic img {left: 15px;}
 
 .press *, .ccc *, .speaker * { cursor: pointer; }
 
