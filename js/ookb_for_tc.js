@@ -128,7 +128,6 @@ $(window).scroll(function() {
     $('#logo img:nth-child(even)').fadeOut();
     $('#logo img:nth-child(odd)').fadeIn();
   }
-  
 
 });
 
@@ -139,6 +138,34 @@ $(window).scroll(function() {
 /****************************/
 
 $(document).ready(function() {
+
+  /** Board Bio stuff **/
+  $(".toggle .bio p").hide();
+  $(".toggle .bio img").click(function() {
+    $(this).parent().siblings().find("p").slideUp(300);
+    $(this).parent().find("p").slideToggle(300);
+  });
+  $(".toggle .bio h2").click(function() {
+    $(this).parent().siblings().find("p").slideUp(300);
+    $(this).parent().find("p").slideToggle(300);
+  });
+  
+  // Make Homepage sections link to their pages.. 
+  $(".press *").click(function(event) {
+    event.preventDefault();
+    window.location = "press.html";
+  });
+  
+  $(".ccc *").click(function(event) {
+    event.preventDefault();
+    window.location = "projects.html";
+  });
+  
+  $(".speaker *").click(function(event) {
+    event.preventDefault();
+    window.location = "lectures.html";
+  });
+
   // set variables for various positioning needs
   var wh = $(window).height();
   var ww = $(window).width();
@@ -160,37 +187,7 @@ $(document).ready(function() {
     $(this).delay(index*(fs/2)).fadeIn(fs);
   });
 
-});
-
-/** Board Bio stuff **/
-$(".toggle .bio p").hide();
-$(".toggle .bio img").click(function() {
-  $(this).parent().siblings().find("p").slideUp(300);
-  $(this).parent().find("p").slideToggle(300);
-});
-$(".toggle .bio h2").click(function() {
-  $(this).parent().siblings().find("p").slideUp(300);
-  $(this).parent().find("p").slideToggle(300);
-});
-
-// Make Homepage sections link to their pages.. 
-$(".press *").click(function(event) {
-  event.preventDefault();
-  window.location = "press.html";
-});
-
-$(".ccc *").click(function(event) {
-  event.preventDefault();
-  window.location = "projects.html";
-});
-
-$(".speaker *").click(function(event) {
-  event.preventDefault();
-  window.location = "lectures.html";
-});
-
 // placing number in a cool shape and then doing interesting things with it
-$( document ).ready(function() {
   var shapeh = $(".speaker-number .shape").height();
   var shapew = $(".speaker-number .shape").width();
   var numw = $(".speaker-number i").width();
