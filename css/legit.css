@@ -611,7 +611,7 @@ h2.speakername {
   /**/
   position: relative;
   top:-.5em;
-  left:-2em;
+  left:-.5em;
   /**/
   transform:rotate(11.25deg);
   -ms-transform:rotate(11.25deg); 
