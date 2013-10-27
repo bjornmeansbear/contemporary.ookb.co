@@ -504,21 +504,21 @@ footer {
   width: auto;
 }
 
+.bigdiv {
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 #bigimage {
   background-color: #eee;
   height: 100%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top:0;
   left: 0;
   z-index: -1;
-  text-align: center;
-}
-
-#bigimage img {
-  height: auto;
-  width: 110% !important;
-  text-align: center;
 }
 
 #bigtext {
@@ -526,25 +526,41 @@ footer {
   z-index: 1;
 }
 
-.bigdiv {
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
+@media (max-width: 767px) {
+  #bigimage img {
+    height: 100%;
+    width: auto;
+    text-align: center;
+  }
+  
+  #bigtext h1 {
+    font-size: 3em;
+    line-height: 1;
+    padding: 0 30px;
+    color: white;
+  }
 }
 
-#bigimage img {
-  width: 100%;
-}
-
-#bigtext h1 {
-  font-size: 5.5em;
-  line-height: 1;
-  color: white;
-}
-
-#bigtext h1 span {
-  font-style: italic;
+@media (min-width: 768px) {
+  #bigimage {
+    background-color: #eee;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  #bigimage img {
+    height: auto;
+    width: 110% !important;
+    text-align: center;
+  }
+  
+  #bigtext h1 {
+    font-size: 5.5em;
+    line-height: 1;
+    color: white;
+  }
+  
 }
 
 #white-wrapper {
@@ -621,10 +637,9 @@ h2.speakername {
 }
 
 h3.sponsorname {
-  background: #F8EF2B;
-  background: rgba(248,239,43,1);
-  color: #53510F;
-  color: rgba(83,81,15,1);
+  background: #00734E;
+  background: rgba(0,115,78,1);
+  color: white;
   display: inline-block;
   font-size: 2.75em;
   line-height: 1;
