@@ -146,11 +146,10 @@ footer {
 /*********/
 /*********/
 
-/** SECTION 4 **/
-/* Projet 20 block */
+/* homepage blocks */
 .homepage-graphic { position: relative; }
-.homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay {height: 360px; }
-.homepage-graphic img, .homepage-graphic .overlay { position: absolute; }
+.homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay { height: 360px; }
+.homepage-graphic img, .homepage-graphic .overlay { position: absolute; top: 0; left:0;}
 
 .press *, .ccc *, .speaker * { cursor: pointer; }
 
@@ -177,101 +176,60 @@ footer {
   -o-transform:rotate(-11.25deg);
 }
 
-.project20 .overlay { 
-  top: 25%;
-  left:5%;
-  transform:rotate(-11.25deg);
-  -ms-transform:rotate(-11.25deg); 
-  -moz-transform:rotate(-11.25deg);
-  -webkit-transform:rotate(-11.25deg);
-  -o-transform:rotate(-11.25deg);
-}
-
-.project20 .overlay h2,
-.project20 .overlay p { 
-  background: #b94a48;
-  color: white;
-  display: inline-block;
-  padding: 5px 15px 1px;
-}
-
-.project20 .overlay h2 {
-  padding-top: 10px;
-}
-
-/** BOARD STUFF **/
-
-.about .main article {
-  border-bottom: 1px solid;
-  margin-bottom: 70px;
-  padding-bottom: 60px;
-}
-
-.about .main article:last-child {
-  border-bottom: none;
-}
-
-.about section img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-}
-
-.triptych .trio {
+.homepage-graphic {
   display: table;
   vertical-align: middle;
 }
 
-.triptych .trio > div {
+.homepage-graphic > div {
   width: 360px;
   height: 360px;
   display: table-cell;
   vertical-align: middle;
 }
 
-.triptych .trio .overlay h2,
-.triptych .trio .overlay h3,
-.triptych .trio .overlay p { 
+.homepage-graphic .overlay h2,
+.homepage-graphic .overlay h3,
+.homepage-graphic .overlay p { 
   color: white;
   display: inline-block;
   padding: 5px 15px 1px;
 }
 
-.triptych .trio.ccc .overlay h2,
-.triptych .trio.ccc .overlay p { 
+.ccc .overlay h2,
+.ccc .overlay p { 
   color: #53510F;
   color: rgba(83,81,15,1);
   padding: 4px 10px;
   margin: 4px 0;
 }
 
-.triptych .trio.press .overlay h2 {
+.press .overlay h2 {
   font-size: 4em;
 }
 
-.triptych .trio:nth-child(1) .overlay h2,
-.triptych .trio:nth-child(1) .overlay p,
-.link-lists .press ul {
+.press .overlay h2,
+.press .overlay p,
+.press .link-lists ul {
   background-color: #597B9E;
   background-color: rgba(89,123,158,1);
 }
 
-.triptych .trio:nth-child(2) .overlay h2,
-.triptych .trio:nth-child(2) .overlay p {
+.ccc .overlay h2,
+.ccc .overlay p {
   background-color: #FAEA44;
   background-color: rgba(250,234,68,.5);
 }
 
-.link-lists .ccc ul {
+.ccc .link-lists ul {
   background-color: #FAEA44;
   background-color: rgba(250,234,68,1);
 }
 
-.triptych .trio:nth-child(3) .overlay h2,
-.triptych .trio:nth-child(3) .overlay h3,
-.triptych .trio:nth-child(3) .overlay p,
-.link-lists .speaker ul {
+.speaker .overlay h2,
+.speaker .overlay h3,
+.speaker .overlay p,
+.speaker .link-lists ul {
   background-color: #E85B4C;
   background-color: rgba(232,91,76,1));
 }
@@ -296,26 +254,22 @@ footer {
 .ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
 .speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
 
-.etcetera .col-lg-2 div {
-  background-color: #F2F7E2;
-  background-color: rgba(242,247,226,1);
-  height: 360px;
-  padding-top: 1px;
+/** BOARD STUFF **/
+.about .main article {
+  border-bottom: 1px solid;
+  margin-bottom: 70px;
+  padding-bottom: 60px;
 }
 
-.etcetera .col-lg-2:nth-child(3) div {
-  background-color: #E6F1CA;
-  background-color: rgba(230,241,202,1);
+.about .main article:last-child {
+  border-bottom: none;
 }
 
-.etcetera .col-lg-2:nth-child(4) div {
-  background-color: #D2E49D;
-  background-color: rgba(210,228,157,1);
-}
-
-.etcetera .col-lg-2:nth-child(5) div {
-  background-color: #C7DE7A;
-  background-color: rgba(199,222,122,1);
+.about section img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
 }
 
 .toggle .bio {
