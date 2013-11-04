@@ -44,26 +44,16 @@ html,body,h1,h2,h3,h4,h5,h6,p,span,strong,small {
 
 h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 
-.row  {
-  margin-bottom: 30px;
-}
-
-.row.no-top {
-  margin-top: -30px;
-}
-
-.add-top {
-  margin-top: 30px;
-}
-
-.border-top {
-  border-top: 1px solid;
-  padding-top: 15px;
-}
-
+/* a bunch of quick corrections and global things... */
+.row  { margin-bottom: 30px; }
+.row.no-top { margin-top: -30px; }
+.add-top { margin-top: 30px; }
+.border-top { border-top: 1px solid; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
-
 em, cite {font-style: italic !important;}
+.progress, .progress-bar { height: 30px; }
+.disabled { display: none !important; }
+.btn.add-top {margin-top: 30px;}
 
 footer {
   background: #eee;
@@ -73,27 +63,10 @@ footer {
   z-index: 1;
 }
 
-#emailcapture {
-  border: 3px solid;
-  margin-bottom: 30px;
-  padding: 15px;
-}
-
-#emailcapture .row {
-  margin-bottom: 0;
-}
-
 #emailcapture form {
   padding-top: 15px;
   }
 
-.progress, .progress-bar {
-  height: 30px;
-}
-
-.disabled { display: none !important; }
-
-.btn.add-top {margin-top: 30px;}
 
 /* navbar override of bootstrap.css */
 
