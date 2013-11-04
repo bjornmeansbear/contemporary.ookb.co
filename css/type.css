@@ -25,3 +25,11 @@
   font-style: italic;
 }
 
+/* Main Links Stuff */
+/* override bootstrap base css */
+
+a {
+  color: #597B9E;
+  color: rgba(89,123,158,1);
+}
+
