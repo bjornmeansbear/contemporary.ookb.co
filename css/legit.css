@@ -282,7 +282,6 @@ footer {
 .homepage-graphic { position: relative; }
 .homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay {height: 360px; }
 .homepage-graphic img, .homepage-graphic .overlay { position: absolute; }
-.homepage-graphic img {left: 15px;}
 
 .press *, .ccc *, .speaker * { cursor: pointer; }
 
@@ -483,7 +482,7 @@ footer {
 
 /** Alternate Homepage Idea **/
 /** CSS for new homepage logo scrolling... **/
-.home-2 header.layers {
+header.layers {
   position: absolute;
   text-align: center;
   margin: 0;
@@ -493,7 +492,7 @@ footer {
   z-index: 99999;
 }
 
-.home-2 header.layers .layer {
+header.layers .layer {
   background: transparent;
   margin: 0;
   padding: 0;
@@ -502,7 +501,7 @@ footer {
   float:left;
 }
 
-.home-2 header.layers .layer img {
+header.layers .layer img {
   height: auto;
   width: 100%;
 }
@@ -581,9 +580,6 @@ footer {
   border-width: 0 0 1px;
 }
 
-/******************************************/
-/******************************************/
-/******************************************/
 /******************************************/
 /******************************************/
 /******************************************/

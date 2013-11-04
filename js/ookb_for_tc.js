@@ -22,12 +22,10 @@ $(document).ready(function() {
     event.preventDefault();
     window.location = "press.html";
   });
-  
   $(".home-2 .ccc *").click(function(event) {
     event.preventDefault();
     window.location = "projects.html";
   });
-  
   $(".home-2 .speaker *").click(function(event) {
     event.preventDefault();
     window.location = "lectures.html";
@@ -40,15 +38,7 @@ $(document).ready(function() {
 
   // use variables to correctly position images, text, and homepage logo
   $('#bigtext').css("top",((wh)/2)-bthfix);
-  $('.home-2 #bigtext').css("top",((wh)/2)-bthfix);
   $('#white-wrapper').css("margin-top",wh);  // set homepage gap height
-
-  // fadein homepage logo layers in sequence
-  var fs = 500; // speed in ms
-  $('.home-2 header img').hide();
-  $('.home-2 header img').each(function(index){
-    $(this).delay(index*(fs/2)).fadeIn(fs);
-  });
 
 // placing number in a cool shape and then doing interesting things with it
   var shapeh = $(".speaker-number .shape").height();
