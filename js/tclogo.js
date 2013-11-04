@@ -164,21 +164,22 @@ $(window).scroll(function(){
   var wh = $(window).height();
   var ww = $(window).width();
   var dh = $(document).height();
-  
-  //reposition Cs on scrolling so that they end up centered
-  //correctly position based on heights
-  $('.layer').css('top',s);
-  $('.layer.r-one').css('top',s+(s/3));
-  $('.layer.r-three').css('top',s*2/3);
-
-  //correctly position based on widths
   var wr = (ww/wh);
   var marginfix = (ww/8);
   var howfar = (s/wh);
+  
+  if (s <= (wh)) {
+    //correctly position based on heights
+    $('.layer').css('top',s);
+    $('.layer.r-one').css('top',s+(s/3));
+    $('.layer.r-three').css('top',s*2/3);
+    //correctly position based on widths
+    $('.layer.c-one').css('left',((s*wr)/2)-(marginfix*howfar));
+    $('.layer.c-two').css('left',((s*wr)/4)-(marginfix*howfar));
+    $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
+    $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
+  }
 
-  $('.layer.c-one').css('left',((s*wr)/2)-(marginfix*howfar));
-  $('.layer.c-two').css('left',((s*wr)/4)-(marginfix*howfar));
-  $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
-  $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
+  else {}
 
 });

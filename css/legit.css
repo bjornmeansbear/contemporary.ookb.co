@@ -486,12 +486,11 @@ footer {
 .home-2 header.layers {
   position: absolute;
   text-align: center;
-  height: 690px;
-  overflow: hidden;
   margin: 0;
   padding: 0;
   top: 0;
   left:0;
+  z-index: 99999;
 }
 
 .home-2 header.layers .layer {
@@ -501,6 +500,11 @@ footer {
   opacity: .33;
   position: relative;
   float:left;
+}
+
+.home-2 header.layers .layer img {
+  height: auto;
+  width: 100%;
 }
 
 .bigdiv {
