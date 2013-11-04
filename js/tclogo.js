@@ -1,6 +1,7 @@
 /****************************/
 /****************************/
 // logo craziness!
+// This shuffles through variations on the individual pages
 /****************************/
 /****************************/
 
@@ -130,3 +131,52 @@ $(window).scroll(function() {
 // /END logo craziness!
 /****************************/
 /****************************/
+
+// This makes the homepage operate somewhat like the original landing page
+
+$(window).load(function() {
+  // declaring various variables
+  var wh = $(window).height();
+  var ww = $(window).width();
+
+  //using the variables to initially position things
+  $('.layers .layer').height(wh/3);
+  $('.layers .layer').width(ww/4);
+});
+
+// try to keep things correct even if there is a resizing...
+$(window).resize(function() {
+  // declaring various variables
+  var wh = $(window).height();
+  var ww = $(window).width();
+
+  //using the variables to initially position things
+  $('.layers .layer').height(wh/3);
+  $('.layers .layer').width(ww/4);
+});
+
+// Scrolling grid magic
+$(window).scroll(function(){
+  // declaring various variables
+  var s  = $(window).scrollTop();
+  var wh = $(window).height();
+  var ww = $(window).width();
+  var dh = $(document).height();
+  
+  //reposition Cs on scrolling so that they end up centered
+  //correctly position based on heights
+  $('.layer').css('top',s);
+  $('.layer.r-one').css('top',s+(s/3));
+  $('.layer.r-three').css('top',s*2/3);
+
+  //correctly position based on widths
+  var wr = (ww/wh);
+  var marginfix = (ww/8);
+  var howfar = (s/wh);
+
+  $('.layer.c-one').css('left',((s*wr)/2)-(marginfix*howfar));
+  $('.layer.c-two').css('left',((s*wr)/4)-(marginfix*howfar));
+  $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
+  $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
+
+});

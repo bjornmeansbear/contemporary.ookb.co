@@ -482,6 +482,7 @@ footer {
 }
 
 /** Alternate Homepage Idea **/
+/*
 .home-2 header {
   display: block;
   margin: 0;
@@ -502,6 +503,26 @@ footer {
   left:50%;
   z-index: 0;
   width: auto;
+}
+*/
+
+/** CSS for new homepage logo scrolling... **/
+.home-2 header.layers {
+  position: absolute;
+  text-align: center;
+  height: 690px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.home-2 header.layers .layer {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  opacity: .33;
+  position: relative;
+  float:left;
 }
 
 .bigdiv {
