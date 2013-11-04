@@ -140,6 +140,7 @@ $(window).load(function() {
   var ww = $(window).width();
 
   //using the variables to initially position things
+  $('.layers').height(wh);
   $('.layers .layer').height(wh/3);
   $('.layers .layer').width(ww/4);
 });
@@ -151,6 +152,7 @@ $(window).resize(function() {
   var ww = $(window).width();
 
   //using the variables to initially position things
+  $('.layers').height(wh);
   $('.layers .layer').height(wh/3);
   $('.layers .layer').width(ww/4);
 });

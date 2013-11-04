@@ -39,10 +39,9 @@ $(document).ready(function() {
   var bthfix = ($('#bigtext').height())/2;
 
   // use variables to correctly position images, text, and homepage logo
-  $('#slideshow').height(wh-300); // set slideshow height
-  $('#bigtext').css("top",((wh-300)/2)-bthfix);
-  $('.home-2 #bigtext').css("top",((wh-150)/2)-bthfix);
-  $('#white-wrapper').css("margin-top",wh-300);  // set homepage gap height
+  $('#bigtext').css("top",((wh)/2)-bthfix);
+  $('.home-2 #bigtext').css("top",((wh)/2)-bthfix);
+  $('#white-wrapper').css("margin-top",wh);  // set homepage gap height
 
   // fadein homepage logo layers in sequence
   var fs = 500; // speed in ms
