@@ -113,6 +113,31 @@ footer {
 .nav li .muted {padding-top: 15px; color: #777;}
 
 /** goofy logo idea **/
+/** CSS for homepage logo scrolling... **/
+header.layers {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left:0;
+  z-index: 99999;
+}
+
+header.layers .layer {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  opacity: .33;
+  position: relative;
+  float:left;
+}
+
+header.layers .layer img {
+  height: auto;
+  width: 100%;
+}
+
 /* this is for logos that flicker in and out on all internal pages */
 #logo {
   position: fixed;
@@ -303,32 +328,7 @@ footer {
   padding: 15px;
 }
 
-/** Alternate Homepage Idea **/
-/** CSS for new homepage logo scrolling... **/
-header.layers {
-  position: absolute;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left:0;
-  z-index: 99999;
-}
-
-header.layers .layer {
-  background: transparent;
-  margin: 0;
-  padding: 0;
-  opacity: .33;
-  position: relative;
-  float:left;
-}
-
-header.layers .layer img {
-  height: auto;
-  width: 100%;
-}
-
+/** Big Hero area for homepage and speakers page **/
 .bigdiv {
   text-align: center;
   top: 0;
