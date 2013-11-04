@@ -142,22 +142,22 @@
 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1999</date>
-                  <img src="img/place.png" />
-                  <h3>Artsail 99</h3>
-                  <p>Site: Rash Field</p>
+                  <img src="img/projects/1999-06-grandstand.jpg" />
+                  <h3>Grandstand Sculpture</h3>
+                  <p>Site: Maryland State Fairgrounds</p>
                   <p>Multiple Artists</p>
                 </div>
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1999</date>
-                  <img src="img/place.png" />
-                  <h3>Grandstand Sculpture</h3>
-                  <p>Site: Maryland State Fairgrounds</p>
+                  <img src="img/projects/1999-04-artsail.jpg" />
+                  <h3>Artsail 99</h3>
+                  <p>Site: Rash Field</p>
                   <p>Multiple Artists</p>
                 </div>
 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1998</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1998-02-mysteriousvoyage.jpg" />
                   <h3>Mysterious Voyages: Exploring the Subject of Photography</h3>
                   <p>Site: Alex. Brown Building</p>
                   <p>Multiple Artists</p>
@@ -165,14 +165,14 @@
 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1997</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1997-10-xsite97.jpg" />
                   <h3>X Site 97</h3>
                   <p>Site: Alex. Brown Building</p>
                   <p>Teresita Fernández & Quisqueya Henríquez</p>
                 </div>
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1997</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1997-04-jewish.jpg" />
                   <h3>Too Jewish?</h3>
                   <p>Site: Retail Space at Garrison Forest Plaza</p>
                   <p>Multiple Artists</p>
@@ -180,14 +180,14 @@
                 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1996</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1996-10-cyberclipper.jpg" />
                   <h3>Aboard the Cyberclipper</h3>
                   <p>Site: Multiple Venus & Online Exhibition</p>
                   <p>Lee Boot & Frank Fietzek</p>
                 </div>
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1996</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1996-03-ignisfatuus.jpg" />
                   <h3>Ignisfatuus</h3>
                   <p>Site: Howard P. Rawlings Conservatory at Druid Hill Park</p>
                   <p>Paul Etienne Lincoln</p>
@@ -195,14 +195,14 @@
                 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1995</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1995-09-baroque.jpg" />
                   <h3>Going for Baroque</h3>
                   <p>Site: The Walters Art Museum</p>
                   <p>Multiple Artists</p>
                 </div>
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1995</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1995-03-canton.jpg" />
                   <h3>Can-ton: The Baltimore Series</h3>
                   <p>Site: Canton National Bank</p>
                   <p>Hung Liu</p>
@@ -210,14 +210,14 @@
                 
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1994</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1994-10-laboroflove.jpg" />
                   <h3>Labor or Love</h3>
                   <p>Site: Baltimore Museum of Industry</p>
                   <p>Willie Cole</p>
                 </div>
                 <div class="project-thumb col-xs-6 col-sm-4 col-md-3">
                   <date>1994</date>
-                  <img src="img/place.png" />
+                  <img src="img/projects/1994-03-homeandtheworld.jpg" />
                   <h3>Home and the World: Architectural Sculpture by Two Contemporary African Artists</h3>
                   <p>Site: Morgan State University</p>
                   <p>Aboudramane & Bodys Isek Kingelez</p>
@@ -335,19 +335,14 @@
     <script>
       $(document).ready(function() {
         var maxHeight = -1;
-        $('.bio').each(function() {
+        $('.project-thumb').each(function() {
           maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
         });
-        $('.biol').each(function() {
+        $('.project-thumb').each(function() {
           $(this).height(maxHeight);
         });
       });
-
-      $(document).ready(function(){
-        $("nav.navbar").sticky({topSpacing:0});
-      });    
     </script>
-
 
   </body>
 </html>
