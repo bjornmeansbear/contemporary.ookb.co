@@ -37,16 +37,12 @@ $(document).ready(function() {
   var wh = $(window).height();
   var ww = $(window).width();
   var bthfix = ($('#bigtext').height())/2;
-  var logoimg = $('.home-2 header img');
-  var imgcorrh = ((logoimg.height())/2)*-1;
-  var imgcorrw = ((logoimg.width())/2)*-1;
 
   // use variables to correctly position images, text, and homepage logo
   $('#slideshow').height(wh-300); // set slideshow height
   $('#bigtext').css("top",((wh-300)/2)-bthfix);
   $('.home-2 #bigtext').css("top",((wh-150)/2)-bthfix);
   $('#white-wrapper').css("margin-top",wh-300);  // set homepage gap height
-  $('.home-2 header img').css("margin-top",imgcorrh-75).css("margin-left",imgcorrw);  // set speakers gap height
 
   // fadein homepage logo layers in sequence
   var fs = 500; // speed in ms
