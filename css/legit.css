@@ -63,12 +63,22 @@ footer {
   z-index: 1;
 }
 
+.home footer {
+  z-index: 10;
+}
+
+
 /* navbar override of bootstrap.css */
 .navbar {
   background: #eee;
   left:0;
   right:0;
   border-width: 0;
+}
+
+.home #undefined-sticky-wrapper {
+  z-index: 10;
+  position: relative;
 }
 
 .navbar-brand {
