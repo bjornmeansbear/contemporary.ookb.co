@@ -133,16 +133,14 @@ $(window).scroll(function() {
 /****************************/
 
 // This makes the homepage operate somewhat like the original landing page
-
 $(window).load(function() {
   // declaring various variables
   var wh = $(window).height();
   var ww = $(window).width();
 
   //using the variables to initially position things
-  $('.layers').height(wh);
-  $('.layers .layer').height(wh/3);
-  $('.layers .layer').width(ww/4);
+  $('.layers').height(wh).width(ww);
+  $('.layers .layer').height(wh/3).width(ww/4);
 });
 
 // try to keep things correct even if there is a resizing...
@@ -152,9 +150,8 @@ $(window).resize(function() {
   var ww = $(window).width();
 
   //using the variables to initially position things
-  $('.layers').height(wh);
-  $('.layers .layer').height(wh/3);
-  $('.layers .layer').width(ww/4);
+  $('.layers').height(wh).width(ww);
+  $('.layers .layer').height(wh/3).width(ww/4);
 });
 
 // Scrolling grid magic
@@ -165,8 +162,7 @@ $(window).scroll(function(){
   var ww = $(window).width();
   var dh = $(document).height();
   var wr = (ww/wh);
-  var marginfix = (ww/8);
-  var howfar = (s/wh);
+  var multiplier = (ww/8)*(s/wh);
   
   if (s <= (wh)) {
     //correctly position based on heights
@@ -174,10 +170,10 @@ $(window).scroll(function(){
     $('.layer.r-one').css('top',s+(s/3));
     $('.layer.r-three').css('top',s*2/3);
     //correctly position based on widths
-    $('.layer.c-one').css('left',((s*wr)/2)-(marginfix*howfar));
-    $('.layer.c-two').css('left',((s*wr)/4)-(marginfix*howfar));
-    $('.layer.c-three').css('right',((s*wr)/4)-(marginfix*howfar));
-    $('.layer.c-four').css('right',((s*wr)/2)-(marginfix*howfar));
+    $('.layer.c-one').css('left',((s*wr)/2)-(multiplier));
+    $('.layer.c-two').css('left',((s*wr)/4)-(multiplier));
+    $('.layer.c-three').css('right',((s*wr)/4)-(multiplier));
+    $('.layer.c-four').css('right',((s*wr)/2)-(multiplier));
   }
 
   else {}

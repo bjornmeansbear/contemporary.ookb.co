@@ -114,28 +114,31 @@ footer {
 
 /** goofy logo idea **/
 /** CSS for homepage logo scrolling... **/
-header.layers {
+.layers {
   position: absolute;
   text-align: center;
   margin: 0;
   padding: 0;
   top: 0;
   left:0;
-  z-index: 99999;
+  width: auto;
+  z-index: 9;
 }
 
-header.layers .layer {
+.layers .layer {
   background: transparent;
   margin: 0;
   padding: 0;
   opacity: .33;
   position: relative;
   float:left;
+  width: auto;
 }
 
-header.layers .layer img {
+.layers .layer img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 /* this is for logos that flicker in and out on all internal pages */
