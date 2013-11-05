@@ -63,10 +63,6 @@ footer {
   z-index: 1;
 }
 
-#emailcapture form {
-  padding-top: 15px;
-  }
-
 /* navbar override of bootstrap.css */
 .navbar {
   background: #eee;
@@ -281,6 +277,18 @@ footer {
 .press ul, .press ul a     { color:#1B2530; color:rgba(27,37,48,1); }
 .ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
 .speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
+
+#emailcapture > .fill {
+  background-color: #306B4C;
+  background-color: rgba(48,107,76,1);
+  color: white;
+  padding-top: 1px;
+}
+
+#emailcapture form {
+  padding-top: 15px;
+}
+
 
 /** BOARD STUFF **/
 .about .main article {

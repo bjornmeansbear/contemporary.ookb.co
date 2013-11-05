@@ -166,7 +166,7 @@ $(window).scroll(function(){
   
   if (s <= (wh)) {
     //correctly position based on heights
-    $('.layer').css('top',s);
+    $('.layer').css('position','relative').css('top',s);
     $('.layer.r-one').css('top',s+(s/3));
     $('.layer.r-three').css('top',s*2/3);
     //correctly position based on widths
@@ -176,6 +176,15 @@ $(window).scroll(function(){
     $('.layer.c-four').css('right',((s*wr)/2)-(multiplier));
   }
 
-  else {}
+  else {
+    var imgh = $('.layer img').height();
+    var imgw = $('.layer img').width();
+    //correctly position based on heights
+    $('.layer').css('position','fixed').css('top',((wh/2)-(imgh/2)));
+    $('.layer.c-one').css('left',((ww/2)-(imgw/2)));
+    $('.layer.c-two').css('left',((ww/2)-(imgw/2)));
+    $('.layer.c-three').css('right',((ww/2)-(imgw/2)));
+    $('.layer.c-four').css('right',((ww/2)-(imgw/2)));
+  }
 
 });
