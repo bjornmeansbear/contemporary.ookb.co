@@ -50,4 +50,5 @@ $(document).ready(function() {
   $('.speaker-number').css("margin-top",(((shapeh/2)-20)*-1));
   $('.speaker-number i').css("left",placement);
   $('.speakers date.lead').css("margin-top",((shapeh/2)*-1)).css("margin-left",shapew+15);
+
 });

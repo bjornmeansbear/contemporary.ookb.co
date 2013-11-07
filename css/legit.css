@@ -307,6 +307,12 @@ footer {
   padding-bottom: 60px;
 }
 
+.about .main article.no-bottom {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+
 .about .main article:last-child {
   border-bottom: none;
 }
