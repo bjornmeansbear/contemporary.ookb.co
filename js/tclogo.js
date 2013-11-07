@@ -141,6 +141,9 @@ $(window).load(function() {
   //using the variables to initially position things
   $('.layers').height(wh).width(ww);
   $('.layers .layer').height(wh/3).width(ww/4);
+  
+  
+  
 });
 
 // try to keep things correct even if there is a resizing...
