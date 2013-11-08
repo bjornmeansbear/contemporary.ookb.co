@@ -302,22 +302,10 @@ footer {
 
 /** BOARD STUFF **/
 .about .main article {
-  border-bottom: 1px solid;
-  margin-bottom: 70px;
-  padding-bottom: 60px;
-}
-
-.about .main article.no-bottom {
-  border-bottom: none;
-  margin-bottom: 0;
   padding-bottom: 15px;
 }
 
-.about .main article:last-child {
-  border-bottom: none;
-}
-
-.about section img {
+section img {
   display: block;
   width: 100%;
   margin: 0 auto;
