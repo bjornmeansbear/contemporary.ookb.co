@@ -490,3 +490,7 @@ h3.sponsorname {
   -o-transform:rotate(-5.625deg);
 }
 
+/* Styles for Donation Form */
+
+#header { display: none; }
+
