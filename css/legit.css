@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 .row  { margin-bottom: 30px; }
 .row.no-top { margin-top: -30px; }
 .add-top { margin-top: 30px; }
+.add-bottom { margin-bottom: 30px; }
 .border-top { border-top: 1px solid; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
@@ -60,7 +61,6 @@ footer {
   padding-top: 45px;
   padding-bottom: 70px;
   position: relative;
-  z-index: 1;
 }
 
 .home footer {
@@ -152,8 +152,7 @@ footer {
   position: fixed;
   margin: 0;
   width: 100%;
-  top:40px;
-  z-index: 1031;
+  top:51px;
   height: 0;
 }
 
@@ -165,7 +164,6 @@ footer {
   top:0;
   left:6px;
   overflow: hidden;
-  z-index: 1031;
 }
 
 #logo img {
@@ -175,7 +173,6 @@ footer {
   top:0;
   left: 0;
   opacity: .33;
-  z-index: 1031;
 }
 /*********/
 /*********/
