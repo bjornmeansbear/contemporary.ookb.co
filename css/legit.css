@@ -49,6 +49,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 .row.no-top { margin-top: -30px; }
 .add-top { margin-top: 30px; }
 .add-bottom { margin-bottom: 30px; }
+.no-top { margin-top: 0; }
+.no-bottom { margin-bottom: 0; }
 .border-top { border-top: 1px solid; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
@@ -302,6 +304,16 @@ footer {
   padding-bottom: 15px;
 }
 
+.color-stripe {
+  height: 30px;
+  overflow: hidden;
+}
+
+.color-stripe img {
+  width: 100%;
+  height: auto;
+}
+
 section img {
   display: block;
   width: 100%;
@@ -489,6 +501,38 @@ h3.sponsorname {
   -webkit-transform:rotate(-5.625deg);
   -o-transform:rotate(-5.625deg);
 }
+
+/******************************************/
+/******************************************/
+/******************************************/
+/* Footer Styles */
+/******************************************/
+/******************************************/
+/******************************************/
+
+footer .row {
+  margin-bottom: 15px;
+}
+
+footer nav {
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul.inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul.inline li {
+  float: left;
+  display: block;
+  margin-right: 30px;
+}
+
+
+
 
 /* Styles for Donation Form */
 
