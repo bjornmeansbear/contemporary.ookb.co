@@ -218,9 +218,9 @@ footer {
 .homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay { height: 360px; }
 .homepage-graphic img, .homepage-graphic .overlay { position: absolute; top: 0; left:0;}
 
-.press *, .ccc *, .speaker * { cursor: pointer; }
+.news *, .ccc *, .speaker * { cursor: pointer; }
 
-.press .overlay { 
+.news .overlay { 
   top: 33%;
   left:-5%;
   transform:rotate(11.25deg);
@@ -271,13 +271,13 @@ footer {
   margin: 4px 0;
 }
 
-.press .overlay h2 {
+.news .overlay h2 {
   font-size: 4em;
 }
 
-.press .overlay h2,
-.press .overlay p,
-.press .link-lists ul {
+.news .overlay h2,
+.news .overlay p,
+.news .link-lists ul {
   background-color: #597B9E;
   background-color: rgba(89,123,158,1);
 }
@@ -317,16 +317,9 @@ footer {
   padding: 7px 10px 5px;
 }
 
-.press ul, .press ul a     { color:#1B2530; color:rgba(27,37,48,1); }
+.news ul, .news ul a     { color:#1B2530; color:rgba(27,37,48,1); }
 .ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
 .speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
-
-#emailcapture > .fill {
-  background-color: #306B4C;
-  background-color: rgba(48,107,76,1);
-  color: white;
-  padding-top: 1px;
-}
 
 #emailcapture form {
   padding-top: 15px;
