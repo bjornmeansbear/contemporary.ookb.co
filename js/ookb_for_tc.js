@@ -34,13 +34,7 @@ $(document).ready(function() {
   // set variables for various positioning needs
   var wh = $(window).height();
   var ww = $(window).width();
-  var bthfix = ($('#bigtext').height())/2;
-
-  // use variables to correctly position images, text, and homepage logo
-  $('#bigtext').css("top",((wh)/2)-bthfix);
-  $('#white-wrapper').css("margin-top",wh);  // set homepage gap height
-
-// placing number in a cool shape and then doing interesting things with it
+  // placing number in a cool shape and then doing interesting things with it
   var shapeh = $(".speaker-number .shape").height();
   var shapew = $(".speaker-number .shape").width();
   var numw = $(".speaker-number i").width();
