@@ -179,6 +179,32 @@ footer {
 /*********/
 /*********/
 
+/* homepage and speakers big top block */
+.bighero {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bighero .bigdiv {
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.bighero #bigimage {
+  z-index: 0;
+}
+
+.bighero #bigtext {
+  z-index: 2;
+}
+
+
+.bighero img { width: 100%; }
+
 /* homepage blocks */
 .homepage-graphic { position: relative; }
 .homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay { height: 360px; }
@@ -297,7 +323,6 @@ footer {
 #emailcapture form {
   padding-top: 15px;
 }
-
 
 /** BOARD STUFF **/
 .main article {
