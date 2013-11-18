@@ -214,46 +214,7 @@ footer {
 }
 
 /* homepage blocks */
-.homepage-graphic { position: relative; }
-.homepage-graphic, .homepage-graphic img, .homepage-graphic .overlay { height: 360px; }
-.homepage-graphic img, .homepage-graphic .overlay { position: absolute; top: 0; left:0;}
-
 .news *, .ccc *, .speaker * { cursor: pointer; }
-
-.news .overlay { 
-  top: 33%;
-  left:-5%;
-  transform:rotate(11.25deg);
-  -ms-transform:rotate(11.25deg); 
-  -moz-transform:rotate(11.25deg);
-  -webkit-transform:rotate(11.25deg);
-  -o-transform:rotate(11.25deg);
-}
-
-.ccc .overlay { 
-  top: 20%;
-}
-
-.speaker .overlay { 
-  top: 15%;
-  transform:rotate(-11.25deg);
-  -ms-transform:rotate(-11.25deg); 
-  -moz-transform:rotate(-11.25deg);
-  -webkit-transform:rotate(-11.25deg);
-  -o-transform:rotate(-11.25deg);
-}
-
-.homepage-graphic {
-  display: table;
-  vertical-align: middle;
-}
-
-.homepage-graphic > div {
-  width: 360px;
-  height: 360px;
-  display: table-cell;
-  vertical-align: middle;
-}
 
 .homepage-graphic .overlay h2,
 .homepage-graphic .overlay h3,
