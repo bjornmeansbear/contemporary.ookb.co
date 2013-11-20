@@ -59,10 +59,10 @@ em, cite {font-style: italic !important;}
 .btn.add-top {margin-top: 30px;}
 
 footer {
-  background: #eee;
   padding-top: 45px;
   padding-bottom: 70px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .home footer {
@@ -72,7 +72,7 @@ footer {
 
 /* navbar override of bootstrap.css */
 .navbar {
-  background: #eee;
+  background: white;
   left:0;
   right:0;
   border-width: 0;
@@ -102,6 +102,9 @@ footer {
 
 .navbar-nav > li > a {
   color: #777777;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .navbar-nav > li > a:hover,
@@ -431,20 +434,11 @@ footer nav {
   padding: 0;
 }
 
-footer nav ul.inline {
-  list-style: none;
+footer .row nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-
-footer nav ul.inline li {
-  float: left;
-  display: block;
-  margin-right: 30px;
-}
-
-
-
 
 /* Styles for Donation Form */
 
