@@ -88,31 +88,52 @@
         <div class="row">
 
           <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
             
-            <article id="slideshow" class="bighero">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h2>Hello. It&rsquo;s nice to see you again.</h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h2>CoHosts. The 2014 Speaker Series.</h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h2>Meet our Curatorial Advisory Council.</h2>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" alt="...">
+                  <div class="carousel-caption">
+                    <h2>Press, Kinds Words, Etc.</h2>
+                  </div>
+                </div>
+              </div>
             
-              <div class="bigdiv slide" id="hello">
-                <div class="wrapper bigimage"><img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" /></div>
-                <h1 class="text-center bigtext">Hello. It&rsquo;s nice to see you again.</h1>
-              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
 
-              <div class="bigdiv slide" id="speakerseries">
-                <div class="wrapper bigimage"><img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" /></div>
-                <h1 class="text-center bigtext">CoHosts. The 2014 Speaker Series.</h1>
-              </div>
-
-              <div class="bigdiv slide" id="meetourcouncil">
-                <div class="wrapper bigimage"><img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" /></div>
-                <h1 class="text-center bigtext">Meet our Curatorial Advisory Council.</h1>
-              </div>
-
-              <div class="bigdiv slide" id="pressetc">
-                <div class="wrapper bigimage"><img src="http://unsplash.s3.amazonaws.com/batch%206/overhead-hi-res.jpg" /></div>
-                <h1 class="text-center bigtext">Press, Kinds Words, Etc.</h1>
-              </div>
-
-            </article>
-            
             <div class="row">
               <section class="news col-sm-4 col-md-4 col-lg-4">
                 <div class="homepage-graphic">
@@ -283,6 +304,7 @@
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>    
 <!--     <script src="js/jquery.js"></script> -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/ookb_for_tc.js"></script>
     <script src="js/tclogo.js"></script>
         
