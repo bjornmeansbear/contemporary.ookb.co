@@ -454,7 +454,7 @@ footer .row ul {
 
 footer h3 { color: #E85B4C; letter-spacing: 1px;}
 footer .secondary p,
-footer .secondary a { color: #E85B4C;}
+footer .secondary a { color: #E85B4C; font-size: 10px !important; letter-spacing: 1px;}
 
 /* Styles for Donation Form */
 
