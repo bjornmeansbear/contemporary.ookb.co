@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 .add-bottom { margin-bottom: 30px; }
 .no-top { margin-top: 0; }
 .no-bottom { margin-bottom: 0; }
-.border-top { border-top: 1px solid; padding-top: 15px; }
+.border-top { border-top: 1px solid #E85B4C; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
 .progress, .progress-bar { height: 30px; }
@@ -289,9 +289,17 @@ footer {
 .ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
 .speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
 
+#emailcapture {
+  border: 3px solid #E85B4C;
+}
+
+#emailcapture .row {
+  margin-bottom: 0;
+}
+
 #emailcapture form {
   padding-top: 15px;
-}
+  }
 
 /** BOARD STUFF **/
 .main article {
@@ -438,11 +446,15 @@ footer nav {
   padding: 0;
 }
 
-footer .row nav ul {
+footer .row ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+footer h3 { color: #E85B4C; letter-spacing: 1px;}
+footer .secondary p,
+footer .secondary a { color: #E85B4C;}
 
 /* Styles for Donation Form */
 
