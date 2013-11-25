@@ -184,7 +184,7 @@ footer {
 
 /* homepage and speakers big top block */
 .bighero {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 30px;
   height: 360px;
   overflow: hidden;
@@ -425,8 +425,8 @@ h3.sponsorname {
 /******************************************/
 /******************************************/
 
-footer .row {
-  margin-bottom: 15px;
+footer h3, footer ul, footer p {
+  font-size: 1em !important;
 }
 
 footer nav {
