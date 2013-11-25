@@ -198,18 +198,18 @@ footer {
   width: 100%;
 }
 
-.bighero #bigimage {
+.bighero .bigimage {
   z-index: 0;
+  position: absolute;
 }
 
-.bighero #bigtext {
+.bighero .bigtext {
   z-index: 2;
   color:white;
-  padding-top: 100px;
-}
-
-#bigtext h1 {
   font-size: 4em;
+  position: absolute;
+  text-align: center;
+  line-height: 125%;
 }
 
 .bighero img {
