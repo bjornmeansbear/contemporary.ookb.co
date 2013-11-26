@@ -221,53 +221,6 @@ footer {
 }
 
 /* homepage blocks */
-.news *, .ccc *, .speaker * { cursor: pointer; }
-
-.homepage-graphic .overlay h2,
-.homepage-graphic .overlay h3,
-.homepage-graphic .overlay p { 
-  color: white;
-  display: inline-block;
-  padding: 5px 15px 1px;
-}
-
-.ccc .overlay h2,
-.ccc .overlay p { 
-  color: #53510F;
-  color: rgba(83,81,15,1);
-  padding: 4px 10px;
-  margin: 4px 0;
-}
-
-.news .overlay h2 {
-  font-size: 4em;
-}
-
-.news .overlay h2,
-.news .overlay p,
-.news .link-lists ul {
-  background-color: #597B9E;
-  background-color: rgba(89,123,158,1);
-}
-
-.ccc .overlay h2,
-.ccc .overlay p {
-  background-color: #FAEA44;
-  background-color: rgba(250,234,68,.5);
-}
-
-.ccc .link-lists ul {
-  background-color: #FAEA44;
-  background-color: rgba(250,234,68,1);
-}
-
-.speaker .overlay h2,
-.speaker .overlay h3,
-.speaker .overlay p,
-.speaker .link-lists ul {
-  background-color: #E85B4C;
-  background-color: rgba(232,91,76,1));
-}
 
 .link-lists ul,
 .upcoming ul {
@@ -284,10 +237,6 @@ footer {
   margin: 0;
   padding: 7px 10px 5px;
 }
-
-.news ul, .news ul a     { color:#1B2530; color:rgba(27,37,48,1); }
-.ccc ul, .ccc ul a         { color:#53510F; color:rgba(83,81,15,1); }
-.speaker ul, .speaker ul a { color:#461B17; color:rgba(70,27,23,1); }
 
 #emailcapture {
   border: 3px solid #E85B4C;
