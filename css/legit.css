@@ -205,7 +205,7 @@ footer {
 
 .bighero .bigtext {
   z-index: 2;
-  color:white;
+  color:black;
   font-size: 4em;
   position: absolute;
   text-align: center;
