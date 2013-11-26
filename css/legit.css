@@ -58,18 +58,6 @@ em, cite {font-style: italic !important;}
 .disabled { display: none !important; }
 .btn.add-top {margin-top: 30px;}
 
-footer {
-  padding-top: 45px;
-  padding-bottom: 70px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.home footer {
-  z-index: 10;
-}
-
-
 /* navbar override of bootstrap.css */
 .navbar {
   background: white;
@@ -385,6 +373,13 @@ h3.sponsorname {
 /******************************************/
 /******************************************/
 /******************************************/
+
+footer {
+  padding-top: 45px;
+  padding-bottom: 70px;
+  position: relative;
+  text-transform: uppercase;
+}
 
 footer h3, footer ul, footer p {
   font-size: 1em !important;
