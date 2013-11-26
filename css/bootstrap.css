@@ -6164,8 +6164,7 @@ body.modal-open,
 .carousel-caption {
   position: absolute;
   right: 15%;
-/*   bottom: 20px; */ /*kb custom 2013-11-25 */
-  bottom: 60px; /*kb custom 2013-11-25 */
+  bottom: 20px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;

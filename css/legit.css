@@ -39,7 +39,8 @@
 /** font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif; **/
 
 html,body,h1,h2,h3,h4,h5,h6,p,span,strong,small {
-  font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif
+  font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif;
+  color: #1a2a35;
 }
 
 h1,h2,h3,h4,h5,h6 { font-weight: 700; }
@@ -153,11 +154,30 @@ em, cite {font-style: italic !important;}
 /* HOMEPAGE STUFF */
 /******************************************/
 /******************************************/
+.carousel-caption {
+  right: 15%;
+  bottom: 20%;
+  left: 15%;
+  padding: 0;
+  color: #1a2a35;
+  text-align: center;
+  text-shadow: none !important;
+  height: 60%;
+}
+
 .carousel-caption h2 {
   font-size: 5.5em;
-  color: black;
   line-height: .9;
 }
+
+.carousel-indicators li {
+  border-color: #1a2a35;
+}
+
+.carousel-indicators .active {
+  background-color: #1a2a35;
+}
+
 
 .link-lists ul,
 .upcoming ul {
@@ -169,7 +189,7 @@ em, cite {font-style: italic !important;}
 
 .link-lists ul li,
 .upcoming ul li {
-  border-top: 1px solid;
+  border-top: 1px solid #1a2a35;
   list-style: none;
   margin: 0;
   padding: 7px 10px 5px;
@@ -273,7 +293,7 @@ footer .row ul {
 }
 
 footer h3 { letter-spacing: 1px;}
-footer, footer h3, footer p, footer a { color: black; }
+footer, footer h3, footer p, footer a { color: #1a2a35; }
 
 footer .secondary p,
 footer .secondary a { color: #E85B4C; font-size: 10px !important; letter-spacing: 1px;}
