@@ -58,7 +58,11 @@ em, cite {font-style: italic !important;}
 .disabled { display: none !important; }
 .btn.add-top {margin-top: 30px;}
 
-/* navbar override of bootstrap.css */
+/******************************************/
+/******************************************/
+/* NAVIGATION STUFF - Overrides a lot of default bootstrap stuff */
+/******************************************/
+/******************************************/
 .navbar {
   background: white;
   left:0;
@@ -110,6 +114,7 @@ em, cite {font-style: italic !important;}
 }
 
 .nav li .muted {padding-top: 15px; color: #777;}
+
 
 /******************************************/
 /******************************************/
