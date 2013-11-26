@@ -304,7 +304,9 @@ footer .row ul {
   list-style: none;
 }
 
-footer h3 { color: #E85B4C; letter-spacing: 1px;}
+footer h3 { letter-spacing: 1px;}
+footer, footer h3, footer p, footer a { color: black; }
+
 footer .secondary p,
 footer .secondary a { color: #E85B4C; font-size: 10px !important; letter-spacing: 1px;}
 
