@@ -111,36 +111,11 @@ em, cite {font-style: italic !important;}
 
 .nav li .muted {padding-top: 15px; color: #777;}
 
-/** goofy logo idea **/
-/** CSS for homepage logo scrolling... **/
-.layers {
-  position: absolute;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left:0;
-  width: auto;
-  z-index: 9;
-}
-
-.layers .layer {
-  background: transparent;
-  margin: 0;
-  padding: 0;
-  opacity: .33;
-  position: relative;
-  float:left;
-  width: auto;
-}
-
-.layers .layer img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-/* this is for logos that flicker in and out on all internal pages */
+/******************************************/
+/******************************************/
+/* LOGO STUFF */
+/******************************************/
+/******************************************/
 #logo {
   position: fixed;
   margin: 0;
@@ -167,10 +142,13 @@ em, cite {font-style: italic !important;}
   left: 0;
   opacity: .33;
 }
-/*********/
-/*********/
 
-/* homepage and speakers big top block */
+/******************************************/
+/******************************************/
+/* HOMEPAGE STUFF */
+/******************************************/
+/******************************************/
+
 .bighero {
   margin-top: 15px;
   margin-bottom: 30px;
@@ -208,8 +186,6 @@ em, cite {font-style: italic !important;}
   font-size: 5.5em;
 }
 
-/* homepage blocks */
-
 .link-lists ul,
 .upcoming ul {
   border-top: 3px solid;
@@ -238,7 +214,11 @@ em, cite {font-style: italic !important;}
   padding-top: 15px;
   }
 
-/** BOARD STUFF **/
+/******************************************/
+/******************************************/
+/* ABOUT & PROJECTS & BIO STUFF */
+/******************************************/
+/******************************************/
 .main article {
   padding-bottom: 15px;
 }
@@ -293,9 +273,7 @@ section img {
 
 /******************************************/
 /******************************************/
-/******************************************/
 /* Footer Styles */
-/******************************************/
 /******************************************/
 /******************************************/
 
