@@ -153,42 +153,10 @@ em, cite {font-style: italic !important;}
 /* HOMEPAGE STUFF */
 /******************************************/
 /******************************************/
-
-.bighero {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  height: 360px;
-  overflow: hidden;
-  position: relative;
-}
-
-.bighero .bigdiv {
-  height: 360px;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-.bighero .bigimage {
-  z-index: 0;
-  position: absolute;
-}
-
-.bighero .bigtext {
-  z-index: 2;
-  color:black;
-  font-size: 4em;
-  position: absolute;
-  text-align: center;
-  line-height: 125%;
-}
-
-.bighero img {
-  width: 100%;
-}
-
 .carousel-caption h2 {
   font-size: 5.5em;
+  color: black;
+  line-height: .9;
 }
 
 .link-lists ul,
