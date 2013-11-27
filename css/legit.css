@@ -178,6 +178,20 @@ em, cite {font-style: italic !important;}
   background-color: #1a2a35;
 }
 
+.homepage-graphic { 
+  margin-top: 30px;
+  padding: 0;
+}
+
+.homepage-graphic h2 {
+  margin: 0;
+  padding: 15px 15px 8px;
+  color: white;
+}
+
+.homepage-graphic, .link-lists {
+  background-color: #E85B4C;
+}
 
 .link-lists ul,
 .upcoming ul {
@@ -198,6 +212,7 @@ em, cite {font-style: italic !important;}
 #emailcapture {
   border: 3px solid #E85B4C;
   margin-bottom: 0;
+  padding-top: 8px;
 }
 
 #emailcapture h2 {
@@ -212,6 +227,7 @@ em, cite {font-style: italic !important;}
   color: #fff;
   background-color: #2b4557;
   border-color: #1a2a35;
+  width: 100%;
   /**/
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
@@ -309,6 +325,8 @@ footer {
   text-transform: uppercase;
 }
 
+.home footer { padding-top: 0; }
+
 footer h3, footer ul, footer p {
   font-size: 1em !important;
 }
@@ -326,6 +344,7 @@ footer .row ul {
 
 footer h3 { letter-spacing: 1px;}
 footer, footer h3, footer p, footer a { color: #1a2a35; }
+footer a:hover { color: #2b4557 !important; }
 
 footer .secondary p,
 footer .secondary a { color: #E85B4C; font-size: 10px !important; letter-spacing: 1px;}

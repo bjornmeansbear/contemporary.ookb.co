@@ -135,8 +135,8 @@
             </div>
 
             <div class="row">
-              <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic news">
+              <section class="col-sm-4 col-md-4 col-lg-4 news">
+                <div class="homepage-graphic">
                   <h2>News</h2>
                 </div>
                 <div class="link-lists">
@@ -148,10 +148,9 @@
                 </div>
               </section>
             
-              <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic speakers">
-                  <h2>Cohosts</h2>
-                  <h3>2014 Speaker Series</h3>
+              <section class="col-sm-4 col-md-4 col-lg-4 speakers">
+                <div class="homepage-graphic">
+                  <h2>Speaker Series</h2>
                 </div>
                 <div class="link-lists">
                   <ul>
@@ -163,8 +162,8 @@
                 </div>
               </section>
 
-              <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic connect">
+              <section class="col-sm-4 col-md-4 col-lg-4 connect">
+                <div class="homepage-graphic">
                   <h2>Connect</h2>
                 </div>
                 <div class="link-lists icons">
@@ -173,8 +172,6 @@
                     <li class="square-block"><a href="https://twitter.com/ThContemporary">Twitter</a></li>
                     <li class="square-block"><a href="http://instagram.com/thecontemporary">Instagram</a></li>
                   </ul>
-                </div>
-                <div class="link-lists">
                   <ul>
                     <li>Donate</li>
                   </ul>
@@ -209,7 +206,7 @@
 
           <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
-            <div class="row border-top">
+            <div class="row">
               <div class="col-md-3">
                 <h3>The Contemporary <br/>(Museum) of Baltimore</h3>
                 <ul>
@@ -234,9 +231,9 @@
               <nav class="col-md-3">
                 <h3>Programming</h3>
                 <ul>
-                  <li><a href="projects.html">Projects</li>
-                  <li><a href="about.html#mission">Curatorial Council</li>
-                  <li><a href="about.html#mission">Speaker Series</li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="projects.html#council">Curatorial Council</a></li>
+                  <li><a href="lectures.html">Speaker Series</a></li>
                 </ul>
               </nav>
     
@@ -249,7 +246,7 @@
                   <li><a href="http://instagram.com/thecontemporary">Instagram</a></li>
     <!--               <li><a href="#">Vimeo</a></li> -->
                   <li>&mdash;</li>
-                  <li>Donate</li>
+                  <li><a href="support.html">Donate</a></li>
                 </ul>
               </nav>
     
@@ -283,16 +280,24 @@
     <script>
       $(window).load(function() {
       
-        var bigbrother = -1;
+        var hg = -1;
       
         $('.homepage-graphic').each(function() {
-          bigbrother = bigbrother > $(this).height() ? bigbrother : $(this).height();
+          hg = hg > $(this).height() ? hg : $(this).height();
         });
       
         $('.homepage-graphic').each(function() {
-          $(this).height(bigbrother);
+          $(this).height(hg);
         });
       
+        var ll = -1;
+        $('.link-lists').each(function() {
+          ll = ll > $(this).height() ? ll : $(this).height();
+        });
+        $('.link-lists').each(function() {
+          $(this).height(ll);
+        });
+
       });
     </script>
         
