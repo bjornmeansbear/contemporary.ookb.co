@@ -197,15 +197,34 @@ em, cite {font-style: italic !important;}
 
 #emailcapture {
   border: 3px solid #E85B4C;
+  margin-bottom: 0;
 }
 
-#emailcapture .row {
-  margin-bottom: 0;
+#emailcapture h2 {
+  padding-right: 0;
 }
 
 #emailcapture form {
   padding-top: 15px;
-  }
+}
+  
+#emailcapture .btn-info {
+  color: #fff;
+  background-color: #2b4557;
+  border-color: #1a2a35;
+  /**/
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+#emailcapture .btn-info:hover {
+  background-color: #1a2a35;
+}
+
+
 
 /******************************************/
 /******************************************/
@@ -242,7 +261,8 @@ section img {
   cursor: pointer;
 }
 
-.toggle .bio h2, .project-thumb h3 { font-size: 1.5em; }
+.toggle .bio h2,
+.project-thumb h3 { font-size: 1.2em; }
 .toggle .bio h3 { font-size: 1em; }
 
 .toggle .bio h2, 
@@ -262,6 +282,18 @@ section img {
   position: absolute;
   z-index: 9;
   padding: 15px;
+}
+
+.project-thumb date {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-thumb h3 { margin-top: 10px; }
+.project-thumb h3,
+.project-thumb p {
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 /******************************************/

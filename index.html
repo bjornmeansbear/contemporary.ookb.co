@@ -136,10 +136,8 @@
 
             <div class="row">
               <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic">
-                  <div class="overlay">
-                    <h2>News</h2>
-                  </div>
+                <div class="homepage-graphic news">
+                  <h2>News</h2>
                 </div>
                 <div class="link-lists">
                   <ul>
@@ -151,33 +149,29 @@
               </section>
             
               <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic">
-                  <div class="overlay">
-                    <h3>2014 Speaker Series</h3>
-                    <h2>Cohosts</h2>
-                  </div>
+                <div class="homepage-graphic speakers">
+                  <h2>Cohosts</h2>
+                  <h3>2014 Speaker Series</h3>
                 </div>
                 <div class="link-lists">
                   <ul>
-                    <li>January: Coco Fusco / Guest Spot</li>
-                    <li>February: TK / TK</li>
-                    <li>March: TK / TK</li>
+                    <li>January: #1 - Coco Fusco / Guest Spot</li>
+                    <li>February: #2 - Nick Cave / TK</li>
+                    <li>March: #3 - Brendan Fowler / TK</li>
                     <li><small>All 2014 Speaker Series events will take place at the Baltimore School for the Arts</small></li>
                   </ul>
                 </div>
               </section>
 
               <section class="col-sm-4 col-md-4 col-lg-4">
-                <div class="homepage-graphic">
-                  <div class="overlay">
-                    <h2>Connect</h2>
-                  </div>
+                <div class="homepage-graphic connect">
+                  <h2>Connect</h2>
                 </div>
-                <div class="link-lists">
+                <div class="link-lists icons">
                   <ul>
-                    <li>FB</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
+                    <li class="square-block"><a href="https://www.facebook.com/thecontemporarybaltimore">Facebook</a></li>
+                    <li class="square-block"><a href="https://twitter.com/ThContemporary">Twitter</a></li>
+                    <li class="square-block"><a href="http://instagram.com/thecontemporary">Instagram</a></li>
                   </ul>
                 </div>
                 <div class="link-lists">
@@ -228,21 +222,21 @@
               </div>
               
               <nav class="col-md-3">
-                <h3>About</h3>
+                <h3><a href="about.html">About</a></h3>
                 <ul>
-                  <li>Mission &amp; History</li>
-                  <li>Staff &amp; Board</li>
-                  <li>Support</li>
-                  <li>Press</li>
+                  <li><a href="about.html#mission">Mission &amp; History</a></li>
+                  <li><a href="about.html#staff">Staff &amp; Board</a></li>
+                  <li><a href="donate.html">Support</a></li>
+                  <li><a href="press.html">Press</a></li>
                 </ul>
               </nav>
     
               <nav class="col-md-3">
                 <h3>Programming</h3>
                 <ul>
-                  <li>Projects</li>
-                  <li>Curatorial Council</li>
-                  <li>Speaker Series</li>
+                  <li><a href="projects.html">Projects</li>
+                  <li><a href="about.html#mission">Curatorial Council</li>
+                  <li><a href="about.html#mission">Speaker Series</li>
                 </ul>
               </nav>
     
@@ -283,6 +277,24 @@
     <script src="js/carousel.js"></script>
     <script src="js/ookb_for_tc.js"></script>
     <script src="js/tclogo.js"></script>
+
+    <!-- make all the bios the same height with JS, not CSS -->
+    <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
+    <script>
+      $(window).load(function() {
+      
+        var bigbrother = -1;
+      
+        $('.homepage-graphic').each(function() {
+          bigbrother = bigbrother > $(this).height() ? bigbrother : $(this).height();
+        });
+      
+        $('.homepage-graphic').each(function() {
+          $(this).height(bigbrother);
+        });
+      
+      });
+    </script>
         
   </body>
 </html>
