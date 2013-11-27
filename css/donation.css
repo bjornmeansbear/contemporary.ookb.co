@@ -1,4 +1,8 @@
 /* Styles for Donation Form */
 
-#header { display: none; }
+.wufoo #header,
+.wufoo #header h2 { 
+  display: none;
+  border: none;
+}
 

@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 .add-bottom { margin-bottom: 30px; }
 .no-top { margin-top: 0; }
 .no-bottom { margin-bottom: 0; }
+.pad-top { padding-top: 30px; }
 .border-top { border-top: 1px solid #E85B4C; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
@@ -335,13 +336,11 @@ section img {
 /******************************************/
 
 footer {
-  padding-top: 45px;
+  padding-top: 0;
   padding-bottom: 70px;
   position: relative;
   text-transform: uppercase;
 }
-
-.home footer { padding-top: 0; }
 
 footer h3, footer ul, footer p {
   font-size: 1em !important;
