@@ -257,7 +257,27 @@ em, cite {font-style: italic !important;}
   background-color: #1a2a35;
 }
 
+/******************************************/
+/******************************************/
+/* big header on all inner pages */
+/******************************************/
+/******************************************/
 
+section.bighero {
+  height: 236px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+section.bighero h1 {
+  position: absolute;
+  top: 80px;
+  left: 0%;
+  right: 0%;
+  font-size: 5.5em;
+  line-height: .9;
+}
 
 /******************************************/
 /******************************************/
