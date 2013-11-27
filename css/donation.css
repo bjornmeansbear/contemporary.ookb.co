@@ -1,7 +1,9 @@
 /* Styles for Donation Form */
 
-.wufoo #header,
-.wufoo #header h2 { 
+form #header,
+form header,
+form .info,
+form #header h2 { 
   display: none;
   border: none;
 }
