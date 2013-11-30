@@ -55,7 +55,7 @@ html, body { background-color: white; }
 .no-top { margin-top: 0; }
 .no-bottom { margin-bottom: 0; }
 .pad-top { padding-top: 30px; }
-.border-top { border-top: 1px solid #E85B4C; padding-top: 15px; }
+.border-top { border-top: 1px solid; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
 .progress, .progress-bar { height: 30px; }
@@ -205,11 +205,11 @@ em, cite {font-style: italic !important;}
   border-top: 1px solid #1a2a35;
   list-style: none;
   margin: 0;
-  padding: 7px 10px 5px;
+  padding: 7px 0 5px;
 }
 
 #emailcapture {
-  border: 3px solid #E85B4C;
+  border: 3px solid;
   margin-bottom: 0;
   padding-top: 8px;
 }
@@ -364,6 +364,6 @@ footer, footer h3, footer p, footer a { color: #1a2a35; }
 footer a:hover { color: #2b4557 !important; }
 
 footer .secondary p,
-footer .secondary a { color: #E85B4C; font-size: 10px !important; letter-spacing: 1px;}
+footer .secondary a { font-size: 10px !important; letter-spacing: 1px;}
 
 
