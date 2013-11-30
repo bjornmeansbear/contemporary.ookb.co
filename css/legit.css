@@ -184,35 +184,15 @@ em, cite {font-style: italic !important;}
   padding: 0;
 }
 
-.homepage-graphic {
-  background-color: #1A2A35;
-}
-
-.link-lists {
-  background-color: #E85B4C;
-}
-
 .homepage-graphic h2 {
   margin: 0;
   padding: 15px 15px 8px;
   color: white;
 }
 
-/*
-.news .homepage-graphic h2 {
-  background: url('../img/blocks/bg1.jpg') center center no-repeat;
-}
-.speakers .homepage-graphic h2 {
-  background: url('../img/blocks/bg2.jpg') center center no-repeat;
-}
-.connect .homepage-graphic h2 {
-  background: url('../img/blocks/bg3.jpg') center center no-repeat;
-}
-*/
-
 .link-lists ul,
 .upcoming ul {
-  border-top: 3px solid;
+  border-top: 3px solid #1a2a35;
   list-style: none;
   margin: 0;
   padding: 0;
