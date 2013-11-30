@@ -212,14 +212,21 @@ em, cite {font-style: italic !important;}
   padding: 7px 0 5px;
 }
 
+.link-lists ul li a { 
+  color: #2b4557 !important;
+}
+
 #emailcapture {
-  border: 3px solid;
+/*   border: 3px solid; */
+  background-color: #1A2A35;
+  color: white !important;
   margin-bottom: 0;
   padding-top: 8px;
 }
 
 #emailcapture h2 {
   padding-right: 0;
+  color: white !important;
 }
 
 #emailcapture form {
