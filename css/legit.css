@@ -339,6 +339,10 @@ section img {
   margin-bottom: 5px;
 }
 
+/* Speaker Series styles */
+.speakers .row h2 {margin-bottom: 0;}
+.speakers .row div button {margin-bottom: 15px; width: 100%;}
+
 /******************************************/
 /******************************************/
 /* Footer Styles */
