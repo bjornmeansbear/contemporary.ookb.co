@@ -90,6 +90,10 @@ em, cite {font-style: italic !important;}
   color: #1a2a35;
 }
 
+.navbar > .container .navbar-brand {
+  margin-left: -7px;
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: #2b4557 !important;
