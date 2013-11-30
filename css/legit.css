@@ -218,14 +218,12 @@ em, cite {font-style: italic !important;}
 
 #emailcapture {
   border: 3px solid;
-  color: white !important;
   margin-bottom: 0;
   padding-top: 8px;
 }
 
 #emailcapture h2 {
   padding-right: 0;
-  color: white !important;
 }
 
 #emailcapture form {
