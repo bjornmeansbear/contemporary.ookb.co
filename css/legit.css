@@ -45,6 +45,8 @@ html,body,h1,h2,h3,h4,h5,h6,p,span,strong,small {
 
 h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 
+html, body { background-color: white; }
+
 /* a bunch of quick corrections and global things... */
 .row  { margin-bottom: 30px; }
 .row.no-top { margin-top: -30px; }
@@ -70,6 +72,7 @@ em, cite {font-style: italic !important;}
   left:0;
   right:0;
   border-width: 0;
+  color:#1a2a35;
 }
 
 .home #undefined-sticky-wrapper {
@@ -84,18 +87,18 @@ em, cite {font-style: italic !important;}
   margin-right: 7.5px;
   font-size: 18px;
   line-height: 20px;
-  color: #777777;
+  color: #1a2a35;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #2b4557 !important;
   text-decoration: none;
   background-color: transparent;
 }
 
 .navbar-nav > li > a {
-  color: #777777;
+  color: #1a2a35;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -103,7 +106,7 @@ em, cite {font-style: italic !important;}
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #2b4557;
   background-color: transparent;
   background-color: #e7e7e7;
 }
@@ -186,8 +189,6 @@ em, cite {font-style: italic !important;}
 
 .homepage-graphic h2 {
   margin: 0;
-  padding: 15px 15px 8px;
-  color: white;
 }
 
 .link-lists ul,
