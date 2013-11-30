@@ -352,6 +352,8 @@ footer {
   text-transform: uppercase;
 }
 
+footer .row { margin-bottom: 0; }
+
 footer h3, footer ul, footer p {
   font-size: 1em !important;
 }
@@ -370,6 +372,10 @@ footer .row ul {
 footer h3 { letter-spacing: 1px;}
 footer, footer h3, footer p, footer a { color: #1a2a35; }
 footer a:hover { color: #2b4557 !important; }
+
+footer .secondary {
+  margin-top: 30px;
+}
 
 footer .secondary p,
 footer .secondary a { font-size: 10px !important; letter-spacing: 1px;}
