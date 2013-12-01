@@ -73,11 +73,6 @@ em, cite {font-style: italic !important;}
   color:#1a2a35;
 }
 
-.home #undefined-sticky-wrapper {
-  z-index: 10;
-  position: relative;
-}
-
 .navbar-brand {
   float: left;
   padding-top: 15px;
@@ -210,7 +205,7 @@ em, cite {font-style: italic !important;}
   padding: 7px 0 5px;
 }
 
-.link-lists ul li a { 
+a { 
   color: #2b4557 !important;
 }
 
@@ -334,8 +329,8 @@ section img {
 }
 
 /* Speaker Series styles */
-.speakers .row h2 {margin-bottom: 0;}
-.speakers .row div button {margin-bottom: 15px; width: 100%;}
+#speakers .row h2 {margin-bottom: 0;}
+#speakers .row div .btn {margin-bottom: 15px; width: 100%;}
 
 /******************************************/
 /******************************************/
