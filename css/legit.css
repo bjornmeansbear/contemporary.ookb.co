@@ -76,7 +76,7 @@
 /** SERIF: font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 ; **/
 
-html,body,h1,h2,h3,h4,h5,h6,p,span,strong,small {
+html,body,h1,h2,h3,h4,h5,h6,p {
   font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif;
   color: #1a2a35;
 }
