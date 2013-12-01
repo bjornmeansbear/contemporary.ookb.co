@@ -211,8 +211,10 @@ a {
 
 #emailcapture {
   border: 3px solid;
-  margin-bottom: 0;
-  padding-top: 8px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding-top:4px;
+  padding-bottom: 6px;
 }
 
 #emailcapture h2 {
