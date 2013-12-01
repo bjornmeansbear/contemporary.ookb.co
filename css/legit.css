@@ -48,13 +48,11 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 html, body { background-color: white; }
 
 /* a bunch of quick corrections and global things... */
-.row  { margin-bottom: 30px; }
-.row.no-top { margin-top: -30px; }
 .add-top { margin-top: 30px; }
 .add-bottom { margin-bottom: 30px; }
 .no-top { margin-top: 0; }
 .no-bottom { margin-bottom: 0; }
-.pad-top { padding-top: 30px; }
+.pad-top { padding-top: 51px; }
 .border-top { border-top: 1px solid; padding-top: 15px; }
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
@@ -274,10 +272,6 @@ section.bighero h1 {
 /* ABOUT & PROJECTS & BIO STUFF */
 /******************************************/
 /******************************************/
-.main article {
-  padding-bottom: 15px;
-}
-
 .color-stripe {
   height: 30px;
   overflow: hidden;
