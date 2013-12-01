@@ -1,9 +1,12 @@
+// JS for contemporary.org
+
 // scroll to content when you click - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
 $(".scroll_to").click(function(event){    
   event.preventDefault();
   $('html,body').animate({scrollTop:$(this.hash).offset().top}, 888);
 });
 
+// Generally useful JS stuff
 $(document).ready(function() {
 
   /** Board Bio stuff **/
@@ -31,18 +34,15 @@ $(document).ready(function() {
     window.location = "lectures.html";
   });
 
-  // set variables for various positioning needs
-  var wh = $(window).height();
-  var ww = $(window).width();
-  // placing number in a cool shape and then doing interesting things with it
-  var shapeh = $(".speaker-number .shape").height();
-  var shapew = $(".speaker-number .shape").width();
-  var numw = $(".speaker-number i").width();
-  var placement = ((shapew/2)-(numw/2));
-  $('.speaker-number').height(shapeh);
-  $('.speaker-number').width(shapew);
-  $('.speaker-number').css("margin-top",(((shapeh/2)-20)*-1));
-  $('.speaker-number i').css("left",placement);
-  $('.speakers date.lead').css("margin-top",((shapeh/2)*-1)).css("margin-left",shapew+15);
+});
 
+// For the individual speaker pages
+$(window).load(function() {
+  var th = $('.date-time').height();
+  $('.artistswork').css('margin-top',(th*-1));
+});
+
+$(window).resize(function() {
+  var th = $('.date-time').height();
+  $('.artistswork').css('margin-top',(th*-1));
 });
