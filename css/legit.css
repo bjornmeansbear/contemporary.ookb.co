@@ -323,14 +323,10 @@ section.bighero h1 {
 /* ABOUT & PROJECTS & BIO STUFF */
 /******************************************/
 /******************************************/
-.color-stripe {
-  height: 30px;
-  overflow: hidden;
-}
-
-.color-stripe img {
-  width: 100%;
-  height: auto;
+#board.border-top,
+.pad-top.border-top {
+  border-top: 3px solid #1a2a35;
+  margin-top: 30px;
 }
 
 section img {
