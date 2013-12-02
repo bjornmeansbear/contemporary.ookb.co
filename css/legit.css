@@ -336,28 +336,6 @@ img.fit {width: 100%;}
 
 /******************************************/
 /******************************************/
-/* big header on all inner pages */
-/******************************************/
-/******************************************/
-
-section.bighero {
-  height: 236px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 15px;
-}
-
-section.bighero h1 {
-  position: absolute;
-  top: 80px;
-  left: 0%;
-  right: 0%;
-  font-size: 5.5em;
-  line-height: .9;
-}
-
-/******************************************/
-/******************************************/
 /* ABOUT & PROJECTS & BIO STUFF */
 /******************************************/
 /******************************************/
@@ -419,7 +397,24 @@ section img {
 }
 
 /* Speaker Series styles */
-#speakers .row h2 {margin-bottom: 0;}
+#speakerintro .blurbs {
+  padding-top: 20px;
+}
+
+#speakerintro .blurbs h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#speakerintro .blurbs h4 {
+  margin-top: 8px;
+}
+
+#speakerintro .blurbs p {
+  margin-bottom: 30px;
+}
+
+#speakers .row h2 {margin-bottom: 0; font-size: 1.25em;}
 #speakers .row div .btn {margin-bottom: 15px; width: 100%;}
 
 /* individual speaker pages */
