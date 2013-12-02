@@ -137,10 +137,8 @@ img.fit {width: 100%;}
 }
 
 .navbar-brand {
-  float: left;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 7.5px;
   font-size: 18px;
   line-height: 20px;
   color: #1a2a35;
@@ -179,7 +177,7 @@ img.fit {width: 100%;}
   background-color: #e4ecf2;
 }
 
-.nav li .muted {padding-top: 15px; color: #777;}
+.nav li .text { padding-top: 15px;}
 
 .nav-tabs {
   color: #090f13;
@@ -259,6 +257,34 @@ img.fit {width: 100%;}
 .carousel-indicators .active {
   background-color: #1a2a35;
 }
+
+.carousel-control, 
+.carousel-control:hover, 
+.carousel-control:active, 
+.carousel-control:focus {
+  border: none;
+  color: #1a2a35;
+  width: 10%;
+}
+
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.5) 0), color-stop(rgba(255, 255, 255, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77FFFFFF', endColorstr='#00FFFFFF', GradientType=1);
+}
+
+.carousel-control.right {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(255, 255, 255, 0.0001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.0001) 0), color-stop(rgba(255, 255, 255, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.0001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='#77FFFFFF', GradientType=1);
+}
+
 
 .homepage-graphic { 
   margin-top: 30px;
