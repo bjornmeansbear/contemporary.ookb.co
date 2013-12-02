@@ -107,6 +107,7 @@ a:focus {
 .no-top { margin-top: 0; }
 .no-bottom { margin-bottom: 0; }
 .pad-top { padding-top: 51px; }
+.pad-top.border-top { padding-top: 51px; }
 .border-top { border-top: 1px solid; padding-top: 15px; }
 hr.border-top {padding: 0;}
 .noleftmargin {padding-left: 0 !important;}
@@ -146,7 +147,7 @@ img.fit {width: 100%;}
 }
 
 .navbar > .container .navbar-brand {
-  margin-left: -7px;
+  margin-left: -15px;
 }
 
 .navbar-brand:hover,
@@ -197,6 +198,39 @@ img.fit {width: 100%;}
   border-bottom-color: transparent;
 }
 
+.navbar-toggle {
+  background-color: white;
+  border: 1px solid #CDDCE7;
+  border-radius: 4px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 0;
+  margin-bottom: 8px;
+  padding: 9px 10px;
+  position: relative;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #1A2A35;
+  border-color: #1A2A35;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background-color: #CDDCE7;
+}
+
+
+
 /******************************************/
 /******************************************/
 /* LOGO STUFF */
@@ -220,7 +254,8 @@ img.fit {width: 100%;}
 }
 
 @media (max-width: 767px) {
-  #logo {
+  #logo,
+  header ul.location {
     display: none;
   }
 }
@@ -362,7 +397,7 @@ img.fit {width: 100%;}
 
 /******************************************/
 /******************************************/
-/* ABOUT & PROJECTS & BIO STUFF */
+/* ABOUT & BIO STUFF */
 /******************************************/
 /******************************************/
 #board.border-top,
@@ -409,6 +444,8 @@ section img {
   z-index: 9;
   padding: 15px;
 }
+
+/* PROJECT PAGE */
 
 .project-thumb time {
   font-weight: 700;

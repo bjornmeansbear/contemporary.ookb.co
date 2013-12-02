@@ -27,9 +27,9 @@
     <header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
         <div class="row">
-          <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
             <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -37,14 +37,14 @@
               </button>
               <a class="navbar-brand" href="index.html">The Contemporary</a>
             </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <nav class="collapse navbar-collapse" role="navigation">
               <ul class="nav navbar-nav">
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="lectures.html">Speaker Series</a></li>
                 <li><a href="donate.html">Support</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right location">
                 <li><p class="text">in Baltimore, MD</p></li>
               </ul>
             </nav>
@@ -122,6 +122,10 @@
                   <h2>Thom Collins</h2>
                   <p>Thom Collins, an arts administrator, art historian, educator and author with more than 15 years of experience in museum leadership, joined Miami Art Museum as director in 2010. Since taking his post, Collins has been the driving force behind the museum&rsquo;s transition to its new Herzog &amp; de Meuron-designed facility in Miami&rsquo;s Museum Park, opening in 2013 as P&Atilde;rez Art Museum Miami. Guided by Collins&rsquo; vision, the Museum has strengthened its institutional mission with a renewed commitment to expanding its educational and public outreach as well as its permanent collection with works that capture artistic creativity across time, region, and discipline and have a special resonance in the Miami community. Prior to joining the Museum, Collins served as director of the Neuberger Museum of Art in Westchester County, New York, for five years. Collins has also previously served as director of the Contemporary Museum in Baltimore, Maryland, 2003&ndash;2005, chief curator at the Contemporary Arts Center in Cincinnati, Ohio, 2000-2003, associate curator at the Henry Art Gallery in Seattle, Washington,1998-2000, and Newhall Curatorial Fellow at the Museum of Modern Art in New York, 1994-1997. Collins earned his master&rsquo;s degree from Northwestern University and his bachelor&rsquo;s degree from Swarthmore College. He currently holds memberships in the Association of Art Museum Directors, the Association of Art Museum Curators, and the College Art Association.</p>
                 </section>
+
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs"></div><!-- this breaks them into two nice rows on mobile/small screens... -->
+                
                 <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
                   <img src="img/headshot/finkelpearl.jpg" class="img-circle"/>
                   <h2>Tom Finkelpearl</h2>
