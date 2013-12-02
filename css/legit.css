@@ -89,6 +89,19 @@ article a, section a, .link-lists a {
   color: #2b4557 !important;
 }
 
+a {
+  color: #2b4557;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #0f181e;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+
 
 /* a bunch of quick corrections and global things... */
 .add-top { margin-top: 30px; }
@@ -102,12 +115,20 @@ em, cite {font-style: italic !important;}
 .progress, .progress-bar { height: 30px; }
 .disabled { display: none !important; }
 .btn.add-top {margin-top: 30px;}
+img.fit {width: 100%;}
 
 /******************************************/
 /******************************************/
 /* NAVIGATION STUFF - Overrides a lot of default bootstrap stuff */
 /******************************************/
 /******************************************/
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eff4f7;
+  border: none;
+}
+
 .navbar {
   background: white;
   left:0;
@@ -124,6 +145,7 @@ em, cite {font-style: italic !important;}
   font-size: 18px;
   line-height: 20px;
   color: #1a2a35;
+  border: none !important;
 }
 
 .navbar > .container .navbar-brand {
@@ -148,18 +170,35 @@ em, cite {font-style: italic !important;}
 .navbar-nav > li > a:focus {
   color: #2b4557;
   background-color: transparent;
-  background-color: #e7e7e7;
+  background-color: #eff4f7;
 }
 
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #d7d7d7;
+  color: #2b4557;
+  background-color: #e4ecf2;
 }
 
 .nav li .muted {padding-top: 15px; color: #777;}
 
+.nav-tabs {
+  color: #090f13;
+  border-bottom: 1px solid #d9e4ec;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: #d9e4ec;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1a2a35;
+  background-color: #ffffff;
+  border: 1px solid #e4ecf2;
+  border-bottom-color: transparent;
+}
 
 /******************************************/
 /******************************************/
