@@ -320,13 +320,18 @@ img.fit {width: 100%;}
   background-color: #1a2a35;
 }
 
-.news .link-lists time {
+.news .link-lists time,
+.press-list time {
   letter-spacing: 1px;
-  font-size: .8em;
+  font-size: .75em;
+  text-transform: uppercase;
 }
 
-.news .link-lists p {
+.news .link-lists p,
+.press-list p {
   font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  margin-top: 3px;
+  margin-bottom: -2px;
 }
 
 /******************************************/
