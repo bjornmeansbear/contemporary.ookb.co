@@ -320,10 +320,6 @@ img.fit {width: 100%;}
   background-color: #1a2a35;
 }
 
-.link-lists {
-  font-size: 1.11111111em;
-}
-
 .news .link-lists time {
   letter-spacing: 1px;
   font-size: .8em;
@@ -405,7 +401,7 @@ section img {
   padding: 15px;
 }
 
-.project-thumb date {
+.project-thumb time {
   font-weight: 700;
   letter-spacing: 1px;
 }
