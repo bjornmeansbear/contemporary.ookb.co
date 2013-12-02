@@ -10,13 +10,10 @@ Stuff to do:
 - Build out NEWS page from deana's text
 
 ## Mobile
-- Skinny layout is totally whack… otherwise most things are working correctly… better investigate options for correcting this.
-- Menu/Nav drop down button disappears — why?
 - At ipad/tablet screen width the navbar goes to 2 lines and hides somethings… resolve this as well.
 
 ## Bios
 - Figure out what to do about text overflowing edges of pages…
-- Also, what to do in Mobile?
 
 ===========
 
@@ -53,10 +50,7 @@ Sep 1, 2013
 City Paper: The Contemporary wins 'Best Reinvention' for 2013 Best of Baltimore by City Paper
 Sep 18, 2013
 
-3. Change (M in 'mixed media should be capitalized):
-Soundsuit // Mixed media // 2011
-
-4. Still need info for Wayne's image.
+3. Still need info for Wayne's image.
 
 Things to do:
 1. Facebook/Instagram Banners
