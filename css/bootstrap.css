@@ -6078,7 +6078,7 @@ body.modal-open,
   background-repeat: repeat-x;
 */
 /* don't want currently, ookb 2013-11-15 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+/*   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); */
 }
 
 .carousel-control.right {
@@ -6092,7 +6092,7 @@ body.modal-open,
   background-repeat: repeat-x;
 */
 /* don't want currently, ookb 2013-11-15 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+/*   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); */
 }
 
 .carousel-control:hover,
@@ -6164,7 +6164,7 @@ body.modal-open,
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 20px; 
   left: 15%;
   z-index: 10;
   padding-top: 20px;

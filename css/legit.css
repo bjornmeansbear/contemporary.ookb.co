@@ -101,8 +101,6 @@ a:focus {
   border-bottom: 1px solid;
 }
 
-
-
 /* a bunch of quick corrections and global things... */
 .add-top { margin-top: 30px; }
 .add-bottom { margin-bottom: 30px; }
@@ -126,7 +124,7 @@ img.fit {width: 100%;}
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eff4f7;
-  border: none;
+  border-bottom: transparent;
 }
 
 .navbar {
@@ -195,7 +193,7 @@ img.fit {width: 100%;}
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #1a2a35;
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #e4ecf2;
   border-bottom-color: transparent;
 }
