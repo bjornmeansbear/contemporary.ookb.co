@@ -18,9 +18,6 @@ Stuff to do:
 - Figure out what to do about text overflowing edges of pages…
 - Also, what to do in Mobile?
 
-## Footer
-E-blast list to E-Blast
-
 ===========
 
 TK from deana:
