@@ -6,19 +6,11 @@ Stuff to do:
 ## Donate
 - Finish figuring out how to get rid of form title on donate page
 
-## News
-- Build out NEWS page from deana's text
-
 ## Mobile
 - At ipad/tablet screen width the navbar goes to 2 lines and hides somethings… resolve this as well.
 
 ## Bios
 - Figure out what to do about text overflowing edges of pages…
-
-===========
-
-TK from deana:
-1. News Reel content
 
 Things to do:
 1. Facebook/Instagram Banners
