@@ -24,7 +24,6 @@ TK from deana:
 1. News Reel content
 2. TC Fact Sheet
 
-
 Changes to web:
 1. SORRY: Change E-Blast to 'Email List'
 2. Press stuff should look like this (in terms of italicized):
@@ -54,3 +53,9 @@ Sep 18, 2013
 Things to do:
 1. Facebook/Instagram Banners
 2. Mailchimp setup with logo and about a paragraph of space for my text. Use lorem ipsum if you want to get a headstart on this at all.
+
+==========
+
+13. Project 20
+14. Baltimore List 1 & 2
+15. Uh-Oh: A Whoop Dee Doo Thing
