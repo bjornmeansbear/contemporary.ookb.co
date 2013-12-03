@@ -14,14 +14,15 @@ Stuff to do:
 
 ## Bios
 - Figure out what to do about text overflowing edges of pages…
+- Board w/ titles in separate container; need to make them also close when other bios activate.
+
+- The 'Email List' in footer is not the same on each page.
 
 ===========
 
 TK from deana:
 1. News Reel content
-2. Projects text content
-3. Press Release (you may need to format this. It should be a PDF.)
-4. TC Fact Sheet
+2. TC Fact Sheet
 
 
 Changes to web:
@@ -49,8 +50,6 @@ Sep 1, 2013
 
 City Paper: The Contemporary wins 'Best Reinvention' for 2013 Best of Baltimore by City Paper
 Sep 18, 2013
-
-3. Still need info for Wayne's image.
 
 Things to do:
 1. Facebook/Instagram Banners
