@@ -11,7 +11,3 @@ Stuff to do:
 
 ## Bios
 - Figure out what to do about text overflowing edges of pages…
-
-Things to do:
-1. Facebook/Instagram Banners
-2. Mailchimp setup with logo and about a paragraph of space for my text. Use lorem ipsum if you want to get a headstart on this at all.
