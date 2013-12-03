@@ -3,9 +3,6 @@ Stuff to do:
 ## Homepage
 - Email capture form — do something that confirms you've signed up
 
-## Donate
-- Finish figuring out how to get rid of form title on donate page
-
 ## Mobile
 - At ipad/tablet screen width the navbar goes to 2 lines and hides somethings… resolve this as well.
 
