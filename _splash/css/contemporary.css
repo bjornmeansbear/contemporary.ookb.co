@@ -1,0 +1,204 @@
+/* 1. @Font-Face Ñ load my google fonts... */
+/*TK*/
+ 
+/* END @Font-Face */
+
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+* {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  /**/
+/*   transition: all 400ms; */
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: white;
+  color: #545454;
+  text-align: center;
+  font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teaser {
+  position: relative;
+  text-align: left;
+}
+
+.teaser h1 {
+  /*fallback size*/
+  font-size: 48px;
+  line-height: 81px;
+}
+
+.teaser h2 {
+}
+
+.teaser p {
+  color: #545454;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 18px;
+}
+
+.copyright {font-size: 85%;}
+
+/* custom styles for C layering effect */
+
+header {
+  z-index: -9999;
+  overflow: hidden;
+  height:100%;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+footer {
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  z-index: -9998;
+}
+
+header img, footer img {
+  height:auto;
+  width: 100% !important;
+}
+
+footer img {
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+/* Cs themselves */
+
+#main, #secondary {position: relative;}
+
+#main {
+  margin: 0;
+  padding: 0;
+}
+
+article.layers {
+  position: absolute;
+  text-align: center;
+  height: 690px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.layers .layer {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  opacity: .33;
+  position: relative;
+  float:left;
+}
+
+.layers .layer.forty-four { opacity: .44; }
+
+
+/*Page Down animation*/
+@keyframes bounce{
+  0% {bottom: 36px;}
+  25% {bottom: 26px;}
+  50% {bottom: 36px;}
+  75% {bottom: 26px;}
+  100% {bottom: 36px;}
+}
+@-webkit-keyframes bounce{
+  0% {bottom: 36px;}
+  25% {bottom: 26px;}
+  50% {bottom: 36px;}
+  75% {bottom: 26px;}
+  100% {bottom: 36px;}
+}
+/*Page down link*/ 
+#pagedown {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  /**/
+  background: none;
+  border: none;
+  margin: 0;
+  margin-left: -36px;
+  opacity: .66;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 72px;
+  z-index: 999;
+  animation: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  -webkit-animation: bounce;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 3s;
+}
+#pagedown a{
+  font-size: 28px;
+}
+#pagedown a:hover{
+  text-decoration: none;
+}
+/* FORM STYLE */
+.mc-field-group{
+}
+.mc-field-group input{
+  text-align: center;
+}
+.mc-field-group input:invalid{
+}
+::-webkit-input-placeholder{
+  color: #404040;
+}
+:-moz-placeholder {
+  color: #404040;
+}
+:-ms-input-placeholder {
+  color: #404040;
+}
+
+/* TYPOGRAPHY */
+/* =================================================================== */
+/* =================================================================== */
+
+/* Links and More */
+/* =================================================================== */
+/* =================================================================== */
+
+a {
+  color: #ED217C;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+a img { border: none; }
