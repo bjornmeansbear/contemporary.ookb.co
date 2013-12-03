@@ -14,9 +14,6 @@ Stuff to do:
 
 ## Bios
 - Figure out what to do about text overflowing edges of pages…
-- Board w/ titles in separate container; need to make them also close when other bios activate.
-
-- The 'Email List' in footer is not the same on each page.
 
 ===========
 
