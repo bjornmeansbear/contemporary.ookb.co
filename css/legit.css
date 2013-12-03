@@ -526,4 +526,8 @@ footer a:hover { color: #2b4557 !important; }
 footer .secondary p,
 footer .secondary a { font-size: 10px !important; letter-spacing: 1px;}
 
-
+@media (max-width: 767px) {
+  footer .secondary .text-right {
+    text-align: left;
+  }
+}
