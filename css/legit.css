@@ -109,6 +109,7 @@ a:focus {
 .pad-top { padding-top: 51px; }
 .pad-top.border-top { padding-top: 51px; }
 .border-top { border-top: 1px solid; padding-top: 15px; }
+.border-bottom { border-bottom: 1px solid; padding-bottom: 15px; margin-bottom: 15px}
 hr.border-top {padding: 0;}
 .noleftmargin {padding-left: 0 !important;}
 em, cite {font-style: italic !important;}
