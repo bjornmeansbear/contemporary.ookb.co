@@ -1,6 +1,10 @@
+footer {
+  margin-top: 1.1111em;
+}
 .sponsors h4 {
   border-bottom: 1px solid;
   padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .sponsors ul {
@@ -11,7 +15,7 @@
 .sponsors ul li {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 1% 10px;
+  margin: 0 1% 16px;
 }
 
 .sponsors ul li img {
