@@ -1,3 +1,4 @@
+@import 'newfooter.css';
 
 /* ========================================== */
 /* ITC FRANKLIN GOTHIC FONT-FACE DECLARATIONS */
@@ -508,7 +509,7 @@ footer {
 }
 
 footer h3, footer ul, footer p {
-  font-size: 1em !important;
+  font-size: 1em;
 }
 
 footer nav {
