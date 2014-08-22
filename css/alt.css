@@ -1,0 +1,74 @@
+/* --------------------------------------*/
+/* ---------->>> Resuables <<<-----------*/
+/* --------------------------------------*/
+/* # Colors */
+/* # alt colors or tweaks */
+/* «— is there some other way to do this??? */
+/**********************/
+/** # helper classes **/
+/**********************/
+.add-top {
+  margin-top: 1.5em;
+}
+.add-top-2x {
+  margin-top: 3em;
+}
+.add-bottom {
+  margin-bottom: 1.5em;
+}
+.add-bottom-2x {
+  margin-bottom: 3em;
+}
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------------------*/
+/* ---------->>> Upgrades to Contemporary Webstyles <<<-----------*/
+/* ---------------------------------------------------------------*/
+#permanantborder {
+  pointer-events: none;
+  border: 20px solid #f0624a;
+  border-top: none;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background: #f0624a;
+  z-index: 998;
+  box-shadow: 0 4px 4px rgba(43, 69, 87, 0.3);
+}
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+main {
+  margin-bottom: 6em;
+}
+#archive .project-thumb.year h2 {
+  margin-top: 48%;
+}
+#archive section div.wrapper ul.years {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1.5em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1.5em;
+  -ms-column-count: 3;
+  -ms-column-gap: 1.5em;
+  -o-column-count: 3;
+  -o-column-gap: 1.5em;
+  column-count: 3;
+  column-gap: 1.5em;
+}

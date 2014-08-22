@@ -1,0 +1,40 @@
+@import url(variables.less);
+
+/* ---------------------------------------------------------------*/
+/* ---------->>> Upgrades to Contemporary Webstyles <<<-----------*/
+/* ---------------------------------------------------------------*/
+
+@css-column-count: 3;
+@css-column-gap: 1.5em;
+
+#permanantborder {
+  pointer-events: none;
+  border: 20px solid @contemporary-red;
+  border-top:none;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  .fixed;
+}
+
+.navbar {
+  background: @contemporary-red;
+  z-index: 998;
+  box-shadow: 0 4px 4px @contemporary-dk-blue-shadow;
+}
+
+body { padding-top: 60px; padding-bottom: 40px; }
+
+main { margin-bottom: 6em; }
+
+#archive .project-thumb.year h2 {
+  margin-top: 48%;
+}
+
+#archive section div.wrapper ul.years {
+  -webkit-column-count: @css-column-count; -webkit-column-gap: @css-column-gap;
+  -moz-column-count: @css-column-count; -moz-column-gap: @css-column-gap;
+  -ms-column-count: @css-column-count; -ms-column-gap: @css-column-gap;
+  -o-column-count: @css-column-count; -o-column-gap: @css-column-gap;
+  column-count: @css-column-count; column-gap: @css-column-gap;
+}
