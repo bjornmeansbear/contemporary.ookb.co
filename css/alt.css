@@ -72,3 +72,30 @@ main {
   column-count: 3;
   column-gap: 1.5em;
 }
+#logo-placeholder {
+  height: 400px;
+  width: 400px;
+  border-radius: 800px;
+  background: white;
+  position: absolute;
+  z-index: 9999;
+  top: 120px;
+  left: 50%;
+  margin-left: -200px;
+  overflow: hidden;
+  padding: 25px;
+}
+#logo-placeholder img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+#cool-stripe {
+  height: 0;
+  width: 100%;
+  border-top: 5px solid #2b4557;
+  position: relative;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}

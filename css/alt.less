@@ -38,3 +38,33 @@ main { margin-bottom: 6em; }
   -o-column-count: @css-column-count; -o-column-gap: @css-column-gap;
   column-count: @css-column-count; column-gap: @css-column-gap;
 }
+
+#logo-placeholder {
+  height:400px;
+  width:400px;
+  border-radius: 800px;
+  background: white;
+  position: absolute;
+  z-index: 9999;
+  top: 120px;
+  left: 50%;
+  margin-left: -200px;
+  overflow: hidden;
+  padding: 25px;
+}
+
+#logo-placeholder img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#cool-stripe {
+  height: 0;
+  width: 100%;
+  border-top: 5px solid @contemporary-dk-blue;
+  position: relative;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}

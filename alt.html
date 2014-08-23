@@ -27,6 +27,13 @@
 
     <!-- header / Fixed navbar -->
     <header class="navbar navbar-fixed-top" role="banner">
+
+      <div id="logo-placeholder">
+        <img src="img/tc-logo.jpg"/>
+      </div>
+
+      <hr id="cool-stripe" />
+
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,6 +75,54 @@
 
     <main>
       <div class="container">
+
+        <section class="row">
+          <p>slideshow still up here?</p>
+        </section>
+
+        <section class="row">
+          <p>News, Upcoming, Etc.</p>
+        </section>
+
+        <section class="row">
+          <p>Featured from the archive, and something else?</p>
+        </section>
+
+        <section class="row">
+          <p>Blog, Twitter, and some other things?</p>
+        </section>
+
+        <section class="row">
+          <p>slideshow still up here?</p>
+        </section>
+
+        <section class="row">
+          <p>News, Upcoming, Etc.</p>
+        </section>
+
+        <section class="row">
+          <p>Featured from the archive, and something else?</p>
+        </section>
+
+        <section class="row">
+          <p>Blog, Twitter, and some other things?</p>
+        </section>
+
+        <section class="row">
+          <p>slideshow still up here?</p>
+        </section>
+
+        <section class="row">
+          <p>News, Upcoming, Etc.</p>
+        </section>
+
+        <section class="row">
+          <p>Featured from the archive, and something else?</p>
+        </section>
+
+        <section class="row">
+          <p>Blog, Twitter, and some other things?</p>
+        </section>
 
         <section class="row">
           <p>slideshow still up here?</p>
@@ -198,6 +253,24 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script>
+      var wh = $(window).height();
+      $('header').css('padding-top', (wh*.66));
+      $('body').css('padding-top', (wh*.66)+100);
+
+      $(window).scroll(function() {
+        var st = $(window).scrollTop();
+
+        if (st > 0 && st <= .66*wh-5 ) {
+          $('header').css('top', -st-5);
+        } else if (st > .66*wh-5) {
+          $('header').css('top', -.66*wh-5);
+        } else {
+          $('header').css('top', 0);
+        }
+      });
+    </script>
 
   </body>
 </html>
