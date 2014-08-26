@@ -111,6 +111,9 @@ body {
   padding-bottom: 4em;
   /*   border: 20px solid @contemporary-red; */
 }
+main .row {
+  margin-bottom: 30px;
+}
 #archive .project-thumb.year h2 {
   margin-top: 48%;
 }
@@ -158,5 +161,9 @@ body {
 }
 .donate a.btn {
   display: inline-block;
+  width: 100%;
+}
+/** image placeholder in body for now... */
+#big-gesture img {
   width: 100%;
 }
