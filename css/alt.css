@@ -32,6 +32,7 @@
 /* ---------->>> Upgrades to Contemporary Webstyles <<<-----------*/
 /* ---------------------------------------------------------------*/
 #permanantborder {
+  /*   display: none; */
   pointer-events: none;
   border: 20px solid #f0624a;
   border-top: none;
@@ -45,17 +46,70 @@
   bottom: 0;
   box-sizing: border-box;
 }
+/******************************************/
+/******************************************/
+/* NAVIGATION STUFF - Overrides a lot of default bootstrap stuff */
+/******************************************/
+/******************************************/
 .navbar {
   background: #f0624a;
   z-index: 998;
   box-shadow: 0 4px 4px rgba(43, 69, 87, 0.3);
+  margin: 0 10px;
 }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #eff4f7;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #18497b;
+}
+.navbar-toggle {
+  background-color: #f0624a;
+  border: 1px solid #2b4557;
+}
+.nav .open > a {
+  color: white;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #18497b;
+  border-color: transparent;
+  border: none;
+}
+.nav .dropdown-menu {
+  padding: 0;
+  background-color: #18497b;
+  border: none;
+  -webkit-box-shadow: 0 6px 12px rgba(43, 69, 87, 0.3);
+  -moz-box-shadow: 0 6px 12px rgba(43, 69, 87, 0.3);
+  -ms-box-shadow: 0 6px 12px rgba(43, 69, 87, 0.3);
+  -o-box-shadow: 0 6px 12px rgba(43, 69, 87, 0.3);
+  box-shadow: 0 6px 12px rgba(43, 69, 87, 0.3);
+}
+.nav .dropdown-menu > li > a {
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+.nav .dropdown-menu > li > a:hover,
+.nav .dropdown-menu > li > a:focus {
+  color: #18497b;
+  text-decoration: none;
+  background-color: white;
+  border: none;
+}
+/**** END NAVBAR STUFF ****/
 body {
   padding-top: 60px;
-  padding-bottom: 40px;
-}
-main {
-  margin-bottom: 6em;
+  padding-bottom: 4em;
+  /*   border: 20px solid @contemporary-red; */
 }
 #archive .project-thumb.year h2 {
   margin-top: 48%;
@@ -98,4 +152,11 @@ main {
   z-index: 1000;
   margin: 0;
   padding: 0;
+}
+.donate {
+  text-align: center;
+}
+.donate a.btn {
+  display: inline-block;
+  width: 100%;
 }
