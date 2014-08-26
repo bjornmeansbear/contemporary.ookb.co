@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 700; }
 
 html, body { background-color: white; }
 
-article a, section a, .link-lists a { 
+article a, section a, .link-lists a {
   color: #2b4557 !important;
 }
 
@@ -295,9 +295,9 @@ img.fit {width: 100%;}
   background-color: #1a2a35;
 }
 
-.carousel-control, 
-.carousel-control:hover, 
-.carousel-control:active, 
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:active,
 .carousel-control:focus {
   border: none;
   color: #1a2a35;
@@ -323,7 +323,7 @@ img.fit {width: 100%;}
 }
 
 
-.homepage-graphic { 
+.homepage-graphic {
   margin-top: 30px;
   padding: 0;
 }
@@ -365,7 +365,7 @@ img.fit {width: 100%;}
 #emailcapture form {
   padding-top: 15px;
 }
-  
+
 #emailcapture .btn-info {
   color: #fff;
   background-color: #2b4557;
@@ -428,7 +428,7 @@ section img {
 .project-thumb h3 { font-size: 1.2em; }
 .toggle .bio h3 { font-size: 1em; }
 
-.toggle .bio h2, 
+.toggle .bio h2,
 .toggle .bio h3 {
   margin: 0;
   padding: 0;
