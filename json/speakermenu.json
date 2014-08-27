@@ -1,0 +1,60 @@
+{
+    "speakermenu": [
+        {
+            "url": "2014-09-04-andrewwk.html",
+            "speaker": "Andrew W.K.",
+            "type": "present",
+            "gallery": "Current Space",
+            "humandate": "Sep 04"
+        },
+        {
+            "url": "2014-05-01-shiniquesmith.html",
+            "speaker": "Shinique Smith",
+            "type": "past",
+            "gallery": "Galerie Myrtis",
+            "humandate": "May 01"
+        },
+        {
+            "url": "2014-04-21-typea.html",
+            "speaker": "Type A",
+            "type": "past",
+            "gallery": "Lease Agreement",
+            "humandate": "Apr 21"
+        },
+        {
+            "url": "2014-04-02-jonrafman.html",
+            "speaker": "Jon Rafman",
+            "type": "past",
+            "gallery": "Springsteen Gallery",
+            "humandate": "Apr 02"
+        },
+        {
+            "url": "2014-03-27-waynewhite.html",
+            "speaker": "Wayne White",
+            "type": "past",
+            "gallery": "Gallery CA",
+            "humandate": "Mar 27"
+        },
+        {
+            "url": "2014-03-05-brendanfowler.html",
+            "speaker": "Brendan Fowler",
+            "type": "past",
+            "gallery": "Nudashank",
+            "humandate": "Mar 05"
+        },
+        {
+            "url": "2014-02-18-nickcave.html",
+            "speaker": "Nick Cave",
+            "type": "past",
+            "gallery": "Pinebox Arts Center",
+            "humandate": "Feb 18"
+        },
+        {
+            "url": "2014-01-13-cocofusco.html",
+            "speaker": "Coco Fusco",
+            "type": "past",
+            "gallery": "GuestSpot",
+            "humandate": "Jan 13"
+        }
+    ]
+}
