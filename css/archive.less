@@ -1,0 +1,49 @@
+@import url(variables.less);
+
+/* ----------------------------------------------------------*/
+/* ---------->>> Some ideas for the archive... <<<-----------*/
+/* ----------------------------------------------------------*/
+
+#timeline {
+  background: @contemporary-blue;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  height: 15px;
+}
+
+#timeline p {
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 63);
+  height: 30px;
+  left: 0;
+  position: absolute;
+  background: @contemporary-red;
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.archive-controls li {
+  position: fixed;
+  z-index: 99999;
+
+  &.close {
+    top: 30px;
+    right: 30px;
+  }
+
+  &.older {
+    top: 48%;
+    left: 5px;
+  }
+
+  &.newer {
+    top: 48%;
+    right: 5px;
+  }
+
+}
+

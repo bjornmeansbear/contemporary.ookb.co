@@ -1,0 +1,69 @@
+/* --------------------------------------*/
+/* ---------->>> Resuables <<<-----------*/
+/* --------------------------------------*/
+/* # Colors */
+/* # alt colors or tweaks */
+/* «— is there some other way to do this??? */
+/**********************/
+/** # helper classes **/
+/**********************/
+.add-top {
+  margin-top: 1.5em;
+}
+.add-top-2x {
+  margin-top: 3em;
+}
+.add-bottom {
+  margin-bottom: 1.5em;
+}
+.add-bottom-2x {
+  margin-bottom: 3em;
+}
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+/* ----------------------------------------------------------*/
+/* ---------->>> Some ideas for the archive... <<<-----------*/
+/* ----------------------------------------------------------*/
+#timeline {
+  background: #18497b;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 15px;
+}
+#timeline p {
+  margin: 0;
+  padding: 0;
+  width: calc(1.58730159%);
+  height: 30px;
+  left: 0;
+  position: absolute;
+  background: #f0624a;
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.archive-controls li {
+  position: fixed;
+  z-index: 99999;
+}
+.archive-controls li.close {
+  top: 30px;
+  right: 30px;
+}
+.archive-controls li.older {
+  top: 48%;
+  left: 5px;
+}
+.archive-controls li.newer {
+  top: 48%;
+  right: 5px;
+}

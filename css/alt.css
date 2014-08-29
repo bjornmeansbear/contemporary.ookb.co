@@ -144,7 +144,8 @@ main .row {
   background: white;
   position: absolute;
   z-index: 9999;
-  top: 120px;
+  top: 50%;
+  margin-top: -220px;
   left: 50%;
   margin-left: -200px;
   overflow: hidden;
