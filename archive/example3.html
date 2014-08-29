@@ -9,10 +9,11 @@
     <title>The Contemporary : Reading Library</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/legit.css" rel="stylesheet">
-    <link href="css/alt.css" rel="stylesheet">
+    <link href="/css/legit.css" rel="stylesheet">
+    <link href="/css/alt.css" rel="stylesheet">
+    <link href="/css/archive.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body class="press">
+  <body class="">
 
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
@@ -30,10 +31,7 @@
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
 
-    <!-- header / Fixed navbar -->
-    <header class="navbar navbar-fixed-top" role="banner">
-    </header><!-- END HEADER/FIXED NAV -->
-    <!-- END header / fixed NAVBAR -->
+    <!-- this will probably be an overlay, so don't worry about it... ->
 
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
@@ -41,19 +39,70 @@
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
 
-    <div class="main" role="main">
+    <!-- hmm, does it make sense to make the archive its own, separate app? maybe have it as a subdomain — archive.contemporary.org or something? -->
+
+    <!-- cool stuff:
+    http://art.thewalters.org/
+    http://archive.newmuseum.org/
+    http://www.walkerart.org/collections
+    http://codyhouse.co/gem/vertical-timeline/
+    http://tympanus.net/Development/CreativeLoadingEffects/
+    http://www.nytimes.com/2014/08/28/movies/it8217s-fall-film-festival-season-let-the-oscar-hype-begin.html?src=dayp&action=click&pgtype=Homepage&module=c-column-above-moth-fixed-region&region=c-column-above-moth-fixed-region&WT.nav=c-column-above-moth-fixed-region&_r=0
+    -->
+
+    <!-- an icon of somekind for it being a travelling exhibition, and also if it has a catalog or anything like that... -->
+
+    <div class="project archive" >
       <div class="container">
-        <article id="library" class="pad-top add-bottom">
-          <h1>Library.</h1>
-          <p>some blurb about how reading library will work</p>
-          <p>some cool display of the delicious library data...</p>
-          <hr/>
-          <p>How to display this? <a href="http://library.ookb.co/">Like this?</a></p>
-          <p>Should this be like an online gallery of what the library has so you can look and see what's here before you schedule an appt?</p>
-          <p>Do people just email to schedule an appt?</p>
-          <p>How sortable should this be?</p>
+        <article class="row">
+          <h1 class="col-xs-12 col-sm-10 col-md-10 col-md-offset-2">Outcry: Artists Answer AIDS</h1>
+          <date class="col-xs-12 col-sm-10 col-md-10 col-md-offset-2">Opening to Closing dates</date>
+          <section class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 add-bottom">
+            <div class="row">
+              <ul class="col-xs-12 col-sm-6 col-md-4">
+                <h3>Curator</h3>
+                <li>lorem ipsum</li>
+              </ul>
+              <ul class="col-xs-12 col-sm-6 col-md-4">
+                <h3>Artist</h3>
+                <li>lorem ipsum</li>
+                <li>dolor sit amet</li>
+                <li>lorem ipsum</li>
+                <li>dolor sit amet</li>
+                <li>lorem ipsum</li>
+                <li>dolor sit amet</li>
+              </ul>
+              <ul class="col-xs-12 col-sm-6 col-md-4">
+                <h3>Site</h3>
+                <li>lorem ipsum dolor sit amet lorem ipsum</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2">
+            <p class="lead">In 1990, as plans for founding the Contemporary were taking shape, independent curator George Ciscle invited twelve regional artists to create works in response to the AIDS crisis. Answering with sculpture, photography, painting, and mixed media, the participating artists issued a collective outcry for healing and action in order to expand public dialogue, awareness, and compassion. Outcry, the first AIDS related exhibition of its kind in the Mid-Atlantic region, went on to tour four area venues. By the time Outcry was presented, the Contemporary had been founded, placing Outcry as a prelude to Visual Aids.</p>
+          </section>
+
+          <aside class="col-xs-12 col-sm-1 col-md-2">
+            <ul>
+              <li>Images</li>
+              <li>Documents</li>
+              <li>Video</li>
+              <li>Audio</li>
+            </ul>
+          </aside>
         </article>
       </div>
+
+      <div id="timeline">
+        <p>Some cool but simple "timeline" graphic showing each project on the timeline of the museum as a whole... does older stuff happen on the left then???</p>
+      </div>
+
+      <ul class="archive-controls">
+        <li class="older">&lt; Older</li>
+        <li class="close"><a href="/alt-archive.html">x Close</a></li>
+        <li class="newer">Newer &gt;</li>
+      </ul>
+
     </div>
 
     <!-------------------------------------------------------------------->
@@ -62,21 +111,16 @@
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
 
-    <footer>
-    </footer>   <!-- END FOOTER -->
-
-    <div id="permanantborder" class="hidden-xs"></div>
-
     <!-- Bootstrap core JavaScript -->
     <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ookb_for_tc.js"></script>
-    <script src="js/alt.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/js/ookb_for_tc.js"></script>
+    <script src="/js/alt.js"></script>
 
     <!-- Google Analytics -->
     <script>
