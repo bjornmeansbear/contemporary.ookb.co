@@ -1,60 +1,28 @@
 {
-    "speakermenu": [
+    "newsfeed": [
         {
-            "url": "2014-09-04-andrewwk.html",
-            "speaker": "Andrew W.K.",
-            "type": "present",
-            "gallery": "Current Space",
-            "humandate": "Sep 04"
+            "url": "http://www.citypaper.com/bob/",
+            "text": "<em>CoHosts</em> wins a “Best of Baltimore” for best synergy",
+            "humandate": "Sep 19, 2014",
+            "machinedate": "2014-09-19"
         },
         {
-            "url": "2014-05-01-shiniquesmith.html",
-            "speaker": "Shinique Smith",
-            "type": "past",
-            "gallery": "Galerie Myrtis",
-            "humandate": "May 01"
+            "url": "http://www.macfound.org/fellows/920/",
+            "text": "Rick Lowe, of our CAC, awarded <em>MacArthur Genius</em>!",
+            "humandate": "Sep 17, 2014",
+            "machinedate": "2014-09-17"
         },
         {
-            "url": "2014-04-21-typea.html",
-            "speaker": "Type A",
-            "type": "past",
-            "gallery": "Lease Agreement",
-            "humandate": "Apr 21"
+            "url": "http://www.baltimoremagazine.net/issue/august-2014",
+            "text": "<em>CoHosts</em> wins a &ldquo;Best of Baltimore&rdquo; for best speaker series",
+            "humandate": "Jul 25, 2014",
+            "machinedate": "2014-07-25"
         },
         {
-            "url": "2014-04-02-jonrafman.html",
-            "speaker": "Jon Rafman",
-            "type": "past",
-            "gallery": "Springsteen Gallery",
-            "humandate": "Apr 02"
-        },
-        {
-            "url": "2014-03-27-waynewhite.html",
-            "speaker": "Wayne White",
-            "type": "past",
-            "gallery": "Gallery CA",
-            "humandate": "Mar 27"
-        },
-        {
-            "url": "2014-03-05-brendanfowler.html",
-            "speaker": "Brendan Fowler",
-            "type": "past",
-            "gallery": "Nudashank",
-            "humandate": "Mar 05"
-        },
-        {
-            "url": "2014-02-18-nickcave.html",
-            "speaker": "Nick Cave",
-            "type": "past",
-            "gallery": "Pinebox Arts Center",
-            "humandate": "Feb 18"
-        },
-        {
-            "url": "2014-01-13-cocofusco.html",
-            "speaker": "Coco Fusco",
-            "type": "past",
-            "gallery": "GuestSpot",
-            "humandate": "Jan 13"
+            "url": "http://issuu.com/thecontemporary/docs/scroll_i_don_t_care_i_love_it/0",
+            "text": "<em>Scroll</em> is out now!",
+            "humandate": "Jul 1, 2014",
+            "machinedate": "2014-07-01"
         }
     ]
 }

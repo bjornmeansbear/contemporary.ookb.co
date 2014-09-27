@@ -1,0 +1,149 @@
+/* --------------------------------------*/
+/* ---------->>> Resuables <<<-----------*/
+/* --------------------------------------*/
+/* # Colors */
+/* # alt colors or tweaks */
+/* «— is there some other way to do this??? */
+/**********************/
+/** # helper classes **/
+/**********************/
+.add-top {
+  margin-top: 1.5em;
+}
+.add-top-2x {
+  margin-top: 3em;
+}
+.add-bottom {
+  margin-bottom: 1.5em;
+}
+.add-bottom-2x {
+  margin-bottom: 3em;
+}
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------------------------------------*/
+/* ---------->>> Some ideas for the homepage and new header/footer... <<<-----------*/
+/* ---------------------------------------------------------------------------------*/
+footer {
+  margin-top: 2em;
+}
+/*********************/
+/*********************/
+/*********************/
+.sponsors h4 {
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  overflow: visible;
+}
+footer .sponsors ul {
+  padding-top: 7px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.sponsors ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2% 16px;
+}
+.sponsors ul li:first-child {
+  margin-left: 0;
+}
+.sponsors ul li:last-child {
+  margin-right: 0;
+}
+.sponsors ul li:nth-child(1) {
+  width: 19%;
+}
+.sponsors ul li:nth-child(2) {
+  margin-top: -2px;
+  width: 9%;
+}
+.sponsors ul li:nth-child(3) {
+  margin-top: 3px;
+  width: 9%;
+}
+.sponsors ul li:nth-child(4) {
+  width: 16%;
+}
+.sponsors ul li:nth-child(5) {
+  margin-top: -5px;
+  width: 6%;
+}
+.sponsors ul li:nth-child(6) {
+  width: 16%;
+}
+.sponsors ul li img {
+  width: 100%;
+  max-width: 100%;
+}
+/*********************/
+/*********************/
+/*********************/
+footer .blurb {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+  text-transform: none;
+}
+#emailcapture h2 {
+  padding-right: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+/*** some new homepage crap now that it's full width */
+.carousel-inner .item {
+  height: 570px;
+  width: 100%;
+}
+.carousel-inner .item img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+header nav.bordered {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 0;
+  margin: 0 15px;
+}
+/********************************/
+#upperdeck {
+  height: 180px;
+  position: relative;
+}
+#upperdeck h1 {
+  margin-left: 150px;
+  margin-top: 73px;
+}
+#logo {
+  position: absolute;
+  min-height: 1px;
+  margin: 15px 0;
+  width: auto;
+  height: 150px;
+  top: 0;
+}
+#logo img {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  top: 0;
+  left: 0;
+  opacity: .33;
+  vertical-align: middle;
+}
+#upperdeck p.description {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}

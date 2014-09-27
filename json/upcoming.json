@@ -1,0 +1,28 @@
+{
+    "speakermenu": [
+        {
+            "url": "2014-10-08-sanfordbiggers.html",
+            "speaker": "Sanford Biggers",
+            "type": "future",
+            "gallery": "Gallery Four",
+            "humandate": "Oct 08",
+            "machinedate": "2014-10-08"
+        },
+        {
+            "url": "2014-10-23-guerrillagirls.html",
+            "speaker": "Guerrilla Girls",
+            "type": "future",
+            "gallery": "Area 405",
+            "humandate": "Oct 23",
+            "machinedate": "2014-10-23"
+        },
+        {
+            "url": "speakerseries.html",
+            "speaker": "+ TWO MORE!",
+            "type": "future",
+            "gallery": " ",
+            "humandate": " ",
+            "machinedate": " "
+        }
+    ]
+}

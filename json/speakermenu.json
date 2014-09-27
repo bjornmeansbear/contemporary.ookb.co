@@ -1,11 +1,36 @@
 {
     "speakermenu": [
         {
+            "url": "2014-10-23-guerrillagirls.html",
+            "speaker": "Guerrilla Girls",
+            "type": "future",
+            "gallery": "Area 405",
+            "humandate": "Oct 23",
+            "machinedate": "2014-10-23"
+        },
+        {
+            "url": "2014-10-08-sanfordbiggers.html",
+            "speaker": "Sanford Biggers",
+            "type": "future",
+            "gallery": "Gallery Four",
+            "humandate": "Oct 08",
+            "machinedate": "2014-10-08"
+        },
+        {
+            "url": "2014-09-24-jacobkhepler.html",
+            "speaker": "Jacob Khepler",
+            "type": "present",
+            "gallery": "Open Space",
+            "humandate": "Sep 24",
+            "machinedate": "2014-09-24"
+        },
+        {
             "url": "2014-09-04-andrewwk.html",
             "speaker": "Andrew W.K.",
-            "type": "present",
+            "type": "past",
             "gallery": "Current Space",
-            "humandate": "Sep 04"
+            "humandate": "Sep 04",
+            "machinedate": "2014-09-04"
         },
         {
             "url": "2014-05-01-shiniquesmith.html",
