@@ -99,9 +99,6 @@ body.interior {
 .interior header .pull-right {
   margin-top: -23px;
 }
-footer {
-  margin-top: 2em;
-}
 /*********************/
 /** Scroll Styles **/
 /*********************/
@@ -133,8 +130,17 @@ h1 span.volume {
   margin: 7px 0;
 }
 /*********************/
+/** Grit Styles **/
+/*********************/
+.grit main .topper {
+  margin: 100px 0 150px;
+}
 /*********************/
 /*********************/
+/*********************/
+footer {
+  margin-top: 4em;
+}
 .sponsors h4 {
   border-bottom: 1px solid;
   padding-bottom: 15px;
