@@ -148,6 +148,10 @@ h1 span.volume {
 .grit article > section {
   margin-bottom: 4em;
 }
+aside .affix {
+  position: fixed !important;
+  top: 100px;
+}
 /*********************/
 /*********************/
 /*********************/
