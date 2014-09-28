@@ -31,8 +31,106 @@
 /* ---------------------------------------------------------------------------------*/
 /* ---------->>> Some ideas for the homepage and new header/footer... <<<-----------*/
 /* ---------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+body.interior {
+  padding-top: 95px;
+}
+/********************************/
+#upperdeck {
+  height: 180px;
+  position: relative;
+}
+#upperdeck h1 {
+  margin-left: 150px;
+  margin-top: 73px;
+}
+#logo {
+  position: absolute;
+  min-height: 1px;
+  margin: 15px 0;
+  width: auto;
+  height: 150px;
+  top: 0;
+}
+#logo img {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  top: 0;
+  left: 0;
+  opacity: .33;
+  vertical-align: middle;
+}
+#upperdeck .contactinfo {
+  position: absolute;
+  top: 30px;
+  right: 322px;
+}
+#upperdeck .description {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.description p {
+  font-size: 12.5px;
+}
+/********************************/
+.interior header h1 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.interior header h1 a,
+.interior header h1 a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+.interior header .navbar-nav > li > a {
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+.interior header nav.bordered {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: 0 10px;
+}
+.interior header .pull-right {
+  margin-top: -23px;
+}
 footer {
   margin-top: 2em;
+}
+/*********************/
+/** Scroll Styles **/
+/*********************/
+figure img {
+  max-width: 100%;
+}
+figure figcaption {
+  margin-top: 1.5em;
+}
+.scroll h1 {
+  margin: 0;
+}
+h1 span.volume {
+  background: #d55aa0;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.3em;
+  /**/
+  display: inline-block;
+  border-radius: 10em;
+  height: 2em;
+  width: 2em;
+  padding: .5em .6em .5em .4em;
+  vertical-align: middle;
+}
+.scroll h2 {
+  margin: 7px 0;
 }
 /*********************/
 /*********************/
@@ -115,35 +213,4 @@ header nav.bordered {
   border-bottom: 3px solid;
   padding: 0;
   margin: 0 15px;
-}
-/********************************/
-#upperdeck {
-  height: 180px;
-  position: relative;
-}
-#upperdeck h1 {
-  margin-left: 150px;
-  margin-top: 73px;
-}
-#logo {
-  position: absolute;
-  min-height: 1px;
-  margin: 15px 0;
-  width: auto;
-  height: 150px;
-  top: 0;
-}
-#logo img {
-  position: absolute;
-  width: auto;
-  height: 150px;
-  top: 0;
-  left: 0;
-  opacity: .33;
-  vertical-align: middle;
-}
-#upperdeck p.description {
-  position: absolute;
-  top: 30px;
-  right: 0;
 }

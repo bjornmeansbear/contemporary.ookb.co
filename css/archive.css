@@ -67,3 +67,40 @@
   top: 48%;
   right: 5px;
 }
+.project-thumb {
+  position: relative;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .project-thumb {
+    height: 220px;
+  }
+}
+@media (min-width: 992px) {
+  .project-thumb {
+    height: 213px;
+  }
+}
+@media (min-width: 1200px) {
+  .project-thumb {
+    height: 165px;
+  }
+}
+.project-thumb h3 {
+  background: #2b4557;
+  color: white;
+  margin: 0;
+  padding: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  /**/
+  display: none;
+}
+.project-thumb:hover h3 {
+  display: block;
+}
+.project-thumb p {
+  display: none;
+}
