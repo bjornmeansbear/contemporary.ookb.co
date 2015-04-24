@@ -1,28 +1,32 @@
 {
-    "newsfeed": [
+    "newsFeed": [
         {
-            "url": "http://www.citypaper.com/bob/",
-            "text": "<em>CoHosts</em> wins a “Best of Baltimore” for best synergy",
-            "humandate": "Sep 19, 2014",
-            "machinedate": "2014-09-19"
+            "url": "/gritfund/",
+            "text": "First Grit Fund round of grantees announced!",
+            "humandate": "Apr 22",
+            "location": "",
+            "time": ""
         },
         {
-            "url": "http://www.macfound.org/fellows/920/",
-            "text": "Rick Lowe, of our CAC, awarded <em>MacArthur Genius</em>!",
-            "humandate": "Sep 17, 2014",
-            "machinedate": "2014-09-17"
+            "url": "http://hyperallergic.com/193686/the-seduction-of-screens-and-neon-at-night/",
+            "text": "Hyperallergic Review: Bubble Over Green",
+            "humandate": "Mar 26",
+            "location": "",
+            "time": ""
         },
         {
-            "url": "http://www.baltimoremagazine.net/issue/august-2014",
-            "text": "<em>CoHosts</em> wins a &ldquo;Best of Baltimore&rdquo; for best speaker series",
-            "humandate": "Jul 25, 2014",
-            "machinedate": "2014-07-25"
+            "url": "http://www.contemporary.org/about.html#council",
+            "text": "Prem Krishnamurthy joins CAC",
+            "humandate": "Mar 20",
+            "location": "",
+            "time": ""
         },
         {
-            "url": "http://issuu.com/thecontemporary/docs/scroll_i_don_t_care_i_love_it/0",
-            "text": "<em>Scroll</em> is out now!",
-            "humandate": "Jul 1, 2014",
-            "machinedate": "2014-07-01"
+            "url": "http://artforum.com/?pn=picks&section=us#picks50723",
+            "text": "Artforum Critics’ Pick: <em>Bubble Over Green</em>",
+            "humandate": "Mar 17",
+            "location": "",
+            "time": ""
         }
     ]
 }

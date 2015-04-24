@@ -174,4 +174,7 @@ $(window).scroll(function() {
 
 //Dynamic temporary footer loading solution
 
+$(document).ready(function() {
+  $('footer #dynamicreplacement').load('/footer.html');
+});
 

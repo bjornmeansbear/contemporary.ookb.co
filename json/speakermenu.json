@@ -1,9 +1,25 @@
 {
     "speakermenu": [
         {
+            "url": "2015-02-17-tamssyearten.html",
+            "speaker": "Tamms Year Ten",
+            "type": "",
+            "gallery": "John Fonda Gallery",
+            "humandate": "Feb 17",
+            "machinedate": "2015-02-17"
+        },
+        {
+            "url": "2015-01-29-lethawilson.html",
+            "speaker": "Letha Wilson",
+            "type": "",
+            "gallery": "ICA Baltimore",
+            "humandate": "Jan 29",
+            "machinedate": "2015-01-29"
+        },
+        {
             "url": "2014-10-23-guerrillagirls.html",
             "speaker": "Guerrilla Girls",
-            "type": "future",
+            "type": "past",
             "gallery": "Area 405",
             "humandate": "Oct 23",
             "machinedate": "2014-10-23"
@@ -11,7 +27,7 @@
         {
             "url": "2014-10-08-sanfordbiggers.html",
             "speaker": "Sanford Biggers",
-            "type": "future",
+            "type": "past",
             "gallery": "Gallery Four",
             "humandate": "Oct 08",
             "machinedate": "2014-10-08"
@@ -19,7 +35,7 @@
         {
             "url": "2014-09-24-jacobkhepler.html",
             "speaker": "Jacob Khepler",
-            "type": "present",
+            "type": "past",
             "gallery": "Open Space",
             "humandate": "Sep 24",
             "machinedate": "2014-09-24"
