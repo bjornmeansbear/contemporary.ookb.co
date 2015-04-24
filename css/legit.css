@@ -527,6 +527,13 @@ section img {
 }
 
 /* PROJECT PAGE */
+.project-thumb {
+  padding-top: 15px;
+}
+
+.project-thumb:hover {
+  background: rgba(24,73,123,.15);
+}
 
 .project-thumb time {
   font-weight: 700;
