@@ -1,0 +1,22 @@
+{
+    "tsmenu": [
+        {
+            "url": "/talkingshop/2015-06-15-healthinequity.html",
+            "title": "Health + Inequity",
+            "one": "LaToya Ruby Frazier",
+            "two": "Dr. Lisa Cooper",
+            "moderator": "Elissa Blount-Moorhead",
+            "humandate": "June 15",
+            "time": "7pm"
+        },
+        {
+            "url": "/talkingshop/2015-05-21-3dprinting.html",
+            "title": "3D Printing + Access",
+            "one": "Smithsonian Digitization Program",
+            "two": "Dwyer Kilcollin",
+            "moderator": "Ginevra Shay",
+            "humandate": "May 21",
+            "time": "7pm"
+        }
+    ]
+}
