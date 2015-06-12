@@ -1,3 +1,54 @@
-.project-page header {
-  background: gray;
+header h1 {
+  font-size: 1.1111em;
+  margin: .75em 0 .5em;
+}
+h1 .add-right { margin-right: 100px; }
+#timeline ul {
+  margin: 0;
+  padding: 0;
+  background: #18497b;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 15px;
+  min-height: initial;
+}
+#timeline ul li {
+  background: #18497b;
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 63); /* 100% / total # of projects... */
+  text-indent: 200%;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+  transition: all 500ms;
+}
+#timeline ul li:hover {
+  background: green;
+  height: 30px;
+}
+#timeline ul li.active {
+  background: #f0624a;
+  height: 30px;
+}
+
+.archive-controls li {
+  position: fixed;
+  z-index: 99999;
+}
+.archive-controls li.close {
+  top: 30px;
+  right: 30px;
+}
+.archive-controls li.previous {
+  top: 48%;
+  left: 5px;
+}
+.archive-controls li.next {
+  top: 48%;
+  right: 5px;
 }
