@@ -1,19 +1,28 @@
+.project-page { 
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.project-page header { height: calc(1.5rem + .75rem + .5rem); min-height: initial; }
+
 header h1 {
-  font-size: 1.1111em;
-  margin: .75em 0 .5em;
+  font-size: 1.5rem;
+  margin: .75rem 0 .5rem;
 }
 h1 .add-right { margin-right: 100px; }
+
 #timeline ul {
   margin: 0;
   padding: 0;
   background: #18497b;
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: calc(1.5rem + .75rem + .5rem);
   right: 0;
   left: 0;
   height: 15px;
   min-height: initial;
 }
+
 #timeline ul li {
   background: #18497b;
   margin: 0;
@@ -36,13 +45,30 @@ h1 .add-right { margin-right: 100px; }
   height: 30px;
 }
 
+.archive-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .archive-controls li {
   position: fixed;
   z-index: 99999;
 }
 .archive-controls li.close {
-  top: 30px;
-  right: 30px;
+  top: 0;
+  right: 0;
+  height: calc(1.5rem + .75rem + .5rem);
+  background: gray;
+  width: 90px;
+}
+li.close a {
+  display: block;
+  height: calc(1.5rem + .75rem + .5rem);
+  width: 90px;
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
 }
 .archive-controls li.previous {
   top: 48%;
@@ -51,4 +77,26 @@ h1 .add-right { margin-right: 100px; }
 .archive-controls li.next {
   top: 48%;
   right: 5px;
+}
+
+.project-page .jumbotron {
+  padding-top: 111px;
+  padding-bottom: 111px;
+}
+
+.project-page ul.miscellany {
+  line-height: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-page ul.miscellany li {
+  border-bottom: 1px solid #f0624a;
+  color: #18497b;
+  padding: .33em 0;
+}
+
+.project-page ul.miscellany li:first-child {
+  border-top: 1px solid #f0624a;
 }
