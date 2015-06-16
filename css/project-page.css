@@ -39,6 +39,7 @@ h1 .add-right { margin-right: 100px; }
   position: relative;
 }
 
+/*
 #timeline ul li:hover {
   background: green;
   height: 30px;
@@ -55,6 +56,7 @@ h1 .add-right { margin-right: 100px; }
   position: absolute;
   bottom: 0;
 }
+*/
 
 #timeline ul li.active {
   background: #f0624a;
@@ -76,8 +78,21 @@ h1 .add-right { margin-right: 100px; }
   top: 0;
   right: 0;
   height: calc(1.5rem + .75rem + .5rem);
-  background: gray;
+  background: rgba(0,0,0,.1);
   width: 90px;
+  padding: 0;
+  transition: all 500ms;
+  /** override bootstrap **/
+  float: none;
+  font-size: inherit;
+  line-height: calc(1.5rem + .75rem + .5rem);
+  color: initial;
+  text-shadow: none;
+  filter: alpha(opactity=100);
+  opacity: 1;
+}
+.archive-controls li.close:hover {
+  background: rgba(0,0,0,.33);
 }
 
 li.close a {
@@ -85,8 +100,10 @@ li.close a {
   height: calc(1.5rem + .75rem + .5rem);
   width: 90px;
   overflow: hidden;
-  text-indent: 200%;
-  white-space: nowrap;
+  line-height: calc(1.5rem + .75rem + .5rem);
+  text-align: center;
+  padding: 2px;
+  border: none;
 }
 
 .archive-controls li.previous {
@@ -102,6 +119,25 @@ li.close a {
 .project-page .jumbotron {
   padding-top: 111px;
   padding-bottom: 111px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.jumbotron img.filler {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 0;
 }
 
 .project-page ul.miscellany {
@@ -120,3 +156,8 @@ li.close a {
 .project-page ul.miscellany li:first-child {
   border-top: 1px solid #f0624a;
 }
+
+ul.miscellany strong {
+  text-transform: uppercase;
+  font-size: 75%;
+  letter-spacing: 1px;
