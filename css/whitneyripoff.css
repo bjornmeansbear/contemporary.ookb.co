@@ -1,0 +1,14 @@
+/* something is here now */
+
+header {
+  /** something**/
+}
+
+.bt3,
+.bb3 {
+  border-width: 3px;
+}
+
+.border-black {
+  border-color: black;
+}
