@@ -1,7 +1,9 @@
 /* something is here now */
 
-header {
-  /** something**/
+nav {
+  font-size: 125%;
+  font-weight: 900;
+  text-align: center;
 }
 
 .bt3,
