@@ -14,3 +14,15 @@ nav {
 .border-black {
   border-color: black;
 }
+
+.evenly-spread {
+  width: calc(100% / 7);
+  display: block;
+  float:left;
+}
+.evenly-spread a.btn {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -165,6 +165,12 @@
     margin-left: 50%;
   }
 }
+.two-by {
+  height: 500px;
+}
+.one-by {
+  height: 250px;
+}
 /** styling! **/
 body {
   font-family: Helvetica, Arial, sans-serif;
