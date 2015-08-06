@@ -26,3 +26,8 @@ nav {
   padding-left: 0;
   padding-right: 0;
 }
+
+.evenly-spread a.btn:hover {
+  background: black;
+  color: white;
+}
