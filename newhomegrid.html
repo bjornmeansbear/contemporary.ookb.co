@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+
+    <link href="/css/basscss.css" rel="stylesheet">
+    <link href="/css/homegrid.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <main>
+
+      <section class="grided fluid">
+        <div class="clearfix">
+
+          <div class="item home block bg-green two-by columns half">
+            <p>something</p>
+          </div>
+
+          <div class="item home block bg-red one-by columns onequarter">
+            <p>something</p>
+          </div>
+
+          <div class="item home block bg-yellow one-by columns onequarter">
+            <p>something</p>
+          </div>
+
+          <div class="item home block bg-blue one-by columns onequarter">
+            <p>something</p>
+          </div>
+
+          <div class="item home block bg-gray one-by columns onequarter">
+            <p>something</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- /** JAVASCRIPT **/ -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script>
+      var blockSizer = function() {
+        $('.item.block').each(function() {
+          var itemWidth = $(this).width();
+          $(this).height(itemWidth);
+        });
+      };
+
+      $(document).ready(function() {
+        blockSizer();
+      });
+
+      $(window).resize(function() {
+        blockSizer();
+      });
+
+    </script>
+
+  </body>
+
+</html>
