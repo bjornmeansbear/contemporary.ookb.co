@@ -31,3 +31,10 @@ nav {
   background: black;
   color: white;
 }
+
+.bigblurb {
+  position: relative;
+  left: -3em;
+  top: 1em;
+  transform: rotate(-5.75deg);
+}
