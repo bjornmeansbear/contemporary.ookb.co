@@ -1,0 +1,10 @@
+nav ul .drawer {
+  display: none;
+}
+
+nav ul .item:hover > .drawer,
+nav ul .item:focus > .drawer,
+nav ul .item > a:hover + .drawer,
+nav ul .item > a:focus + .drawer {
+  display: block;
+}
