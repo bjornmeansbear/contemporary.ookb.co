@@ -67,6 +67,7 @@ nav ul .drawer {
 
   /** this controls the way the "drawer" works **/
   .drawer {
+    background: white;
     position: absolute;
     width: 100%;
     left:0;
