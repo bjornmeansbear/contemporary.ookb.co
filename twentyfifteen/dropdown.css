@@ -7,19 +7,71 @@ Override as little as possible.
 Try to just add.
 **/
 
+* { box-sizing: inherit; }
+html { box-sizing: border-box; }
+
 /** hide drawers on "skinny" as well as by default on "wide" **/
 nav ul .drawer {
   display: none;
 }
 
+.border-top    { border-top:    1px solid currentColor; }
+.border-right  { border-right:  1px solid currentColor; }
+.border-bottom { border-bottom: 1px solid currentColor; }
+.border-left   { border-left:   1px solid currentColor; }
+
+.bw2 { border-width: 2px; }
 
 @media (min-width: 768px) {
   /** drawers only show on hover/focus in wider view modes **/
-  nav ul .item:hover > .drawer,
-  nav ul .item:focus > .drawer,
-  nav ul .item > a:hover + .drawer,
-  nav ul .item > a:focus + .drawer {
+  nav ul .item:hover  > .drawer,
+  nav ul .item:active > .drawer,
+  nav ul .item:focus  > .drawer,
+  /* "+": plus sign is the next sibling selector. */
+  /* this only works if ".drawer" is right after an "a" in the html */
+  nav ul .item > a:hover  + .drawer,
+  nav ul .item > a:active + .drawer,
+  nav ul .item > a:focus  + .drawer {
     display: block;
   }
+
+  /* actually style the menu */
+  /* horizontal display is only for wider screens */
+  .menu-bar {
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  /* for production replace this with a .less clearfix fix,
+  or global clearfix class in the html */
+  .drawer:after,
+  .menu-bar:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .menu-bar .item {
+    float: left;
+  }
+
+  .menu-bar .item a {
+    display: block;
+    padding: 1.5em 3em;
+    color: black;
+  }
+
+  .drawer {
+    position: absolute;
+    width: 100%;
+    left:0;
+    right:0;
+  }
+
+  .drawer p, .drawer ul { float: left; width: 33%; padding: 1em; margin: 0; }
 
 }
