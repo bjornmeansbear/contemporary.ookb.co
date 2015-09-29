@@ -1,10 +1,25 @@
+/**
+“mobile first ideology”
+Style for stacked setup first,
+then only work in more complex design and functionality through
+media queries for wider media.
+Override as little as possible.
+Try to just add.
+**/
+
+/** hide drawers on "skinny" as well as by default on "wide" **/
 nav ul .drawer {
   display: none;
 }
 
-nav ul .item:hover > .drawer,
-nav ul .item:focus > .drawer,
-nav ul .item > a:hover + .drawer,
-nav ul .item > a:focus + .drawer {
-  display: block;
+
+@media (min-width: 768px) {
+  /** drawers only show on hover/focus in wider view modes **/
+  nav ul .item:hover > .drawer,
+  nav ul .item:focus > .drawer,
+  nav ul .item > a:hover + .drawer,
+  nav ul .item > a:focus + .drawer {
+    display: block;
+  }
+
 }
