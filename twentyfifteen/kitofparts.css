@@ -2,6 +2,15 @@
 general things that should apply everywhere and anywhere and will often be reused or chained together for specific needs
 **/
 
+/**
+a lot of this comes from this
+https://github.com/OOKB/gridtastic-lite/
+https://github.com/OOKB/gridtastic-lite/blob/master/structure.less
+
+and read more on some important ideas/stylistic direction at BASSCSS
+http://www.basscss.com/
+**/
+
 *    { box-sizing: inherit; }
 html { box-sizing: border-box; }
 

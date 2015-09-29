@@ -60,9 +60,10 @@ nav ul .drawer {
   /** Style first level menu items for horizontal nav bar **/
   .menu-bar .item > a {
     display: block;
-    padding: 1.5em 0;
+    padding: 1.25rem 0;
     text-align: center;
     width: 100%;
+    font-size: 1.25rem;
   }
 
   /** this controls the way the "drawer" works **/
