@@ -50,3 +50,46 @@ header .top nav.right {
   }
 
 }
+
+
+
+
+/****** trying to figure out some griddy things for homepage ******/
+.three-by {
+  height: 750px;
+}
+.two-by {
+  height: 500px;
+}
+.one-by {
+  height: 250px;
+}
+
+.home.block {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home.block img {
+  display: none;
+  visibility: hidden;
+}
+
+.block a.area {
+  text-decoration: none;
+  color:transparent;
+  display: block;
+  position: absolute;
+  height:100%;
+  widows: 100%;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.block a.area:hover {
+  background-color: rgba(255,255,255,.5);
+}

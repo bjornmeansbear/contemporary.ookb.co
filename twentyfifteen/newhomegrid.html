@@ -6,59 +6,98 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8" />
 
-    <link href="/css/basscss.css" rel="stylesheet">
-    <link href="/css/homegrid.css" rel="stylesheet">
+    <link href="kitofparts.css" rel="stylesheet" type="text/css" />
+    <link href="designed.css"   rel="stylesheet" type="text/css" />
+    <link href="homepage.css"   rel="stylesheet" type="text/css" />
 
   </head>
 
   <body>
+
+    <div id="temporaryfix"></div>
 
     <main>
 
       <section class="grided fluid">
         <div class="clearfix">
 
-          <div class="item home block bg-green two-by columns half">
-            <p>something</p>
+          <div class="home block bg-silver three-by columns fullwidth">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/apps.gif" />
+              <p>something</p>
+            </a>
           </div>
 
-          <div class="item home block bg-red one-by columns onequarter">
-            <p>something</p>
+          <div class="home block bg-green two-by columns half">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/podcastsonprocess.jpg" />
+              <p>something</p>
+            </a>
           </div>
 
-          <div class="item home block bg-yellow one-by columns onequarter">
-            <p>something</p>
+          <div class="home block bg-red one-by columns onequarter">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/home-f1.jpg" />
+              <p>something</p>
+            </a>
           </div>
 
-          <div class="item home block bg-blue one-by columns onequarter">
-            <p>something</p>
+          <div class="home block bg-yellow one-by columns onequarter">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/moretstk.png" />
+              <p>something</p>
+            </a>
           </div>
 
-          <div class="item home block bg-gray one-by columns onequarter">
-            <p>something</p>
+          <div class="home block bg-blue one-by columns onequarter">
+            <a class="area" href="http://www.contemporary.org/speakerseries.html#archive">
+              <img src="img/vimeo-homepage.jpg" />
+              <p>something</p>
+            </a>
           </div>
 
+          <div class="home block bg-gray one-by columns onequarter">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/scroll2.jpg" />
+              <p>something</p>
+            </a>
+          </div>
+
+          <div class="home block bg-silver one-by columns four">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/apps.gif" />
+              <p>something</p>
+            </a>
+          </div>
+
+          <div class="home block bg-green one-by columns four">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/podcastsonprocess.jpg" />
+              <p>something</p>
+            </a>
+          </div>
+
+          <div class="home block bg-red one-by columns four">
+            <a class="area" href="http://www.contemporary.org/scroll.html">
+              <img src="img/home-f1.jpg" />
+              <p>something</p>
+            </a>
+          </div>
         </div>
+
       </section>
 
     </main>
 
     <!-- /** JAVASCRIPT **/ -->
-    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script>
-      var blockSizer = function() {
-        $('.item.block').each(function() {
-          var itemWidth = $(this).width();
-          $(this).height(itemWidth);
-        });
-      };
 
-      $(document).ready(function() {
-        blockSizer();
-      });
-
-      $(window).resize(function() {
-        blockSizer();
+      // pull img url from img tag inside a block
+      // and place as background-image on parent
+      $('div.home.block').each(function() {
+        var myImage = $(this).find('img').attr('src');
+        $(this).css('background-image', 'url('+ myImage +')');
       });
 
     </script>

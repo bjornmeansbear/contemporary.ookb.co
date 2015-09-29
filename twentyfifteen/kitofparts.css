@@ -20,6 +20,47 @@ html { box-sizing: border-box; }
     display: block;
 }
 
+/** mini CSS modules **/
+
+/* colors from basscss */
+.black{color:#111}
+.gray{color:#aaa}
+.silver{color:#ddd}
+.white{color:#fff}
+.aqua{color:#7fdbff}
+.blue{color:#0074d9}
+.navy{color:#001f3f}
+.teal{color:#39cccc}
+.green{color:#2ecc40}
+.olive{color:#3d9970}
+.lime{color:#01ff70}
+.yellow{color:#ffdc00}
+.orange{color:#ff851b}
+.red{color:#ff4136}
+.fuchsia{color:#f012be}
+.purple{color:#b10dc9}
+.maroon{color:#85144b}
+.color-inherit{color:inherit}
+.muted{opacity:.5}
+
+.bg-black{background-color:#111}
+.bg-gray{background-color:#aaa}
+.bg-silver{background-color:#ddd}
+.bg-white{background-color:#fff}
+.bg-aqua{background-color:#7fdbff}
+.bg-blue{background-color:#0074d9}
+.bg-navy{background-color:#001f3f}
+.bg-teal{background-color:#39cccc}
+.bg-green{background-color:#2ecc40}
+.bg-olive{background-color:#3d9970}
+.bg-lime{background-color:#01ff70}
+.bg-yellow{background-color:#ffdc00}
+.bg-orange{background-color:#ff851b}
+.bg-red{background-color:#ff4136}
+.bg-fuchsia{background-color:#f012be}
+.bg-purple{background-color:#b10dc9}
+.bg-maroon{background-color:#85144b}
+
 /* Visibility Classes */
 .show {
   display: block !important;
@@ -70,13 +111,43 @@ html { box-sizing: border-box; }
 .absolute { position: absolute; }
 .fixed    { position:    fixed; }
 
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.z999 {
+  z-index: 999;
+}
+.allcaps,
+.uppercase {
+  text-transform: uppercase;
+}
+.fullwidth,
+.w100 {
+  width: 100%;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+}
+
+/** grid **/
+.columns {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
+  padding-right: .75em;
+  padding-left: .75em;
+  line-height: 1.5em;
+  /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
+}
+
 @media (min-width: 768px) {
   /* columnar stuff */
   .column,
   .columns {
     float: left;
-    margin: 0 0 2rem 0;
-    padding: 0 1rem;
   }
 
   /* the Grid
@@ -90,10 +161,14 @@ html { box-sizing: border-box; }
   */
   .one                   { width: calc(100% / 12 * 01); }
   .two                   { width: calc(100% / 12 * 02); }
-  .three                 { width: calc(100% / 12 * 03); }
+  .three,
+  .quarter,
+  .onequarter            { width: calc(100% / 12 * 03); }
   .four                  { width: calc(100% / 12 * 04); }
   .five                  { width: calc(100% / 12 * 05); }
-  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .six,
+  .half,
+  .halfwidth             { width: calc(100% / 12 * 06); }
   .seven                 { width: calc(100% / 12 * 07); }
   .eight                 { width: calc(100% / 12 * 08); }
   .nine                  { width: calc(100% / 12 * 09); }
