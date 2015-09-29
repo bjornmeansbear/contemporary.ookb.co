@@ -12,6 +12,25 @@ nav ul .drawer {
   display: none;
 }
 
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu .item > a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-menu .item > a:hover,
+.main-menu .item > a:active,
+.main-menu .item > a:focus {
+  color: white;
+  background: black;
+}
+
 @media (min-width: 768px) {
   /** drawers only show on hover/focus in wider view modes **/
   nav ul .item:hover  > .drawer,
@@ -29,32 +48,24 @@ nav ul .drawer {
   /* horizontal display is only for wider screens */
   .menu-bar {
     background: white;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     position: relative;
     width: 100%;
   }
 
-  /* for production replace this with a .less clearfix fix,
-  or global clearfix class in the html */
-  .drawer:after,
-  .menu-bar:after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-
   .menu-bar .item {
     float: left;
+    width: calc(100% / 7); /** width based on # of menu items **/
   }
 
-  .menu-bar .item a {
+  /** Style first level menu items for horizontal nav bar **/
+  .menu-bar .item > a {
     display: block;
-    padding: 1.5em 3em;
-    color: black;
+    padding: 1.5em 0;
+    text-align: center;
+    width: 100%;
   }
 
+  /** this controls the way the "drawer" works **/
   .drawer {
     position: absolute;
     width: 100%;

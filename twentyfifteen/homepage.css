@@ -1,0 +1,52 @@
+
+/** special header homepage stuff **/
+header .top {
+  position: relative;
+}
+
+header figure.logo {
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+  text-align: center;
+}
+
+header .top .blurb,
+header .top nav.right {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header figure.logo {
+    width: 25%;
+    max-width: none;
+  }
+  header .top .blurb,
+  header .top nav.right {
+    display: block;
+  }
+  nav.right {
+    top:    0;
+    right:  0;
+    bottom: 0;
+    /**/
+    width: 25%;
+    text-align: center;
+  }
+
+  nav.right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    bottom: 12.5%;
+    left:0;
+    right:0;
+  }
+  nav.right a {
+    color: black;
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+  }
+
+}

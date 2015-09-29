@@ -5,6 +5,41 @@ general things that should apply everywhere and anywhere and will often be reuse
 *    { box-sizing: inherit; }
 html { box-sizing: border-box; }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Visibility Classes */
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.visible-lg,
+.hidden-sm {
+  display: none;
+  visibility: hidden;
+}
+
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}
+
 /* border stuff */
 .border-top    { border-top:    1px solid currentColor; }
 .border-right  { border-right:  1px solid currentColor; }
@@ -15,3 +50,75 @@ html { box-sizing: border-box; }
 .bw3 { border-width: 3px; }
 .bw4 { border-width: 4px; }
 .bw5 { border-width: 5px; }
+
+.static   { position:   static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position:    fixed; }
+
+@media (min-width: 768px) {
+  /* columnar stuff */
+  .column,
+  .columns {
+    float: left;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 01); }
+  .two                   { width: calc(100% / 12 * 02); }
+  .three                 { width: calc(100% / 12 * 03); }
+  .four                  { width: calc(100% / 12 * 04); }
+  .five                  { width: calc(100% / 12 * 05); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 07); }
+  .eight                 { width: calc(100% / 12 * 08); }
+  .nine                  { width: calc(100% / 12 * 09); }
+  .ten                   { width: calc(100% / 12 * 10); }
+  .eleven                { width: calc(100% / 12 * 11); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+  /*
+    you can easily add more columns (or remove columnes) by
+    changing 12 to the number of total columns you want, and then
+    add additional classes for the extra columns...
+    like if you want 16 column base grid, you'd get something like
+    width: calc(100% / x * y);
+    x would be 16
+    width: calc(100% / 16 * #columnsSpanned);
+    make sense?
+  */
+
+  /* some standard offsets */
+  .offset-by-one         { margin-left: calc(100% / 12 * 01); }
+  .offset-by-two         { margin-left: calc(100% / 12 * 02); }
+  .offset-by-three       { margin-left: calc(100% / 12 * 03); }
+  .offset-by-four        { margin-left: calc(100% / 12 * 04); }
+  .offset-by-five        { margin-left: calc(100% / 12 * 05); }
+  .offset-by-six,
+  .offset-by-half        { margin-left: calc(100% / 12 * 06); }
+  .offset-by-seven       { margin-left: calc(100% / 12 * 07); }
+  .offset-by-eight       { margin-left: calc(100% / 12 * 08); }
+  .offset-by-nine        { margin-left: calc(100% / 12 * 09); }
+  .offset-by-ten         { margin-left: calc(100% / 12 * 10); }
+  .offset-by-eleven      { margin-left: calc(100% / 12 * 11); }
+  .offset-by-twelve      { margin-left: calc(100% / 12 * 12); }
+
+  .visible-lg {
+    display: block;
+    visibility: visible;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
