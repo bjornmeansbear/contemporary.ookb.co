@@ -1,3 +1,4 @@
+body { padding: 0 5px; margin: 0; }
 
 /** special header homepage stuff **/
 header .top {
@@ -65,21 +66,21 @@ header .top nav.right {
   height: 250px;
 }
 
-.home.block {
+.home.tile {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border: 5px solid white;
 }
 
-.home.block img {
+.home.tile img {
   display: none;
   visibility: hidden;
 }
 
-.block a.area {
+.tile a.area {
   text-decoration: none;
-  color:transparent;
   display: block;
   position: absolute;
   height:100%;
@@ -88,8 +89,18 @@ header .top nav.right {
   right:0;
   bottom:0;
   left:0;
+  /**/
+  color: inherit;
 }
 
-.block a.area:hover {
+.tile a.area:hover {
   background-color: rgba(255,255,255,.5);
+  border: 1em solid currentColor;
+}
+
+.home header { margin-bottom: 2em; }
+footer.border-top {
+  margin-left: -5px;
+  margin-right: -5px;
+  height: 300px;
 }

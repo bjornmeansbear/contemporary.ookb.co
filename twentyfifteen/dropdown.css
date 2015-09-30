@@ -31,7 +31,14 @@ nav ul .drawer {
   background: black;
 }
 
+.internal h1 {
+  font-size: .9em;
+  margin: 0;
+  padding: .33em 1em;
+}
+
 @media (min-width: 768px) {
+  header { position: fixed; }
   /** drawers only show on hover/focus in wider view modes **/
   nav ul .item:hover  > .drawer,
   nav ul .item:active > .drawer,
@@ -64,6 +71,11 @@ nav ul .drawer {
     text-align: center;
     width: 100%;
     font-size: 1.25rem;
+  }
+
+  .internal .menu-bar .item > a {
+    font-size: .9rem;
+    padding: .333333333rem 0;
   }
 
   /** this controls the way the "drawer" works **/

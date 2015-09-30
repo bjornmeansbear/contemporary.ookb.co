@@ -111,13 +111,24 @@ html { box-sizing: border-box; }
 .absolute { position: absolute; }
 .fixed    { position:    fixed; }
 
+.t0        { top:    0; }
+.r0        { right:  0; }
+.b0        { bottom: 0; }
+.l0        { left:   0; }
+
 .mlrauto {
   margin-left: auto;
   margin-right: auto;
 }
+
+.mt5px { margin-top: 5px; }
+
+.pt5px { padding-top: 5px; }
+
 .z999 {
   z-index: 999;
 }
+
 .allcaps,
 .uppercase {
   text-transform: uppercase;

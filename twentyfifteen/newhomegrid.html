@@ -12,72 +12,73 @@
 
   </head>
 
-  <body>
+  <body class="home">
 
-    <div id="temporaryfix"></div>
+<!--    <div id="temporaryfix"></div>-->
+    <header>Menu will go here.</header>
 
     <main>
 
       <section class="grided fluid">
         <div class="clearfix">
 
-          <div class="home block bg-silver three-by columns fullwidth">
+          <div class="home tile bg-silver three-by columns fullwidth silver hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/apps.gif" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-green two-by columns half">
+          <div class="home tile bg-green two-by columns half green hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/podcastsonprocess.jpg" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-red one-by columns onequarter">
+          <div class="home tile bg-red one-by columns onequarter red hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/home-f1.jpg" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-yellow one-by columns onequarter">
+          <div class="home tile bg-yellow one-by columns onequarter yellow hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/moretstk.png" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-blue one-by columns onequarter">
+          <div class="home tile bg-blue one-by columns onequarter blue hide-text">
             <a class="area" href="http://www.contemporary.org/speakerseries.html#archive">
               <img src="img/vimeo-homepage.jpg" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-gray one-by columns onequarter">
+          <div class="home tile bg-gray one-by columns onequarter gray hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/scroll2.jpg" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-silver one-by columns four">
+          <div class="home tile bg-orange one-by columns four orange hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/apps.gif" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-green one-by columns four">
+          <div class="home tile bg-aqua one-by columns four aqua hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/podcastsonprocess.jpg" />
               <p>something</p>
             </a>
           </div>
 
-          <div class="home block bg-red one-by columns four">
+          <div class="home tile bg-fuchsia one-by columns four fuchsia hide-text">
             <a class="area" href="http://www.contemporary.org/scroll.html">
               <img src="img/home-f1.jpg" />
               <p>something</p>
@@ -89,18 +90,20 @@
 
     </main>
 
+    <footer class="border-top mt5px bg-silver"></footer>
+
     <!-- /** JAVASCRIPT **/ -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script>
 
-      // pull img url from img tag inside a block
+      // pull img url from img tag inside a tile
       // and place as background-image on parent
-      $('div.home.block').each(function() {
+      $('div.home.tile').each(function() {
         var myImage = $(this).find('img').attr('src');
         $(this).css('background-image', 'url('+ myImage +')');
       });
 
-      $('#temporaryfix').load('demo.html');
+//      $('#temporaryfix').load('demo.html');
 
     </script>
 
