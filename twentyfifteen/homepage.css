@@ -93,7 +93,10 @@ header .top nav.right {
   color: inherit;
 }
 
-.tile a.area:hover {
+.tile:hover a.area,
+.tile:focus a.area,
+.tile a.area:hover,
+.tile a.area:focus {
   background-color: rgba(255,255,255,.5);
   border: 1em solid currentColor;
 }
