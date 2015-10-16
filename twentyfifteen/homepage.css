@@ -6,7 +6,7 @@ header .top {
 }
 
 header figure.logo {
-  margin: 0;
+  margin: auto;
   padding: 0;
   max-width: 200px;
   text-align: center;
@@ -22,6 +22,16 @@ header .top nav.right {
     width: 25%;
     max-width: none;
   }
+    
+  .blurb {
+    position: absolute;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    width: 25%;
+    text-align: left;
+  }
+    
   header .top .blurb,
   header .top nav.right {
     display: block;
@@ -30,9 +40,8 @@ header .top nav.right {
     top:    0;
     right:  0;
     bottom: 0;
-    /**/
     width: 25%;
-    text-align: center;
+    text-align: left;
   }
 
   nav.right ul {
@@ -48,6 +57,9 @@ header .top nav.right {
     display: block;
     padding: .5em 1em;
     text-decoration: none;
+  }
+  header nav .menu {
+    width: 95%;
   }
 
 }
