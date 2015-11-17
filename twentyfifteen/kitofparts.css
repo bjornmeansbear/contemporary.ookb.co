@@ -185,7 +185,8 @@ html { box-sizing: border-box; }
   .nine                  { width: calc(100% / 12 * 09); }
   .ten                   { width: calc(100% / 12 * 10); }
   .eleven                { width: calc(100% / 12 * 11); }
-  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+  .twelve,
+  .fullwidth             { width: calc(100% / 12 * 12); }
   /*
     you can easily add more columns (or remove columnes) by
     changing 12 to the number of total columns you want, and then
