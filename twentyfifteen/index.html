@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="menu.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>The Contemporary</h1>
+
+        <div class="group">
+          <p class="twelve columns">Logo, some other blurb, a couple minor links</p>
+        </div>
+
+        <nav>
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix">
+            <script id="menu-drawers" type="text/x-mustache-template">
+              {{#menu}}
+                <li class="mainlink evenly-spread drop-down">
+                  <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
+                  <div class="drawer">
+                    <div class="group">
+                      <div class="three columns blurb">
+                        <p class="lead">{{{primary}}}</p>
+                      </div>
+                      <ul class="nine columns sub-menu list-reset">
+                        {{#sublink}}
+                          <li class="group">
+                            <p class="four columns">
+                              <a class="sub-link" href="#{{title}}">{{title}}</a>
+                            </p>
+                            <p class="eight columns secondary">
+                              {{{secondary}}}
+                            </p>
+                          </li>
+                        {{/sublink}}
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              {{/menu}}
+            </script>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="container">
+        <div class="group">
+            <div class="twelve columns">
+                <div class="inner tile imged one">
+                    <a href="" class="bigBlock">
+                        <h1>Ghost Food</h1>
+                        <p>A little blurb of some sort of text...</p>
+                    </a>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="inner tile imged two">
+                    <a href="" class="bigBlock">
+                        <h1>Grit Fund</h1>
+                        <p>A little blurb of some sort of text...</p>
+                    </a>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="inner tile imged three">
+                    <a href="" class="bigBlock">
+                        <h1>Talking Shop</h1>
+                        <p>2015 Speaker Series</p>
+                    </a>
+                </div>
+            </div>
+            <div class="two columns">
+                <div class="inner tile imged">
+                    <a href="" class="bigBlock">
+                        <h1>A title</h1>
+                        <p>A longer blurb of some sort of text.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="inner tile imged four">
+                    <a href="" class="bigBlock">
+                        <h1>Archive</h1>
+                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="inner tile imged five">
+                    <a href="" class="bigBlock">
+                        <h1>Speaker Series</h1>
+                        <p>A longer blurb of some sort of text...</p>
+                    </a>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="inner tile imged six">
+                    <a href="" class="bigBlock">
+                        <h1>Scroll: Bound</h1>
+                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
+                    </a>
+                </div>
+            </div>
+<!--
+            <div class="two columns">
+                <div class="inner tile imged">
+                    <a href="" class="bigBlock">
+                        <h1>A Different Title.</h1>
+                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
+                    </a>
+                </div>
+            </div>
+-->
+        </div>
+
+    </div>
+
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+    <!-- Javascript Magix happens down here -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- this is jquery, needed for a bunch of stuff -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- this loads mustache.js, required for the templating to happen -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- This actually takes your behance data and prints it into the site -->
+    <script>
+      /** the stuff for printing things out **/
+      $.getJSON('menu.json', function(data) {
+
+        //mustache for projects
+        //this prints the project thumbnails
+        var template = $('#menu-drawers').html();
+        var info = Mustache.to_html(template, data);
+        $('#main-menu-wrap').html(info);
+
+      });
+    </script>
+
+  </body>
+</html>
