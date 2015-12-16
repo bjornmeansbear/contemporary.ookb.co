@@ -24,24 +24,28 @@
   position: static;
 }
 
-a.main-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgba(26,42,53,1);
-}
-
 #main-menu-wrap:hover a.main-link {
   color: rgba(26,42,53,.44);
 }
 
-.evenly-spread a.main-link {
+a.main-link,
+a.sub-link {
+  color: rgba(26,42,53,1);
   display: block;
   width: 100%;
   font-size: 125%;
   font-weight: 900;
+  text-decoration: none;
+}
+
+a.main-link {
+  text-transform: uppercase;
+}
+
+.evenly-spread a.main-link {
   text-align: center;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .4em;
+  padding-bottom: .4em;
 }
 
 #main-menu-wrap .evenly-spread:hover a.main-link,
@@ -59,8 +63,7 @@ a.main-link {
   z-index: 9;
   display: none;
   border-top: 3px solid rgba(26,42,53,1);
-  padding-top: 1.5em;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .evenly-spread:hover .drawer {
@@ -69,15 +72,31 @@ a.main-link {
 
 .drawer .blurb {
   line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-/**/
+.drawer .columns,
+.drawer p {
+  margin: 0;
+}
 
 .sub-menu > li {
   display: block;
+  position: static;
 }
 .sub-menu > li p {
   margin-bottom: 0;
+}
+a.sub-link {
+  line-height: 2em;
+  border-bottom: 1px solid rgba(26,42,53,1);
+  padding-left: .25em;
+}
+
+.sub-menu > li:hover .sub-link,
+a.sub-link:hover {
+  color: rgba(241,97,74,1);
 }
 
 .sub-menu > li .secondary {
@@ -85,25 +104,15 @@ a.main-link {
   border-left: 3px solid rgba(241,97,74,1);
   display: none;
   position: absolute;
-  margin-left: calc(100% / 12 * 04 - .75em - 3px);
-  padding-top:.25em;
-  padding-left: .5em;
-  padding-bottom: .5em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  min-height: 100%;
+  top: 0;
+  right: 0;
+  left: calc(100% / 12 * 04 - .75rem);
 }
 .sub-menu > li:hover .secondary {
   display: block;
 }
 
-a.sub-link {
-  color: rgba(0,75,124,1);
-  display: block;
-  padding:.5em .25em .4em;
-  text-decoration: none;
-  font-size: 112.5%;
-}
-
-.sub-menu > li:hover .sub-link,
-a.sub-link:hover {
-  background: rgba(241,97,74,1);
-  color:white;
-}

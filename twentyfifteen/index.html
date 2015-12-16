@@ -9,10 +9,20 @@
 
     <header>
       <div class="container">
-        <h1>The Contemporary</h1>
-
         <div class="group">
-          <p class="twelve columns">Logo, some other blurb, a couple minor links</p>
+          <h1 class="wordmark">The Contemporary</h1>
+          <div class="three columns logo mlrauto">
+            <img src="img/logo.jpg" />
+          </div>
+          <div class="three absolute">
+            <img src="img/logo.jpg" />
+          </div>
+          <div class="three columns offset-by-six">
+<!--          <h1>The Contemporary</h1>-->
+            <p>Become a Member</p>
+            <p>Explore the Archive</p>
+            <p>Join our Mailing List</p>
+          </div>
         </div>
 
         <nav>
@@ -23,10 +33,10 @@
                   <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
                   <div class="drawer">
                     <div class="group">
-                      <div class="three columns blurb">
+                      <div class="four columns blurb">
                         <p class="lead">{{{primary}}}</p>
                       </div>
-                      <ul class="nine columns sub-menu list-reset">
+                      <ul class="eight columns sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
                         {{#sublink}}
                           <li class="group">
                             <p class="four columns">
@@ -37,6 +47,7 @@
                             </p>
                           </li>
                         {{/sublink}}
+                        {{^sublink}}<!-- nothing here --> {{/sublink}}
                       </ul>
                     </div>
                   </div>
@@ -51,8 +62,16 @@
 
     <div class="container">
         <div class="group">
-            <div class="twelve columns">
-                <div class="inner tile imged one">
+            <div class="three columns">
+                <div class="inner tile texted">
+                    <a href="" class="bigBlock">
+                        <h1>A title</h1>
+                        <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="nine columns">
+                <div class="inner tile imged img-one">
                     <a href="" class="bigBlock">
                         <h1>Ghost Food</h1>
                         <p>A little blurb of some sort of text...</p>
@@ -60,7 +79,7 @@
                 </div>
             </div>
             <div class="six columns">
-                <div class="inner tile imged two">
+                <div class="inner tile imged img-two">
                     <a href="" class="bigBlock">
                         <h1>Grit Fund</h1>
                         <p>A little blurb of some sort of text...</p>
@@ -68,31 +87,31 @@
                 </div>
             </div>
             <div class="four columns">
-                <div class="inner tile imged three">
+                <div class="inner tile imged img-three">
                     <a href="" class="bigBlock">
                         <h1>Talking Shop</h1>
                         <p>2015 Speaker Series</p>
                     </a>
                 </div>
             </div>
-            <div class="two columns">
-                <div class="inner tile imged">
-                    <a href="" class="bigBlock">
-                        <h1>A title</h1>
-                        <p>A longer blurb of some sort of text.</p>
-                    </a>
-                </div>
-            </div>
             <div class="four columns">
-                <div class="inner tile imged four">
+                <div class="inner tile imged img-four">
                     <a href="" class="bigBlock">
                         <h1>Archive</h1>
                         <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
                     </a>
                 </div>
             </div>
+            <div class="two columns">
+                <div class="inner tile texted">
+                    <a href="" class="bigBlock">
+                        <h1>A title</h1>
+                        <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
+                    </a>
+                </div>
+            </div>
             <div class="four columns">
-                <div class="inner tile imged five">
+                <div class="inner tile imged img-five">
                     <a href="" class="bigBlock">
                         <h1>Speaker Series</h1>
                         <p>A longer blurb of some sort of text...</p>
@@ -100,23 +119,13 @@
                 </div>
             </div>
             <div class="four columns">
-                <div class="inner tile imged six">
+                <div class="inner tile imged img-six">
                     <a href="" class="bigBlock">
                         <h1>Scroll: Bound</h1>
                         <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
                     </a>
                 </div>
             </div>
-<!--
-            <div class="two columns">
-                <div class="inner tile imged">
-                    <a href="" class="bigBlock">
-                        <h1>A Different Title.</h1>
-                        <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
-                    </a>
-                </div>
-            </div>
--->
         </div>
 
     </div>
@@ -136,12 +145,14 @@
     <script>
       /** the stuff for printing things out **/
       $.getJSON('menu.json', function(data) {
-
-        //mustache for projects
-        //this prints the project thumbnails
+        console.log( "success" );
+        //mustache for menu
+        //this prints the menu for now... is not working locally
+        // hoping to solve that
         var template = $('#menu-drawers').html();
         var info = Mustache.to_html(template, data);
         $('#main-menu-wrap').html(info);
+        console.log( "You now have a menu." );
 
       });
     </script>
