@@ -11,7 +11,6 @@
 
 #main-menu-wrap {
   position: relative;
-  /**/
   border-width: 3px;
   border-top-style: solid ;
   border-bottom-style: solid ;
@@ -36,6 +35,7 @@ a.sub-link {
   font-size: 125%;
   font-weight: 900;
   text-decoration: none;
+  transition: all 400ms;
 }
 
 a.main-link {
@@ -49,9 +49,16 @@ a.main-link {
 }
 
 #main-menu-wrap .evenly-spread:hover a.main-link,
-#main-menu-wrap .evenly-spread a.main-link:hover {
+#main-menu-wrap .evenly-spread a.main-link:hover,
+#main-menu-wrap .evenly-spread a.main-link:focus {
   background: rgba(26,42,53,1);
   color: white;
+}
+
+#main-menu-wrap .evenly-spread a.main-link:active {
+  background: rgba(26,42,53,1);
+  color: rgba(255,255,255,.8);
+  box-shadow: 0 0 .33333rem 0 rgba(26,42,53,.4);
 }
 
 /**/
@@ -59,11 +66,11 @@ a.main-link {
   position: absolute;
   left: 0;
   right:0;
-  background: white;
   z-index: 9;
   display: none;
   border-top: 3px solid rgba(26,42,53,1);
-  padding: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .evenly-spread:hover .drawer {
@@ -72,26 +79,28 @@ a.main-link {
 
 .drawer .blurb {
   line-height: 1.5em;
-  padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .drawer .columns,
-.drawer p {
-  margin: 0;
+.drawer p,
+.sub-menu > li p {
+  margin-bottom: 0;
 }
 
 .sub-menu > li {
   display: block;
   position: static;
 }
-.sub-menu > li p {
-  margin-bottom: 0;
-}
+
 a.sub-link {
   line-height: 2em;
   border-bottom: 1px solid rgba(26,42,53,1);
   padding-left: .25em;
+}
+
+.sub-menu > li:first-child .sub-link {
+  border-top: 1px solid rgba(26,42,53,1);
 }
 
 .sub-menu > li:hover .sub-link,
@@ -100,13 +109,9 @@ a.sub-link:hover {
 }
 
 .sub-menu > li .secondary {
-  background: white;
-  border-left: 3px solid rgba(241,97,74,1);
   display: none;
   position: absolute;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
+  padding: 0 1em;
   min-height: 100%;
   top: 0;
   right: 0;
@@ -116,3 +121,41 @@ a.sub-link:hover {
   display: block;
 }
 
+/** Mailchimp Signup Form **/
+
+#mc_embed_signup h4 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+}
+
+#mc_embed_signup .mc-field-group .email {
+  border: none;
+  border-bottom: 2px solid rgba(0,75,124,1);
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  padding: .25em .25em .1em;
+  transition: all 400ms;
+  font-family: 'balto', helvetica, arial, sans-serif
+}
+
+#mc_embed_signup .mc-field-group .email:focus {
+  border-bottom: 2px solid rgba(201,222,121,1);
+  outline:none;
+  color: rgba(0,75,124,1);
+  background-color: rgba(201,222,121,.15);
+}
+
+#mc_embed_signup input.button {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  padding: .33rem 1.5rem;
+  height: 3rem;
+  font-family: 'balto', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}

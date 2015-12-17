@@ -1,0 +1,38 @@
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
+
+.red            { color: rgba(241,097,074,1); }
+.orange         { color: rgba(255,117,044,1); }
+.yellow         { color: rgba(255,234,058,1); }
+.lightgreen     { color: rgba(201,222,121,1); }
+.darkgreen      { color: rgba(040,109,076,1); }
+.blue           { color: rgba(000,075,124,1); }
+.darkblue       { color: rgba(026,042,053,1); }
+.white          { color: rgba(250,252,255,1); }
+.black          { color: rgba(026,010,008,1); }
+
+.bg-red         { background-color: rgba(241,097,074,1); }
+.bg-orange      { background-color: rgba(255,117,044,1); }
+.bg-yellow      { background-color: rgba(255,234,058,1); }
+.bg-lightgreen  { background-color: rgba(201,222,121,1); }
+.bg-darkgreen   { background-color: rgba(040,109,076,1); }
+.bg-blue        { background-color: rgba(000,075,124,1); }
+.bg-darkblue    { background-color: rgba(026,042,053,1); }
+.bg-white       { background-color: rgba(250,252,255,1); }
+.bg-black       { background-color: rgba(026,010,008,1); }
+
+/** padding **/
+.p1             { padding: 1rem; }
+.p2             { padding: 2rem; }
+
+/** borders? **/
+.b1             { border: 1px solid; }
+.b2             { border: 2px solid; }

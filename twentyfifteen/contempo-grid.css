@@ -251,6 +251,21 @@ img { max-width: 100%; }
   list-style: none;
 }
 
+
+
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+
+
 /* columnar stuff */
 #wrapper,
 .wrapper,
@@ -269,7 +284,6 @@ img { max-width: 100%; }
 /* columnar stuff */
 .column,
 .columns {
-  float: left;
   margin: 0 0 1.5rem 0;
   padding: 0 .75rem;
 }
@@ -315,33 +329,16 @@ header .columns {
     width: 80%;
   }
 
-  /* the Grid
-  ===========================================*/
-  /*
-    widths are set using CSS calc() function
-    width: calc(100% / x * y);
-    where x = #of columns total, and y = #of columns the class crosses.
-    by default this has been set as a 12 column grid, so x = 12.
-    y matches numerically the class number.
-  */
-  .one                   { width: calc(100% / 12 * 03); }
-  .two                   { width: calc(100% / 12 * 03); }
-  .three                 { width: calc(100% / 12 * 03); }
-  .four                  { width: calc(100% / 12 * 06); }
-  .five                  { width: calc(100% / 12 * 06); }
-  .six, .halfwidth       { width: calc(100% / 12 * 06); }
-  .seven                 { width: calc(100% / 12 * 09); }
-  .eight                 { width: calc(100% / 12 * 09); }
-  .nine                  { width: calc(100% / 12 * 09); }
-  .ten                   { width: calc(100% / 12 * 12); }
-  .eleven                { width: calc(100% / 12 * 12); }
-  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+  .group,
+  .grouped,
+  .row {
+    margin: 0 -.75rem;
+  }
 
-}
-
-@media (min-width: 60em) {
-
-  /** 6 column grid changeup **/
+  .column,
+  .columns {
+    float: left;
+  }
 
   /* the Grid
   ===========================================*/
@@ -352,18 +349,19 @@ header .columns {
     by default this has been set as a 12 column grid, so x = 12.
     y matches numerically the class number.
   */
-  .one                   { width: calc(100% / 12 * 02); }
-  .two                   { width: calc(100% / 12 * 02); }
-  .three                 { width: calc(100% / 12 * 04); }
-  .four                  { width: calc(100% / 12 * 04); }
-  .five                  { width: calc(100% / 12 * 06); }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
   .six, .halfwidth       { width: calc(100% / 12 * 06); }
-  .seven                 { width: calc(100% / 12 * 08); }
-  .eight                 { width: calc(100% / 12 * 08); }
-  .nine                  { width: calc(100% / 12 * 10); }
-  .ten                   { width: calc(100% / 12 * 10); }
-  .eleven                { width: calc(100% / 12 * 12); }
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven,
   .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+
 }
 
 /** XL **/
@@ -373,13 +371,7 @@ header .columns {
   #wrapper,
   .wrapper,
   .container {
-    max-width: 75rem;
-  }
-
-  .group,
-  .grouped,
-  .row {
-    margin: 0 -.75rem;
+    max-width: 82.5rem;
   }
 
   /* the Grid
@@ -444,40 +436,66 @@ header .columns {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
 
 
 
 /** starting to custom style the header a bit more **/
-header h1.wordmark {
+header h1.wordmark,
+header .mission {
   position: absolute;
   z-index: 99;
-  transform: rotate(-15.1deg);
-  top: 34%;
-  left: 10%;
 }
 
+header h1.wordmark {
+  transform: rotate(5.625deg);
+  top: 40%;
+  left: -2%;
+}
 
+header .logo {
+  margin-top: 2%;
+  width: 20%;
+  margin-left: 20%;
+  height: auto;
+}
 
+svg.logo .c {
+  fill: rgba(241,97,74,1);
+}
 
+header .mission {
+  transform: rotate(-11.25deg);
+  top: 6%;
+  right: 0;
+}
 
+/** neon sign will really glow!!!! **/
+/*
+svg.logo {
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
 
-
-
-
-
-
-
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 10px rgba(250,252,255,.9),  0 0 25px rgba(255,117,044,.9), 0 0 100px rgba(241,097,074,.9), 0 0 111px rgba(255,234,058,.5);
+  }
+  to {
+    box-shadow: 0 0 5px rgba(250,252,255,.9), 0 0 50px rgba(255,117,044,.9), 0 0 50px rgba(241,097,074,.9), 0 0 150px rgba(255,234,058,.33);
+  }
+}
+*/
 
 /**
 These are some styles related to the crazy homepage solution Connor and Kristian are developing
@@ -486,8 +504,6 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 /*** testing an idea ***/
 
 .imged {
-  background-color: rgba(255,234,188,1);
-  background-size: cover;
   width: 100%;
   height: 0;
   padding-bottom: 60%;
@@ -496,7 +512,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 }
 
 .imged a {
-  background: rgba(26,42,53,.075);
+  background-color: rgba(26,42,53,0);
   text-decoration: none;
   display: block;
   position: absolute;
@@ -510,113 +526,29 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 }
 
 .imged a:hover {
-  background: rgba(26,42,53,.5);
-}
-.img-one {
-  background-image: url('img/tile_3.jpg');
+  background-color: rgba(26,42,53,.5);
 }
 
-.img-two {
-  background-image: url('img/tile_5.gif');
-}
-
-.img-three {
-  background-image: url('img/tile_6.jpg');
-}
-
-.img-four {
-  background-image: url('img/tile_4.jpg');
-}
-
-.img-five {
-  background-image: url('img/tile_1.jpg');
-}
-
-.img-six {
-  background-image: url('img/tile_2.jpg');
-}
-
-.tile {
+.tile, .tile a {
   color: white;
+}
+
+.imged .bigBlock h1,
+.imged .bigBlock p {
+  position: absolute;
 }
 
 .imged .bigBlock h1 {
   text-transform: uppercase;
-  position: absolute;
+  top: 3%;
+  left: 3%;
 }
 
 .imged .bigBlock p {
-  position: absolute;
   max-width: 75%;
-}
-
-/*XL*/
-
-.twelve.columns .imged.tile .bigBlock h1 {
-  font-size: 3.75rem;
-  left: 3%;
-  top: 3%;
-}
-
-.twelve.columns .imged.tile .bigBlock p {
-  font-size: 1rem;
-  right: 5%;
-  bottom: 5%;
-}
-
-.nine.columns .imged.tile .bigBlock h1 {
-  font-size: 3.75rem;
-  left: 4%;
-  top: 4%;
-}
-
-.nine.columns .imged.tile .bigBlock p {
-  font-size: 1rem;
-  right: 5%;
-  bottom: 5%;
-}
-
-/*L*/
-
-.six.columns .imged.tile .bigBlock h1 {
-  font-size: 2.25rem;
-  left: 6%;
-  top: 6%;
-}
-
-.six.columns .imged.tile .bigBlock p {
-  font-size: 1rem;
-  right: 6%;
   bottom: 3%;
+  right: 3%;
 }
-
-/*M*/
-
-.four.columns .imged.tile .bigBlock h1 {
-  font-size: 1.5rem;
-  top: 9%;
-  left: 9%;
-}
-
-.four.columns .imged.tile .bigBlock p {
-  font-size: 1rem;
-  right: 5%;
-  bottom: 2%;
-}
-
-/*S*/
-
-.two.columns .imged.tile .bigBlock h1 {
-  font-size: 1.5rem;
-  top: 9%;
-  left: 9%;
-}
-
-.two.columns .imged.tile .bigBlock p {
-  font-size: 1rem;
-  right: 9%;
-}
-
 
 /**
 NOTES AND HELP:
