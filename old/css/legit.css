@@ -1,0 +1,1156 @@
+/* ========================================== */
+/* ITC FRANKLIN GOTHIC FONT-FACE DECLARATIONS */
+/* ========================================== */
+
+@font-face {
+  font-family: 'Franklin Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('ff/fgbook.eot');
+  src: local('ITC Franklin Gothic Std Book'), local('ITCFranklinGothicStd-Book'), local('☺'), url('ff/fgbook.woff') format('woff'), url('ff/fgbook.ttf') format('truetype'), url('ff/fgbook.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic';
+  font-style: italic;
+  font-weight: 400;
+  src: url('ff/fgbookital.eot');
+  src: local('ITC Franklin Gothic Std Book Italic'), local('ITCFranklinGothicStd-BookIt'), local('☺'), url('ff/fgbookital.woff') format('woff'), url('ff/fgbookital.ttf') format('truetype'), url('ff/fgbookital.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('ff/fgdemi.eot');
+  src: local('ITC Franklin Gothic Std Demi'), local('ITCFranklinGothicStd-Demi'), local('☺'), url('ff/fgdemi.woff') format('woff'), url('ff/fgdemi.ttf') format('truetype'), url('ff/fgdemi.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic';
+  font-style: italic;
+  font-weight: 700;
+  src: url('ff/fgdemiital.eot');
+  src: local('ITC Franklin Gothic Std Demi Italic'), local('ITCFranklinGothicStd-DemiIt'), local('☺'), url('ff/fgdemiital.woff') format('woff'), url('ff/fgdemiital.ttf') format('truetype'), url('ff/fgdemiital.svg') format('svg');
+}
+/* ========================================== */
+/* NEW CENTURY SCHOOL BOOK FONT-FACE DECLARATIONS */
+/* ========================================== */
+
+@font-face {
+  font-family: 'New Century Schoolbook';
+  font-style: normal;
+  font-weight: 400;
+  src: url('ff/newcenturyschlbkltstd_roman-webfont.eot');
+  src: local('New Century Schoolbook LT STD Roman'), local('NewCenturySchlbkLTStd-Roman'), local('☺'), url('ff/newcenturyschlbkltstd_roman-webfont.woff') format('woff'), url('ff/newcenturyschlbkltstd_roman-webfont.ttf') format('truetype'), url('ff/newcenturyschlbkltstd_roman-webfont.svg#new_century_schoolbook_lroman') format('svg');
+}
+
+@font-face {
+  font-family: 'New Century Schoolbook';
+  font-style: italic;
+  font-weight: 400;
+  src: url('ff/newcenturyschlbkltstd_it-webfont.eot');
+  src: local('New Century Schoolbook LT STD Italic'), local('NewCenturySchlbkLTStd-It'), local('☺'), url('ff/newcenturyschlbkltstd_it-webfont.woff') format('woff'), url('ff/newcenturyschlbkltstd_it-webfont.ttf') format('truetype'), url('ff/newcenturyschlbkltstd_it-webfont.svg#newcenturyschlbk_lt_stditalic') format('svg');
+}
+
+@font-face {
+  font-family: 'New Century Schoolbook';
+  font-style: normal;
+  font-weight: 700;
+  src: url('ff/newcenturyschlbkltstd_bd-webfont.eot');
+  src: local('New Century Schoolbook LT STD Bold'), local('NewCenturySchlbkLTStd-Bd'), local('☺'), url('ff/newcenturyschlbkltstd_bd-webfont.woff') format('woff'), url('ff/newcenturyschlbkltstd_bd-webfont.ttf') format('truetype'), url('ff/newcenturyschlbkltstd_bd-webfont.svg#newcenturyschlbk_lt_stdbold') format('svg');
+}
+
+@font-face {
+  font-family: 'New Century Schoolbook';
+  font-style: italic;
+  font-weight: 700;
+  src: url('ff/newcenturyschlbkltstd_bdit-webfont.eot');
+  src: local('New Century Schoolbook LT STD Bold Italic'), local('NewCenturySchlbkLTStd-BdIt'), local('☺'), url('ff/newcenturyschlbkltstd_bdit-webfont.woff') format('woff'), url('ff/newcenturyschlbkltstd_bdit-webfont.ttf') format('truetype'), url('ff/newcenturyschlbkltstd_bdit-webfont.svg#newcenturyschlbk_lt_stdBdIt') format('svg');
+}
+/** FONT STACK TO USE FOR NOW: **/
+/** SANS: font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif; **/
+/** SERIF: font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+; **/
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Franklin Gothic', 'Liberation Sans', 'Nimbus Sans L', Helvetica, Arial, Sans-Serif;
+  color: #1a2a35;
+}
+
+.serif {
+  font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+html,
+body {
+  background-color: white;
+}
+
+article a,
+section a,
+.link-lists a {
+  color: rgba(26, 42, 53, 1);
+}
+
+a {
+  color: rgba(26, 42, 53, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(241, 97, 74, 1);
+  transition: all 400ms;
+}
+
+a:hover,
+a:focus {
+  color: rgba(0, 75, 124, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(241, 97, 74, .5);
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+/* a bunch of quick corrections and global things... */
+
+.add-top {
+  margin-top: 30px;
+}
+
+.add-bottom {
+  margin-bottom: 30px;
+}
+
+.no-top {
+  margin-top: 0;
+}
+
+.no-bottom {
+  margin-bottom: 0;
+}
+
+.pad-top {
+  padding-top: 51px;
+}
+
+.pad-top.border-top {
+  padding-top: 51px;
+}
+
+.border-top {
+  border-top: 1px solid;
+  padding-top: 15px;
+}
+
+hr.border-top {
+  padding: 0;
+}
+
+.noleftmargin {
+  padding-left: 0 !important;
+}
+
+em,
+cite {
+  font-style: italic !important;
+}
+
+.progress,
+.progress-bar {
+  height: 30px;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.btn.add-top {
+  margin-top: 30px;
+}
+
+img.fit {
+  width: 100%;
+}
+
+.baseline-shift {
+  margin-top: -2.66em;
+}
+
+.block-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  .md-no-top {
+    margin-top: 0;
+  }
+}
+/******************************************/
+/******************************************/
+/* NAVIGATION STUFF - Overrides a lot of default bootstrap stuff */
+/******************************************/
+/******************************************/
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eff4f7;
+  border-bottom: transparent;
+}
+
+.navbar {
+  background: white;
+  left: 0;
+  right: 0;
+  border-width: 0;
+  color: #1a2a35;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1a2a35;
+  border: none !important;
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: -15px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #2b4557 !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar-nav > li > a {
+  color: #1a2a35;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #2b4557;
+  background-color: transparent;
+  background-color: #eff4f7;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #2b4557;
+  background-color: #e4ecf2;
+}
+
+.nav li .text {
+  padding-top: 15px;
+}
+
+.nav-tabs {
+  color: #090f13;
+  border-bottom: 1px solid #d9e4ec;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: #eff4f7;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1a2a35;
+  background-color: white;
+  border: 1px solid #e4ecf2;
+  border-bottom-color: transparent;
+}
+
+.navbar-toggle {
+  background-color: white;
+  border: 1px solid #CDDCE7;
+  border-radius: 4px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 0;
+  margin-bottom: 8px;
+  padding: 9px 10px;
+  position: relative;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #1A2A35;
+  border-color: #1A2A35;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background-color: #CDDCE7;
+}
+
+.navbar-nav a {
+  border-bottom: none;
+}
+
+.nav .caret {
+  border-top-color: rgba(26, 42, 53, 1);
+  border-bottom-color: rgba(26, 42, 53, 1);
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eff4f7;
+  border-color: rgba(26, 42, 53, 1);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -10px;
+}
+
+.navbar-nav > li > .dropdown-menu > li > a {
+  color: rgba(26, 42, 53, 1);
+}
+
+.navbar-nav > li > .dropdown-menu > li > a:hover {
+  background: transparent;
+  color: rgba(241, 97, 74, 1);
+}
+/******************************************/
+/******************************************/
+/* LOGO STUFF */
+/******************************************/
+/******************************************/
+
+#logo {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  top: 51px;
+  height: 0;
+}
+
+#logo img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  opacity: .33;
+}
+
+@media (max-width: 767px) {
+  #logo,
+  header ul.location {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {}
+/******************************************/
+/******************************************/
+/* HOMEPAGE STUFF */
+/******************************************/
+/******************************************/
+
+.carousel-caption {
+  right: 15%;
+  bottom: 20%;
+  left: 15%;
+  padding: 0;
+  color: #1a2a35;
+  text-align: center;
+  text-shadow: none !important;
+  height: 60%;
+  display: none;
+}
+
+.carousel-caption h2 {
+  font-size: 5.5em;
+  line-height: .9;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-indicators li {
+  border-color: #1a2a35;
+}
+
+.carousel-indicators .active {
+  background-color: #1a2a35;
+}
+
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:active,
+.carousel-control:focus {
+  border: none;
+  color: #1a2a35;
+  width: 10%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+.carousel-control.left:hover {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.5) 0), color-stop(rgba(255, 255, 255, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#77FFFFFF', endColorstr='#00FFFFFF', GradientType=1);
+}
+
+.carousel-control.right:hover {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(255, 255, 255, 0.0001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.0001) 0), color-stop(rgba(255, 255, 255, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.0001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='#77FFFFFF', GradientType=1);
+}
+
+.homepage-graphic {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.homepage-graphic h2 {
+  margin: 0;
+}
+
+.link-lists ul,
+aside #upcoming,
+.jsonmade {
+  border-top: 3px solid #1a2a35;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-lists ul li,
+.upcoming ul li,
+.jsonmade > li {
+  border-top: 1px solid #1a2a35;
+  list-style: none;
+  margin: 0;
+  padding: 7px 0 5px;
+}
+
+.link-lists p {
+  margin-bottom: 0;
+}
+
+.news .link-lists time,
+.press-list time {
+  letter-spacing: 1px;
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
+.news .link-lists p,
+.press-list p {
+  font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  margin-top: 3px;
+  margin-bottom: -2px;
+}
+
+#upcoming > li ul,
+.jsonmade > li ul {
+  padding: .33em 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.25;
+}
+
+#upcoming > li ul > li,
+.jsonmade > li ul > li {
+  text-indent: -1em;
+  padding-left: 1em
+}
+
+#upcoming li span.date,
+.jsonmade li span.date {
+  font-weight: bold;
+  line-height: inherit;
+  color: rgba(241, 97, 74, 1);
+}
+
+.jsonmade li a {
+  border-bottom: none;
+  padding: 0;
+}
+
+.jsonmade li a:hover {
+  border-bottom: 1px solid rgba(241, 97, 74, .25);
+}
+
+.jsonmade li a:hover span.date {
+  color: inherit;
+}
+/******************************************/
+/******************************************/
+/* ABOUT & BIO STUFF */
+/******************************************/
+/******************************************/
+
+#board.border-top,
+.pad-top.border-top {
+  border-top: 3px solid #1a2a35;
+  margin-top: 30px;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#staff .bio img {
+  max-width: 300px;
+}
+
+.toggle .bio {
+  position: relative;
+}
+
+.toggle .bio img,
+.toggle .bio h2 {
+  cursor: pointer;
+}
+
+.toggle .bio h2,
+.project-thumb h3 {
+  font-size: 1.2em;
+}
+
+.toggle .bio h3 {
+  font-size: 1em;
+}
+
+.toggle .bio h2,
+.toggle .bio h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toggle .bio h2 {
+  margin-top: 15px;
+}
+
+.toggle .bio p {
+  background: white;
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-left: -220px;
+  width: 440px;
+  left: 50%;
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.email .small {
+  font-size: .85em;
+}
+/* PROJECT PAGE */
+
+.project-thumb:hover {
+  background: rgba(0, 0, 0, .1);
+}
+
+.project-thumb time {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-thumb h3 {
+  margin-top: 10px;
+}
+
+.project-thumb h3,
+.project-thumb p {
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+#current aside h3,
+#current aside h3 * {
+  margin: 0;
+}
+
+#current aside ul {
+  margin: 0;
+  padding: .5em 0;
+}
+
+#current aside ul li,
+#current aside ul li * {
+  margin: 0;
+  padding: 0;
+}
+/* Speaker Series styles */
+
+#speakerintro .blurbs {
+  padding-top: 20px;
+}
+
+#speakerintro .blurbs h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#speakerintro .blurbs h4 {
+  margin-top: 8px;
+}
+
+#speakerintro .blurbs p {
+  margin-bottom: 30px;
+}
+
+#speakers .row h2,
+#archive .row h2 {
+  margin-bottom: 0;
+  font-size: 1.25em;
+}
+
+#speakers .row div .btn {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#archive .row p {
+  margin-bottom: 0;
+}
+
+#speakers .upcoming p {
+  margin-bottom: 0;
+}
+/* individual speaker pages */
+
+.date-time,
+.date-time p {
+  font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.date-time {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.date-time .moderator {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 75%;
+  display: block;
+}
+
+ul.nav-stacked.scoot-down {
+  border-top: 1px solid;
+  font-size: 80%;
+  margin-bottom: 2em;
+}
+
+ul.nav-stacked.scoot-down li {
+  border-bottom: 1px solid rgba(241, 97, 74, 1);
+}
+
+ul.nav-stacked.scoot-down li a {
+  border-bottom: none;
+}
+/* some new styles for JSON fed lists to hide past things... */
+
+.jsonmade li.past {
+  text-decoration: line-through;
+  ;
+}
+
+.jsonmade li.past,
+.jsonmade li.past a {
+  color: #abc4d6;
+}
+
+.home .jsonmade li.past {
+  display: none;
+}
+/******************************************/
+/******************************************/
+/* Footer Styles */
+/******************************************/
+/******************************************/
+
+footer {
+  padding-top: 0;
+  padding-bottom: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+footer h3,
+footer ul,
+footer p {
+  font-size: 1em;
+}
+
+footer nav {
+  margin: 0;
+  padding: 0;
+}
+
+footer .row ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer h3 {
+  letter-spacing: 1px;
+}
+
+footer,
+footer h3,
+footer p,
+footer a {
+  color: #1a2a35;
+}
+
+footer a:hover {
+  color: rgba(241, 97, 74, 1) !important;
+}
+
+footer .secondary p,
+footer .secondary a {
+  font-size: 10px !important;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  footer .secondary .text-right {
+    text-align: left;
+  }
+}
+
+#archive section > div {
+  padding-top: 20px;
+  margin: 0;
+}
+
+#archive section > div.thumb {
+  height: 333px;
+}
+
+h5 {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+footer a,
+footer a:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+/** cool new link treatment **/
+
+.interior main a {
+  box-shadow: inset 0 -8px 0 rgba(24, 73, 123, .2);
+  border-bottom: 0px solid rgba(24, 73, 123, .2) !important;
+  text-decoration: none !important;
+  transition: box-shadow 400ms ease, border 400ms ease;
+}
+
+.interior main a:hover {
+  box-shadow: inset 0 0px 0 rgba(24, 73, 123, .8);
+  border-bottom: 2px solid rgba(24, 73, 123, .8) !important;
+  text-decoration: none !important;
+}
+/** = Grit Fund Additions **/
+
+.hero,
+.hero img {
+  width: 100%;
+}
+
+.hero {
+  margin-bottom: 2em;
+  /*   height: 400px; */
+  
+  overflow: hidden;
+}
+
+.hero.gfgray {
+  border: 2px solid #6A6B6D;
+}
+
+.hero.gfblue {
+  border: 2px solid #2981C9;
+}
+/*************************/
+
+#grit-text section {
+  padding-top: 5px;
+}
+
+#grit-text section:first-of-type {
+  padding-top: 0;
+}
+
+#grit-text ul {
+  margin: 0;
+  padding: 0;
+}
+
+#grit-text section > ul > li {
+  margin-bottom: 4px;
+}
+
+#grit-text ul ul {
+  padding-left: 1em;
+}
+
+#grit-text ul ul {
+  padding-left: 1em;
+  font-style: italic;
+  list-style: none;
+}
+
+#grit-menu {
+  padding-top: 53px;
+}
+
+#grit-menu .affix-top,
+#grit-menu .affix-bottom {
+  position: relative;
+}
+
+#grit-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#grit-menu .affix {
+  position: fixed;
+  top: 63px;
+  width: inherit;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.home .list-style-none {
+  margin: 0;
+  padding: 0;
+}
+
+.home .list-style-none h4 {
+  font-size: 1.1111em;
+  margin-bottom: .25em;
+}
+
+#grit-text #apply h5 em {
+  font-weight: normal;
+  font-style: normal !important;
+}
+
+#grit-text dt {
+  float: left;
+  width: 130px;
+  text-align: right;
+}
+
+#grit-text dd {
+  margin-left: 150px;
+}
+
+#grit-text #information .list-style-none h4 {
+  padding-top: 1em;
+  margin-bottom: .111em;
+}
+
+.progress {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.progress .progress-bar {
+  color: rgba(201, 222, 121, 1);
+  background: rgba(40, 109, 76, 1);
+  padding-top: 7px;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.progress > .remainder {
+  color: rgba(40, 109, 76, 1);
+  background: rgba(201, 222, 121, 1);
+  float: left;
+  text-align: center;
+  padding-top: 7px;
+  border-left: none;
+  height: 30px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.home .progress,
+.home .progress .progress-bar,
+.home .progress > .remainder,
+.home .embed-container {
+  margin: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.home .progress,
+.home .progress .progress-bar,
+.home .progress > .remainder {
+  height: 72px;
+}
+
+.home .progress .progress-bar,
+.home .progress > .remainder {
+  padding-top: 28px;
+}
+
+.home .progress .progress-bar {
+  color: white;
+  background: rgba(0, 75, 124, 1);
+}
+
+.home .progress > .remainder {
+  color: rgba(26, 42, 53, 1);
+  background: rgba(241, 97, 74, 1);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.embed-container h2 {
+  position: absolute;
+  top: 33%;
+  left: 12%;
+  width: 75%;
+  padding: 2%;
+  background: white;
+  transform: rotate(-11.25deg);
+}
+
+.embed-container:hover h2 {
+  display: none;
+}
+
+small strong {
+  color: red;
+  font-weight: bold;
+}
+
+.semi-lead p {
+  font-size: 125%;
+}
+
+.progress {
+  margin-top: 2em;
+}
+
+.progress * {
+  transition: all 400ms;
+}
+/** temporary homepage updates for rest of 2014 **/
+
+.big-graphic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home .diptych,
+.home .triptych {
+  margin-top: 2em;
+}
+
+.home .diptych section,
+.home .triptych section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .home .tall-stripe {
+    background: rgba(241, 97, 74, 1);
+    height: 362px;
+    position: relative;
+    left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .tall-stripe {
+    height: 440px;
+  }
+}
+
+p.bordered-text,
+a.border-btn {
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  padding: .33em;
+  display: block;
+  font-size: 2em;
+  line-height: 2em;
+  border: 3px solid !important;
+  border-radius: .33em;
+  font-family: 'New Century Schoolbook', Constantia, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  margin: 0;
+}
+
+a.border-btn:hover {
+  box-shadow: none;
+  border: 3px solid !important;
+  background: rgba(26, 42, 53, .1);
+}
+
+.grit a.border-btn {
+  font-size: 2em;
+  line-height: 2em;
+  margin: .66em 0;
+  border: 3px solid !important;
+  box-shadow: none;
+}
+
+.grit a.border-btn:hover {
+  border: 3px solid !important;
+  box-shadow: none;
+}
+
+.home a.border-btn {
+  font-size: 1em;
+  line-height: 1.66666em;
+  margin: .44em 0 1.44em;
+  border: 2px solid !important;
+  display: inline-block;
+  padding: .44em 1em .22em;
+}
+
+.home a.border-btn:hover {
+  border: 2px solid !important;
+}
+
+.victoria aside * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.33;
+}
+
+.victoria aside ul {
+  margin: 1em 0 0 0;
+  list-style: none;
+}
+
+.alert p.lead {
+  line-height: 21px;
+  margin-top: 6px;
+}
+
+dl .past {
+  text-decoration: line-through;
+}
+/** Scroll Related
+    ======================= **/
+
+.issue img {
+  max-width: 100%;
+  width: initial;
+}
+
+.issue .issue-info {
+  margin: 1em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+/** Opportunity / Internship related
+    ======================= **/
+
+.opportunity > ul {
+  list-style: none;
+  padding: 0;
+}

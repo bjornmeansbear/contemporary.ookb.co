@@ -8,16 +8,14 @@
 
     <title>The Contemporary : About</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="css/legit.css" rel="stylesheet">
+    <link href="css/newfooter.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -27,7 +25,7 @@
     <header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <div class="col-xs-12 col-md-10 col-xs-offset-0 col-md-offset-2">
             <div class="navbar-header">
               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -35,16 +33,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">The Contemporary</a>
+              <a class="navbar-brand" href="/">The Contemporary</a>
             </div>
             <nav class="collapse navbar-collapse" role="navigation">
               <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="speakerseries.html">Speaker Series</a></li>
-                <li><a href="donate.html">Support</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="/projects/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Programs <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/projects/">Projects</a></li>
+                    <li><a href="/speakerseries.html">Speaker Series</a></li>
+                    <li><a href="/scroll.html">Scroll</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="/gritfund/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/gritfund/">Grit Fund</a></li>
+                  </ul>
+                </li>
+                <li><a href="/donate.html">Support</a></li>
+                <li><a href="/shop.html">Shop</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right location">
+              <ul class="nav navbar-nav navbar-right location visible-lg">
                 <li><p class="text">in Baltimore, MD</p></li>
               </ul>
             </nav>
@@ -53,6 +64,7 @@
       </div><!-- END CONTAINER -->
     </header><!-- END HEADER/FIXED NAV -->
     <!-- END header / fixed NAVBAR -->
+
 
     <!-- Fluctuating LOGO! -->
     <header id="logo">
@@ -94,57 +106,150 @@
     <div class="main no-top" role="main">
       <div class="container">
         <div class="row">
-          
+
           <!-- Offset content over to the right -->
           <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
             <div class="row">
               <!-- Mission! -->
-              <article id="mission" class="pad-top col-md-5 col-lg-5 "> 
+              <article id="mission" class="pad-top col-md-5 col-lg-5 ">
                 <h1>Mission.</h1>
                 <section>
-                  <p class="lead">The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. Our mission expands the idea of a museum as an incubator that commissions site-specific and subject-oriented projects. We engage diverse audiences and advance contemporary art through projects and educational programming.</p>
-                  <p class="lead">Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.</p>
+                  <p class="lead serif">The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. Our mission expands the idea of a museum as an incubator that commissions site-specific and subject-oriented projects. We engage diverse audiences and advance contemporary art through projects and educational programming.</p>
+                  <p class="lead serif">Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.</p>
                 </section>
               </article>
 
               <!-- History! -->
-              <article id="history" class="pad-top col-md-7 col-lg-7 "> 
+              <article id="history" class="pad-top col-md-7 col-lg-7 ">
                 <h1>History.</h1>
                 <section>
-                  <p>In 1989, Baltimore curator George Ciscle founded the Contemporary in order to foster meaningful exchanges between artists, institutions, and diverse audiences. This nomadic institution quickly developed a reputation for delivering unexpected, challenging, and inspiring encounters with contemporary art by notable artists such as Willie Cole, Alison Saar, and Fred Wilson.</p>
-                  <p>During its first decade, the Contemporary was &ldquo;dedicated to redefining the concept of the museum.&rdquo; It moved around the city of Baltimore, sponsoring exhibitions and projects in a variety of borrowed venues such as warehouses, car dealerships, and bus stations, as well as collaborating with partnering institutions such as the Baltimore Museum of Art, Maryland Historical Society, Peabody Conservatory, and Walters Art Museum.</p>
-                  <p>Because of the variety and ambition of its projects, programs, and operations, the Contemporary&rsquo;s mission was continuously reviewed, adapted, and reinvented under various directors: Gary Sangster, Thom Collins, Irene Hofmann, and Sue Spaid. Thus the organization&rsquo;s profile has continuously evolved in its 24-year history. </p>
-                  <p>In 1999, The Contemporary rebranded as the Contemporary Museum and moved to 100 W. Centre Street, one block from the Walters Art Museum in the Mount Vernon neighborhood of downtown Baltimore. It organized exhibitions and related programming in that location for nearly ten years and worked with artists such as Dawoud Bey, Chris Burden, Dara Birnbaum, Louise Bourgeois, Futurefarmers, Ellen Gallagher, Felix Gonzalez-Torres, Isaac Julien, Christian Marclay, and Soledad Salam&eacute;. In 2011, the museum moved out of the W. Centre Street space and returned to the process of facilitating projects in neighboring institutions and buildings.</p>
+                  <p>In 1989, Baltimore curator George Ciscle founded The Contemporary in order to foster meaningful exchanges between artists, institutions, and diverse audiences. This nomadic institution quickly developed a reputation for delivering unexpected, challenging, and inspiring encounters with contemporary art by notable artists such as Willie Cole, Alison Saar, and Fred Wilson.</p>
+                  <p>During its first decade, The Contemporary was &ldquo;dedicated to redefining the concept of the museum.&rdquo; It moved around the city of Baltimore, sponsoring exhibitions and projects in a variety of borrowed venues such as warehouses, car dealerships, and bus stations, as well as collaborating with partnering institutions such as the Baltimore Museum of Industry, Maryland Historical Society, Peabody Conservatory, and Walters Art Museum.</p>
+                  <p>Because of the variety and ambition of its projects, programs, and operations, The Contemporary&rsquo;s mission was continuously reviewed, adapted, and reinvented under various directors: Gary Sangster, Thom Collins, Irene Hofmann, and Sue Spaid. Thus the organization&rsquo;s profile has continuously evolved in its 24-year history. </p>
+                  <p>In 1999, The Contemporary rebranded as The Contemporary Museum and moved to 100 W. Centre Street, one block from the Walters Art Museum in the Mount Vernon neighborhood of downtown Baltimore. It organized exhibitions and related programming in that location for nearly ten years and worked with artists such as Dawoud Bey, Chris Burden, Dara Birnbaum, Louise Bourgeois, Futurefarmers, Ellen Gallagher, Felix Gonzalez-Torres, Isaac Julien, Christian Marclay, and Soledad Salam&eacute;. In 2011, the museum moved out of the W. Centre Street space and returned to the process of facilitating projects in neighboring institutions and buildings.</p>
                   <p>At a critical juncture, and consistent with the belief that the mission should be subject to review, the Board of Trustees suspended operations in May of 2012. An intensive reassessment process followed, ultimately leading to the reinstatement of the institution&rsquo;s original vision of redefining the museum and the creation of a bold new organizational model. </p>
                   <p>Today, The Contemporary is a museum that willfully operates without a permanent collection or a building. Instead, we work with curators, both in Baltimore and beyond, to commission site- and situation-specific art projects that engage, challenge, and awe the people of Baltimore. We collaborate with different institutions, organizations, and individuals to offer dynamic programming that is tailored to both artists and the general public.</p>
                 </section>
               </article>
             </div>
-                        
+
             <!-- Staff!! -->
-            <article id="staff" class="pad-top border-top">
+            <article id="staff" class="pad-top border-top toggle">
               <h1>Staff.</h1>
               <section class="row add-top">
-                <div class="col-xs-6 col-sm-5 col-md-6 col-lg-5 col-xs-offset-3 col-sm-offset-0">
-                  <img src="img/headshot/haggag.jpg" class="img-circle" />
-                </div>
-                
-                <!-- Add the extra clearfix for only the required viewport -->
-                <div class="clearfix visible-xs"></div><!-- this breaks deana's image from the text on mobile mode for now... -->
-                
-                <div class="col-sm-7 col-md-6 col-lg-7"> 
+                <!-- deana -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/deana.jpg" class="img-circle" />
                   <h2>Deana Haggag</h2>
                   <h3>Director</h3>
-                  <p>Deana Haggag has been with The Contemporary since the spring of 2013. Prior to her work with The Contemporary, she was the Curator-in-Residence at Gallery CA, which is also located in Baltimore, MD in the City Arts building &mdash; home to over 90 artists. Deana received her MFA in Curatorial Practice from the Maryland Institute College of Art and a BA from Rutgers University in Art History and Philosophy. In addition to her work at The Contemporary, Deana curates independent exhibitions, consults on various public art initiatives, and contributes to cultural publications. She is on the board of Whoop Dee Doo, Station North Tool Library, and is the Dean of the Baltimore Chapter of the Awesome Foundation. Deana was named &ldquo;10 People to Watch Under 30&rdquo; by the Baltimore Sun in 2013.</p>
+                  <div class="text-center email"><a href="dhaggag@contemporary.org">dhaggag@contemporary.org</a></div>
+                  <p>Deana Haggag has been the Director of The Contemporary since the spring of 2013. Prior to her work with the museum, she was the Curator-in-Residence at Gallery CA, which is also located in Baltimore, MD in the City Arts building &#8212; home to over 90 artists. Deana received her MFA in Curatorial Practice from the Maryland Institute College of Art and a BA from Rutgers University in Art History and Philosophy. In addition to her work at The Contemporary, Deana lectures extensively, consults on various public art initiatives, contributes to cultural publications, and teaches at institutions such as Towson University and Johns Hopkins University. She is on the board of the Greater Baltimore Cultural Alliance, is an advisory member for FORCE, and founded the Baltimore Chapter of the Awesome Foundation. She also serves as a member of the Affiliates Board for the Museums and Society Program at Johns Hopkins University and is an active participant of the StageOne/FANS council at the Baltimore School for the Arts. Deana was named &#8220;10 People to Watch Under 30&#8221; by the Baltimore Sun in 2013 and a &#8220;Young Cultural Innovator&#8221; by the Salzburg Global Forum in 2015.</p>
                 </div>
+
+                <!-- Ginevra -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/ginevra.jpg" class="img-circle" />
+                  <h2>Ginevra Shay</h2>
+                  <h3>Program Manager</h3>
+                  <div class="text-center email"><a href="mailto:gshay@contemporary.org">gshay@contemporary.org</a></div>
+                  <p>Ginevra Shay joined The Contemporary late 2013. She is an active independent curator, founder of the Current Space Community Darkroom and Photo Program, and an artist and curator in-residence at Gallery Four. The exhibitions and publications that shes produced have been nationally and internationally recognized. Ginevra has worked with a number of private collections and Baltimore institutions, including The Jewish Museum of Maryland and The Afro-American Newspaper to aid with research and assist with digital archiving processes. Ginevra received her BA from the University of Vermont. She recently participated in a three person exhibit with Jen Schwarting and Cooper Holoweski at Present Company in NYC. Other recent exhibitions include, a two person exhibition at Rock512Devil (Baltimore), The Finnish Museum of Photography (Finland), Notre Dame University (Maryland), John Hansard Gallery (United Kingdom), Galleri Vasli Souza (Sweden), and Flying Object (Mass). Her work and publications are in the libraries of Yale University Art Gallery Library, The International Center for Photography, Indie Photobook Library, Houston Center for Photography, and the Los Angeles County Museum of Art. She was invited to be a “30 Creative Minds Under 30” by Maryland Art Place in 2013, and was selected to speak at the Society for Photographic Education National Conference in 2014. Ginevra is also on the board of Baltimore Youth Arts and the Bromo Arts District.</p>
+                </div>
+
+                <!-- Lu -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/lu.jpg" class="img-circle" />
+                  <h2>Lu Zhang</h2>
+                  <h3>Business Manager</h3>
+                  <div class="text-center email"><a href="mailto:lzhang@contemporary.org">lzhang@contemporary.org</a></div>
+                  <p>Lu Zhang received her MFA in Painting at the Frank Mohr Institute in the Netherlands and her BFA in General Fine Arts at the Maryland Institute College of Art (MICA). Prior to joining The Contemporary, Lu worked for a number of years as Senior Model Designer at a local architecture firm before transitioning to the non-profit sector in her position as Employer Relations Coordinator at MICA&#x27;s Joseph Meyerhoff Center for Career Development. In addition to her role as Business Manager at The Contemporary, Lu teaches part-time at MICA. Lu also serves on the Programming Advisory Committee at Maryland Art Place. Lu has exhibited her drawings and installations in the United States and abroad including shows at C. Grimaldis Gallery in Baltimore, Randall Scott Gallery in Washington DC, and The Center for Art and Culture in France. In 2010, Lu received a grant from the Maryland State Arts Council for Works on Paper. She was awarded The Trawick Prize Young Artist Award in 2011 and a Rubys Artist Project Grant in 2014. </p>
+                </div>
+
+                <!-- Dominiece  -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/dominiece.jpg" class="img-circle" />
+                  <h2>Dominiece Johnson</h2>
+                  <h3>Advancement Manager</h3>
+                  <div class="text-center email"><a href="mailto:lzhang@contemporary.org">djohnson@contemporary.org</a></div>
+                  <p>Dominiece Johnson joined The Contemporary in 2015, in conjunction with a Baltimore Corps Fellowship designed to place results-oriented professionals, locally and nationally, to scale the impact of leading social change organizations in Baltimore. Prior to her involvement with The Contemporary and Baltimore Corps, Dominiece spent a year as an AmeriCorps VISTA under Strong City Baltimore working for My Sister's Circle. She received a BA in Fashion Merchandising from Howard University. Upon graduation, she worked in the fashion industry at Macy’s Merchandising Group, followed by a year teaching English as a second language in China.</p>
+                </div>
+
+                <!-- Lee  -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/lee.jpg" class="img-circle" />
+                  <h2>Lee Heinemann</h2>
+                  <h3>Outreach Coordinator</h3>
+                  <div class="text-center email"><a href="mailto:lzhang@contemporary.org">lheinemann@contemporary.org</a></div>
+                  <p>Lee Heinemann joined The Contemporary in 2015, following prior temporary employment and a year-long internship with the museum. In addition to his work with The Contemporary, Lee is an artist, educator and organizer. He is the initiator and lead facilitator of Get Your Life! Productions—a collaborative, youth-centered video production company in partnership with middle-school-aged artists at 901 Arts in the Waverly neighborhood. Lee has been developing and facilitating youth art programming at 901 Arts since moving to Baltimore in 2011. He is a 2015 graduate of the Maryland Institute College of Art in Interdisciplinary Sculpture and a 2014-2015 France-Merrick Fellow in Community Art. He was a 2011 Presidential Scholar in the Arts and the recipient of the Theresa and Abraham Clapman Distinguished Sculpture Award in 2015. </p>
+                </div>
+
+                <!-- The Interns -->
+                <div class="col-xs-12 col-sm-4 col-md-3 bio">
+                  <img src="img/headshot/staff-2015/interns.jpg" class="img-circle" />
+                  <h2>Allie Linn, Brandon Buckson, May Kim</h2>
+                  <h3>Intern Team</h3>
+                  <div class="text-center email"><a href="mailto:scroll@contemporary.org">scroll@contemporary.org</a></div>
+                  <p>Allie Linn received her BFA in Interdisciplinary Sculpture from MICA in 2014. She is co-founder of the collaborative project space Bb and a collective member of the artist-run gallery Open Space, both located in Baltimore’s Bromo Arts District. Brandon Buckson is a Baltimore-born artist working out of East Baltimore. He is currently organizing a merging exhibition citation at Max Gallery, as well as numerous collaborations in East Baltimore for better representation in the development of Baltimore's cultural landscape. May Kim is currently receiving her BFA in Graphic Design from MICA. She was born on the same day as Snoop Dogg. </p>
+                </div>
+                <!-- end staff/intern bios -->
+              </section>
+
+<!--
+              <section class="row add-top">
+                <p class="col-xs-12 no-bottom"><strong>Graduate Fellow:</strong> Kirsten Poulsen-House</p>
+              </section>
+-->
+            </article>
+
+            <article id="council" class="pad-top toggle border-top">
+              <h1>Curatorial Advisory Council.</h1>
+              <div class="row add-top">
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/moorhead.jpg" class="img-circle"/>
+                  <h2>Elissa Blount Moorhead</h2>
+                  <p>Elissa Blount Moorhead is a Brooklyn based Exhibition Designer, Curator and Lecturer. She has developed public art events, gallery based exhibitions, and education programs for the last 20 years. She created and taught the <em>Cultural Pluralism</em> course for Pratt Institute&rsquo;s Graduate School of Art and Cultural Management (1999-2011), and currently teaches at Parsons Graduate School of Design @Cooper Hewitt. She co-founded <em>Red Clay Arts</em> in NYC where she curated/produced over 20 groundbreaking exhibitions and programs in NYC and London including; <em>Random Occurrences</em> - a multi- venue exhibition in conjunction with Project Diversity/ 2005; <em>Cat Calls</em> (Street Harassment project) at St Ann&rsquo;s Warehouse and the NYC Museum/2001; and <em>Practicum</em> - the inaugural experimental series at BRIC/2002. She served as Director of <em>RushKids</em>, arts education program administered by Rush Arts Gallery (2001-2003). She lectures and publishes work internationally covering environmental design, history, and museology. As Weeksville Heritage Center&rsquo;s Vice Director and Director of Design, Programming, and Exhibitions (2007- 2013), she developed the education, exhibition, and programming slate for WHC&rsquo;s contemporary gallery, garden, and performance spaces. She also served as project director, for the construction of WHC&rsquo;s 19,000 sq. ft. LEED Gold Cultural Arts Building. She is co-curator of the multisite public art project in partnership with the NYC based <em>Creative Time</em>, which is set to launch in Fall 2014. Elissa is co-founder of the art and social practice team, <em>Tandem</em>, which develops site-specific public art and design projects in several US cities.</p>
+                </section>
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/blumenthal.jpg" class="img-circle"/>
+                  <h2>Emily Blumenthal</h2>
+                  <p>Emily Blumenthal is the Senior Educator for Family, Teen, and Multigenerational Learning at the Metropolitan Museum of Art. Prior to joining the Met, she served as the Head of Family and Community Programs at the Walters Art Museum in Baltimore, MD, where she also acted as the Co-chair for Countdown to Kindergarten, Baltimore City and held leadership roles on a number of statewide early childhood and arts initiatives. She has developed and implemented award-winning interpretive materials and programs to engage families and children of all ages with works of art, and frequently presents professional papers and research on family learning in museums at a national level. She has facilitated curatorial projects, led interpretation for numerous exhibitions, and guided large-scale digital learning and evaluation initiatives alike. Blumenthal serves as a Graduate Thesis Advisor for MICA’s MFA in Curatorial Practice program, where she has also taught as adjunct faculty and guest lecturer.  She previously served as the Education and Public Programs Mentor for the MICA's Exhibition Development Seminar. Blumenthal received her Bachelors of Fine Arts from the Maryland Institute College of Art, her Masters of Science in Leadership in Museum Education from the Bank Street Graduate College of Education, and completed advanced graduate studies in Mind, Brain & Teaching at the Johns Hopkins University.</p>
+                </section>
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/collins.jpg" class="img-circle"/>
+                  <h2>Thom Collins</h2>
+                  <p>Thom Collins, an arts administrator, art historian, educator and author with more than 15 years of experience in museum leadership, joined Miami Art Museum as director in 2010. Since taking his post, Collins has been the driving force behind the museum&rsquo;s transition to its new Herzog &amp; de Meuron-designed facility in Miami&rsquo;s Museum Park, opening in 2013 as P&Atilde;rez Art Museum Miami. Guided by Collins&rsquo; vision, the Museum has strengthened its institutional mission with a renewed commitment to expanding its educational and public outreach as well as its permanent collection with works that capture artistic creativity across time, region, and discipline and have a special resonance in the Miami community. Prior to joining the Museum, Collins served as director of the Neuberger Museum of Art in Westchester County, New York, for five years. Collins has also previously served as director of the Contemporary Museum in Baltimore, Maryland, 2003&ndash;2005, chief curator at the Contemporary Arts Center in Cincinnati, Ohio, 2000-2003, associate curator at the Henry Art Gallery in Seattle, Washington,1998-2000, and Newhall Curatorial Fellow at the Museum of Modern Art in New York, 1994-1997. Collins earned his master&rsquo;s degree from Northwestern University and his bachelor&rsquo;s degree from Swarthmore College. He currently holds memberships in the Association of Art Museum Directors, the Association of Art Museum Curators, and the College Art Association.</p>
+                </section>
+
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs"></div><!-- this breaks them into two nice rows on mobile/small screens... -->
+
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/krishnamurthy.jpg" class="img-circle"/>
+                  <h2>Prem Krishnamurthy</h2>
+                  <p>Prem Krishnamurthy is a New York-based designer and curator. As a founding principal of award-winning design studio Project Projects, he has collaborated with clients including the Art Institute of Chicago, Bard Center for Curatorial Studies, Bozar Brussels, Guggenheim Museum, Harvard University, Istanbul Design Biennial, The Jewish Museum, M+ Museum (Hong Kong), MoMA, RISD Museum, SALT Istanbul, Vera List Center for Art & Politics, Whitney Museum, Yale University Art Gallery, and others. Project Projects is a two-time finalist for the Cooper Hewitt National Design Museum’s National Design Awards, the nation’s highest award for design. Prem is also the director/curator of P!, a multidisciplinary exhibition space and gallery in New York City’s Chinatown. Since opening in September 2012, P!’s exhibitions with Åbäke, Mel Bochner, Judith Barry, Katarina Burin, Heman Chong, Elaine Lustig Cohen, Leslie Hewitt, Karel Martens, Brian O‘Doherty, Sarah Oppenheimer, Amie Siegel, Société Réaliste, Philippe Van Snick, Kit Yi Wong, and others have been covered by publications such as Artforum, Frieze, Art in America, ArtReview, Design Observer, The New York Times, The New Yorker, and The Wall Street Journal. He has edited books including MATRIX / Berkeley: A Changing Exhibition of Contemporary Art (with Elizabeth Thomas) and Speculating on Change (with Vyjayanthi Rao and Carin Kuoni, forthcoming from Duke University Press in 2015). Prem is the Associate Editor of the art journal Paper Monument and serves on the Board of Directors of the online journal Triple Canopy. He is faculty at the Bard College Center for Curatorial Studies, where his focus is on the intersections of design and curatorial practice.</p>
+                </section>
+
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/lowe.jpg" class="img-circle"/>
+                  <h2>Rick Lowe</h2>
+                  <p>Rick Lowe lives in Houston. His exhibitions includes; Phoenix Art Museum, Contemporary arts Museum, Houston, Museum of Contemporary Arts, Los Angeles, Neuberger Museum, Purchase, New York, Kwangji Bienale, Kwangji, Korea, Museum of Fine Arts, Houston, Glassell School, &nbsp;Indianapolis Museum of Art, the Kumamoto State Museum, Kumamoto, Japan, Venice Architecture Bienale. Cittadellarte, Biella, Italy, Nasher Scuplture Center, Dallas, TX, Community building projects includes; Project Row Houses, Houston, Texas; Watts House Project, Los Angeles, CA; Arts Plan for Rem Koolhaus designed Seattle Public Library with Jessica Cusick; Borough Project for Spoleto Festival with Suzanne Lacy, Charleston, SC; Delray Beach Cultural Loop, Delray Beach, Florida, a project for the Seattle Art Museum in their new Olympic Sculpture Park with David Adjaye. Among Rick&rsquo;s honors are; Rudy Bruner Awards in Urban Excellence; AIA Keystone Award, the Heinz Award in the arts and humanities; Skowhegan School of Painting and Sculpture Governors Award; Loeb Fellow at Harvard University; Skandalaris Award for Excellence in Art Architecture, USA Artists Booth Fellow, and the Creative Time Annenberg Prize for Art and Social Change. In 2013, Rick Lowe was appointed by the Obama Administration to serve on the National Council of the Arts.</p>
+                </section>
+                <section class="col-xs-4 col-sm-3 col-md-2 col-lg-2 bio">
+                  <img src="img/headshot/momin.jpg" class="img-circle"/>
+                  <h2>Shamim M. Momin</h2>
+                  <p>Shamim M. Momin is the Director, Curator, and co-founder of LAND (Los Angeles Nomadic Division), a non-profit public art organization committed to curating site- and situation-specific contemporary art projects, in Los Angeles and beyond. LAND was founded in 2009 and has since presented over fifty discreet exhibitions and programs with contemporary artists. Momin&rsquo;s most recent projects include Painting in Place (2013), a group exhibition of contemporary painting presented in the historic Farmers and Merchants Bank in Downtown Los Angeles; Perpetual Conceptual: Echoes of Eugenia Butler (2012), an exhibition about Eugenia Butler Gallery as part of Pacific Standard Time: Art in L.A. 1945-1980; and Nothing Beside Remains (2011-2012), a multi-site, multi-artist exhibition in Marfa, TX. LAND recently published a monograph on artist Sarah Cain in which Momin contributed an essay on the artist&rsquo;s work. Previous to founding LAND, Momin was Associate Curator at the Whitney Museum of American Art where she co-curated both the 2008 and 2004 Whitney Biennial exhibitions, as well as numerous solo exhibitions. As Branch Director and Curator of the former Whitney Museum at Altria, she was responsible for organizing exhibitions and commissioning more than fifty new projects by emerging artists for both solo and thematic presentations.</p>
+                </section>
+              </div>
+
+              <section class="row add-top">
+                <p class="col-xs-12 no-bottom"><strong>Emeritus:</strong> Tom Finkelpearl</p>
               </section>
             </article>
 
             <!-- board!! -->
             <article id="board" class="toggle border-top">
               <h1>Board.</h1>
-              
+
               <div class="row add-top">
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/squyres.jpg" class="img-circle" />
@@ -154,25 +259,20 @@
                 </section>
 
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
+                  <img src="img/headshot/rubino.jpg" class="img-circle" />
+                  <h2>Debra Rubino</h2>
+                  <h3>Vice President</h3>
+                  <p>Debra Rubino is the director of strategic communications at Open Society Institute-Baltimore. From 1998 to January 2006, Rubino served as vice president for communications at Goucher College. From 1988 to 1996, she served first as director of institutional communications at the Maryland Institute College of Art (MICA), and then from 1996 to 1998, as associate vice president. At MICA, she was one of six individuals to launch the Baltimore Collegetown Network, a consortium of 15 institutions from the region, and later served as its governing board&rsquo;s president for five years. She is a member of the board of the Santa Fe University of Art and Design and on the Greater Baltimore Cultural Alliance, where she was one of the founding members. She served as the board president for Art on Purpose until it shut its doors in 2012. She is also an active professional artist&mdash;a photographer and printmaker. She holds a BA degree from Franklin and Marshall College and an MFA from the Maryland Institute College of Art.</p>
+                </section>
+
+<!--
+                <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/allen.jpg" class="img-circle" />
                   <h2>Ray Allen</h2>
                   <h3>Vice President</h3>
                   <p>Ray Allen, who was first appointed in 1994 as Vice President for Academic Affairs and in 2006, as its first provost, has led the educational program at Maryland Institute College of Art (MICA) through the largest period of growth in its history. Ray first came to MICA in 1970 as a faculty member and subsequently, department chair. In 1983, he assumed an eleven-year tenure as the first Vice President for Academic Affairs at Maine College of Art. An extensive international evaluator of programs of art and design, Ray was elected to the Commission on Accreditation for the National Association of Schools of Art and Design (NASAD), became its chair in 2002 and President of the organization from 2005 to 2008. In 2009, NASAD elected him a Fellow and Life Member, its highest award for distinguished service. Ray holds a BFA from Philadelphia College of Art (PCA) and a MFA from Queens College of the City University of New York respectively.</p>
                 </section>
-
-                <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/bothner.jpg" class="img-circle" />
-                  <h2>Doug Bothner</h2>
-                  <h3>Vice President</h3>
-                  <p>Doug Bothner is a Senior Associate at Ziger/Snead Architects in Baltimore, Maryland. His work has won numerous design awards from the Baltimore and Maryland chapters of the American Institute of Architects, and has been published in Dwell, Wallpaper* Online, IDFX, Baltimore Style, Home &amp; Design, and VIEW Magazines. Doug is active in the Baltimore community. He has been adjunct faculty at the Maryland Institute of College of Art and a visiting critic at the University of Maryland School of Architecture, the School of Architecture and Planning at The Catholic University, and Morgan State University School of Architecture. As an avid cyclist, he served as a Juror for the Station North Arts &amp; Entertainment Bike Rack Competition. He holds a Master of Architecture from the Yale University School of Architecture where he was awarded The Drawing Prize in 1996, and he graduated with Honors in Painting from Wesleyan University. </p>
-                </section>
-
-                <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/stults.jpg" class="img-circle" />
-                  <h2>Karen Stults</h2>
-                  <h3>Vice President</h3>
-                  <p>Karen Stults is the Director of Community Engagement at Maryland Institute College of Art and brings over twenty years of nonprofit management and program development experience to her commitment to the arts. Ms. Stults holds a M.Ed. in Policy Development and Program Evaluation from Vanderbilt University, a BA in Business and Communications from Mercer University, a certificate in Ceramics and Sculpture from the Corcoran College of Art + Design, and a certificate in Museum Exhibition Planning and Design from Georgetown University. Previous employers include the Center for Community Change, YouthAction, Inc., and McAuley Institute in Washington, DC. She is an alumna of the Windcall Residency Program for social change activists and serves on the board of Fluid Movement. Her work at MICA and in Baltimore is rooted in the belief that individual artists and arts organizations play a vital role in energizing and transforming communities.</p>
-                </section>
+-->
 
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/haggag_sm.jpg" class="img-circle" />
@@ -187,10 +287,13 @@
                   <p>Jessica Lanzillotti, a South Dakota native, holds the position of Treasurer of Single Carrot Theatre&rsquo;s Board of Directors and works as the General Manager at Everyman Theatre. Jessica graduated valedictorian of the Towson University Business School in 2002, has interned at Arthur Andersen, LLP, and worked up to a senior accountant at Chernoff &amp; Richards, P.A. She left to form her own accounting company in 2005 and immediately took on Baltimore&rsquo;s Everyman Theatre as one of her clients. After working contractually for a few years, Jessica joined the Everyman team full time, first as Business Manager and then as General Manager beginning in July of 2012. Jessica does not have any artistic experience, generally preferring to work &quot;behind the scenes,&quot; but she attends shows regularly and loves the creative environment.</p>
                 </section>
 
-                <!-- Add the extra clearfix for only the required viewport -->
-                <div class="clearfix add-bottom add-top"></div><!-- this breaks the groups of board members up a little... -->
-                              
                 <!-- general board members -->
+                <section class="col-xs-4 col-sm-3 col-md-2 bio">
+                  <img src="img/headshot/bothner.jpg" class="img-circle" />
+                  <h2>Doug Bothner</h2>
+                  <p>Doug Bothner is a Senior Associate at Ziger/Snead Architects in Baltimore, Maryland. His work has won numerous design awards from the Baltimore and Maryland chapters of the American Institute of Architects, and has been published in Dwell, Wallpaper* Online, IDFX, Baltimore Style, Home &amp; Design, and VIEW Magazines. Doug is active in the Baltimore community. He has been adjunct faculty at the Maryland Institute of College of Art and a visiting critic at the University of Maryland School of Architecture, the School of Architecture and Planning at The Catholic University, and Morgan State University School of Architecture. As an avid cyclist, he served as a Juror for the Station North Arts &amp; Entertainment Bike Rack Competition. He holds a Master of Architecture from the Yale University School of Architecture where he was awarded The Drawing Prize in 1996, and he graduated with Honors in Painting from Wesleyan University. </p>
+                </section>
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/cloyd.jpg" class="img-circle" />
                   <h2>Tamar Cloyd</h2>
@@ -202,7 +305,7 @@
                   <h2>Jeffry Cudlin</h2>
                   <p>Jeffry Cudlin is a Washington, D.C. based critic, curator, and performance artist. He serves as full-time Professor of Curatorial Studies and Practice at the Maryland Institute College of Art in Baltimore, teaching in George Ciscle&rsquo;s Curatorial Practice MFA program. Cudlin has written for The Washington Post, The Washington City Paper, and Sculpture Magazine. In both 2009 and 2008, he won First Place Altweekly Awards for Arts Criticism from the Association of Alternative Newsweeklies. From 2007 to 2012, Cudlin worked for The Arlington Arts Center in Arlington, Virginia. As Director of Exhibitions, Cudlin developed projects exploring trans-humanism, historical reenactments, and images of women in sports. At MICA, Cudlin coordinates the undergraduate Concentration in Curatorial Studies, and works with undergraduate and graduate students to create audience-focused exhibitions throughout Baltimore. Cudlin received his MFA from the University of Maryland, College Park, and his undergraduate degree in studio art from the University of Virginia.</p>
                 </section>
-                
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/foster.jpg" class="img-circle" />
                   <h2>Lionel Foster</h2>
@@ -214,25 +317,13 @@
                   <h2>Sarva Girdhar</h2>
                   <p>Sarva Girdhar, M.D. is a board certified surgeon, in practice since 1977, specializing in general surgery, wound care, and veins. His office and practice are located in Westminster, MD. Born and raised in India, Sarva completed his medical studies at the University of Gauhati and the Postgraduate Institute of Medical Education and Research before immigrating to the United States in 1971. From 1971-1977, Sarva completed medical residences and fellowships in Baltimore, Dallas, St. Louis as well as Altoona, PA. Sarva is very interested in contemporary art, specifically installation and site-specific works. He is an avid contemporary art collector focusing predominately on Indian and South Asian artists. He lives in Pikesville with his wife Veena.</p>
                 </section>
-                
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/golden.jpg" class="img-circle" />
                   <h2>Joanna Golden</h2>
                   <p>Joanna Golden is the Creative Director of Pie in the Sky, a pie baking company located in Aspen, CO. She splits her time between Aspen and Baltimore, where she was born and raised. She attended the Park School of Baltimore and then went on to receive her BFA in Costume Design from the Rhode Island School of Design. Joanna worked in the costume design industry for many years before starting her family of two children. She has been an active member of the The Walters Art Museum Women&#x27;s Committee since 2000 and is also a member of the Board of Trustees for The Maryland Zoo.</p>
                 </section>
-                
-                <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/goldiner.jpg" class="img-circle" />
-                  <h2>William Goldiner</h2>
-                  <p>William Goldiner has been the Team Physician and Medical Director for the Baltimore Orioles since 1993. He also is an internal medicine consultant and works for hospitals such as Sheppard Pratt. A Baltimore native, William is an avid contemporary art collector and lives in Pikesville, Maryland.</p>
-                </section>
-                
-                <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/johnson.jpg" class="img-circle" />
-                  <h2>Stanton Johnson</h2>
-                  <p>Stanton R. Johnson is an associate at Venable LLP. He focuses his practice on a variety of complex commercial litigation matters. A native of the Washington, DC area, Stanton graduated from Morgan State University with an Electrical Engineering degree, and received his Juris Doctor from the University of Maryland School of Law&mdash;where he was a Leadership Scholar and served as Technology Editor for the University of Maryland Law Journal of Race, Religion, Gender and Class. Before law school, Stanton was an intelligence analyst in the Directorate of Intelligence, Central Intelligence Agency. He attended the Sherman Kent School for Intelligence Analysis, graduating in 2005, and earned exceptional performance awards from the CIA in 2005, 2006 and 2007. Stanton was also recognized in 2013 as a &ldquo;Shining Star&rdquo; by the University of Maryland School of Law Black Alumni Reunion.</p>
-                </section>
-                
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/lee.jpg" class="img-circle" />
                   <h2>Joyce <br/>Yu-Jean Lee</h2>
@@ -240,21 +331,27 @@
                 </section>
 
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
+                  <img src="img/headshot/lowy.jpg" class="img-circle" />
+                  <h2>Jason Lowy</h2>
+                  <p>Jason Lowy is Vice President &ndash; Wealth Management at UBS Financial Services and partner of The Murray Group. He holds the designations of CERTIFIED FINANCIAL PLANNER&trade;, Accredited Investment Fiduciary designee, Chartered Retirement Plan Specialist and Wealth Advisor. Jason started his career in 2004 when he joined the Murray Group at Legg Mason in downtown Baltimore. His main focus is helping business owners and retirees manage their retirement income needs and achieve their financial dreams. He graduated from Western Maryland/McDaniel college, where he holds a dual major in Philosophy and Human Behavior in Organizations. Jason is an actively involved in Best Buddies, National Collegiate Cancer Foundation and Junior Achievement of Central Maryland.</p>
+                </section>
+
+                <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/ottesen.jpg" class="img-circle" />
                   <h2>Bodil Ottesen</h2>
                   <p>Bodil Ottesen is an art historian and educator. She is a lecturer and adjunct faculty at the University of Maryland, Goucher College, Towson University, Johns Hopkins University, Maryland Institute College of Art, Stevenson University, and the University of Maryland, Baltimore County. Bodil has taught a range of art discourses including Ancient, Medieval, Renaissance, Modern, and Contemporary Art. Her writing and research has been including in numerous arts publications. Bodil received her PhD from the University of Maryland in 1987 and wrote her dissertation on <cite>The Development of Dedication Imagery in Romanesque Manuscripts</cite>. She also earned an M.A. from the University of Maryland and a B.A. from Goucher College. Bodil holds membership in the College of Art Association America and The National Museum of Women in the Arts.</p>
                 </section>
-                
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/rubino.jpg" class="img-circle" />
-                  <h2>Debra Rubino</h2>
-                  <p>Debra Rubino is the director of strategic communications at Open Society Institute-Baltimore. From 1998 to January 2006, Rubino served as vice president for communications at Goucher College. From 1988 to 1996, she served first as director of institutional communications at the Maryland Institute College of Art (MICA), and then from 1996 to 1998, as associate vice president. At MICA, she was one of six individuals to launch the Baltimore Collegetown Network, a consortium of 15 institutions from the region, and later served as its governing board&rsquo;s president for five years. She is a member of the board of the Santa Fe University of Art and Design and on the Greater Baltimore Cultural Alliance, where she was one of the founding members. She served as the board president for Art on Purpose until it shut its doors in 2012. She is also an active professional artist&mdash;a photographer and printmaker. She holds a BA degree from Franklin and Marshall College and an MFA from the Maryland Institute College of Art.</p>
+                  <img src="img/headshot/stults.jpg" class="img-circle" />
+                  <h2>Karen Stults</h2>
+                  <p>Karen Stults is the Director of Community Engagement at Maryland Institute College of Art and brings over twenty years of nonprofit management and program development experience to her commitment to the arts. Ms. Stults holds a M.Ed. in Policy Development and Program Evaluation from Vanderbilt University, a BA in Business and Communications from Mercer University, a certificate in Ceramics and Sculpture from the Corcoran College of Art + Design, and a certificate in Museum Exhibition Planning and Design from Georgetown University. Previous employers include the Center for Community Change, YouthAction, Inc., and McAuley Institute in Washington, DC. She is an alumna of the Windcall Residency Program for social change activists and serves on the board of Fluid Movement. Her work at MICA and in Baltimore is rooted in the belief that individual artists and arts organizations play a vital role in energizing and transforming communities.</p>
                 </section>
 
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
-                  <img src="img/headshot/warfield.jpg" class="img-circle" />
-                  <h2>Lynn Warfield</h2>
-                  <p>Lynn Warfield and her husband Edwin Warfield own citybizlist.com, a local business news website published in 11 cities. Prior to citybizlist, Lynn was Project Manager for Sandy Lerner, founder of Cisco Systems. Before moving to Baltimore in 2003, Lynn&rsquo;s career was in art and interior design. With a BA in Fine Art, Lynn managed several art galleries and an auction house, and owned interior design companies in Dallas, TX and Middleburg, VA. In Middleburg, Lynn, as a trustee, chaired and decorated events for Loudoun Hospital, the Upperville Horse Show and Trinity Child Care Center in conjunction with Sotheby&rsquo;s Auction House; and has since decorated the Contemporary&rsquo;s 2007 &ldquo;Water Ball&rdquo;, the &ldquo;Sustain-a-Ball&rdquo; in 2008, the &ldquo;Bollywood&rdquo; Gala in 2009, &ldquo;Fred Wilson&rdquo; in 2010 and the Finnish themed gala in 2012. An avid horsewoman since childhood, Lynn recently traded in her mount for a lady&rsquo;s Trek, which she rides on weekends at the eastern shore or the Maryland hunt country.</p>
+                  <img src="img/headshot/walters.jpg" class="img-circle" />
+                  <h2>Rita Walters</h2>
+                  <p>Since February 2015, Rita has served as Vice President for Advancement at MICA. Over her career, Walters has helped to secure millions of dollars for education and nonprofit organizations. Prior to joining MICA, Walters served as chief development officer for Washington National Cathedral, where she has worked to increase the endowment, more consistently and closely engaged donors, and developed new fundraising initiatives. Prior to the Cathedral she was a senior associate director of development for Johns Hopkins University Zanvyl Krieger School of Arts and Sciences, director of development for the Baltimore Presbytery, and annual fund officer for Big Brothers Big Sisters of Central Maryland. She also spent 14 years in finance working both in New York City for AMEX as a senior accountant; and in NJ for Willingboro Board of Education, a $50 million dollar school district where she served as an accountant. Walters has been deeply engaged in the community, and in addition to the Contemporary, also serves on the Leadership Council for Convergence Center for Policy Resolution in Washington, DC. She earned a master’s degree in liberal arts and a graduate certificate in nonprofit studies at the Institute for Policy Studies Center for Civil Society Studies from Johns Hopkins University and a Bachelor of Science degree in accounting from Fairleigh Dickinson University. She resides in Baltimore City with her husband. They have two college-aged sons and one unruly dog-named Barry Allen.</p>
                 </section>
 
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
@@ -262,7 +359,7 @@
                   <h2>Portia Wood</h2>
                   <p>Portia Wood is a practicing trial attorney in Baltimore City. She received her Juris Doctor from the recently renamed University of Maryland Francis King Carey School of Law in 2011. Portia is a California native with deep Baltimore roots. She studied public relations as an undergraduate, and uses those skills to bring people together with an impetus for social change. Over the past few years, in addition to her legal work, she participates in the Young Professionals Group of Open Society Institute-Baltimore. Portia also volunteered with Hockey in the Hood, a non-profit bringing sports and mentorship to Baltimore&rsquo;s Patterson Park neighborhood, as well as, United Sisters Mentoring program. While not an artist herself, she has spent many years collecting and promoting the works of underground artists around the country, including but not limited to collaborating with Steady Baltimore Artist Collective on exhibitions of Graffiti Art in Baltimore Galleries. Portia resides in the Homeland neighborhood.</p>
                 </section>
-                
+
                 <section class="col-xs-4 col-sm-3 col-md-2 bio">
                   <img src="img/headshot/zimelman.jpg" class="img-circle" />
                   <h2>Robin Zimelman</h2>
@@ -285,29 +382,13 @@
 
     <footer>
       <div class="container">
-
-        <div class="row">
-          <div class="sponsors col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 ">
-            <h4>Featured Sponsors</h4>
-            <ul>
-              <li><a href=""><img src="img/sponsors/warhol-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/rwdf-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/straus-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/bsfta-bw.png"/></a></li>
-              <li><a href-""><img src="img/sponsors/brookshire-bw.png"/></a></li>
-            </ul>
-          </div>
-        </div>
-
         <div class="row">
 
-          <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <div id="dynamicreplacement" class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+
+            <hr class="border-top" />
 
             <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <p class="blurb"><strong>The Contemporary</strong> is a nomadic, non-collecting art museum in Baltimore, Maryland, guided by three main principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.</p>
-              </div>
-
               <div class="col-sm-6 col-md-3">
                 <h3>The Contemporary <br/>(Museum) of Baltimore</h3>
                 <ul>
@@ -318,22 +399,21 @@
                   <li>info@contemporary.org</li>
                 </ul>
               </div>
-              
-              <nav class="col-sm-6 col-md-2">
+
+              <nav class="col-sm-6 col-md-3">
                 <h3><a href="about.html">About</a></h3>
                 <ul>
                   <li><a href="about.html#mission">Mission &amp; History</a></li>
                   <li><a href="about.html#staff">Staff &amp; Board</a></li>
-                  <li><a href="pdf/ContemporaryInternApp_2014-15.pdf">Internship</a></li>
                   <li><a href="donate.html#supporters">Support</a></li>
                   <li><a href="press.html">Press</a></li>
                 </ul>
               </nav>
 
               <!-- Add the extra clearfix for only the required viewport -->
-              <div class="clearfix visible-sm"></div>
+              <div class="clearfix visible-sm"></div><!-- this breaks deana's image from the text on mobile mode for now... -->
 
-              <nav class="col-sm-6 col-md-2">
+              <nav class="col-sm-6 col-md-3">
                 <h3>Programming</h3>
                 <ul>
                   <li><a href="projects.html">Projects</a></li>
@@ -341,8 +421,8 @@
                   <li><a href="speakerseries.html">Speaker Series</a></li>
                 </ul>
               </nav>
-    
-              <nav class="col-sm-6 col-md-2">
+
+              <nav class="col-sm-6 col-md-3">
                 <h3>Connect</h3>
                 <ul>
                   <li><a href="http://eepurl.com/BDHxH">Email List</a></li>
@@ -357,19 +437,19 @@
                   <li><a href="donate.html">Donate</a></li>
                 </ul>
               </nav>
-    
+
             </div>
-            
+
             <hr class="border-top" />
 
             <div class="row secondary">
-              <p class="col-sm-9">&copy; Copyright 1989&ndash;2014, The Contemporary</p>
+              <p class="col-sm-9">&copy; Copyright 1989&ndash;2013, The Contemporary</p>
               <p class="col-sm-3 text-right"><a href="http://www.ookb.co/">site by OOKB</a></p>
             </div>
             <!-- END FOOTER CONTENTS -->
-            
+
           </div><!-- END RIGHT OFFSET -->
-        
+
         </div>  <!-- END ROW -->
       </div>    <!-- END CONTAINER -->
     </footer>   <!-- END FOOTER -->
@@ -378,39 +458,42 @@
     <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ookb_for_tc.js"></script>
-    
+
     <!-- make all the bios the same height with JS, not CSS -->
     <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
     <script>
-      $(window).load(function() {
-      
+      var bioheight = function() {
         var bigbrother = -1;
-      
-        $('.bio').each(function() {
+        $('#board .bio').each(function() {
           bigbrother = bigbrother > $(this).height() ? bigbrother : $(this).height();
         });
-      
-        $('.bio').each(function() {
+        $('#board .bio').each(function() {
           $(this).height(bigbrother);
         });
-      
+        var bigbrother2 = -1;
+        $('#staff .bio').each(function() {
+          bigbrother2 = bigbrother2 > $(this).height() ? bigbrother2 : $(this).height();
+        });
+        $('#staff .bio').each(function() {
+          $(this).height(bigbrother2);
+        });
+      };
+
+      $(window).load(function() {
+        bioheight();
       });
+
+      $(window).resize(function() {
+        bioheight();
+      });
+
     </script>
 
     <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-46130583-1', 'contemporary.org');
-      ga('send', 'pageview');
-    </script>
-    
+    <script src="js/ga.js"></script>
+
   </body>
 </html>

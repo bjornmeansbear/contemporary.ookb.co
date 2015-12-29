@@ -8,14 +8,17 @@
 
     <title>The Contemporary, Baltimore, MD.</title>
 
+    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
     <link href="css/legit.css" rel="stylesheet">
     <link href="css/newfooter.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -106,22 +109,31 @@
 
           <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="homepage-carousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <!-- how do I make this auto populate? -->
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#homepage-carousel" data-slide-to="1"></li>
+                <li data-target="#homepage-carousel" data-slide-to="2"></li>
+                <li data-target="#homepage-carousel" data-slide-to="3"></li>
+                <li data-target="#homepage-carousel" data-slide-to="4"></li>
               </ol>
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
+                  <a href="/projects/" class="no-styles">
+                    <img src="/img/001-ghostfood.jpg" alt="Ghost Food, October/November 2015">
+                    <div class="carousel-caption">
+                      <h2>GhostFood explores eating in a future of biodiversity loss brought on by climate change.</h2>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
                   <a href="/speakerseries.html" class="no-styles">
-                    <img src="/img/006-TalkingShop.jpg" alt="Talking Shop, our 2015 speaker series, starts May 21">
+                    <img src="/img/006-talkingshop2.jpg" alt="Talking Shop, our 2015 speaker series, starts May 21">
                     <div class="carousel-caption">
                       <h2>Talking Shop, our 2015 speaker series, starts May 21</h2>
                     </div>
@@ -130,10 +142,7 @@
 
                 <div class="item ">
                   <a href="/gritfund/" class="no-styles">
-                    <img src="/img/gritfund.jpg" alt="The Grit Fund First Round Grantees Announced" />
-                    <div class="carousel-caption">
-                      <h2>The Grit Fund First Round Grantees Announced</h2>
-                    </div>
+                    <img src="/img/gritfund2-header.jpg" alt="The Grit Fund Year Two" />
                   </a>
                 </div>
 
@@ -147,17 +156,8 @@
                 </div>
 
                 <div class="item">
-                  <a href="http://www.podcastsonprocess.com/" class="no-styles">
-                    <img src="/img/005-podcasts.jpg" alt="Podcasts on Process">
-                    <div class="carousel-caption">
-                      <h2>Podcasts on Process</h2>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item">
                   <a href="scroll.html" class="no-styles">
-                    <img src="/img/002-scrollbound2.jpg" alt="Scroll: Bound2 released Mar 28 at PMFVI!">
+                    <img src="/img/002-scrollbound3.jpg" alt="Scroll: Bound2 released Mar 28 at PMFVI!">
                     <div class="carousel-caption">
                       <h2>Scroll: Bound2 released Mar 28 at PMFVI!</h2>
                     </div>
@@ -167,10 +167,10 @@
               </div><!-- end slide! -->
 
               <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <a class="left carousel-control" href="#homepage-carousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
               </a>
-              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <a class="right carousel-control" href="#homepage-carousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
               </a>
             </div>
@@ -181,7 +181,7 @@
                   <h2>News</h2>
                 </div>
                 <div>
-                  <ul id="newsfeed" class="jsonmade list">
+                  <ul id='newsfeed' class="jsonmade list">
                     <!-- printing this out with json magix -->
                   </ul>
                 </div>
@@ -192,9 +192,6 @@
                   <h2>Upcoming</h2>
                 </div>
                 <div>
-                  <div class="embed-wrapper">
-                    <iframe src="http://contemporary.ezle.io/iframe/fb-events"></iframe>
-                  </div>
                   <ul id="upcoming" class="jsonmade list">
                     <!-- printing this out with json magix -->
                   </ul>
@@ -310,8 +307,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- ================================================== -->
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/ookb_for_tc.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ookb_for_tc.js"></script>
 
     <script>
       $.getJSON('json/upcoming.json', function(data) {

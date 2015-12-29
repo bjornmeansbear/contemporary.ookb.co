@@ -1,0 +1,9 @@
+/* Styles for Donation Form */
+
+form #header,
+form header,
+form .info,
+form #header h2 { 
+  display: none;
+  border: none;
+}

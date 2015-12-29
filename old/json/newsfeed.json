@@ -1,0 +1,32 @@
+{
+    "newsFeed": [
+        {
+            "url": "/speakerseries.html",
+            "text": "Talking Shop, the 2015 speaker series, starts May 21",
+            "humandate": "May 7",
+            "location": "",
+            "time": ""
+        },
+        {
+            "url": "/gritfund/",
+            "text": "First Grit Fund round of grantees announced!",
+            "humandate": "Apr 22",
+            "location": "",
+            "time": ""
+        },
+        {
+            "url": "http://hyperallergic.com/193686/the-seduction-of-screens-and-neon-at-night/",
+            "text": "Hyperallergic Review: <em>Bubble Over Green</em>",
+            "humandate": "Mar 26",
+            "location": "",
+            "time": ""
+        },
+        {
+            "url": "http://www.contemporary.org/about.html#council",
+            "text": "Prem Krishnamurthy joins CAC",
+            "humandate": "Mar 20",
+            "location": "",
+            "time": ""
+        }
+    ]
+}

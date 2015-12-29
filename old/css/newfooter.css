@@ -1,0 +1,132 @@
+footer {
+  margin-top: 2em;
+}
+
+/*********************/
+/*********************/
+/*********************/
+
+.sponsors h4 {
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  overflow: visible;
+}
+
+footer .sponsors ul {
+  padding-top: 7px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+.sponsors ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2% 16px;
+}
+
+.sponsors ul li:first-child {
+  margin-left: 0;
+}
+
+.sponsors ul li:last-child {
+  margin-right: 0;
+}
+
+.sponsors ul li:nth-child(1) {
+  width: 19%;
+}
+
+.sponsors ul li:nth-child(2) {
+  margin-top: -2px;
+  width: 9%;
+}
+
+.sponsors ul li:nth-child(3) {
+  margin-top: 3px;
+  width: 9%;
+}
+
+.sponsors ul li:nth-child(4) {
+  width: 16%;
+}
+
+.sponsors ul li:nth-child(5) {
+  margin-top: -5px;
+  width: 6%;
+}
+
+.sponsors ul li:nth-child(6) {
+  width: 16%;
+}
+
+.sponsors ul li img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*********************/
+/*********************/
+/*********************/
+
+footer .blurb {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+  text-transform: none;
+}
+
+/* footer email form */
+#emailcapture h2 {
+  padding-right: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#emailcapture {
+  border: 3px solid;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding-top:4px;
+  padding-bottom: 6px;
+}
+
+#emailcapture h2 {
+  padding-right: 0;
+}
+
+#emailcapture form {
+  padding-top: 15px;
+}
+
+#emailcapture form .mc-field-group {
+  padding: 0;
+}
+
+#emailcapture form .mc-field-group input {
+  width: 100%;
+  margin: 0;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+#emailcapture .btn-info {
+  color: #fff;
+  background-color: #2b4557;
+  border-color: #1a2a35;
+  width: 100%;
+  /**/
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+#emailcapture .btn-info:hover {
+  background-color: #1a2a35;
+}
+

@@ -814,17 +814,23 @@ footer a:hover {
 /** cool new link treatment **/
 
 .interior main a {
-  box-shadow: inset 0 -8px 0 rgba(24, 73, 123, .2);
-  border-bottom: 0px solid rgba(24, 73, 123, .2) !important;
+  box-shadow: inset 0 -6px 0 rgba(24, 73, 123, .2);
+  border-bottom: 1px solid rgba(24, 73, 123, .2) !important;
   text-decoration: none !important;
-  transition: box-shadow 400ms ease, border 400ms ease;
+  transition: all 400ms ease, border 400ms ease;
 }
 
 .interior main a:hover {
   box-shadow: inset 0 0px 0 rgba(24, 73, 123, .8);
-  border-bottom: 2px solid rgba(24, 73, 123, .8) !important;
+  border-bottom: 1px solid rgba(24, 73, 123, .8) !important;
   text-decoration: none !important;
 }
+
+.interior main a.btn {
+  box-shadow: none;
+  border-bottom: none;
+}
+
 /** = Grit Fund Additions **/
 
 .hero,
@@ -835,7 +841,7 @@ footer a:hover {
 .hero {
   margin-bottom: 2em;
   /*   height: 400px; */
-  
+
   overflow: hidden;
 }
 
@@ -895,11 +901,9 @@ footer a:hover {
   width: inherit;
 }
 
-.list-style-none {
-  list-style: none;
-}
-
+.list-style-none,
 .home .list-style-none {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -1069,7 +1073,8 @@ small strong {
 }
 
 p.bordered-text,
-a.border-btn {
+a.border-btn,
+.grit a.bordered-text {
   text-align: center;
   border: none;
   box-shadow: none;
@@ -1083,7 +1088,8 @@ a.border-btn {
   margin: 0;
 }
 
-a.border-btn:hover {
+a.border-btn:hover,
+.grit a.bordered-text:hover {
   box-shadow: none;
   border: 3px solid !important;
   background: rgba(26, 42, 53, .1);

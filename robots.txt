@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /25/
+Disallow: /ignore/
+
+User-agent: Google
+Disallow: /25/
+Disallow: /ignore/

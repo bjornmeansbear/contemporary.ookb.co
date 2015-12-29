@@ -1,13 +1,34 @@
 {
     "tsmenu": [
         {
-            "url": "/talkingshop/2015-06-15-healthinequity.html",
+            "url": "/talkingshop/2015-11-17-craft-defiance.html",
+            "title": "Craft + Defiance",
+            "one": "Joyce J. Scott",
+            "two": "Marquis Revlon",
+            "moderator": "Lee Heinemann",
+            "humandate": "November 17",
+            "time": "7pm",
+            "type": ""
+        },
+        {
+            "url": "/talkingshop/2015-09-30-humor-absurdity.html",
+            "title": "Humor + Absurdity",
+            "one": "Jerry Saltz",
+            "two": "Stavros Halkias",
+            "moderator": "Lu Zhang",
+            "humandate": "September 30",
+            "time": "7pm",
+            "type": ""
+        },
+        {
+            "url": "/talkingshop/2015-06-29-health-inequity.html",
             "title": "Health + Inequity",
             "one": "LaToya Ruby Frazier",
             "two": "Dr. Lisa Cooper",
             "moderator": "Elissa Blount-Moorhead",
-            "humandate": "June 15",
-            "time": "7pm"
+            "humandate": "June 29",
+            "time": "7pm",
+            "type": "past"
         },
         {
             "url": "/talkingshop/2015-05-21-3dprinting.html",
@@ -16,7 +37,8 @@
             "two": "Dwyer Kilcollin",
             "moderator": "Ginevra Shay",
             "humandate": "May 21",
-            "time": "7pm"
+            "time": "7pm",
+            "type": "past"
         }
     ]
 }

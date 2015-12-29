@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>The Contemporary : Support</title>
 
@@ -12,6 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/legit.css" rel="stylesheet">
+    <link href="css/newfooter.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +26,7 @@
     <header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <div class="col-xs-12 col-md-10 col-xs-offset-0 col-md-offset-2">
             <div class="navbar-header">
               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -35,16 +34,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">The Contemporary</a>
+              <a class="navbar-brand" href="/">The Contemporary</a>
             </div>
             <nav class="collapse navbar-collapse" role="navigation">
               <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="speakerseries.html">Speaker Series</a></li>
-                <li><a href="donate.html">Support</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="/projects/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Programs <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/projects/">Projects</a></li>
+                    <li><a href="/speakerseries.html">Speaker Series</a></li>
+                    <li><a href="/scroll.html">Scroll</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="/gritfund/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/gritfund/">Grit Fund</a></li>
+                  </ul>
+                </li>
+                <li><a href="/donate.html">Support</a></li>
+                <li><a href="/shop.html">Shop</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right location">
+              <ul class="nav navbar-nav navbar-right location visible-lg">
                 <li><p class="text">in Baltimore, MD</p></li>
               </ul>
             </nav>
@@ -89,10 +101,10 @@
       </div>
     </header>
 
-    <div class="main" role="main">
+    <main class="main" role="main">
       <div class="container">
         <div class="row">
-        
+
           <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
             <article id="donate" class="pad-top">
@@ -109,7 +121,7 @@
                      Baltimore, MD 21203
                   </p>
                 </section>
-                
+
                 <!-- Embedded Wufoo Form for managing Donations -->
                 <section class="col-sm-7 col-md-7">
                   <div id="wufoo-r1qogfym0ain6fv">
@@ -117,13 +129,13 @@
                   </div>
                   <script type="text/javascript">var r1qogfym0ain6fv;(function(d, t) {
                   var s = d.createElement(t), options = {
-                  'userName':'ookb', 
-                  'formHash':'r1qogfym0ain6fv', 
+                  'userName':'ookb',
+                  'formHash':'r1qogfym0ain6fv',
                   'autoResize':true,
                   'height':'973',
                   'async':true,
                   'host':'wufoo.com',
-                  'header':'show', 
+                  'header':'show',
                   'ssl':true};
                   s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
                   s.onload = s.onreadystatechange = function() {
@@ -131,76 +143,210 @@
                   try { r1qogfym0ain6fv = new WufooForm();r1qogfym0ain6fv.initialize(options);r1qogfym0ain6fv.display(); } catch (e) {}};
                   var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
                   })(document, 'script');</script>
-                  
+
                   <p>Thank you! Online donations to The Contemporary are processed through Stripe. </p>
-                  
+
                 </section>
                 <!-- End Embedded Wufoo Form -->
-    
+
               </div>
             </article>
 
             <article id="supporters" class="pad-top add-bottom border-top">
               <h1>Supporters.</h1>
-              <p>We are immeasurably grateful to those who made a contribution in support of our operations and programming between July 1, 2013 and now.</p>
+              <p>We are immeasurably grateful to those who have made contributions in support of our operations and programming.</p>
 
               <div class="row">
-                <dl class="col-md-5">
-                  <dt>$20,000+</dt>
+                <dl class="col-xs-12 col-sm-6 col-md-4">
+                  <dt>$50,000+</dt>
                     <dd>The Andy Warhol Foundation for the Visual Arts</dd>
                     <dd>Robert W. Deutsch Foundation</dd>
-                  
-                  <dt class="add-top">$10,000-$19,999</dt>
+
+                  <dt class="add-top">$20,000&ndash;$49,999</dt>
+                    <dd>The Aaron and Lillie Straus Foundation</dd>
+
+                  <dt class="add-top">$10,000&ndash;$19,999</dt>
                     <dd>Anonymous</dd>
                     <dd>Jane Brown & Neil Didriksen</dd>
-  
-                  <dt class="add-top">$5,000-$9,999</dt>
+<!--                     <dd>The Jacob and Hilda Blaustein Foundation</dd> -->
+                    <dd>William G. Baker, Jr. Memorial Fund</dd>
+                    <dd>Downtown Partnership of Baltimore</dd>
+                    <dd>Jacob and Hilda Blaustein Foundation </dd>
+
+                  <dt class="add-top">$5,000&ndash;$9,999</dt>
+                    <dd>Aaron B. Cohen Charitable Foundation</dd>
+                    <dd>The Davison–Golden Family Philanthropic Fund</dd>
                     <dd>Joanna Golden</dd>
-  
-                  <dt class="add-top">$2,500-$4,999</dt>
+                    <dd>Bodil Ottesen</dd>
+                    <dd>Debra Rubino</dd>
+
+                  <dt class="add-top">$2,500&ndash;$4,999</dt>
                     <dd>Ray Allen</dd>
                     <dd>Jeffry Cudlin</dd>
-                    <dd>Sarva Girdhar</dd>
-                    <dd>Stanton Johnson</dd>
-                    <dd>Bodil Ottesen</dd>
-                    <dd>Terry Squyres</dd>
+                    <dd>Sarva & Veena Girdhar</dd>
                     <dd>William Goldiner</dd>
-                </dl>
-                
-                <dl class="col-md-3">
-                  <dt>$1,000-$2,499</dt>
-                    <dd>Doug Bothner</dd>
-                    <dd>Charlie Duff</dd>
-                    <dd>Lionel Foster</dd>
-                    <dd>Deana Haggag</dd>
-                    <dd>Jessica Lanzillotti</dd>
-                    <dd>Debra Rubino</dd>
+                    <dd>Stanton Johnson</dd>
+                    <dd>Jason Lowy</dd>
+                    <dd>Terry Squyres</dd>
                     <dd>Karen Stults</dd>
                     <dd>Lynn Warfield</dd>
-                    <dd>Portia Wood</dd>
                     <dd>Robin Zimelman</dd>
-                  
-                  <dt class="add-top">$100-$999</dt>
-                    <dd>Sandra Abbott</dd>
-                    <dd>Tamar Cloyd</dd>
-                    <dd>Joyce Yu-Jean Lee</dd>
-                </dl>
-  
-                <dl class="col-md-4">
-                  <dt>$1-$99</dt>
-                    <dd>Kristian Bjornard</dd>
 
-                  <dt class="add-top">In-Kind</dt>
-                    <dd>Baltimore School for the Arts</dd>
+                  <dt class="add-top">$1,000&ndash;$2,499</dt>
+                    <dd>Glenn &amp; Cindy Anderson</dd>
+                    <dd>Douglas Bothner & Jacky Jennings</dd>
+                    <dd>George Ciscle</dd>
+                    <dd>Charlie Duff</dd>
+                    <dd>Lionel Foster</dd>
+                    <dd>Neil Friedlander &amp; Virginia Adams</dd>
+                    <dd>Deana Haggag</dd>
+                    <dd>Jessica Lanzillotti</dd>
+                    <dd>Warnock Foundation</dd>
+                    <dd>Portia Wood</dd>
+                    <dd>Steve Ziger &amp; Jamie Snead</dd>
                 </dl>
-                
+
+                <dl class="col-xs-12 col-sm-6 col-md-4">
+                  <dt>$100&ndash;$999</dt>
+                    <dd>Sandra Abbott</dd>
+                    <dd>Seth Adelsberger</dd>
+                    <dd>Miriam Arenberg</dd>
+                    <dd>Pam &amp; Mark Berman</dd>
+                    <dd>Lee Boot & Stacy Arnold</dd>
+                    <dd>Elissa Blount Moorhead</dd>
+                    <dd>Brendan G. Burns</dd>
+                    <dd>Constance R. Caplan</dd>
+                    <dd>Sabine Carlson</dd>
+                    <dd>Tamar Cloyd</dd>
+                    <dd>Kari Connolly</dd>
+                    <dd>Dr. Curt &amp; Nancy Civin</dd>
+                    <dd>Diane DiSalvo</dd>
+                    <dd>Jay Fisher</dd>
+                    <dd>Joanne Gold &amp; Andrew Stern</dd>
+                    <dd>Hang Art</dd>
+                    <dd>Mona & Mokhtar Haggag</dd>
+                    <dd>Rosemary Harder</dd>
+                    <dd>Jennifer &amp; David Heinemann</dd>
+                    <dd>Sandra D. Hess</dd>
+                    <dd>Joyce Yu-Jean Lee</dd>
+                    <dd>Kimberly Lewis</dd>
+                    <dd>Susan McCarter</dd>
+                    <dd>Dan Meyers</dd>
+                    <dd>Megan Miller</dd>
+                    <dd>Jodie Misiak & Rod Malin & Marcel</dd>
+                    <dd>Kathy O&rsquo;Dell</dd>
+                    <dd>Barbara Portnoy Levine &amp; Leonard Spector</dd>
+                    <dd>Wendy Rosen &amp; Richard Weisman</dd>
+                    <dd>Stacey & Robert Salazar</dd>
+                    <dd>Sarge Salman</dd>
+                    <dd>Leslie Shepard</dd>
+                    <dd>Piero Spadaro</dd>
+                    <dd>Joaneath Spicer</dd>
+                    <dd>Ben Stone</dd>
+                    <dd>Brian Tate | The Tate Group</dd>
+                    <dd>Tony Venne</dd>
+                    <dd>Stewart Watson &amp; Jim Vose</dd>
+                </dl>
+
+                <dl class="col-xs-12 col-sm-6 col-md-4">
+                  <dt>$1&ndash;$99</dt>
+                    <dd>Vestal Abbott</dd>
+                    <dd>Joshua Abelow</dd>
+                    <dd>Charlotte J. Albertson</dd>
+                    <dd>Colin Alexander</dd>
+                    <dd>Catherine Akins</dd>
+                    <dd>Charles Anthony</dd>
+                    <dd>Jerrie &amp; Jim Bethel</dd>
+                    <dd>Priya Bhayana</dd>
+                    <dd>Kristian Bj&oslash;rnard</dd>
+                    <dd>Katie Boyts</dd>
+                    <dd>Rebecca Chan</dd>
+                    <dd>Jessica Damen</dd>
+                    <dd>Danielsson-Yung</dd>
+                    <dd>Alex Ebstein</dd>
+                    <dd>Eman Elkwisni</dd>
+                    <dd>Kate Ewald</dd>
+                    <dd>Neville Fernandes</dd>
+                    <dd>Chris Ford</dd>
+                    <dd>Brandon George</dd>
+                    <dd>Kathryn Greenbaum</dd>
+                    <dd>Geneva Griswold & Aley Thompson</dd>
+                    <dd>Chester Gwazda</dd>
+                    <dd>Karim Haggag</dd>
+                    <dd>Noha Haggag</dd>
+                    <dd>Craig Hankin</dd>
+                    <dd>Charles Harzer</dd>
+                    <dd>Lee Heinemann&rsquo;s Mom</dd>
+                    <dd>Aaron Heinsman</dd>
+                    <dd>Steven Himmelrich & Eileen Fader</dd>
+                    <dd>Sarah Hope</dd>
+                    <dd>Brockett Horne</dd>
+                    <dd>Brit Huff</dd>
+                    <dd>Jessie Hughes</dd>
+                    <dd>Briony Hynson</dd>
+                    <dd>Hunter Jaffe</dd>
+                    <dd>Lou Joseph | ICA Baltimore</dd>
+                    <dd>Gwynne Keathley</dd>
+                    <dd>Val Karuskevich</dd>
+                    <dd>Michelle La Perriere</dd>
+                    <dd>Nick Laughton</dd>
+                    <dd>Jake Lazovick</dd>
+                    <dd>Rosemary Liss</dd>
+                    <dd>Margo Malter</dd>
+                    <dd>Christine Manganaro</dd>
+                    <dd>Claudia McDonough & Michael Harris</dd>
+                    <dd>Greg Minah</dd>
+                    <dd>Quentin Moseley</dd>
+                    <dd>Celia Neustadt</dd>
+                    <dd>Timothy Nohe & Lisa Moren</dd>
+                    <dd>Cara Ober</dd>
+                    <dd>C. Ryan Patterson &amp; Rachel Valsing</dd>
+                    <dd>Miranda Pfeiffer</dd>
+                    <dd>Ben Piwowar</dd>
+                    <dd>Elizabeth Popkin</dd>
+                    <dd>Aliya Reich</dd>
+                    <dd>The Reinstitute</dd>
+                    <dd>J. Rice</dd>
+                    <dd>Steven Riddle</dd>
+                    <dd>Sanzi</dd>
+                    <dd>Fred Scharmen</dd>
+                    <dd>Andrew Segedin</dd>
+                    <dd>Joseph Shaikewitz</dd>
+                    <dd>Ginevra Shay</dd>
+                    <dd>Nicole Shiflet</dd>
+                    <dd>Paul Shortt</dd>
+                    <dd>Mary Kunaniec Skeen</dd>
+                    <dd>Matt Stegman</dd>
+                    <dd>Phoebe Stein</dd>
+                    <dd>Shawn Taylor</dd>
+                    <dd>Pulman Vose</dd>
+                    <dd>Qianfei Wang</dd>
+                    <dd>Hermonie Williams</dd>
+                    <dd>Katy Wood</dd>
+                    <dd>Matthew Zernhelt</dd>
+                    <dd>Lu Zhang</dd>
+                </dl>
+
               </div>
-              
+              <div class="row">
+
+                <section class="col-xs-12">
+                  <h5>In-Kind</h5>
+                  <p>3 Square Feet, Baltimore School for the Arts, Bismallah Restaurant, Blacksauce Kitchen, Brookshire Suites, Clementine, The Cloyd Group, Colby Keller, Dooby's Coffee, Eddie's Market of Charles Village, GWWO Inc./Architects, Hawks Hill Creamery, Hilton Garden, Hoehn&rsquo;s Bakery, Iggies Pizza, Kinderhook Snacks, The Maryland Institute College of Art, Nancy by SNAC, <!-- The Office of Kristian Bjørnard, --> Oherbals, P&acirc;tisserie Poupon, The Verandah, The Wild Pea</p>
+                </section>
+
+                <section class="col-xs-12">
+                  <h5>Volunteers</h5>
+                  <p>Max Anderson, Miriam Arenberg, Brittney Baltimore, Josiah Bolth, Melissa Campbell,  Audrey Gair, Kimmi Hanauer, Lee Heinemann, Jolie Kumin, Rosemary Liss, Margo Malter (Coordinator), Amanda Metcalf, Marines Montalvo, Allison Ransom, Jordan Shelton, Gillian Waldo, Clara West</p>
+                </section>
+
+              </div>
+
             </article>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-------------------------------------------------------------------->
     <!-------------------------------------------------------------------->
@@ -210,29 +356,13 @@
 
     <footer>
       <div class="container">
-
-        <div class="row">
-          <div class="sponsors col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 ">
-            <h4>Featured Sponsors</h4>
-            <ul>
-              <li><a href=""><img src="img/sponsors/warhol-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/rwdf-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/straus-bw.png"/></a></li>
-              <li><a href=""><img src="img/sponsors/bsfta-bw.png"/></a></li>
-              <li><a href-""><img src="img/sponsors/brookshire-bw.png"/></a></li>
-            </ul>
-          </div>
-        </div>
-
         <div class="row">
 
-          <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <div id="dynamicreplacement" class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+
+            <hr class="border-top" />
 
             <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <p class="blurb"><strong>The Contemporary</strong> is a nomadic, non-collecting art museum in Baltimore, Maryland, guided by three main principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.</p>
-              </div>
-
               <div class="col-sm-6 col-md-3">
                 <h3>The Contemporary <br/>(Museum) of Baltimore</h3>
                 <ul>
@@ -243,22 +373,21 @@
                   <li>info@contemporary.org</li>
                 </ul>
               </div>
-              
-              <nav class="col-sm-6 col-md-2">
+
+              <nav class="col-sm-6 col-md-3">
                 <h3><a href="about.html">About</a></h3>
                 <ul>
                   <li><a href="about.html#mission">Mission &amp; History</a></li>
                   <li><a href="about.html#staff">Staff &amp; Board</a></li>
-                  <li><a href="pdf/ContemporaryInternApp_2014-15.pdf">Internship</a></li>
                   <li><a href="donate.html#supporters">Support</a></li>
                   <li><a href="press.html">Press</a></li>
                 </ul>
               </nav>
 
               <!-- Add the extra clearfix for only the required viewport -->
-              <div class="clearfix visible-sm"></div>
+              <div class="clearfix visible-sm"></div><!-- this breaks deana's image from the text on mobile mode for now... -->
 
-              <nav class="col-sm-6 col-md-2">
+              <nav class="col-sm-6 col-md-3">
                 <h3>Programming</h3>
                 <ul>
                   <li><a href="projects.html">Projects</a></li>
@@ -266,8 +395,8 @@
                   <li><a href="speakerseries.html">Speaker Series</a></li>
                 </ul>
               </nav>
-    
-              <nav class="col-sm-6 col-md-2">
+
+              <nav class="col-sm-6 col-md-3">
                 <h3>Connect</h3>
                 <ul>
                   <li><a href="http://eepurl.com/BDHxH">Email List</a></li>
@@ -282,19 +411,19 @@
                   <li><a href="donate.html">Donate</a></li>
                 </ul>
               </nav>
-    
+
             </div>
-            
+
             <hr class="border-top" />
 
             <div class="row secondary">
-              <p class="col-sm-9">&copy; Copyright 1989&ndash;2014, The Contemporary</p>
+              <p class="col-sm-9">&copy; Copyright 1989&ndash;2013, The Contemporary</p>
               <p class="col-sm-3 text-right"><a href="http://www.ookb.co/">site by OOKB</a></p>
             </div>
             <!-- END FOOTER CONTENTS -->
-            
+
           </div><!-- END RIGHT OFFSET -->
-        
+
         </div>  <!-- END ROW -->
       </div>    <!-- END CONTAINER -->
     </footer>   <!-- END FOOTER -->
@@ -307,8 +436,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/tclogo.js"></script>
-    
+    <script src="js/ookb_for_tc.js"></script>
+
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -318,6 +447,6 @@
       ga('create', 'UA-46130583-1', 'contemporary.org');
       ga('send', 'pageview');
     </script>
-    
+
   </body>
 </html>

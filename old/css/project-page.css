@@ -1,0 +1,254 @@
+.project-page { 
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.project-page header { height: calc(1.5rem + .75rem + .5rem); min-height: initial; }
+
+header h1 {
+  font-size: 1.5rem;
+  margin: .75rem 0 .5rem;
+}
+
+h1 .add-right { margin-right: 100px; }
+
+#timeline ul {
+  margin: 0;
+  padding: 0;
+  background: #18497b;
+  position: absolute;
+  top: calc(1.5rem + .75rem + .5rem);
+  right: 0;
+  left: 0;
+  height: 15px;
+  min-height: initial;
+}
+
+#timeline ul li {
+  background: #18497b;
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 63); /* 100% / total # of projects... */
+  text-indent: 200%;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+  transition: all 500ms;
+  position: relative;
+}
+
+/*
+#timeline ul li:hover {
+  background: green;
+  height: 30px;
+  overflow: visible;
+  text-indent: .1em;
+}
+
+#timeline ul li p {
+  color: white;
+  margin: 0;
+}
+
+#timeline ul li:hover p {
+  position: absolute;
+  bottom: 0;
+}
+*/
+
+#timeline ul li.active {
+  background: #f0624a;
+  height: 30px;
+}
+
+.archive-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-controls li {
+  position: fixed;
+  z-index: 9998;
+}
+
+.archive-controls li.close {
+  top: 0;
+  right: 0;
+  height: calc(1.5rem + .75rem + .5rem);
+  background: rgba(0,0,0,.1);
+  width: 90px;
+  padding: 0;
+  transition: all 500ms;
+  /** override bootstrap **/
+  float: none;
+  font-size: inherit;
+  line-height: calc(1.5rem + .75rem + .5rem);
+  color: initial;
+  text-shadow: none;
+  filter: alpha(opactity=100);
+  opacity: 1;
+}
+.archive-controls li.close:hover {
+  background: rgba(0,0,0,.33);
+}
+
+li.close a {
+  display: block;
+  height: calc(1.5rem + .75rem + .5rem);
+  width: 90px;
+  overflow: hidden;
+  line-height: calc(1.5rem + .75rem + .5rem);
+  text-align: center;
+  padding: 2px;
+  border: none;
+}
+
+.archive-controls li.previous {
+  top: 48%;
+  left: 5px;
+}
+
+.archive-controls li.next {
+  top: 48%;
+  right: 5px;
+}
+
+.project-page .jumbotron {
+  padding-top: 111px;
+  padding-bottom: 111px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.jumbotron img.filler {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 0;
+}
+
+.project-page ul.miscellany {
+  line-height: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-page ul.miscellany li {
+  border-bottom: 1px solid #f0624a;
+  color: #18497b;
+  padding: .33em 0;
+}
+
+.project-page ul.miscellany li:first-child {
+  border-top: 1px solid #f0624a;
+}
+
+ul.miscellany strong {
+  text-transform: uppercase;
+  font-size: 75%;
+  letter-spacing: 1px;
+}
+
+.image-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.image-list .image {
+  margin: 0 0 1em 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-list .image,
+.image figure {
+  position: relative;
+}
+
+.image-list .image figcaption {
+  display: none;
+  position: absolute;
+}
+
+.image-list .image:hover figure,
+.image-list .image:hover figcaption {
+  z-index: 9;
+  box-shadow: 0 0 .75em 0 rgba(0,0,0,.33);
+}
+
+.image-list .image:hover figcaption {
+  display: block;
+  top: 0;
+  left: 100%;
+  background: white;
+  height: 100%;
+  max-width: 100%;
+}
+
+figcaption .info {
+  margin: 0;
+  padding: .5em;
+  list-style: none;
+}
+
+.info .title {
+  font-weight: bold;
+}
+
+/** hacky overlay? **/
+.image-list .lightbox {
+  display: none;
+}
+.image-list .lightbox.overlay {
+  display: block;
+  background: rgba(0,0,0,.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 3em;
+}
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */ 
+.block img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 75%;
+  max-height: 90%;
+  box-shadow: 0 0 2em 0 rgba(255,255,255,.33);
+}
