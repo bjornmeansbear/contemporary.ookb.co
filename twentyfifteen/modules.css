@@ -29,10 +29,85 @@
 .bg-white       { background-color: rgba(250,252,255,1); }
 .bg-black       { background-color: rgba(026,010,008,1); }
 
+/** margin **/
+.m0             { margin: 0rem; }
+.m1             { margin: 1rem; }
+.m2             { margin: 2rem; }
+.m3             { margin: 3rem; }
+.m4             { margin: 4rem; }
+
+.ml1            { margin-left: 1rem; }
+
+.mlrauto        { margin-left:auto; margin-right: auto;}
+
 /** padding **/
+.p0             { padding: 0rem; }
 .p1             { padding: 1rem; }
 .p2             { padding: 2rem; }
+.p3             { padding: 3rem; }
+.p4             { padding: 4rem; }
+
+.py2            { padding-top: 2rem; padding-bottom: 2rem; }
 
 /** borders? **/
 .b1             { border: 1px solid; }
 .b2             { border: 2px solid; }
+
+.bt3            { border-top: 3px solid; }
+.bb3            { border-bottom: 3px solid; }
+
+/** positioning **/
+.static   { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+/** hidden/visible **/
+/* Visibility Classes */
+.show           { display: block !important; }
+.hidden         { display: none !important; }
+.invisible      { visibility: hidden; } /* doesn't show up, but does still live in the DOM */
+
+.visible-lg,
+.visible-60em,
+.hidden-sm {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 60rem) {
+  .visible-60em {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 75rem) {
+  .visible-lg,
+  .hidden-sm {
+    display: block;
+    visibility: visible;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}

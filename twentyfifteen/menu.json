@@ -3,14 +3,17 @@
     {
       "mainlink": "Visit",
       "primary": "M-TH, 11am-4pm <br/>by appointment only.",
+      "url": "/visit/",
       "sublink": [
         {
           "title": "Studio",
-          "secondary": "We are a nomadic, non-collecting museum without a permanent collection or exhibition space. Visitors are always welcome to stop by our working studio and headquarters to learn more about the museum and past projects."
+          "secondary": "We are a nomadic, non-collecting museum without a permanent collection or exhibition space. Visitors are always welcome to stop by our working studio and headquarters to learn more about the museum and past projects.",
+          "url": "#studio"
         },
         {
           "title": "Calendar",
-          "secondary": "We host regular openings, events, and lectures. Join our mailing list for updates."
+          "secondary": "We host regular openings, events, and lectures. Join our mailing list for updates.",
+          "url": "https://www.facebook.com/thecontemporarymuseum/events"
         }
       ]
     },
@@ -60,7 +63,7 @@
     },
     {
       "mainlink": "Resources",
-      "primary": "The Contemporary offers an array of resources for artists in our area including access to Workspace, Studio Visits, Equipment Library, Art Retreat, and Grit Fund—some resources are only available to our members. <br/><br/> <a href='#'>Become a Member.</a>"
+      "primary": "The Contemporary offers an array of resources for artists in our area including access to Workspace, Studio Visits, Equipment Library, Art Retreat, and Grit Fund—some resources are only available to our members. <br><br> <a href='#'> Become a Member </a>"
 ,
       "sublink": [
         {

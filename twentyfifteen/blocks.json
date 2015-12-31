@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "title": "Grit Fund",
+      "blurb": "The Grit Fund supports unincorporated and collaborative artist-organized activity that contributes significantly to Baltimore’s arts landscape but seldom qualifies for traditional funding.",
+      "url": "#page1",
+      "image": "img/gritfund2.jpg",
+      "bg-color": "red",
+      "big": true
+    },
+    {
+      "title": "Donate!",
+      "blurb": "We rely on your donation to keep our operation up and running! …",
+      "url": "#page2",
+      "bg-color": "orange"
+    },
+    {
+      "title": "Membership",
+      "blurb": "Our members are crucial to the overall health of the museum. …",
+      "url": "#page3",
+      "bg-color": "yellow"
+    },
+    {
+      "title": "Archive",
+      "blurb": "We commission site-specific and subject-oriented projects that exist in public space …",
+      "url": "#page4",
+      "bg-color": "darkgreen"
+    },
+    {
+      "title": "Scroll",
+      "blurb": "Scroll is an annual publication that is produced entirely by our intern staff. …",
+      "url": "#page4",
+      "bg-color": "blue"
+    }
+  ]
+}

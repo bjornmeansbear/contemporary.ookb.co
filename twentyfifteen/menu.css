@@ -9,18 +9,21 @@
   dark blue     rgba(26,42,53,1)
 */
 
+header {
+  height: 450px;
+}
+
 #main-menu-wrap {
-  position: relative;
   border-width: 3px;
   border-top-style: solid ;
   border-bottom-style: solid ;
-}
-
-.evenly-spread {
-  width: calc(100% / 7);
-  display: block;
-  float: left;
-  position: static;
+  z-index: 9999;
+  /**/
+  position: absolute;
+  top: 9rem;
+  right: .75rem;
+  width: calc(100% - 180px);
+  background-color: rgba(250,252,255,1);
 }
 
 #main-menu-wrap:hover a.main-link {
@@ -32,7 +35,6 @@ a.sub-link {
   color: rgba(26,42,53,1);
   display: block;
   width: 100%;
-  font-size: 125%;
   font-weight: 900;
   text-decoration: none;
   transition: all 400ms;
@@ -43,16 +45,15 @@ a.main-link {
 }
 
 .evenly-spread a.main-link {
-  text-align: center;
   padding-top: .4em;
   padding-bottom: .4em;
+  padding-left: .4em;
 }
 
 #main-menu-wrap .evenly-spread:hover a.main-link,
 #main-menu-wrap .evenly-spread a.main-link:hover,
 #main-menu-wrap .evenly-spread a.main-link:focus {
-  background: rgba(26,42,53,1);
-  color: white;
+  color: rgba(26,42,53,1);
 }
 
 #main-menu-wrap .evenly-spread a.main-link:active {
@@ -61,101 +62,163 @@ a.main-link {
   box-shadow: 0 0 .33333rem 0 rgba(26,42,53,.4);
 }
 
-/**/
 .drawer {
-  position: absolute;
-  left: 0;
-  right:0;
-  z-index: 9;
   display: none;
-  border-top: 3px solid rgba(26,42,53,1);
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
 }
 
-.evenly-spread:hover .drawer {
-  display: block;
-}
-
-.drawer .blurb {
-  line-height: 1.5em;
-  padding-bottom: 1em;
-}
-
-.drawer .columns,
-.drawer p,
-.sub-menu > li p {
-  margin-bottom: 0;
-}
-
-.sub-menu > li {
-  display: block;
-  position: static;
-}
-
+/*** Controling the menu fontsize ***/
+a.main-link,
 a.sub-link {
-  line-height: 2em;
-  border-bottom: 1px solid rgba(26,42,53,1);
-  padding-left: .25em;
+  font-size: 115%;
 }
 
-.sub-menu > li:first-child .sub-link {
-  border-top: 1px solid rgba(26,42,53,1);
+@media (min-width: 50rem) {
+  header {
+    height: initial;
+  }
+
+  #main-menu-wrap {
+    position: relative;
+    top: initial;
+    right: initial;
+    bottom: initial;
+    left: initial;
+    width: 100%;
+  }
+  /** make the menu a horizontal row **/
+  .evenly-spread {
+    width: calc(100% / 7);
+    display: block;
+    float: left;
+    position: static;
+  }
+
+  .evenly-spread a.main-link {
+    text-align: center;
+  }
+
+  a.main-link,
+  a.sub-link {
+    font-size: 95%;
+  }
 }
 
-.sub-menu > li:hover .sub-link,
-a.sub-link:hover {
-  color: rgba(241,97,74,1);
+@media (min-width: 60rem) {
+  a.main-link,
+  a.sub-link {
+    font-size: 105%;
+  }
 }
 
-.sub-menu > li .secondary {
-  display: none;
-  position: absolute;
-  padding: 0 1em;
-  min-height: 100%;
-  top: 0;
-  right: 0;
-  left: calc(100% / 12 * 04 - .75rem);
-}
-.sub-menu > li:hover .secondary {
-  display: block;
+@media (min-width: 75rem) {
+  a.main-link,
+  a.sub-link {
+    font-size: 125%;
+  }
 }
 
-/** Mailchimp Signup Form **/
+@media (min-width: 50rem) {
+  /**/
+  .drawer {
+    border-top: 3px solid rgba(26,42,53,1);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: absolute;
+    left: 0;
+    right:0;
+    z-index: 9;
+    transition: all 400ms;
+  }
 
-#mc_embed_signup h4 {
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  margin-top: .25rem;
-  margin-bottom: .5rem;
-  padding-left: .5rem;
-}
+  .evenly-spread:hover .drawer {
+    display: block;
+    box-shadow: 0 10px 20px -10px rgba(26,42,53,.4);
+  }
 
-#mc_embed_signup .mc-field-group .email {
-  border: none;
-  border-bottom: 2px solid rgba(0,75,124,1);
-  height: 3rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  padding: .25em .25em .1em;
-  transition: all 400ms;
-  font-family: 'balto', helvetica, arial, sans-serif
-}
+  .drawer .blurb {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
 
-#mc_embed_signup .mc-field-group .email:focus {
-  border-bottom: 2px solid rgba(201,222,121,1);
-  outline:none;
-  color: rgba(0,75,124,1);
-  background-color: rgba(201,222,121,.15);
-}
+  .drawer .columns,
+  .drawer p,
+  .sub-menu > li p {
+    margin-bottom: 0;
+  }
 
-#mc_embed_signup input.button {
-  border: none;
-  border-radius: 1rem;
-  font-size: 1.25rem;
-  padding: .33rem 1.5rem;
-  height: 3rem;
-  font-family: 'balto', helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  .sub-menu > li {
+    display: block;
+    position: static;
+  }
+
+  a.sub-link {
+    line-height: 2em;
+    border-bottom: 1px solid rgba(26,42,53,1);
+    padding-left: .25em;
+  }
+
+  .sub-menu > li:first-child .sub-link {
+    border-top: 1px solid rgba(26,42,53,1);
+  }
+
+  .sub-menu > li:hover .sub-link,
+  a.sub-link:hover {
+    color: rgba(241,97,74,1);
+  }
+
+  .sub-menu > li .secondary {
+    display: none;
+    position: absolute;
+    padding: 0 1em;
+    min-height: 100%;
+    top: 0;
+    right: 0;
+    left: calc(100% / 12 * 04 - .75rem);
+    line-height: 1.5em;
+  }
+  .sub-menu > li:hover .secondary {
+    display: block;
+  }
+
+  /** Mailchimp Signup Form **/
+
+  #mc_embed_signup h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    padding-left: .5rem;
+    font-weight: normal
+  }
+
+  #mc_embed_signup .mc-field-group .email {
+    border: none;
+    border-bottom: 2px solid;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    padding: .25em .25em .1em;
+    transition: all 400ms;
+    font-family: 'balto', helvetica, arial, sans-serif
+  }
+
+  #mc_embed_signup .mc-field-group .email:focus {
+    border-bottom: 2px solid rgba(201,222,121,1);
+    outline:none;
+    color: rgba(0,75,124,1);
+    background-color: rgba(201,222,121,.15);
+  }
+
+  #mc_embed_signup input.button {
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: .33rem 1.5rem;
+    height: 3rem;
+    font-family: 'balto', helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }

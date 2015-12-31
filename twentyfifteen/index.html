@@ -2,6 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Contemporary (A nomadic, non-collecting art museum in Baltimore, Maryland.)</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="contempo-grid.css" rel="stylesheet" type="text/css" />
     <link href="modules.css" rel="stylesheet" type="text/css" />
     <link href="menu.css" rel="stylesheet" type="text/css" />
@@ -11,11 +16,10 @@
     <header>
       <div class="container">
         <div class="group">
-          <h1 class="wordmark bg-blue white p1">The Contemporary</h1>
 
+<!--        <div class="skinny-logo">  -->
           <!-- SVG logo -->
-          <svg class="logo" version="1.1" id="_x33__Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-             y="0px" viewBox="0 0 300 360" enable-background="new 0 0 300 360" xml:space="preserve">
+          <svg class="logo" version="1.1" id="_x33__Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 360" enable-background="new 0 0 300 360" xml:space="preserve">
             <path class="c" d="M155.2,358c-41.5,0-80.4-18.6-109.4-52.3C16.9,272.1,1,227.5,1,180S16.9,87.9,45.8,54.3
               C74.8,20.6,113.7,2,155.2,2c33.6,0,61.4,8.5,84.9,26c20.6,15.3,37.5,37.4,51.7,67.4c0.5,1,0.5,2.3,0,3.3c-0.5,1.1-1.4,1.9-2.5,2.2
               l-43.4,13.2c-1.4,0.4-3,0-4-1.1c-1-1.1-1.4-2.7-0.9-4.1c0.1-0.2,7-20.7-5.1-37.9c-12-17-38-25.6-77.2-25.6
@@ -30,9 +34,12 @@
               s15.2,88.4,42.8,120.5c27.5,32,64.3,49.6,103.4,49.6c35.7,0,65.7-9.6,89.1-28.6c23.4-18.9,39.1-46.2,46.8-81.1
               c0.5-2.1,2.6-3.5,4.7-3c2.1,0.5,3.5,2.6,3,4.7c-8.1,36.8-24.8,65.6-49.6,85.6C224.4,347.8,192.8,358,155.2,358z"/>
           </svg>
+<!--        </div>  -->
 
-          <div class="mission five">
-            <p class="lead blue b2 p2 bg-white">
+          <h1 class="wordmark">The Contemporary</h1>
+
+          <div class="mission visible-60em">
+            <p class="lead p2 bg-white">
               The Contemporary is a nomadic, non-collecting art museum in Baltimore, Maryland. Our work is inspired by three guiding principles: <em>artists matter</em>, <em>collaboration is key</em>, and <em>audience is everywhere</em>.
             </p>
           </div>
@@ -40,10 +47,34 @@
 
         <nav>
           <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/visit/">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/about/">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/programs/">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/resources/">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/support/">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
             <script id="menu-drawers" type="text/x-mustache-template">
               {{#menu}}
                 <li class="mainlink evenly-spread drop-down {{mainlink}}">
-                  <a class="main-link" href="#{{mainlink}}">{{mainlink}}</a>
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
                   <div class="drawer bg-white">
                     <div class="three columns blurb">
                       <p>{{{primary}}}</p>
@@ -52,7 +83,7 @@
                       {{#sublink}}
                         <li class="group">
                           <p class="four columns">
-                            <a class="sub-link" href="#{{title}}">{{title}}</a>
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
                           </p>
                           <p class="eight columns secondary">
                             {{{secondary}}}
@@ -65,7 +96,7 @@
                     <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup" class="eight columns offset-by-one">
                       <form action="//contemporary.us7.list-manage.com/subscribe/post?u=eff2e5ec224690abbfe4e9f4d&amp;id=9909b16eee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                          <h4 class="blue">Sign up for Contemporary emails</h4>
+                          <h4 class="darkblue">Sign up for Contemporary emails</h4>
                           <div id="mc_embed_signup_scroll" class="group">
                             <div class="mc-field-group eight columns">
                               <label class="hidden" for="mce-EMAIL">Email Address </label>
@@ -77,10 +108,13 @@
                             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div clas="hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eff2e5ec224690abbfe4e9f4d_9909b16eee" tabindex="-1" value=""></div>
                             <div class="four columns">
-                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-blue white btn btn-outline twelve">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-darkblue white btn btn-outline twelve">
                             </div>
                           </div>
                       </form>
+                    </div>
+                    <div class="social eight columns offset-by-one text-right m2">
+                      <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-2x"></i></a>
                     </div>
                     <!--End mc_embed_signup-->
                     {{/signup}}
@@ -97,64 +131,116 @@
 
     <main>
       <div class="container">
-          <div class="group">
-              <div class="twelve columns">
-                  <!-- this will be a slideshow? -->
-                  <div class="inner tile imged bg-red">
-                      <a href="" class="bigBlock">
-                          <h1>This will be a slideshow</h1>
-                          <p>A little blurb for each slide...</p>
-                      </a>
-                  </div>
+
+        <div class="group">
+
+          <div class="twelve columns">
+            <div id="slideshow-wrap" class="cycle-slideshow">
+              <!-- this will be a slideshow? -->
+              <div class="item">
+                <div class="inner tile imged bg-red">
+                    <a href="" class="bigBlock">
+                        <h1>Seed these with something</h1>
+                        <p>Something that doesn't go out of date incase of a JS failure.</p>
+                    </a>
+                </div>
               </div>
-              <div class="six columns">
-                  <div class="inner tile imged bg-orange">
-                      <a href="" class="bigBlock">
-                          <h1>Grit Fund</h1>
-                          <p>A little blurb of some sort of text...</p>
-                      </a>
-                  </div>
+              <div class="item">
+                <div class="inner tile imged bg-orange">
+                    <a href="" class="bigBlock">
+                        <h1>Seed these with a different thing ...</h1>
+                        <p>Something that doesn't go out of date incase of a JS failure.</p>
+                    </a>
+                </div>
               </div>
-              <div class="three columns">
-                  <div class="inner tile imged bg-yellow">
-                      <a href="" class="bigBlock">
-                          <h1>Talking Shop</h1>
-                          <p>2015 Speaker Series</p>
-                      </a>
+
+              <script id="slide-item" type="text/x-mustache-template">
+              {{#slideshow}}
+                <div class="item">
+                  <div class="inner tile imged bg-black" style="background-image:url({{image}});">
+                    <a href="{{url}}" class="bigBlock">
+                      <h1>{{title}}</h1>
+                      <p>{{{blurb}}}</p>
+                    </a>
                   </div>
-              </div>
-              <div class="three columns">
-                  <div class="inner tile imged bg-darkgreen">
-                      <a href="" class="bigBlock">
-                          <h1>Archive</h1>
-                          <p>A longer blurb of some sort of text... trying to make this more flexible.</p>
-                      </a>
-                  </div>
-              </div>
-              <div class="three columns">
-                  <div class="inner tile imged bg-lightgreen">
-                      <a href="" class="bigBlock">
-                          <h1>A title</h1>
-                          <p>A longer blurb of some sort of text. These will be list-y kind of tiles, or else paragraphy/quote-y tiles.</p>
-                      </a>
-                  </div>
-              </div>
-              <div class="three columns">
-                  <div class="inner tile imged bg-blue">
-                      <a href="" class="bigBlock">
-                          <h1>Speaker Series</h1>
-                          <p>A longer blurb of some sort of text...</p>
-                      </a>
-                  </div>
-              </div>
+                </div>
+              {{/slideshow}}
+              </script>
+
+            </div>
+            <div class=controls>
+              <div class="prevControl"> <i class="fa fa-angle-left fa-4x"> <span class="hidden">Left/Previous</span> </i> </div>
+              <div class="nextControl"> <i class="fa fa-angle-right fa-4x"> <span class="hidden">Right/Next</span> </i> </div>
+            </div>
+
           </div>
+
+          <section id="lower-blocks">
+            <div class="six columns">
+                <div class="inner tile imged bg-black gritfund">
+                    <a href="/gritfund/" class="bigBlock">
+                        <h1>Grit Fund</h1>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-yellow">
+                    <a href="/support/donate/" class="bigBlock">
+                        <h1>Donate!</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-darkgreen">
+                    <a href="/projects/archive/" class="bigBlock">
+                        <h1>Archive</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-lightgreen">
+                    <a href="/about/#history" class="bigBlock">
+                        <h1>History</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-blue">
+                    <a href="/projects/speakerseries/" class="bigBlock">
+                        <h1>Speaker Series</h1>
+                    </a>
+                </div>
+            </div>
+
+            <script id="block-item" type="text/x-mustache-template">
+            {{#blocks}}
+              <div class="{{#big}}six{{/big}}{{^big}}three{{/big}} columns">
+                <div class="inner tile imged bg-{{bg-color}}" {{#image}}style="background-image:url({{image}});"{{/image}}{{^image}}{{/image}}>
+                  <a href="{{url}}" class="bigBlock">
+                    <h1>{{title}}</h1>
+                    <p>{{{blurb}}}</p>
+                  </a>
+                </div>
+              </div>
+            {{/blocks}}
+            </script>
+          </section>
+        </div>
 
       </div>
     </main>
 
     <footer>
       <div class="container">
-        <p>Simple footer tk.</p>
+        <div class=" bt3 py2">
+          <div class="group">
+            <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+            <div class="social four columns offset-by-four text-right">
+              <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- ---------------------------------- -->
@@ -166,23 +252,93 @@
     <!-- this is jquery, needed for a bunch of stuff -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+
     <!-- this loads mustache.js, required for the templating to happen -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
 
-    <!-- This actually takes your behance data and prints it into the site -->
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
+
+    <!-- This actually takes the menu.json data and prints it into the site -->
     <script>
       /** the stuff for printing things out **/
       $.getJSON('menu.json', function(data) {
-        console.log( "success" );
-        //mustache for menu
-        //this prints the menu for now... is not working locally
-        // hoping to solve that
+        console.log( "Menu success" );
         var template = $('#menu-drawers').html();
         var info = Mustache.to_html(template, data);
         $('#main-menu-wrap').html(info);
         console.log( "You now have a menu." );
 
       });
+
+    </script>
+
+    <script>
+      /** the stuff for printing the dynamic slideshow out **/
+      $.getJSON("slideshow.json", function(data) {
+        console.log( "SS success" );
+        var template = $("#slide-item").html();
+        var info = Mustache.to_html(template, data);
+        $("#slideshow-wrap").html(info);
+        console.log( "You now have the contents for a slideshow, next to get it to work." );
+
+        $("#slideshow-wrap").cycle("destroy");
+        /*
+          the only way I could get this to work properly was to initialize
+          the slideshow with placeholder content, replace the content with
+          new stuff, then destroy the old SS and start a new one...
+          http://jquery.malsup.com/cycle2/api/#commands for more help
+        */
+
+        var ww = $(window).width();
+
+        if (ww >= 800) {
+          $("#slideshow-wrap").cycle({
+            fx: "slideHorz",
+            timeout: 50000,
+            prev: ".prevControl",
+            next: ".nextControl",
+            slides: "> div.item"
+          });
+        } else {
+          $("#slideshow-wrap").cycle("destroy");
+        }
+
+        $(window).resize(function() {
+          $("#slideshow-wrap").cycle("destroy");
+          var ww = $(window).width();
+          if (ww >= 800) {
+            $("#slideshow-wrap").cycle({
+              fx: "slideHorz",
+              timeout: 50000,
+              prev: ".prevControl",
+              next: ".nextControl",
+              slides: "> div.item"
+            });
+          } else {
+            $("#slideshow-wrap").cycle("destroy");
+          }
+        });
+
+      });
+    </script>
+
+    <script>
+      /** the stuff for printing the lower blocks out **/
+      $.getJSON('blocks.json', function(data) {
+        console.log( "block success" );
+        var template = $('#block-item').html();
+        var info = Mustache.to_html(template, data);
+        $('#lower-blocks').html(info);
+        console.log( "You now have some lower blocks." );
+      });
+    </script>
+
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
     </script>
 
   </body>

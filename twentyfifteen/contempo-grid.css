@@ -108,7 +108,7 @@ p {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -164,34 +164,6 @@ small,
 img { max-width: 100%; }
 
 /** Base 2 column grid **/
-/* Visibility Classes */
-.show {
-  display: block !important;
-}
-.hidden {
-  display: none !important;
-}
-.invisible {
-  visibility: hidden;
-}
-
-.visible-lg,
-.hidden-sm {
-  display: none;
-  visibility: hidden;
-}
-
-.hide-text {
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.show-text {
-  text-indent: 0%;
-  white-space: normal;
-  overflow: visible;
-}
 
 /* floats and clears */
 .left,
@@ -241,18 +213,6 @@ img { max-width: 100%; }
   clear: both;
 }
 
-.static   { position: static; }
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed    { position: fixed; }
-
-.list-reset {
-  padding-left: 0;
-  list-style: none;
-}
-
-
-
 /****************************************************/
 /****************************************************/
 /****************************************************/
@@ -263,15 +223,15 @@ img { max-width: 100%; }
 /****************************************************/
 /****************************************************/
 /****************************************************/
-
-
 
 /* columnar stuff */
 #wrapper,
 .wrapper,
 .container {
   margin: 0 auto;
-  padding: 0 .75rem 1.5rem .75rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 1.55rem;
   width: 100%;
 }
 
@@ -285,7 +245,8 @@ img { max-width: 100%; }
 .column,
 .columns {
   margin: 0 0 1.5rem 0;
-  padding: 0 .75rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 header #wrapper,
@@ -326,13 +287,14 @@ header .columns {
   .wrapper,
   .container {
     min-width: 30rem;
-    width: 80%;
+    max-width: 95%;
   }
 
   .group,
   .grouped,
   .row {
-    margin: 0 -.75rem;
+    margin-left: -.75rem;
+    margin-right: -.75rem;
   }
 
   .column,
@@ -422,20 +384,8 @@ header .columns {
   .offset-by-eleven      { margin-left: calc(100% / 12 * 11); }
   .offset-by-twelve      { margin-left: calc(100% / 12 * 12); }
 
-  .visible-lg {
-    display: block;
-    visibility: visible;
-  }
-  .visible-sm,
-  .hidden-lg {
-    display: none;
-    visibility: hidden;
-  }
-
 }
 
-
-
 /****************************************************/
 /****************************************************/
 /****************************************************/
@@ -446,39 +396,106 @@ header .columns {
 /****************************************************/
 /****************************************************/
 /****************************************************/
-
-
 
 /** starting to custom style the header a bit more **/
-header h1.wordmark,
-header .mission {
-  position: absolute;
-  z-index: 99;
-}
-
-header h1.wordmark {
-  transform: rotate(5.625deg);
-  top: 40%;
-  left: -2%;
-}
-
-header .logo {
-  margin-top: 2%;
-  width: 20%;
-  margin-left: 20%;
-  height: auto;
-}
-
 svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
-header .mission {
-  transform: rotate(-11.25deg);
-  top: 6%;
-  right: 0;
+/*TESTING SIZING ON THE SKINNY VIEW*/
+
+header .logo {
+  width: 200px;
+  position: absolute;
 }
 
+header h1.wordmark {
+  font-size: 2rem;
+  position: absolute;
+  transform: rotate(-5.625deg);
+  z-index: 9999;
+  top: 6.125rem;
+  left: 5rem;
+}
+
+@media (min-width: 50rem) {
+  header .logo {
+    margin-top: .75rem;
+    margin-left: 25%;
+    width: 20%;
+    height: auto;
+    position: static;
+  }
+
+  header h1.wordmark,
+  header .mission {
+    position: absolute;
+    z-index: 99;
+    transition: all 400ms;
+  }
+
+  header h1.wordmark {
+    transform: rotate(5.625deg);
+    top: 35%;
+    left: 42.5%;
+    /**/
+    color: rgba(250,252,255,1);
+    background-color: rgba(000,075,124,1);
+    padding: 1rem;
+  }
+
+  header .mission {
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+
+  header .mission p {
+    color: rgba(000,075,124,1);
+    border: 3px rgba(255,234,058,1) solid;
+  }
+
+  .drawer .blurb a {
+    color: rgba(026,010,008,1);
+    border-bottom: 3px solid rgba(255,234,058,1);
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: .15em;
+    padding-bottom: 0em;
+  }
+
+  .drawer .blurb a:hover {
+    background-color: rgba(255,234,058,1);
+    transition: background-color 0.33s ease;
+  }
+}
+
+@media (min-width: 60rem) {
+  header .logo {
+    margin-left: 20%;
+    width: 20%;
+  }
+
+  header h1.wordmark {
+    top: 35%;
+    left: -2%;
+  }
+
+  header .mission {
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+}
+
+@media (min-width: 65rem) {
+  header h1.wordmark {
+    font-size: 3rem;
+    left: 0;
+  }
+}
 /** neon sign will really glow!!!! **/
 /*
 svg.logo {
@@ -502,13 +519,16 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 **/
 
 /*** testing an idea ***/
-
 .imged {
   width: 100%;
   height: 0;
   padding-bottom: 60%;
   overflow: hidden;
   position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 400ms;
 }
 
 .imged a {
@@ -523,6 +543,11 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   height: 100%;
   width: 100%;
   color: inherit;
+  transition: all 400ms;
+}
+
+.imged:hover {
+  box-shadow: 0 0 10px rgba(26,42,53,.33);
 }
 
 .imged a:hover {
@@ -538,6 +563,10 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   position: absolute;
 }
 
+.imged .bigBlock p {
+  display: none;
+}
+
 .imged .bigBlock h1 {
   text-transform: uppercase;
   top: 3%;
@@ -548,6 +577,17 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   max-width: 75%;
   bottom: 3%;
   right: 3%;
+}
+
+.imged.gritfund {
+  background-image: url('img/gritfund2.jpg');
+  background-color: rgba(26,42,53,.25);
+}
+
+@media (min-width: 60rem) {
+  .imged .bigBlock p {
+    display: block;
+  }
 }
 
 /**
@@ -565,6 +605,70 @@ NOTES AND HELP:
 - http://jxnblk.com/react-fitter-happier-text/
 **/
 
-/* Centering in the unknown */
-/* from http://css-tricks.com/centering-in-the-unknown/
-  ---------------------------------------------------------*/
+/** slideshow? **/
+.cycle-slideshow,
+.cycle-slideshow .item {
+  width: 100%;
+}
+
+.cycle-slideshow .item {
+  position: relative;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.cycle-slideshow .item:last-of-type {
+  margin-bottom: 0;
+}
+
+.item.cycle-slide.cycle-slide-active {
+  visibility: visible;
+}
+
+.controls {
+  position: absolute;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  /**/
+  display: none;
+}
+
+.prevControl,
+.nextControl {
+  position: absolute;
+  z-index: 99999;
+  height: 100%;
+}
+
+.prevControl .fa,
+.nextControl .fa {
+  top: calc(50% - 2rem);
+}
+
+.prevControl:hover {
+  cursor: w-resize;
+}
+.nextControl:hover {
+  cursor: e-resize;
+}
+
+.prevControl {
+  left: -1.5rem;
+}
+
+.nextControl {
+  right: -1.5rem;
+}
+
+@media (min-width: 800px) {
+  .cycle-slideshow .item {
+    margin-bottom: 0;
+  }
+  .controls {
+    display: block;
+  }
+}
+
+/** footer **/
+
