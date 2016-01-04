@@ -224,6 +224,24 @@ img { max-width: 100%; }
 /****************************************************/
 /****************************************************/
 
+/** Typography? **/
+
+main a,
+.drawer .blurb a {
+  background-color: transparent;
+  border-bottom: 3px solid rgba(255,234,058,1);
+  color: rgba(026,010,008,1);
+  padding: .15em .15em 0;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+main a:hover,
+.drawer .blurb a:hover {
+  background-color: rgba(255,234,058,1);
+}
+
+
 /* columnar stuff */
 #wrapper,
 .wrapper,
@@ -238,7 +256,8 @@ img { max-width: 100%; }
 .group,
 .grouped,
 .row {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* columnar stuff */
@@ -409,13 +428,25 @@ header .logo {
   position: absolute;
 }
 
-header h1.wordmark {
+header.home h1.wordmark {
   font-size: 2rem;
   position: absolute;
   transform: rotate(-5.625deg);
   z-index: 9999;
   top: 6.125rem;
   left: 5rem;
+}
+
+/* inside pages have a slightly different header */
+header.internal {
+  padding-top: .25rem;
+}
+header.internal h1 {
+  font-size: 1rem;
+  padding-top: .25rem;
+}
+header.internal #main-menu-wrap {
+  margin-top: .25rem;
 }
 
 @media (min-width: 50rem) {
@@ -427,14 +458,14 @@ header h1.wordmark {
     position: static;
   }
 
-  header h1.wordmark,
+  header.home h1.wordmark,
   header .mission {
     position: absolute;
     z-index: 99;
     transition: all 400ms;
   }
 
-  header h1.wordmark {
+  header.home h1.wordmark {
     transform: rotate(5.625deg);
     top: 35%;
     left: 42.5%;
@@ -456,19 +487,6 @@ header h1.wordmark {
     border: 3px rgba(255,234,058,1) solid;
   }
 
-  .drawer .blurb a {
-    color: rgba(026,010,008,1);
-    border-bottom: 3px solid rgba(255,234,058,1);
-    box-sizing: border-box;
-    text-decoration: none;
-    padding: .15em;
-    padding-bottom: 0em;
-  }
-
-  .drawer .blurb a:hover {
-    background-color: rgba(255,234,058,1);
-    transition: background-color 0.33s ease;
-  }
 }
 
 @media (min-width: 60rem) {
@@ -477,7 +495,7 @@ header h1.wordmark {
     width: 20%;
   }
 
-  header h1.wordmark {
+  header.home h1.wordmark {
     top: 35%;
     left: -2%;
   }
@@ -491,7 +509,7 @@ header h1.wordmark {
 }
 
 @media (min-width: 65rem) {
-  header h1.wordmark {
+  header.home h1.wordmark {
     font-size: 3rem;
     left: 0;
   }
@@ -555,7 +573,7 @@ These are some styles related to the crazy homepage solution Connor and Kristian
 }
 
 .tile, .tile a {
-  color: white;
+  color: rgba(250,252,255,1);
 }
 
 .imged .bigBlock h1,
@@ -672,3 +690,78 @@ NOTES AND HELP:
 
 /** footer **/
 
+
+/*XTRA*/
+
+/******************************************/
+/******************************************/
+/* ABOUT & BIO STUFF */
+/******************************************/
+/******************************************/
+
+#board.border-top,
+.pad-top.border-top {
+  border-top: 3px solid #1a2a35;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#staff .bio img {
+  max-width: 300px;
+}
+
+.toggle .bio {
+  position: relative;
+}
+
+.toggle .bio img,
+.toggle .bio h2 {
+  cursor: pointer;
+}
+
+.toggle .bio h2,
+.project-thumb h3 {
+  font-size: 1.2em;
+}
+
+.toggle .bio h3 {
+  font-size: 1em;
+}
+
+.toggle .bio h2,
+.toggle .bio h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toggle .bio h2 {
+  margin-top: 15px;
+}
+
+.toggle .bio p {
+  background: rgba(250,252,255,1);
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+  padding: 1rem;
+  margin-left: -12.5rem;
+  width: 25rem;
+  left: 50%;
+  box-shadow: 0 10px 20px -10px rgba(26,42,53,.4);
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.email .small {
+  font-size: .85em;
+}

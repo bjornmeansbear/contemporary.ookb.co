@@ -36,6 +36,12 @@
 .m3             { margin: 3rem; }
 .m4             { margin: 4rem; }
 
+.mt0            { margin-top: 0rem; }
+.mt1            { margin-top: 1rem; }
+.mt2            { margin-top: 2rem; }
+.mt3            { margin-top: 3rem; }
+.mt4            { margin-top: 4rem; }
+
 .ml1            { margin-left: 1rem; }
 
 .mlrauto        { margin-left:auto; margin-right: auto;}
@@ -65,6 +71,11 @@
 .list-reset {
   padding-left: 0;
   list-style: none;
+}
+
+/* miscellany */
+.img-circle {
+    border-radius: 50%;
 }
 
 /** hidden/visible **/
