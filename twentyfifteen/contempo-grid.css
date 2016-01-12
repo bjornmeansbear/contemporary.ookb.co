@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: normal;
 }
-h1 { font-size: 3.0rem;  }
+h1 { font-size: 4.0rem;  }
 h2 { font-size: 2.5rem;  }
 h3 { font-size: 2.0rem;  }
 h4 { font-size: 1.75rem; }
@@ -268,6 +268,10 @@ main a:hover,
   padding-right: .75rem;
 }
 
+.columns.blurb {
+  padding-left: 2rem;
+}
+
 header #wrapper,
 header .wrapper,
 header .container,
@@ -438,7 +442,7 @@ header.home h1.wordmark {
 }
 
 /* inside pages have a slightly different header */
-header.internal {
+header.internal > .container {
   padding-top: .25rem;
 }
 header.internal h1 {
@@ -450,6 +454,19 @@ header.internal #main-menu-wrap {
 }
 
 @media (min-width: 50rem) {
+  header.internal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  body { padding-top: 90px; }
+  header.internal > .container {
+    background: rgba(250,252,255,1);
+  }
+
   header .logo {
     margin-top: .75rem;
     margin-left: 25%;
@@ -487,6 +504,19 @@ header.internal #main-menu-wrap {
     border: 3px rgba(255,234,058,1) solid;
   }
 
+  .drawer .blurb a {
+    color: rgba(026,010,008,1);
+    border-bottom: 3px solid rgba(255,234,058,.75);
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: .15em;
+    padding-bottom: 0em;
+  }
+
+  .drawer .blurb a:hover {
+    background-color: rgba(255,234,058,.75);
+    transition: background-color 0.33s ease;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -549,8 +579,11 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   transition: all 400ms;
 }
 
+/*Slight overlay to allow for white text*/
+
 .imged a {
   background-color: rgba(26,42,53,0);
+  border: none;
   text-decoration: none;
   display: block;
   position: absolute;
@@ -585,16 +618,35 @@ These are some styles related to the crazy homepage solution Connor and Kristian
   display: none;
 }
 
-.imged .bigBlock h1 {
+/*Added the same margin on the header for each tile*/
+
+.imged .bigBlock h1,
+.imged .bigBlock h2,
+.imged .bigBlock h3 {
   text-transform: uppercase;
   top: 3%;
   left: 3%;
 }
 
-.imged .bigBlock p {
+/*Added these just to test the type size of each element. I think it probably has to be varied on the widest view before becoming uniform*/
+
+.six .imged .bigBlock p {
   max-width: 75%;
   bottom: 3%;
   right: 3%;
+}
+
+.twelve .imged .bigBlock p {
+  max-width: 50%;
+  bottom: 3%;
+  right: 3%;
+}
+
+.three .imged .bigBlock p {
+  max-width: 100%;
+  padding-left: 3%;
+  bottom: 3%;
+  left: 3%;
 }
 
 .imged.gritfund {
@@ -642,6 +694,12 @@ NOTES AND HELP:
   visibility: visible;
 }
 
+.cycle-slideshow .item h1,
+.cycle-slideshow .item h2,
+.cycle-slideshow .item p {
+  display: none;
+}
+
 .controls {
   position: absolute;
   top:0;
@@ -664,11 +722,11 @@ NOTES AND HELP:
   top: calc(50% - 2rem);
 }
 
-.prevControl:hover {
-  cursor: w-resize;
-}
+/*I think these might be too repetive to have along with the previous and next arrows. There are other problems with those arrows and their hover states?*/
+
+.prevControl:hover,
 .nextControl:hover {
-  cursor: e-resize;
+  cursor: pointer;
 }
 
 .prevControl {

@@ -30,8 +30,7 @@ header {
   color: rgba(26,42,53,.44);
 }
 
-a.main-link,
-a.sub-link {
+a.main-link {
   color: rgba(26,42,53,1);
   display: block;
   width: 100%;
@@ -42,6 +41,15 @@ a.sub-link {
 
 a.main-link {
   text-transform: uppercase;
+}
+
+a.sub-link {
+  color: rgba(26,42,53,1);
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 400ms;  
 }
 
 .evenly-spread a.main-link {

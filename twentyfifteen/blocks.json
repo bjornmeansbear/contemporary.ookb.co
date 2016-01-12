@@ -9,21 +9,20 @@
       "big": true
     },
     {
-      "title": "Donate!",
-      "blurb": "We rely on your donation to keep our operation up and running! …",
-      "url": "#page2",
-      "bg-color": "orange"
-    },
-    {
       "title": "Membership",
       "blurb": "Our members are crucial to the overall health of the museum. …",
       "url": "#page3",
+      "bg-color": "orange"
+    },
+    {
+      "title": "Mailing List",
+      "url": "#page4",
       "bg-color": "yellow"
     },
     {
-      "title": "Archive",
-      "blurb": "We commission site-specific and subject-oriented projects that exist in public space …",
-      "url": "#page4",
+      "title": "Donate!",
+      "blurb": "We rely on your donation to keep our operation up and running! …",
+      "url": "#page2",
       "bg-color": "darkgreen"
     },
     {
