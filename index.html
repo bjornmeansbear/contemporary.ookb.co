@@ -1,340 +1,374 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>The Contemporary, Baltimore, MD.</title>
+    <title>The Contemporary (A nomadic, non-collecting art museum in Baltimore, Maryland.)</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/legit.css" rel="stylesheet">
-    <link href="css/newfooter.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/css/contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="/css/modules.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
   </head>
+  <body class="bg-white" id="homepage">
 
-  <body class="home" style="padding-top:52px;">
-
-    <!-- header / Fixed navbar -->
-    <header class="navbar navbar-fixed-top" role="banner">
+    <header class="internal">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-10 col-xs-offset-0 col-md-offset-2">
-            <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">The Contemporary</a>
-            </div>
-            <nav class="collapse navbar-collapse" role="navigation">
-              <ul class="nav navbar-nav">
-                <li><a href="/about.html">About</a></li>
-                <li class="dropdown">
-                  <a href="/projects/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Programs <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="/projects/">Projects</a></li>
-                    <li><a href="/speakerseries.html">Speaker Series</a></li>
-                    <li><a href="/scroll.html">Scroll</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="/gritfund/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="/gritfund/">Grit Fund</a></li>
-                  </ul>
-                </li>
-                <li><a href="/donate.html">Support</a></li>
-                <li><a href="/shop.html">Shop</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right location visible-lg">
-                <li><p class="text">in Baltimore, MD</p></li>
-              </ul>
-            </nav>
-          </div><!-- END OFFSET -->
-        </div><!-- END ROW -->
-      </div><!-- END CONTAINER -->
-    </header><!-- END HEADER/FIXED NAV -->
-    <!-- END header / fixed NAVBAR -->
+        <div class="clearfix">
 
-    <!-- Fluctuating LOGO! -->
-    <header id="logo">
-      <div class="container">
-        <div class="row">
-          <h1 style="display:none;">The Contemporary, Baltimore, MD.</h1>
-          <div class="col-sm-2 col-md-2 col-lg-2">
-            <img src="/img/logos/clogo-db-12.png" />
-            <img src="/img/logos/clogo-db-11.png" />
-            <img src="/img/logos/clogo-db-10.png" />
-            <img src="/img/logos/clogo-db-9.png" />
-            <img src="/img/logos/clogo-db-8.png" />
-            <img src="/img/logos/clogo-db-7.png" />
-            <img src="/img/logos/clogo-db-6.png" />
-            <img src="/img/logos/clogo-db-5.png" />
-            <img src="/img/logos/clogo-db-4.png" />
-            <img src="/img/logos/clogo-db-3.png" />
-            <img src="/img/logos/clogo-db-2.png" />
-            <img src="/img/logos/clogo-db-1.png" />
-            <img src="/img/logos/clogo-db-3.png" />
-            <img src="/img/logos/clogo-db-5.png" />
-            <img src="/img/logos/clogo-db-4.png" />
-            <img src="/img/logos/clogo-db-6.png" />
-            <img src="/img/logos/clogo-db-7.png" />
-            <img src="/img/logos/clogo-db-1.png" />
-            <img src="/img/logos/clogo-db-8.png" />
-            <img src="/img/logos/clogo-db-9.png" />
-            <img src="/img/logos/clogo-db-12.png" />
-            <img src="/img/logos/clogo-db-10.png" />
-            <img src="/img/logos/clogo-db-11.png" />
-            <img src="/img/logos/clogo-db-2.png" />
+          <h1 class="wordmark pull-left m0">The Contemporary</h1>
+
+          <div class="pull-right text-right">
+            <p class="small m0">Baltimore, MD</p>
           </div>
         </div>
+
+        <nav>
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/visit/">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/about/">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/programs/">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/resources/">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/support/">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
+            <script id="menu-drawers" type="text/x-mustache-template">
+              {{#menu}}
+                <li class="mainlink evenly-spread drop-down {{mainlink}}">
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
+                  <div class="drawer bg-white">
+                    <div class="three columns blurb">
+                      <p>{{{primary}}}</p>
+                    </div>
+                    <ul class="eight columns offset-by-one sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
+                      {{#sublink}}
+                        <li class="group">
+                          <p class="four columns">
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
+                          </p>
+                          <p class="eight columns secondary">
+                            {{{secondary}}}
+                          </p>
+                        </li>
+                      {{/sublink}}
+                      {{^sublink}}<!-- nothing here --> {{/sublink}}
+                    </ul>
+                    {{#signup}}
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup" class="eight columns offset-by-one">
+                      <form action="//contemporary.us7.list-manage.com/subscribe/post?u=eff2e5ec224690abbfe4e9f4d&amp;id=9909b16eee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <h4 class="darkblue">Sign up for Contemporary emails</h4>
+                          <div id="mc_embed_signup_scroll" class="group">
+                            <div class="mc-field-group eight columns">
+                              <label class="hidden" for="mce-EMAIL">Email Address </label>
+                              <input type="email" value="" name="EMAIL" class="required email twelve bg-white darkblue" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="hidden">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div clas="hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eff2e5ec224690abbfe4e9f4d_9909b16eee" tabindex="-1" value=""></div>
+                            <div class="four columns">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-darkblue white btn btn-outline twelve">
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="social eight columns offset-by-one text-right m2">
+                      <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-2x"></i></a>
+                    </div>
+                    <!--End mc_embed_signup-->
+                    {{/signup}}
+                    {{^signup}}<!-- nope -->{{/signup}}
+                  </div>
+                </li>
+              {{/menu}}
+            </script>
+          </ul>
+        </nav>
       </div>
+
     </header>
 
-    <div class="main" role="main">
+    <main>
       <div class="container">
-        <div class="row">
 
-          <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+        <div class="group">
 
-            <div id="homepage-carousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <!-- how do I make this auto populate? -->
-                <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#homepage-carousel" data-slide-to="1"></li>
-                <li data-target="#homepage-carousel" data-slide-to="2"></li>
-                <li data-target="#homepage-carousel" data-slide-to="3"></li>
-                <li data-target="#homepage-carousel" data-slide-to="4"></li>
-              </ol>
+          <div class="three columns logo-wrapper">
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <a href="/projects/" class="no-styles">
-                    <img src="/img/001-ghostfood.jpg" alt="Ghost Food, October/November 2015">
-                    <div class="carousel-caption">
-                      <h2>GhostFood explores eating in a future of biodiversity loss brought on by climate change.</h2>
-                    </div>
-                  </a>
-                </div>
+            <h1 class="wordmark hidden">The Contemporary</h1>
 
-                <div class="item">
-                  <a href="/speakerseries.html" class="no-styles">
-                    <img src="/img/006-talkingshop2.jpg" alt="Talking Shop, our 2015 speaker series, starts May 21">
-                    <div class="carousel-caption">
-                      <h2>Talking Shop, our 2015 speaker series, starts May 21</h2>
-                    </div>
-                  </a>
-                </div>
+            <!-- SVG logo -->
+            <svg class="logo" version="1.1" id="_x33__Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 360" enable-background="new 0 0 300 360" xml:space="preserve">
+              <path class="c" d="M155.2,358c-41.5,0-80.4-18.6-109.4-52.3C16.9,272.1,1,227.5,1,180S16.9,87.9,45.8,54.3
+            C74.8,20.6,113.7,2,155.2,2c33.6,0,61.4,8.5,84.9,26c20.6,15.3,37.5,37.4,51.7,67.4c0.5,1,0.5,2.3,0,3.3c-0.5,1.1-1.4,1.9-2.5,2.2
+            l-43.4,13.2c-1.4,0.4-3,0-4-1.1c-1-1.1-1.4-2.7-0.9-4.1c0.1-0.2,7-20.7-5.1-37.9c-12-17-38-25.6-77.2-25.6
+            C51,45.4,51,111.1,51,180.6c0,33.7,0,68.5,13.9,93.8c15.1,27.4,44.9,40.2,93.7,40.2c36.2,0,63.4-9.4,80.9-27.8
+            c18.2-19.2,20.5-43.1,20.8-51.1l-35.1-9.9c-12.1,37.4-37.9,61.3-66.6,61.3c-19.9,0-38.6-11.3-52.5-31.9
+            C92.6,235,85.2,208.3,85.2,180s7.5-55,21.1-75.1C120.1,84.3,138.8,73,158.7,73c28.6,0,54.4,23.9,66.5,61.1l68.8-19
+            c2.1-0.6,4.3,0.7,4.9,2.8c0.6,2.1-0.7,4.3-2.8,4.9l-72.5,20c-2.1,0.6-4.3-0.6-4.9-2.7c-10.5-35.9-34.1-59.2-60-59.2
+            c-36.2,0-65.6,44.5-65.6,99.1c0,54.6,29.4,99.1,65.6,99.1c26,0,49.6-23.3,60.1-59.4c0.6-2.1,2.8-3.3,4.9-2.7l41.7,11.7
+            c1.6,0.5,2.8,1.9,2.9,3.6c0.1,1.4,1.6,33.9-22.9,59.7c-19.1,20.2-48.2,30.4-86.7,30.4c-51.3,0-84.2-14.5-100.7-44.3
+            c-14.9-27.1-14.9-62.9-14.9-97.6c0-34.9,0-70.9,14.9-98.2c16.5-30.2,49.4-44.9,100.8-44.9c42,0,70.1,9.8,83.7,29
+            c9.8,14,9.3,29.2,7.8,37.9l32.3-9.8C254.1,36.9,213.5,10,155.2,10C116,10,79.3,27.6,51.8,59.5C24.1,91.6,8.9,134.4,8.9,180
+            s15.2,88.4,42.8,120.5c27.5,32,64.3,49.6,103.4,49.6c35.7,0,65.7-9.6,89.1-28.6c23.4-18.9,39.1-46.2,46.8-81.1
+            c0.5-2.1,2.6-3.5,4.7-3c2.1,0.5,3.5,2.6,3,4.7c-8.1,36.8-24.8,65.6-49.6,85.6C224.4,347.8,192.8,358,155.2,358z"/>
+            </svg>
 
-                <div class="item ">
-                  <a href="/gritfund/" class="no-styles">
-                    <img src="/img/gritfund2-header.jpg" alt="The Grit Fund Year Two" />
-                  </a>
-                </div>
-
-                <div class="item">
-                  <a href="/speakerseries.html#archive" class="no-styles">
-                    <img src="/img/003-speakers.jpg" alt="All CoHosts lectures are archived">
-                    <div class="carousel-caption">
-                      <h2>All CoHosts lectures are archived</h2>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item">
-                  <a href="scroll.html" class="no-styles">
-                    <img src="/img/002-scrollbound3.jpg" alt="Scroll: Bound2 released Mar 28 at PMFVI!">
-                    <div class="carousel-caption">
-                      <h2>Scroll: Bound2 released Mar 28 at PMFVI!</h2>
-                    </div>
-                  </a>
-                </div>
-
-              </div><!-- end slide! -->
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#homepage-carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#homepage-carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
+            <div class="bottom-block">
+              <div class="inner tile imged bg-lightgreen">
+                <a href="/resources/#artist-retreat" class="bigBlock">
+                  <h2>Artist Retreat</h2>
+                </a>
+              </div>
             </div>
 
-            <div class="row">
-              <section class="col-sm-4 col-md-5 col-lg-5 news">
-                <div class="homepage-graphic">
-                  <h2>News</h2>
-                </div>
-                <div>
-                  <ul id='newsfeed' class="jsonmade list">
-                    <!-- printing this out with json magix -->
-                  </ul>
-                </div>
-              </section>
+          </div>
 
-              <section class="col-sm-4 col-md-5 col-lg-5 speakers">
-                <div class="homepage-graphic">
-                  <h2>Upcoming</h2>
+          <div class="nine columns">
+            <div id="slideshow-wrap" class="cycle-slideshow">
+              <!-- this will be a slideshow? -->
+              <div class="item">
+                <div class="inner tile imged bg-black" style="background-image:url(/img/ghostfood.jpg);">
+                  <a href="/projects/ghostfood/" class="bigBlock">
+                    <h1>GhostFood</h1>
+                    <p class="blurb"></p>
+                  </a>
                 </div>
-                <div>
-                  <ul id="upcoming" class="jsonmade list">
-                    <!-- printing this out with json magix -->
-                  </ul>
-                </div>
-              </section>
+              </div>
 
-              <section class="col-sm-4 col-md-2 col-lg-2 connect">
-                <div class="homepage-graphic">
-                  <h2>Connect</h2>
+              <script id="slide-item" type="text/x-mustache-template">
+              {{#slideshow}}
+                <div class="item">
+                  <div class="inner tile imged {{#bg-color}}bg-{{bg-color}}{{/bg-color}}{{^bg-color}}bg-black{{/bg-color}}" style="background-image:url({{image}});">
+                    <a href="{{url}}" class="bigBlock">
+                      <h1>{{title}}</h1>
+                      <p class="blurb">{{{blurb}}}</p>
+                      {{#quote}}
+                        <div class="bigQuote">
+                          <blockquote>{{quote}}</blockquote>
+                          <p class="byline lead m0 mb1">— {{byline}}</p>
+                          {{#extra}}<p class="extra small m0">{{extra}}</p>{{/extra}}
+                        </div>
+                      {{/quote}}
+                    </a>
+                  </div>
                 </div>
-                <div class="link-lists icons">
-                  <ul>
-                    <li><a href="http://www.facebook.com/thecontemporarymuseum">Facebook</a></li>
-                    <li><a href="http://instagram.com/thecontemporary">Instagram</a></li>
-                    <li><a href="http://thecontemporarymuseum.tumblr.com">Tumblr</a></li>
-                    <li><a href="https://twitter.com/ThContemporary">Twitter</a></li>
-                    <li><a href="https://vimeo.com/thecontemporarymuseum">Vimeo</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="donate.html">Donate</a></li>
-                  </ul>
-                </div>
-              </section>
+              {{/slideshow}}
+              </script>
 
             </div>
+            <div class=controls>
+              <div class="prevControl"> <i class="fa fa-angle-left fa-4x"> <span class="hidden">Left/Previous</span> </i> </div>
+              <div class="nextControl"> <i class="fa fa-angle-right fa-4x"> <span class="hidden">Right/Next</span> </i> </div>
+            </div>
 
-          </div><!-- end offset content area -->
+          </div>
+        </div>
+        <div class="group">
+          <section id="lower-blocks">
+            <div class="six columns">
+                <div class="inner tile imged bg-black gritfund">
+                    <a href="/gritfund/" class="bigBlock">
+                        <h2>Grit Fund</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-yellow">
+                    <a href="/support/" class="bigBlock">
+                        <h2>Donate!</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-darkgreen">
+                    <a href="/programs/projects/" class="bigBlock">
+                        <h2>Archive</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-lightgreen">
+                    <a href="/about/#history" class="bigBlock">
+                        <h2>History</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
+            <div class="three columns">
+                <div class="inner tile imged bg-blue">
+                    <a href="/programs/speaker-series/" class="bigBlock">
+                        <h2>Speaker Series</h2>
+                        <p>The Grit Fund supports unincorporated and collaborative artist-organized activity … </p>
+                    </a>
+                </div>
+            </div>
 
-        </div><!-- END ROW -->
-      </div><!-- END CONTAINER -->
-    </div><!-- END MAIN -->
-    <!-------------------------------------------------------------------->
-    <!-------------------------------------------------------------------->
-    <!-- FOOTER! -->
-    <!-------------------------------------------------------------------->
-    <!-------------------------------------------------------------------->
+            <script id="block-item" type="text/x-mustache-template">
+            {{#blocks}}
+              <div class="{{#big}}six{{/big}}{{^big}}three{{/big}} columns">
+                <div class="inner tile imged bg-{{bg-color}}" {{#image}}style="background-image:url({{image}});"{{/image}}{{^image}}{{/image}}>
+                  <a href="{{url}}" class="bigBlock">
+                    {{#big}}<!--nothing-->{{/big}}{{^big}}<h2>{{title}}</h2>{{/big}}
+                  </a>
+                </div>
+              </div>
+            {{/blocks}}
+            </script>
+          </section>
+        </div>
+
+      </div>
+    </main>
 
     <footer>
       <div class="container">
-        <div class="row">
-
-          <div id="dynamicreplacement" class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-
-            <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <h3>The Contemporary <br/>(Museum) of Baltimore</h3>
-                <ul>
-                  <li>PO Box 1572</li>
-                  <li>Baltimore MD 21203</li>
-                  <li>&mdash;</li>
-                  <li>T: 410 756 0397</li>
-                  <li>info@contemporary.org</li>
-                </ul>
-              </div>
-
-              <nav class="col-sm-6 col-md-3">
-                <h3><a href="about.html">About</a></h3>
-                <ul>
-                  <li><a href="about.html#mission">Mission &amp; History</a></li>
-                  <li><a href="about.html#staff">Staff &amp; Board</a></li>
-                  <li><a href="pdf/ContemporaryInternApp_2014-15.pdf">Internship</a></li>
-                  <li><a href="donate.html#supporters">Support</a></li>
-                  <li><a href="press.html">Press</a></li>
-                </ul>
-              </nav>
-
-              <!-- Add the extra clearfix for only the required viewport -->
-              <div class="clearfix visible-sm"></div>
-
-              <nav class="col-sm-6 col-md-3">
-                <h3>Programming</h3>
-                <ul>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="projects.html#council">Curatorial Council</a></li>
-                  <li><a href="speakerseries.html">Speaker Series</a></li>
-                </ul>
-              </nav>
-
-              <nav class="col-sm-6 col-md-3">
-                <h3>Connect</h3>
-                <ul>
-                  <li><a href="http://eepurl.com/BDHxH">Email List</a></li>
-                  <li><a href="http://www.facebook.com/thecontemporarymuseum">Facebook</a></li>
-                  <li><a href="http://www.flickr.com/photos/cmbaltimore/">Flickr</a></li>
-                  <li><a href="http://instagram.com/thecontemporary">Instagram</a></li>
-                  <li><a href="http://thecontemporarymuseum.tumblr.com">Tumblr</a></li>
-                  <li><a href="https://twitter.com/ThContemporary">Twitter</a></li>
-                  <li><a href="https://vimeo.com/thecontemporarymuseum">Vimeo</a></li>
-                  <li><a href="https://www.youtube.com/channel/UCz7EO0hiR08D87j1mssO8Sw">YouTube</a></li>
-                  <li>&mdash;</li>
-                  <li><a href="donate.html">Donate</a></li>
-                </ul>
-              </nav>
-
+        <div class=" bt3 pt2">
+          <div class="group">
+            <div class="sponsors twelve columns">
+              <h6 class="mb0">Featured Sponsors</h6>
+              <ul class="m0 list-reset">
+                <li><a href="http://www.warholfoundation.org/"><img src="/img/sponsors/warhol-bw.png"></a></li>
+                <li><a href="http://www.rwdfoundation.org/"><img src="/img/sponsors/rwdf-bw.png"></a></li>
+                <li><a href="http://www.strausfoundation.org/"><img src="/img/sponsors/straus-bw.png"></a></li>
+                <li><a href="http://www.bsfa.org/"><img src="/img/sponsors/bsfta-bw.png"></a></li>
+                <li><a href="http://www.ihg.com/hotelindigo/hotels/us/en/baltimore/balhn/hoteldetail"><img src="/img/sponsors/hotelindigo.png"></a></li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-            <hr class="border-top" />
-
-            <div class="row secondary">
-              <p class="col-sm-9">&copy; Copyright 1989&ndash;2015, The Contemporary</p>
-              <p class="col-sm-3 text-right"><a href="http://www.ookb.co/">site by OOKB</a></p>
+        <div class=" bt3 py2">
+          <div class="group">
+            <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+            <div class="social four columns offset-by-four text-right">
+              <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
             </div>
-            <!-- END FOOTER CONTENTS -->
+          </div>
+        </div>
+      </div>
+    </footer>
 
-          </div><!-- END RIGHT OFFSET -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+    <!-- Javascript Magix happens down here -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
 
-        </div>  <!-- END ROW -->
-      </div>    <!-- END CONTAINER -->
-    </footer>   <!-- END FOOTER -->
+    <!-- this is jquery, needed for a bunch of stuff -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- ================================================== -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ookb_for_tc.js"></script>
+    <!-- this loads mustache.js, required for the templating to happen -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
+
+    <!-- This actually takes the menu.json data and prints it into the site -->
+    <script>
+      /** the stuff for printing things out **/
+      $.getJSON('/json/menu.json', function(data) {
+        console.log( "Menu success" );
+        var template = $('#menu-drawers').html();
+        var info = Mustache.to_html(template, data);
+        $('#main-menu-wrap').html(info);
+        console.log( "You now have a menu." );
+
+      });
+
+    </script>
 
     <script>
-      $.getJSON('json/upcoming.json', function(data) {
-        $.each(data.upcomingEvents, function(data) {
-          console.log(this["event"]);
-          $('#upcoming').append('<li class="eventItem"><a href="' + this["url"] + '"><ul><li><span class="date">' + this["humandate"] + '</span> // ' + this["text"] + '</a></li><li>' + this["location"] + '</li><li>' + this["time"] + '</li></ul></a></li>');
+      /** the stuff for printing the dynamic slideshow out **/
+      $.getJSON("/json/slideshow.json", function(data) {
+        console.log( "SS success" );
+        var template = $("#slide-item").html();
+        var info = Mustache.to_html(template, data);
+        $("#slideshow-wrap").html(info);
+        console.log( "You now have the contents for a slideshow, next to get it to work." );
+
+        $("#slideshow-wrap").cycle("destroy");
+        /*
+          the only way I could get this to work properly was to initialize
+          the slideshow with placeholder content, replace the content with
+          new stuff, then destroy the old SS and start a new one...
+          http://jquery.malsup.com/cycle2/api/#commands for more help
+        */
+
+        var ww = $(window).width();
+
+        if (ww >= 800) {
+          $("#slideshow-wrap").cycle({
+            fx: "scrollHorz",
+            timeout: 50000,
+            prev: ".prevControl",
+            next: ".nextControl",
+            slides: "> div.item"
+          });
+        } else {
+          $("#slideshow-wrap").cycle("destroy");
+        }
+
+        $(window).resize(function() {
+          $("#slideshow-wrap").cycle("destroy");
+          var ww = $(window).width();
+          if (ww >= 800) {
+            $("#slideshow-wrap").cycle({
+              fx: "scrollHorz",
+              timeout: 50000,
+              prev: ".prevControl",
+              next: ".nextControl",
+              slides: "> div.item"
+            });
+          } else {
+            $("#slideshow-wrap").cycle("destroy");
+          }
         });
-      });
-      $.getJSON('json/newsfeed.json', function(data) {
-        $.each(data.newsFeed, function(data) {
-          console.log(this["event"]);
-          $('#newsfeed').append('<li class="newsItem"><a href="' + this["url"] + '"><ul><li><span class="date">' + this["humandate"] + '</span> // ' + this["text"] + '</a></li><li>' + this["location"] + '</li><li>' + this["time"] + '</li></ul></a></li>');
-        });
+
       });
     </script>
 
-    <!-- Google Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      /** the stuff for printing the lower blocks out **/
+      $.getJSON('/json/blocks.json', function(data) {
+        console.log( "block success" );
+        var template = $('#block-item').html();
+        var info = Mustache.to_html(template, data);
+        $('#lower-blocks').html(info);
+        console.log( "You now have some lower blocks." );
+      });
+    </script>
 
-      ga('create', 'UA-46130583-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
     </script>
 
   </body>

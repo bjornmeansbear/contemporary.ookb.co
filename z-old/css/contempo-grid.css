@@ -1,0 +1,872 @@
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
+
+/* ----------------------------------------------------*/
+/** screen sizes (minimum) **/
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-book.eot');
+  src: local('Balto Book'), local('Balto-Book'), url('http://fonts.ookb.co/ff/balto/baltoweb-book.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-book.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.eot');
+  src: local('Balto Book Italic'), local('Balto-BookItalic'), url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bold.eot');
+  src: local('Balto Bold'), local('Balto-Bold'), url('http://fonts.ookb.co/ff/balto/baltoweb-bold.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.eot');
+  src: local('Balto Bold Italic'), local('Balto-BoldItalic'), url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.woff') format('woff');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/********/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  /* type stuff */
+  -moz-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -ms-font-feature-settings: "kern";
+  -o-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Base type and layout Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 100% so that all the REM measurements throughout this doc are
+are based on 1rem sizing. So basically 1rem = 1rem :) — should a better solution be devised? */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 400;
+  /* do I want a better, wider ranging font-stack? */
+  font-family: Balto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(26,42,53,1);
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
+}
+
+/* Base Typography
+  these are currently way to large and slightly strange...
+  come up with better standard for deciding sizes - modularscale based on 1.618?
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
+}
+h1 { font-size: 4.0rem;  }
+h2 { font-size: 2.5rem;  }
+h3 { font-size: 2.0rem;  }
+h4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem;  }
+h6 { font-size: 1.33rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.lead {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+ul {
+  margin-bottom: 1em;
+  line-height: normal;
+}
+
+small,
+.small {
+  font-size: .9rem;
+}
+
+/*
+  center, left and right align text.
+  it is my personal opinion that you should never use "text-align: justify;" on the web.
+  browsers aren't good enough at typesetting justified text.
+  I have not created those styles for that reason.
+*/
+.text-center,
+.textcenter,
+.center-text,
+.centertext,
+.align-center,
+.center-align,
+.aligncenter,
+.centeralign {
+  text-align: center;
+}
+
+.text-right,
+.right-text,
+.textright,
+.righttext,
+.align-right,
+.right-align,
+.alignright,
+.rightalign {
+  text-align: right;
+}
+
+.text-left,
+.left-text,
+.textleft,
+.lefttext,
+.align-left,
+.left-align,
+.alignleft,
+.leftalign {
+  text-align: left;
+}
+
+img { max-width: 100%; }
+
+/** Base 2 column grid **/
+
+/* floats and clears */
+.left,
+.floatleft,
+.float-left,
+.leftfloat,
+.left-float {
+  float: left;
+}
+
+.right,
+.floatright,
+.float-right,
+.rightfloat,
+.right-float {
+  float: right;
+}
+
+.clear,
+.clearboth,
+.clear-both,
+.both-clear,
+.bothclear {
+  clear: both;
+}
+.clearleft,
+.leftclear,
+.clear-left,
+.left-clear {
+  clear: left;
+}
+.clearright,
+.rightclear,
+.clear-right,
+.right-clear {
+  clear: right;
+}
+
+.clearfix::after,
+.clear-fix::after,
+.cf::after,
+.row::after,
+.grouped::after,
+.group::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+/** Typography? **/
+
+main a,
+.drawer .blurb a {
+  background-color: transparent;
+  border-bottom: 3px solid rgba(255,234,058,1);
+  color: rgba(026,010,008,1);
+  padding: .15em .15em 0;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+main a:hover,
+.drawer .blurb a:hover {
+  background-color: rgba(255,234,058,1);
+}
+
+
+/* columnar stuff */
+#wrapper,
+.wrapper,
+.container {
+  margin: 0 auto;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-bottom: 1.55rem;
+  width: 100%;
+}
+
+.group,
+.grouped,
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* columnar stuff */
+.column,
+.columns {
+  margin: 0 0 1.5rem 0;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.columns.blurb {
+  padding-left: 2rem;
+}
+
+header #wrapper,
+header .wrapper,
+header .container,
+header .column,
+header .columns {
+  padding-bottom: 0;
+}
+
+/* Start of the Grid
+===========================================*/
+/*
+  widths are set using CSS calc() function
+  width: calc(100% / x * y);
+  where x = #of columns total, and y = #of columns the class crosses.
+  by default this is a 12 column grid, so x = 12
+*/
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.halfwidth,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.fullwidth    { width: 100%; }
+/*everything goes full width on skinny viewports */
+
+@media (min-width: 40em) {
+  /** 4 column grid changeup **/
+  #wrapper,
+  .wrapper,
+  .container {
+    min-width: 30rem;
+    max-width: 95%;
+  }
+
+  .group,
+  .grouped,
+  .row {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+  }
+
+  .column,
+  .columns {
+    float: left;
+  }
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven,
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+
+}
+
+/** XL **/
+@media (min-width: 75rem) {
+  /** 12 column grid changeup **/
+
+  #wrapper,
+  .wrapper,
+  .container {
+    max-width: 82.5rem;
+  }
+
+  /* the Grid
+  ===========================================*/
+  /*
+    widths are set using CSS calc() function
+    width: calc(100% / x * y);
+    where x = #of columns total, and y = #of columns the class crosses.
+    by default this has been set as a 12 column grid, so x = 12.
+    y matches numerically the class number.
+  */
+  .one                   { width: calc(100% / 12 * 01); }
+  .two                   { width: calc(100% / 12 * 02); }
+  .three                 { width: calc(100% / 12 * 03); }
+  .four                  { width: calc(100% / 12 * 04); }
+  .five                  { width: calc(100% / 12 * 05); }
+  .six, .halfwidth       { width: calc(100% / 12 * 06); }
+  .seven                 { width: calc(100% / 12 * 07); }
+  .eight                 { width: calc(100% / 12 * 08); }
+  .nine                  { width: calc(100% / 12 * 09); }
+  .ten                   { width: calc(100% / 12 * 10); }
+  .eleven                { width: calc(100% / 12 * 11); }
+  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
+  /*
+    you can easily add more columns (or remove columnes) by
+    changing 12 to the number of total columns you want, and then
+    add additional classes for the extra columns...
+    like if you want 16 column base grid, you'd get something like
+    width: calc(100% / x * y);
+    x would be 16
+    width: calc(100% / 16 * #columnsSpanned);
+    make sense?
+  */
+
+
+  /* some standard offsets */
+  .offset-by-one         { margin-left: calc(100% / 12 * 01); }
+  .offset-by-two         { margin-left: calc(100% / 12 * 02); }
+  .offset-by-three       { margin-left: calc(100% / 12 * 03); }
+  .offset-by-four        { margin-left: calc(100% / 12 * 04); }
+  .offset-by-five        { margin-left: calc(100% / 12 * 05); }
+  .offset-by-six,
+  .offset-by-half        { margin-left: calc(100% / 12 * 06); }
+  .offset-by-seven       { margin-left: calc(100% / 12 * 07); }
+  .offset-by-eight       { margin-left: calc(100% / 12 * 08); }
+  .offset-by-nine        { margin-left: calc(100% / 12 * 09); }
+  .offset-by-ten         { margin-left: calc(100% / 12 * 10); }
+  .offset-by-eleven      { margin-left: calc(100% / 12 * 11); }
+  .offset-by-twelve      { margin-left: calc(100% / 12 * 12); }
+
+}
+
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+/** starting to custom style the header a bit more **/
+svg.logo .c {
+  fill: rgba(241,97,74,1);
+}
+
+@media (min-width: 60em) {
+  main .logo-wrapper .logo {
+    width: 90%;
+    margin-left: -1.5rem;
+    margin-top: 7.5%;
+  }
+}
+
+/*TESTING SIZING ON THE SKINNY VIEW*/
+
+header .logo {
+  width: 200px;
+  position: absolute;
+}
+
+header.home h1.wordmark {
+  font-size: 2rem;
+  position: absolute;
+  transform: rotate(-5.625deg);
+  z-index: 9999;
+  top: 6.125rem;
+  left: 5rem;
+}
+
+/* inside pages have a slightly different header */
+header.internal > .container {
+  padding-top: .25rem;
+}
+header.internal h1 {
+  font-size: 1rem;
+  padding-top: .25rem;
+}
+header.internal #main-menu-wrap {
+  margin-top: .25rem;
+}
+
+@media (min-width: 50rem) {
+  header.internal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+  }
+
+  body { padding-top: 90px; }
+  header.internal > .container {
+    background: rgba(250,252,255,1);
+  }
+
+  header .logo {
+    margin-top: .75rem;
+    margin-left: 25%;
+    width: 20%;
+    height: auto;
+    position: static;
+  }
+
+  header.home h1.wordmark,
+  header .mission {
+    position: absolute;
+    z-index: 99;
+    transition: all 400ms;
+  }
+
+  header.home h1.wordmark {
+    transform: rotate(5.625deg);
+    top: 35%;
+    left: 42.5%;
+    /**/
+    color: rgba(250,252,255,1);
+    background-color: rgba(000,075,124,1);
+    padding: 1rem;
+  }
+
+  header .mission {
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+
+  header .mission p {
+    color: rgba(000,075,124,1);
+    border: 3px rgba(255,234,058,1) solid;
+  }
+
+  .drawer .blurb a {
+    color: rgba(026,010,008,1);
+    border-bottom: 3px solid rgba(255,234,058,.75);
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: .15em;
+    padding-bottom: 0em;
+  }
+
+  .drawer .blurb a:hover {
+    background-color: rgba(255,234,058,.75);
+    transition: background-color 0.33s ease;
+  }
+}
+
+@media (min-width: 60rem) {
+  header .logo {
+    margin-left: 20%;
+    width: 20%;
+  }
+
+  header.home h1.wordmark {
+    top: 35%;
+    left: -2%;
+  }
+
+  header .mission {
+    transform: rotate(-8.25deg);
+    top: 8%;
+    right: 5%;
+    width: 500px;
+  }
+}
+
+@media (min-width: 65rem) {
+  header.home h1.wordmark {
+    font-size: 3rem;
+    left: 0;
+  }
+}
+/** neon sign will really glow!!!! **/
+/*
+svg.logo {
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 10px rgba(250,252,255,.9),  0 0 25px rgba(255,117,044,.9), 0 0 100px rgba(241,097,074,.9), 0 0 111px rgba(255,234,058,.5);
+  }
+  to {
+    box-shadow: 0 0 5px rgba(250,252,255,.9), 0 0 50px rgba(255,117,044,.9), 0 0 50px rgba(241,097,074,.9), 0 0 150px rgba(255,234,058,.33);
+  }
+}
+*/
+
+/**
+These are some styles related to the crazy homepage solution Connor and Kristian are developing
+**/
+
+/*** testing an idea ***/
+.imged {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 400ms;
+}
+
+/*Slight overlay to allow for white text*/
+
+.imged a {
+  background-color: rgba(26,42,53,0);
+  border: none;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  transition: all 400ms;
+}
+
+.imged:hover {
+  box-shadow: 0 0 10px rgba(26,42,53,.33);
+}
+
+.imged a:hover {
+  background-color: rgba(26,42,53,.5);
+}
+
+.tile, .tile a {
+  color: rgba(250,252,255,1);
+}
+
+.imged .bigBlock h1,
+.imged .bigBlock p {
+  position: absolute;
+}
+
+.imged .bigBlock p {
+  display: none;
+}
+
+/*Added the same margin on the header for each tile*/
+
+.imged .bigBlock h1,
+.imged .bigBlock h2,
+.imged .bigBlock h3 {
+  text-transform: uppercase;
+  top: 3%;
+  left: 3%;
+}
+
+/*Added these just to test the type size of each element. I think it probably has to be varied on the widest view before becoming uniform*/
+
+.six .imged .bigBlock p {
+  max-width: 75%;
+  bottom: 3%;
+  right: 3%;
+}
+
+.twelve .imged .bigBlock p {
+  max-width: 50%;
+  bottom: 3%;
+  right: 3%;
+}
+
+.three .imged .bigBlock p {
+  max-width: 100%;
+  padding-left: 3%;
+  bottom: 3%;
+  left: 3%;
+}
+
+.imged.gritfund {
+  background-image: url('img/gritfund2.jpg');
+  background-color: rgba(26,42,53,.25);
+}
+
+@media (min-width: 60rem) {
+  .imged .bigBlock p {
+    display: block;
+  }
+  .bottom-block {
+    margin-top: 11.5%;
+  }
+}
+
+/**
+NOTES AND HELP:
+- look into this more: http://www.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/
+- Maybe try exploring more of less.js's powers for dynamically building and nesting styles?
+- http://tylertate.com/blog/2013/06/11/retina-images-using-media-queries-and-LESS-CSS.html
+- http://nicolasgallagher.com/flexible-css-cover-images/
+- http://responsive.gs/ (really nice code coloring/styling)
+- http://jxnblk.com/rebass/
+- http://jxnblk.com/writing/posts/mathematical-web-typography/
+- http://eng.wealthfront.com/2013/08/functional-css-fcss.html
+- http://glenmaddern.com/articles/interoperable-css
+- http://www.w3.org/TR/wai-aria-practices/#menu
+- http://jxnblk.com/react-fitter-happier-text/
+**/
+
+/** slideshow? **/
+.cycle-slideshow,
+.cycle-slideshow .item {
+  width: 100%;
+}
+
+.cycle-slideshow .item {
+  position: relative;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.cycle-slideshow .item:last-of-type {
+  margin-bottom: 0;
+}
+
+.item.cycle-slide.cycle-slide-active {
+  visibility: visible;
+}
+
+.cycle-slideshow .item p.blurb {
+  display: none;
+}
+
+.cycle-slideshow .item blockquote {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+}
+
+.cycle-slideshow .item .bigQuote {
+  position: static;
+}
+
+.cycle-slideshow .item .bigQuote .byline,
+.cycle-slideshow .item .bigQuote .extra {
+  position: absolute;
+  bottom: 2rem;
+  margin-bottom: 0;
+}
+.cycle-slideshow .item .bigQuote .byline {
+  left: 3rem;
+}
+
+.cycle-slideshow .item .bigQuote .extra {
+  right: 3rem;
+}
+
+.controls {
+  position: absolute;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  /**/
+  display: none;
+}
+
+.prevControl,
+.nextControl {
+  position: absolute;
+  z-index: 999  ;
+  height: 100%;
+  color: rgba(250,252,255,.75);
+  width: 2rem;
+  text-align: center;
+}
+
+.prevControl .fa,
+.nextControl .fa {
+  top: calc(50% - 2rem);
+  text-shadow: 0 0 .2rem rgba(026,010,008,.25);
+}
+
+.prevControl:hover,
+.nextControl:hover {
+  cursor: pointer;
+  color: rgba(250,252,255,1);
+}
+
+.prevControl {
+  left: .75rem;
+}
+
+.nextControl {
+  right: .75rem;
+}
+
+@media (min-width: 800px) {
+  .cycle-slideshow .item {
+    margin-bottom: 0;
+  }
+  .controls {
+    display: block;
+  }
+  .cycle-slideshow .item .bigBlock h1 {
+    opacity: 0;
+    transition: all 400ms;
+    text-shadow: 0 0 0 rgba(026,010,008,0);
+  }
+  .cycle-slideshow .item:hover .bigBlock h1 {
+    opacity: 1;
+    text-shadow: 0 0 .33333rem rgba(026,010,008,1);
+  }
+}
+
+/** footer **/
+
+
+/*XTRA*/
+
+/******************************************/
+/******************************************/
+/* ABOUT & BIO STUFF */
+/******************************************/
+/******************************************/
+
+#board.border-top,
+.pad-top.border-top {
+  border-top: 3px solid rgba(26,42,53,1);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#staff .bio img {
+  max-width: 300px;
+}
+
+.toggle .bio {
+  position: relative;
+}
+
+.toggle .bio img,
+.toggle .bio h2 {
+  cursor: pointer;
+}
+
+.toggle .bio h2,
+.project-thumb h3 {
+  font-size: 1.2em;
+}
+
+.toggle .bio h3 {
+  font-size: 1em;
+}
+
+.toggle .bio h2,
+.toggle .bio h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toggle .bio h2 {
+  margin-top: 15px;
+}
+
+.toggle .bio p {
+  background: rgba(250,252,255,1);
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+  padding: 1rem;
+  margin-left: -12.5rem;
+  width: 25rem;
+  left: 50%;
+  box-shadow: 0 10px 20px -10px rgba(26,42,53,.4);
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.email .small {
+  font-size: .85em;
+}

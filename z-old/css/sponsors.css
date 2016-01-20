@@ -1,0 +1,56 @@
+/*********************/
+/*********************/
+/*********************/
+
+.sponsors h4 {
+  line-height: 24px;
+}
+
+footer .sponsors ul {
+  text-align: center;
+}
+
+.sponsors ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2% 0;
+}
+
+.sponsors ul li:first-child {
+  margin-left: 0;
+}
+
+.sponsors ul li:last-child {
+  margin-right: 0;
+}
+
+.sponsors ul li:nth-child(1) {
+  width: 25%;
+}
+
+.sponsors ul li:nth-child(2) {
+  margin-top: -2px;
+  width: 12%;
+}
+
+.sponsors ul li:nth-child(3) {
+  margin-top: 3px;
+  width: 12%;
+}
+
+.sponsors ul li:nth-child(4) {
+  width: 16%;
+}
+
+.sponsors ul li:nth-child(5) {
+  width: 15%;
+}
+
+.sponsors ul li img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*********************/
+/*********************/
+/*********************/
