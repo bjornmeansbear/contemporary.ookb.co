@@ -1,0 +1,1228 @@
+@font-face {
+  font-family: Souvenir;
+  src: url('memory_r.woff');
+  
+}
+
+@font-face {
+  font-family: SouvenirLi;
+  src: url('souveni1.woff');
+  
+}
+
+@font-face {
+  font-family: SouvenirExLi;
+  src: url('memory3.woff');
+  
+}
+
+html{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    
+      background-color:black;
+      
+    }
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+
+/* # Elements 
+
+Basic styling of html tags
+
+*/
+
+/* ## Headers
+
+Primary header styles used throughout the site. 
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+
+	<div class= "alpha">Alpha Heading</div>
+	<div class= "beta">Beta Heading</div>
+
+*/
+
+h1{
+	font-size: 16px;
+}
+
+h2{
+	font-size: 16px;
+}
+
+.alpha{
+	font-size: 21px;
+}
+
+.beta{
+	font-size: 187px;
+}
+
+/* # Objects
+Modular Objects re-used throughout the site */
+
+.text .body{
+	padding: 20px 10px;
+	color:white;
+	letter-spacing: 1px;
+	font-family:sans-serif;
+}
+
+.text .smalltext {
+	font-size: 10px;
+	color:white;
+}
+
+
+sup{
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #0066FF;
+	font-size:15px;
+  	line-height: 0;
+  	position: relative;
+  	vertical-align: baseline;
+  	top: -2em;
+  	margin-left:-10px;
+}
+
+sup .two{
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: white;
+	font-size:11px;
+  	line-height: 0;
+  	position: relative;
+  	vertical-align: baseline;
+  	top: 4em;
+	left:-1em;  	
+}
+
+.headcontainer{
+ 	background-position:center;
+    height:600px;
+    padding-top:60px;
+ 	overflow: hidden;
+
+}
+
+.arrows{
+	float:right;
+	margin-top:-200px;
+}
+
+.subheader{
+	text-align: center;
+	font-size: 55px;
+	color:white;
+	font-family: SouvenirExLi;
+	letter-spacing: 2px;
+	margin-left:-10px;
+
+
+}
+
+.subheader2{
+	text-align: center;
+	font-size: 55px;
+	font-family: SouvenirLi;
+	color:white;
+	letter-spacing: 2px;
+
+}
+@media screen and (min-width: 600px) {
+  .subheader2{
+	text-align: left;
+	font-size: 50px;
+	
+	}
+}
+
+@media screen and (min-width: 600px) {
+  .subheader {
+	text-align: left;
+	font-size: 50px;
+	padding-left:50px;
+
+	}
+}
+
+.publication{
+	top:200px;
+	width:240px;
+	font-size:10px;
+	position: relative;
+	display: block;
+	left:10%;
+	line-height: 15px;
+	z-index: 999;
+
+}
+
+@media screen and (min-width: 600px) {
+  .publication {
+  	top:-10px;
+	font-size:11px;
+	position: relative;
+	display: inline-block;
+	left:70%;
+
+	}
+}
+
+.publication .foot{
+	color:white;
+	text-align:left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-weight: lighter;
+	font-size: 11px;
+	letter-spacing: 1px;
+	padding-left: 1px;
+
+
+}
+
+.foot a{
+	text-decoration: none;
+	color:white;
+	text-align:left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-weight: lighter;
+	font-size: 11px;
+	letter-spacing: 1px;
+	padding-left: 1px;
+}
+.foot a:link{
+	text-decoration: none;
+
+}
+.publication .foot a:hover{
+	text-decoration: underline;
+}
+
+.publication .foot a:active{
+	text-decoration: underline;
+}
+
+.publication .foot a:visited{
+	color: white;
+}
+
+.publication .lightfoot{
+	text-align:left;
+	color:white;
+	font-weight: lighter;
+	font-family: sans-serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+/* ## Media Objects
+*/
+
+.largeimg .src{
+	margin-right: 0;
+}
+
+.smallimg .src{
+	width: 100px;
+	height: auto;
+}
+
+
+
+/* # Navigation */
+
+.contents{
+	padding:30px;
+	width:100%;
+
+}
+
+.item{
+	color:white;
+	padding-right: 10px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-family: SouvenirExLi;
+	line-height: 15px;
+	text-decoration: none;
+	float:left;
+
+
+}
+
+
+.item:hover{
+	text-decoration: underline;
+	cursor: pointer;
+
+}
+
+.item:active{
+	text-decoration: underline;
+
+}
+@media screen and (min-width: 600px) {
+  .contents {
+
+
+
+	}
+}
+@media screen and (min-width: 600px) {
+  .item {
+	font-size:20px;
+	line-height: 55px;
+padding-right: 42px;
+
+	}
+}
+
+
+.numeral{
+	color:black;
+	font-family: SouvenirLi;
+	font-size: 16px;	
+	text-align: center;
+}
+
+.numeral a{
+
+}
+
+@media screen and (min-width: 600px) {
+  .numeral {
+	font-size:18px;
+
+
+	}
+}
+
+
+/* # Recurring Content */
+.insideheader{
+	font-size: 45px;
+	margin-top: 30px;
+	color:black;
+
+	letter-spacing: 1.5px;
+	font-family: SouvenirLi;
+	line-height: 65px;
+	padding-bottom: 30px;
+	display: block;
+
+}
+
+.insideheader_white{
+	font-size: 45px;
+	margin-top: 30px;
+	color:white;
+	letter-spacing: 1.5px;
+	font-family: SouvenirLi;
+	line-height: 65px;
+	padding-bottom: 30px;
+	display: block;
+
+}
+
+/* # Content */
+
+.introduction{
+	background-color:white;
+	height:auto;
+	padding:50px;
+	display: block;
+	position: relative;
+}
+@media screen and (min-width: 600px) {
+  .introduction{
+	padding:100px;
+}
+}
+
+.introcontainer{
+	margin-left:0px;
+}
+
+@media screen and (min-width: 600px) {
+  .introcontainer{
+	width:70%;
+
+
+	}
+}
+
+.introduction-text{
+	color:black;
+	line-height: 25px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: lighter;
+
+}
+
+@media screen and (min-width: 600px) {
+  .introduction-text {
+	font-size:16px;
+	line-height: 40px;
+
+
+	}
+}
+.boldinfo {
+	width:90%;
+	font-family: SouvenirExLi;
+	line-height: 25px;
+	margin-left:-20px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .boldinfo {
+	margin-left:300px;
+	width:40%;
+
+
+	}
+}
+
+.icons{
+	float:left;
+	padding-right:20px;
+
+}
+
+.crisis{
+	background-color:black;
+	text-align: center;
+	height:auto;
+	padding-top:50px;
+	padding-right:10px;
+	padding-left:10px;
+	display: block;
+
+}
+
+@media screen and (min-width: 600px) {
+  .crisis{
+	padding:100px;
+}
+}
+
+.ccrisis{
+	overflow: hidden;
+	margin-left:50px;
+	width:80%;
+	margin-left: 60px;
+}
+
+@media screen and (min-width: 600px) {
+  .ccrisis{
+	margin-left: 200px;
+	width:60%;
+}
+}
+.crisis-text{
+	color:white;
+	font-weight: lighter;
+	line-height: 25px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 600px) {
+  .crisis-text {
+	font-size:17px;
+	line-height: 30px;
+	max-width:300px;
+
+
+	}
+}
+
+.author{
+	text-transform:uppercase; 
+	font-weight: lighter;
+	letter-spacing:1.5px;
+	color:white;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+
+
+
+.bluename{
+	color:#0066FF;
+	text-decoration: underline;
+}
+
+.bluename a{
+	font-size:16px;
+	font-family: SouvenirLi;
+	text-decoration: none;
+}
+
+.bluename a:hover{
+	text-decoration: none;
+}
+
+.bluename a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+.bluename a:active{
+	text-decoration: none;
+
+}
+
+.blue{
+	color:#0066FF;
+	text-decoration:underline;
+}
+
+
+#sticker{
+	display: inline-block;
+	z-index: 99;
+	width:auto;
+	background-color: black;
+	height:auto;
+	text-align: left;
+
+}
+
+@media screen and (min-width: 600px) {
+  #sticker{
+	display: inline-block;
+	z-index: 99;
+	width:auto;
+	background-color: black;
+	height:auto;
+	text-align: left;
+	width: 280px;
+
+
+
+	}
+}
+
+.pull{
+	background-color:white;
+	max-width:100%;
+	height:auto;
+	margin-left:0px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .pull{
+	background-color:white;
+	max-width:80%;
+	height:auto;
+	margin-left:200px;
+	margin-top: 80px;
+	margin-bottom: 0px;
+
+	}
+}
+
+.pullquote{
+	font-size: 25px;
+	font-family: SouvenirLi;
+	line-height: 35px;
+	letter-spacing: 2px;
+	color:black;
+}
+
+@media screen and (min-width: 600px) {
+  .pullquote{
+	font-size: 40px;
+	line-height: 50px;
+	font-family: SouvenirLi;
+	letter-spacing: 2px;
+	color:black;
+
+	}
+}
+
+a.tooltip {
+	outline:none; 
+	color:#0066FF;
+	font-size: 16px;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-weight: lighter;
+
+
+}
+a.tooltip strong {
+	line-height:30px;
+}
+a.tooltip:hover {
+	text-decoration:none;
+} 
+a.tooltip span {    
+	z-index:10;
+    display:none; 
+    padding:14px 20px;
+    margin-top:-30px; 
+    margin-left:28px;
+    width:150px; 
+    line-height:20px;
+}
+
+a.tooltip:hover span{
+    display:inline; 
+    position:absolute; 
+    color:white;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border:none;
+    background:#0066FF;
+}
+.callout {z-index:20;
+	position:absolute;
+	top:30px;
+	border:0;
+	left:-12px;
+}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+  
+}
+
+
+@media screen and (min-width: 600px) {
+  a.tooltip span{
+	padding:14px 20px;
+	   width:300px;
+
+	}
+}
+
+.description{ 
+	font-weight: lighter;
+	letter-spacing:1.5px;
+	font-size: 16px;
+	color:white;
+	font-family: sans-serif;
+	text-align: left;
+
+}
+
+.roundtable{
+	float:left;
+	padding-right:200px;
+	height: 800px;
+    text-align:left;
+    padding:50px;
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .roundtable{
+  	float:right;
+  	height: 800px;
+  	padding-right:550px;
+  	margin-top:-100px;
+	display: block;
+	text-align: left;;
+
+
+	}
+}
+.participant{
+	font-family: SouvenirExLi;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color:white;
+	line-height: 50px;
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .participant{
+	font-size: 40px;
+	letter-spacing: 2px;
+
+	}
+}
+
+.participant_p{
+	text-decoration: underline;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color:white;
+	display: inline;
+	line-height: 30px;
+
+
+}
+@media screen and (min-width: 600px) {
+  .participant_p{
+  	font-size: 15px;
+	}
+}
+
+
+.participant_p a{
+	text-decoration: none;
+}
+
+.participant_p a:hover{
+	text-decoration: none;
+}
+
+.participant_p a:active{
+	color:white;
+	text-decoration: none;
+}
+
+.participant_p a:visited{
+	color:white;
+	text-decoration: none;
+}
+
+.location{
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color:white;
+	display: inline;
+	margin-left: 20px;
+
+}
+
+.rtimage{
+	margin-left:-100px;
+	width:100%;
+
+	
+}
+
+
+@media screen and (min-width: 600px) {
+  .rtimage{
+  	width:100%;
+  	margin-left:0px;
+	}
+}
+
+
+.conversation{
+	width:80%;
+	padding:50px;
+	height:auto;
+	background-color: white;
+	display: block;
+	float: left;
+	margin-top: -50px;
+}
+
+@media screen and (min-width: 600px) {
+  .conversation{
+	width:41%;
+	overflow: hidden;
+	float: left;
+	display: block;
+
+	}
+}
+
+#top{
+	color:black;
+}
+
+
+.question{
+	text-align: left;
+	font-size: 15px;
+	line-height: 25px;
+	color:black;
+	font-family: sans-serif;
+	display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .question{
+	font-size: 20px;
+	line-height: 30px;
+
+	}
+}
+
+.answer{
+	text-align: left;
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: 5px;
+	font-weight: lighter;
+	font-family: sans-serif;
+	display: inline;
+
+}
+
+@media screen and (min-width: 600px) {
+  .answer{
+	font-size: 16px;
+	line-height: 30px;
+
+	}
+}
+
+.name{
+	font-family: SouvenirLi;
+	font-size: 20px;
+	color:#0066FF;
+	display: block;
+
+}
+
+.initials{
+	font-family: SouvenirLi;
+	font-size: 20px;
+	color:#0066FF;
+	display: inline;
+	margin-top: 40px;
+	margin-right:30px;
+
+}
+
+.imageright{
+	width:40%;
+	float:right;
+	padding-right:70px;
+	padding-top:200px;
+	padding-bottom:200px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .imageright{
+	width:40%;
+	float:right;
+	padding-right:70px;
+	padding-top:400px;
+	padding-bottom:400px;
+
+	}
+}
+
+.sideimg{
+	width: 110%;
+	display: none;
+	margin-top: 0px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .sideimg{
+	width: 110%;
+	display: block;
+	margin-right:-60px;
+
+
+}
+}
+
+
+.quotecontainer{
+	width: 70%;
+	float:right;
+	display: inline;
+	padding-right:100px;
+	padding-top:20px;
+	padding-bottom:20px;
+
+
+}
+@media screen and (min-width: 600px) {
+  .quotecontainer{
+	width: 40%;
+	padding-right:110px;
+	padding-top:200px;
+	padding-bottom:200px;
+
+
+
+}
+}
+
+.quotebox{
+	width:100%;
+	height:auto;
+	padding-right:50px;
+	padding-left:50px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+
+
+.largequote{
+	font-family: SouvenirExLi;
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color:white;
+	text-align: center;
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .largequote{
+	font-size: 36px;
+	line-height: 46px;
+
+
+	}
+}
+
+p.clear {
+    clear: both;
+}
+
+.boomimg{
+	top: 0px;
+	float:right;
+	z-index: 1;
+	margin-bottom:50px;
+	display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .boomimg{
+	display: inline;
+	top: -300px;
+	float:right;
+	left:80px;
+	z-index: 1;
+	margin-bottom:0px;
+}
+}
+
+
+.collect{
+	background-color:white;
+	height:5800px;
+	padding:50px;
+	display: block;
+}
+@media screen and (min-width: 600px) {
+  .collect{
+  	height:3100px;
+	padding:100px;
+	background-color:white;
+
+}
+}
+
+.collectcontainer{
+	margin-left:0px;
+	width:100%;
+}
+
+@media screen and (min-width: 600px) {
+  .collectcontainer{
+	width:40%;
+
+
+	}
+}
+
+.collect-text{
+	color:black;
+	line-height: 25px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+@media screen and (min-width: 600px) {
+  .collect-text {
+	font-size:16px;
+	line-height: 30px;
+
+
+
+	}
+}
+
+.collectquestion{
+	font-family: SouvenirLi;
+	font-size: 20px;
+	color:#0066FF;
+	display: block;
+	line-height: 30px;
+}
+
+.collectname{
+	font-family: SouvenirLi;
+	font-size: 40px;
+	color:black;
+	margin-top:100px;
+	display: block;
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .collectname {
+	font-family: SouvenirLi;
+	margin-top:0px;
+	font-size: 40px;
+	color:black;
+	display: block;
+	margin-bottom: 30px;
+
+
+	}
+}
+
+.collectdescription{
+	font-family: sans-serif;
+	font-size: 16;
+	color: black;
+}
+
+.collectimg{
+	margin-left:-150px;
+}
+
+@media screen and (min-width: 600px) {
+  .collectimg {
+	margin-left:0px;
+
+
+	}
+}
+
+.sine{
+	background-color:white;
+	height:auto;
+	padding:50px;
+	display: block;
+}
+
+.glossimg{
+	width:100%;
+}
+
+.glosscontainer{
+	width:100%;
+	background-color: white;
+	height:auto;
+	padding:50px;
+}
+
+@media screen and (min-width: 600px) {
+.glosscontainer{
+	width:100%;
+	background-color: white;
+	height:auto;
+	padding:80px;
+}
+}
+
+.unicontainer{
+	width:70px;
+	height:500px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  
+}
+
+
+
+
+
+.uni{
+	font-size:15px;
+	color:black;
+	font-family: sans-serif;
+	display:block;
+	line-height: 20px;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+.uni{
+	font-size: 20px;
+	color:black;
+	font-family: sans-serif;
+	display:block;
+	line-height: 50px;
+	text-align: center;
+}
+}
+
+
+.traitcontainer{
+	width:80%;
+	height:auto;
+	display: block;
+	position: absolute;
+
+}
+@media screen and (min-width: 600px) {
+.traitcontainer{
+	width:30%;
+	height:auto;
+	display: block;
+	position: absolute;
+
+}
+}
+.trait{
+	font-family: sans-serif;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	color:black;
+	font-size: 10px;
+	line-height: 20px;
+	display: block;
+	margin-left:60px;
+
+
+}
+
+@media screen and (min-width: 600px) {
+.trait{
+	font-family: sans-serif;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	color:black;
+	font-size: 12px;
+	line-height: 50px;
+	display: block;
+	margin-left:60px;
+
+
+}
+}
+
+
+.GL_cont{
+	width:80%;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    z-index: 999;
+    margin-top:-300px;
+
+
+}
+
+@media screen and (min-width: 600px) {
+.GL_cont{
+	width:90%;
+	height:auto;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+    z-index: 999;
+    margin-top:-200px;
+
+
+
+}
+}
+.GL_text{
+	font-family: sans-serif;
+	letter-spacing:1px;
+	color:black;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: lighter;
+
+}
+
+.GL_name{
+	font-family: SouvenirLi;
+	letter-spacing:1px;
+	color:#0066FF;
+	font-size: 17px;
+	display: block;
+	margin-top:30px;
+
+}
+.GL_name a:link{
+	font-family: SouvenirLi;
+	letter-spacing:1px;
+	color:#0066FF;
+	font-size: 17px;
+	display: block;	
+}
+
+.GL_name a:active{
+	text-decoration: none;
+}
+
+.GL_name a:hover{
+	text-decoration: none;
+}
+.GL_name a:visited{
+	text-decoration: none;
+	color:#0066FF;
+}
+
+.cat{
+	display: block;
+	font-size: 20px;
+}
+

@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Contemporary (A nomadic, non-collecting art museum in Baltimore, Maryland.)</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/css/contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="/css/modules.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="bg-white" id="homepage">
+
+    <header class="internal">
+      <div class="container">
+        <div class="clearfix">
+
+          <h1 class="wordmark pull-left m0"><a class="no-style" href="/">The Contemporary</a></h1>
+
+          <div class="pull-right text-right">
+            <p class="small m0">Baltimore, MD</p>
+          </div>
+        </div>
+
+        <nav>
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/visit/">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/about/">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/programs/">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/resources/">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/support/">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
+            <script id="menu-drawers" type="text/x-mustache-template">
+              {{#menu}}
+                <li class="mainlink evenly-spread drop-down {{mainlink}}">
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
+                  <div class="drawer bg-white">
+                    <div class="three columns blurb">
+                      <p>{{{primary}}}</p>
+                    </div>
+                    <ul class="eight columns offset-by-one sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
+                      {{#sublink}}
+                        <li class="group">
+                          <p class="four columns">
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
+                          </p>
+                          <p class="eight columns secondary">
+                            {{{secondary}}}
+                          </p>
+                        </li>
+                      {{/sublink}}
+                      {{^sublink}}<!-- nothing here --> {{/sublink}}
+                    </ul>
+                    {{#signup}}
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup" class="eight columns offset-by-one">
+                      <form action="//contemporary.us7.list-manage.com/subscribe/post?u=eff2e5ec224690abbfe4e9f4d&amp;id=9909b16eee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <h4 class="darkblue">Sign up for Contemporary emails</h4>
+                          <div id="mc_embed_signup_scroll" class="group">
+                            <div class="mc-field-group eight columns">
+                              <label class="hidden" for="mce-EMAIL">Email Address </label>
+                              <input type="email" value="" name="EMAIL" class="required email twelve bg-white darkblue" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="hidden">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div clas="hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eff2e5ec224690abbfe4e9f4d_9909b16eee" tabindex="-1" value=""></div>
+                            <div class="four columns">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-darkblue white btn btn-outline twelve">
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="social eight columns offset-by-one text-right m2">
+                      <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-2x"></i></a>
+                    </div>
+                    <!--End mc_embed_signup-->
+                    {{/signup}}
+                    {{^signup}}<!-- nope -->{{/signup}}
+                  </div>
+                </li>
+              {{/menu}}
+            </script>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="container">
+
+        <h1>Programs.</h1>
+        <p class="lead mt1 mb4">
+          The Contemporary focuses on three main program areas: Projects, Speaker Series, and <em>Scroll</em>.
+        </p>
+
+        <div class="group">
+          <section class="four columns">
+            <div class="tile imged bg-red">
+              <a class="bigBlock" href="projects/">
+                <h2>Projects</h2>
+              </a>
+            </div>
+            <p class="mt1">
+              We commission site-specific and subject-oriented projects that exist in public space and are in collaboration with artists and existing arts and non-arts institutions, organizations, sites, and spaces. All projects are free and open to the public.
+            </p>
+          </section>
+          <section class="four columns">
+            <div class="tile imged bg-blue">
+              <a class="bigBlock" href="speaker-series/">
+                <h2>Speaker Series</h2>
+              </a>
+            </div>
+            <p class="mt1">
+              Our annual Speaker Series, which is held at the Baltimore School for the Arts, features internationally-recognized artists, critics, and art professionals. Each year the theme shifts to reflect contemporary practices and trends. All lectures are free and open to the public.
+            </p>
+          </section>
+          <section class="four columns">
+            <div class="tile imged bg-darkgreen">
+              <a class="bigBlock" href="scroll/">
+                <h2>Scroll</h2>
+              </a>
+            </div>
+            <p class="mt1">
+              <em>Scroll</em> is an annual publication that is produced entirely by our intern staff. Each issue of <em>Scroll</em> explores a different cultural topic related to the mission and efforts of the museum and is available, for free, in print and online.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class=" bt3 pt2">
+          <div class="group">
+            <div class="sponsors twelve columns">
+              <h6 class="mb0">Featured Sponsors</h6>
+              <ul class="m0 list-reset">
+                <li><a href="http://www.warholfoundation.org/"><img src="/img/sponsors/warhol-bw.png"></a></li>
+                <li><a href="http://www.rwdfoundation.org/"><img src="/img/sponsors/rwdf-bw.png"></a></li>
+                <li><a href="http://www.strausfoundation.org/"><img src="/img/sponsors/straus-bw.png"></a></li>
+                <li><a href="http://www.bsfa.org/"><img src="/img/sponsors/bsfta-bw.png"></a></li>
+                <li><a href="http://www.ihg.com/hotelindigo/hotels/us/en/baltimore/balhn/hoteldetail"><img src="/img/sponsors/hotelindigo.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class=" bt3 py2">
+          <div class="group">
+            <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+            <div class="social four columns offset-by-four text-right">
+              <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+    <!-- Javascript Magix happens down here -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- this is jquery, needed for a bunch of stuff -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- this loads mustache.js, required for the templating to happen -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
+
+    <!-- This actually takes the menu.json data and prints it into the site -->
+    <script>
+      /** the stuff for printing things out **/
+      $.getJSON('/json/menu.json', function(data) {
+        console.log( "Menu success" );
+        var template = $('#menu-drawers').html();
+        var info = Mustache.to_html(template, data);
+        $('#main-menu-wrap').html(info);
+        console.log( "You now have a menu." );
+      });
+    </script>
+
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
+    </script>
+
+  </body>
+</html>

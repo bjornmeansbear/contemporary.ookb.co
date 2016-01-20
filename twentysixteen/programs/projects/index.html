@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Contemporary : Projects</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/css/contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="/css/modules.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="bg-white projects">
+
+    <header class="internal">
+      <div class="container">
+        <div class="clearfix">
+
+          <h1 class="wordmark pull-left m0"><a class="no-style" href="/">The Contemporary</a></h1>
+
+          <div class="pull-right text-right">
+            <p class="small m0">Baltimore, MD</p>
+          </div>
+        </div>
+
+        <nav>
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/visit/">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/about/">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/programs/">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/resources/">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/support/">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
+            <script id="menu-drawers" type="text/x-mustache-template">
+              {{#menu}}
+                <li class="mainlink evenly-spread drop-down {{mainlink}}">
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
+                  <div class="drawer bg-white">
+                    <div class="three columns blurb">
+                      <p>{{{primary}}}</p>
+                    </div>
+                    <ul class="eight columns offset-by-one sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
+                      {{#sublink}}
+                        <li class="group">
+                          <p class="four columns">
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
+                          </p>
+                          <p class="eight columns secondary">
+                            {{{secondary}}}
+                          </p>
+                        </li>
+                      {{/sublink}}
+                      {{^sublink}}<!-- nothing here --> {{/sublink}}
+                    </ul>
+                    {{#signup}}
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup" class="eight columns offset-by-one">
+                      <form action="//contemporary.us7.list-manage.com/subscribe/post?u=eff2e5ec224690abbfe4e9f4d&amp;id=9909b16eee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <h4 class="darkblue">Sign up for Contemporary emails</h4>
+                          <div id="mc_embed_signup_scroll" class="group">
+                            <div class="mc-field-group eight columns">
+                              <label class="hidden" for="mce-EMAIL">Email Address </label>
+                              <input type="email" value="" name="EMAIL" class="required email twelve bg-white darkblue" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="hidden">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div clas="hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eff2e5ec224690abbfe4e9f4d_9909b16eee" tabindex="-1" value=""></div>
+                            <div class="four columns">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-darkblue white btn btn-outline twelve">
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="social eight columns offset-by-one text-right m2">
+                      <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-2x"></i></a>
+                    </div>
+                    <!--End mc_embed_signup-->
+                    {{/signup}}
+                    {{^signup}}<!-- nope -->{{/signup}}
+                  </div>
+                </li>
+              {{/menu}}
+            </script>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <div class="container">
+
+        <article id="projects" class="six">
+          <h1>Projects.</h1>
+          <p class="lead" id="projectTxt">We commission site-specific and subject-oriented projects that exist in public space and are in collaboration with artists and existing arts and non-arts institutions, organizations, sites, and spaces.</p>
+        </article>
+
+          <article id="upcoming" class="">
+            <h2>Current.</h2>
+
+            <div class="group">
+              <img src="/img/projects/2015-miriam-simun/ghostfood-init.jpg">
+
+              <aside>
+                <h3 class="no-top">
+                <em>GhostFood</em> <br>
+                    Miriam Simun <br>
+                <time>Fall 2015</time>
+                </h3>
+
+                <p class="border-top">
+                  GhostFood explores eating in a future of biodiversity loss brought on by climate change. The GhostFood truck serves scent-food pairings consumed by patrons while wearing a device that adapts human physiology to enable taste experiences of unavailable foods. Inspired by insect physiology (insects use their antennae to smell and navigate their world) and long-standing human traditions of technological extension of the senses, the device inserts direct olfactory stimulation into the eating experience. Scents of foods threatened by climate change are paired with foods made from climate change-resilient foodstuffs, providing taste illusions of foods that may soon no longer be available. GhostFood staff serve the public, guiding visitors through this pre-nostalgic experience and engaging dialogue. This project is in collaboration with Miriam Songster. This Baltimore iteration of GhostFood is organized by The Contemporary in collaboration with students at Johns Hopkins University enrolled in 'GhostFood: Curatorial Practicum with The Contemporary,' which runs Fall 2015.
+                </p>
+                <p>
+                  <a href="http://www.miriamsimun.com/">miriamsimun.com</a>
+                </p>
+
+              </aside>
+
+              <p class="small border-top serif">
+                <a href="http://www.wholefoodsmarket.com/stores/mountwashington"><img class="pull-right col-xs-4 col-sm-3 col-md-2" src="/img/sponsors/wholefoods-mtw.png"/></a>
+                  This rendition of GhostFood is made possible with lead support from the Museums & Society Program at Johns Hopkins University via The Andrew W. Mellon Foundation. The project was originally commissioned by the Robert Rauschenberg Foundation for the multi-site exhibition Marfa Dialogues/NY, with additional support provided by Takasago, NextFab Studios and Whole Foods. Marfa Dialogues/NY is a collaboration between the Robert Rauschenberg Foundation, Ballroom Marfa and the Public Concern Foundation. GhostFood has also been presented by Gallery Aferro in Newark and by SteamWorkPhilly in Philadelphia. Thank you Holly Gressley, Corrie Van Sice, Monell Chemical Senses Center and Olivia Bransbourg. The Contemporary is funded through the generosity of foundations, government agencies, corporations, and individuals. Major programming support has been provided by The Andy Warhol Foundation for the Visual Arts, Robert W. Deutsch Foundation, Aaron & Lillie Straus Foundation, and the William G. Baker, Jr. Memorial Fund, creator of the Baker Artist Awards. The museum also gratefully acknowledges an ongoing partnership with the Baltimore School for the Arts. The official graphic designer of The Contemporary is The Office of Kristian Bjørnard (OOKB), and the hotel sponsor is Brookshire Suites.
+                </p>
+            </div>
+          </article>
+
+            <article id="archive">
+              <h1>Archive.</h1>
+
+              <section class="group">
+                <!-- New Life! -->
+                <div class="project-thumb three columns">
+                  <a class="block-link" href="/programs/projects/ghostfood/">
+                    <time>2015</time>
+                    <img src="ghostfood/gfthumb.jpg" />
+                    <h3>Ghostfood</h3>
+                    <p>Miriam Simun</p>
+                  </a>
+                </div>
+                <div class="project-thumb three columns">
+                  <a class="block-link" href="/programs/projects/bubble-over-green/">
+                    <time>2015</time>
+                    <img src="/img/projects/2015-02-21-victoriafu/2015-bubble-over-green.jpg" />
+                    <h3>Bubble Over Green</h3>
+                    <p>Site: 101 W. North Ave</p>
+                    <p>Victoria Fu</p>
+                  </a>
+                </div>
+
+                <!-- death rattle -->
+                <div class="project-thumb three columns">
+                  <time>2012</time>
+                  <img src="/img/projects/2012-05-liste2.jpg" />
+                  <h3>Baltimore Liste 2</h3>
+                  <p>Site: The Bank Building</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2012</time>
+                  <img src="/img/projects/2012-04-wdd.jpg" />
+                  <h3>Uh-Oh: <br/>A Whoop Dee Doo Thing</h3>
+                  <p>Site: Gallery CA</p>
+                  <p>Whoop Dee Doo</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2011</time>
+                  <img src="/img/projects/2011-11-movingrightalong.jpg" />
+                  <h3>Moving Right Along</h3>
+                  <p>Site: Penn Station</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2011</time>
+                  <img src="/img/projects/2011-06-lol.jpg" />
+                  <h3>LOL: A Decade of Antic Art</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2011</time>
+                  <img src="/img/projects/2011-05-liste1.jpg" />
+                  <h3>Baltimore Liste 1</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <!-- The Museum Finds a Home -->
+                <div class="project-thumb three columns">
+                  <time>2011</time>
+                  <img src="/img/projects/2011-02-agitatedhistories.jpg" />
+                  <h3>Agitated Histories</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2010</time>
+                  <img src="/img/projects/2010-09-bengest.jpg" />
+                  <h3>Commissure</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Ben Gest</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2010</time>
+                  <img src="/img/projects/2010-05-bearingwitness.jpg" />
+                  <h3>Bearing Witness</h3>
+                  <p>Site: Contemporary Museum and various locations around Baltimore</p>
+                  <p>Bradley McCallum and Jacqueline Tarry</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2010</time>
+                  <img src="/img/projects/2010-01-participation.jpg" />
+                  <h3>Participation Nation</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Lee Mingwei, Neighborhood Public Radio, Finishing School</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2009</time>
+                  <img src="/img/projects/2009-09-fax.jpg" />
+                  <h3>FAX</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2009</time>
+                  <img src="/img/projects/2009-05-hugh.jpg" />
+                  <h3>My Food My Poop</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Hugh Pocock</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2009</time>
+                  <img src="/img/projects/2009-03-soledad.jpg" />
+                  <h3>Where Do You Live?</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Soledad Salame</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2009</time>
+                  <img src="/img/projects/2009-03-futurefarmers.jpg" />
+                  <h3>The Reverse Ark: In the Wake</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Futurefarmers</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2009</time>
+                  <img src="/img/projects/2008-12-dawoud.jpg" />
+                  <h3>Class Pictures and The Portrait Re/Examined</h3>
+                  <p>Site: Contemporary Museum and the Walters Art Museum</p>
+                  <p>Dawoud Bey</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2008</time>
+                  <img src="/img/projects/2008-09-kianga2.jpg" />
+                  <h3>My Life in Fiction</h3>
+                  <p>Site: Contemporary Museum and various locations around Baltimore</p>
+                  <p>Kianga Ford</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2008</time>
+                  <img src="/img/projects/2008-06-cottageindustry2.jpg" />
+                  <h3>Cottage Industry</h3>
+                  <p>Site: Contemporary Museum and various locations around Baltimore</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2007</time>
+                  <img src="/img/projects/2007-12-doubletake.jpg" />
+                  <h3>Double-Take: The Poetics of Illusion and Light</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Alexandra Grant, Bernhard Hildebrant and Mary Temple</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2007</time>
+                  <img src="/img/projects/2007-09-broadcast.jpg" />
+                  <h3>Broadcast</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2007</time>
+                  <img src="/img/projects/2007-05-cecilia.jpg" />
+                  <h3>St. Cecilia</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Joseph Grigely</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2007</time>
+                  <img src="/img/projects/2007-01-cellphone.jpg" />
+                  <h3>Cell Phone: Art and the Mobile Phone</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2006</time>
+                  <img src="/img/projects/2006-12-relocation.jpg" />
+                  <h3>Re:location: A Super Pride Studio Project</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>municipalWORKSHOP and Super Pride Studio</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2006</time>
+                  <img src="/img/projects/2006-09-girlsnightout.jpg" />
+                  <h3>Girls Night Out</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2006</time>
+                  <img src="/img/projects/2006-05-headquarters.jpg" />
+                  <h3>Headquarters: Investigating the Creation of the Ghetto and the Prison Industrial Complex</h3>
+                  <p>Site: Contemporary Museum and various locations around Baltimore</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2006</time>
+                  <img src="/img/projects/2006-02-femme.jpg" />
+                  <h3>Femme</h3>
+                  <p>Site: Contemporary Museum and the Walters Art Museum</p>
+                  <p>Louise Bourgeois</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2005</time>
+                  <img src="/img/projects/2005-10-crowd.jpg" />
+                  <h3>Crowd of the Person</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2005</time>
+                  <img src="/img/projects/2005-07-losers.jpg" />
+                  <h3>Beautiful Losers: Contemporary Art and Street Culture</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2005</time>
+                  <img src="/img/projects/2005-04-patriot.jpg" />
+                  <h3>Patriot</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2005</time>
+                  <img src="/img/projects/2005-02-swissceramics.jpg" />
+                  <h3>Swiss Contemporary Ceramics</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2004</time>
+                  <img src="/img/projects/2004-10-bothandneitheror.jpg" />
+                  <h3>both/andnoteither/or</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Sanford Biggers</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2004</time>
+                  <img src="/img/projects/2004-08-leipzig.jpg" />
+                  <h3>The New Leipzig School of Painting</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2004</time>
+                  <img src="/img/projects/2004-05-isaacjulien.jpg" />
+                  <h3>Baltimore</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Isaac Julien</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2004</time>
+                  <img src="/img/projects/2004-02-movingoutlines.jpg" />
+                  <h3>Moving Outlines</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2003</time>
+                  <img src="/img/projects/2003-11-handson.jpg" />
+                  <h3>Hands On</h3>
+                  <p>Site: Contemporary Museum and MTA buses</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2003</time>
+                  <img src="/img/projects/2003-09-billboard.jpg" />
+                  <h3>Billboard Project</h3>
+                  <p>Site: Contemporary Museum and the Walters Art Museum</p>
+                  <p>Felix Gonzalez-Torres</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2003</time>
+                  <img src="/img/projects/2003-05-louisa.jpg" />
+                  <h3>Louisa Chase: New Paintings</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Louisa Chase</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2003</time>
+                  <img src="/img/projects/2003-01-imperfect.jpg" />
+                  <h3>Imperfect Innocence: The Debra and Dennis Scholl Collection</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2002</time>
+                  <img src="/img/projects/2002-06-hotsummer.jpg" />
+                  <h3>Hot Summer</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2001</time>
+                  <img src="/img/projects/2001-11-netten.jpg" />
+                  <h3>Net:Ten</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2001</time>
+                  <img src="/img/projects/2001-10-facingmuseums.jpg" />
+                  <h3>Dennis Adams: Facing Museums</h3>
+                  <p>Site: Contemporary Museum and the Walters Art Museum</p>
+                  <p>Dennis Adams</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2001</time>
+                  <img src="/img/projects/2001-06-moira.jpg" />
+                  <h3>Moira Dryer: Paintings 1989&ndash;1992</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Moira Dryer</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2001</time>
+                  <img src="/img/projects/2001-02-visibility.jpg" />
+                  <h3>Visibility</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>TK</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>2000</time>
+                  <img src="/img/projects/2000-11-snapshot.jpg" />
+                  <h3>Snapshot: An Exhibition of 1000 Artists</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>2000</time>
+                  <img src="/img/projects/2000-05-makingsense.jpg" />
+                  <h3>Making Sense</h3>
+                  <p>Site: Contemporary Museum and Peabody Institute</p>
+                  <p>Ellen Gallagher, Christian Marclay and Liliana Porter</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1999</time>
+                  <img src="/img/projects/1999-03-videoart.jpg" />
+                  <h3>Video Art Series</h3>
+                  <p>Site: Holiday Street Window Galleries</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1999</time>
+                  <img src="/img/projects/1999-09-impact.jpg" />
+                  <h3>Impact: Revealing Sources for Contemporary Art</h3>
+                  <p>Site: Contemporary Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <!-- The Museum without Walls -->
+                <div class="project-thumb three columns">
+                  <time>1999</time>
+                  <img src="/img/projects/1999-06-grandstand.jpg" />
+                  <h3>Grandstand Sculpture</h3>
+                  <p>Site: Maryland State Fairgrounds</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1999</time>
+                  <img src="/img/projects/1999-04-artsail.jpg" />
+                  <h3>Artsail 99</h3>
+                  <p>Site: Rash Field</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1998</time>
+                  <img src="/img/projects/1998-02-mysteriousvoyage.jpg" />
+                  <h3>Mysterious Voyages: Exploring the Subject of Photography</h3>
+                  <p>Site: Alex. Brown Building</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1997</time>
+                  <img src="/img/projects/1997-10-xsite97.jpg" />
+                  <h3>X Site 97</h3>
+                  <p>Site: Alex. Brown Building</p>
+                  <p>Teresita Fernández & Quisqueya Henríquez</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1997</time>
+                  <img src="/img/projects/1997-04-jewish.jpg" />
+                  <h3>Too Jewish?</h3>
+                  <p>Site: Retail Space at Garrison Forest Plaza</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1996</time>
+                  <img src="/img/projects/1996-10-cyberclipper.jpg" />
+                  <h3>Aboard the Cyberclipper</h3>
+                  <p>Site: Multiple Venus & Online Exhibition</p>
+                  <p>Lee Boot & Frank Fietzek</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1996</time>
+                  <img src="/img/projects/1996-03-ignisfatuus.jpg" />
+                  <h3>Ignisfatuus</h3>
+                  <p>Site: Howard P. Rawlings Conservatory at Druid Hill Park</p>
+                  <p>Paul Etienne Lincoln</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1995</time>
+                  <img src="/img/projects/1995-09-baroque.jpg" />
+                  <h3>Going for Baroque</h3>
+                  <p>Site: The Walters Art Museum</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1995</time>
+                  <img src="/img/projects/1995-03-canton.jpg" />
+                  <h3>Can-ton: The Baltimore Series</h3>
+                  <p>Site: Canton National Bank</p>
+                  <p>Hung Liu</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1994</time>
+                  <img src="/img/projects/1994-10-laboroflove.jpg" />
+                  <h3>Labor or Love</h3>
+                  <p>Site: Baltimore Museum of Industry</p>
+                  <p>Willie Cole</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1994</time>
+                  <img src="/img/projects/1994-03-homeandtheworld.jpg" />
+                  <h3>Home and the World: Architectural Sculpture by Two Contemporary African Artists</h3>
+                  <p>Site: Morgan State University</p>
+                  <p>Aboudramane & Bodys Isek Kingelez</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1993</time>
+                  <img src="/img/projects/1993-10-easteuropeanceramics.jpg" />
+                  <h3>Contemporary East European Ceramics</h3>
+                  <p>Site: St. Stanislaus Kostka Convent</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1993</time>
+                  <img src="/img/projects/1993-04-catfish.jpg" />
+                  <h3>Catfish Dreamin&rsquo;</h3>
+                  <p>Site: 1959 Chevy Truck</p>
+                  <p>Alison Saar</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1993</time>
+                  <img src="/img/projects/1993-02-mining-the-museum.jpg" />
+                  <h3>Mining the Museum</h3>
+                  <p>Site: Maryland Historical Society</p>
+                  <p>Fred Wilson</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1992</time>
+                  <img src="/img/projects/1992-01-soul-shadows.jpg" />
+                  <h3>Soul Shadows: Urban Warrior Myths</h3>
+                  <p>Site: University of Baltimore Street Garage</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1991</time>
+                  <img src="/img/projects/1991-05-photo-manifesto.jpg" />
+                  <h3>Photo Manifesto: Contemporary Photography in the USSR</h3>
+                  <p>Site: Greyhound Service Terminal</p>
+                  <p>Multiple Artists</p>
+                </div>
+                <div class="project-thumb three columns">
+                  <time>1990</time>
+                  <img src="/img/projects/1990-12-visual-aids.jpg" />
+                  <h3>Visual Aids</h3>
+                  <p>Site: Famous Ballroom</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+                <div class="project-thumb three columns">
+                  <time>1990</time>
+                  <img src="/img/projects/1990-07-outcry.jpg" />
+                  <h3>Outcry: Artists Answer Aids </h3>
+                  <p>Site: Maryland Institute College of Art</p>
+                  <p>Multiple Artists</p>
+                </div>
+
+              </section>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <!-- FOOTER! -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+
+    <footer>
+      <div class="container">
+        <div class=" bt3 pt2">
+          <div class="group">
+            <div class="sponsors twelve columns">
+              <h6 class="mb0">Featured Sponsors</h6>
+              <ul class="m0 list-reset">
+                <li><a href="http://www.warholfoundation.org/"><img src="/img/sponsors/warhol-bw.png"></a></li>
+                <li><a href="http://www.rwdfoundation.org/"><img src="/img/sponsors/rwdf-bw.png"></a></li>
+                <li><a href="http://www.strausfoundation.org/"><img src="/img/sponsors/straus-bw.png"></a></li>
+                <li><a href="http://www.bsfa.org/"><img src="/img/sponsors/bsfta-bw.png"></a></li>
+                <li><a href="http://www.ihg.com/hotelindigo/hotels/us/en/baltimore/balhn/hoteldetail"><img src="/img/sponsors/hotelindigo.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class=" bt3 py2">
+          <div class="group">
+            <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+            <div class="social four columns offset-by-four text-right">
+              <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>   <!-- END FOOTER -->
+
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+    <!-- Javascript Magix happens down here -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- this is jquery, needed for a bunch of stuff -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- this loads mustache.js, required for the templating to happen -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
+
+    <!-- This actually takes the menu.json data and prints it into the site -->
+    <script>
+      /** the stuff for printing things out **/
+      $.getJSON('/json/menu.json', function(data) {
+        console.log( "Menu success" );
+        var template = $('#menu-drawers').html();
+        var info = Mustache.to_html(template, data);
+        $('#main-menu-wrap').html(info);
+        console.log( "You now have a menu." );
+      });
+    </script>
+
+<!--
+    <script>
+      $('#projectTxt').load('project.txt');
+    </script>
+-->
+
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
+    </script>
+
+    <script>
+      $(window).load(function() {
+
+        var bigbrother = -1;
+
+        $('.project-thumb').each(function() {
+          bigbrother = bigbrother > $(this).height() ? bigbrother : $(this).height();
+        });
+
+        $('.project-thumb').each(function() {
+          $(this).height(bigbrother);
+        });
+
+      });
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46130583-1', 'contemporary.org');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

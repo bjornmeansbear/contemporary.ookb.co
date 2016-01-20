@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "title": "Grit Fund",
+      "blurb": "The Grit Fund supports unincorporated and collaborative artist-organized activity that contributes significantly to Baltimore’s arts landscape but seldom qualifies for traditional funding.",
+      "url": "#page1",
+      "image": "/img/gritfund2.jpg",
+      "bg-color": "red",
+      "big": true
+    },
+    {
+      "title": "Membership",
+      "blurb": "Our members are crucial to the overall health of the museum. …",
+      "url": "/support/#membership",
+      "bg-color": "orange"
+    },
+    {
+      "title": "Mailing List",
+      "url": "http://contemporary.us7.list-manage1.com/subscribe?u=eff2e5ec224690abbfe4e9f4d&id=9909b16eee",
+      "bg-color": "red"
+    },
+    {
+      "title": "Donate!",
+      "blurb": "We rely on your donation to keep our operation up and running! …",
+      "url": "/support/#donate",
+      "bg-color": "darkgreen"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact/",
+      "bg-color": "blue"
+    }
+  ]
+}

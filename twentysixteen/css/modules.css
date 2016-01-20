@@ -1,0 +1,142 @@
+/*** Colors ***/
+/*
+  red           rgba(241,97,74,1)
+  orange        rgba(255,117,44,1)
+  yellow        rgba(255,234,58,1)
+  light green   rgba(201,222,121,1)
+  dark green    rgba(40,109,76,1)
+  blue          rgba(0,75,124,1)
+  dark blue     rgba(26,42,53,1)
+*/
+
+.red            { color: rgba(241,097,074,1); }
+.orange         { color: rgba(255,117,044,1); }
+.yellow         { color: rgba(255,234,058,1); }
+.lightgreen     { color: rgba(201,222,121,1); }
+.darkgreen      { color: rgba(040,109,076,1); }
+.blue           { color: rgba(000,075,124,1); }
+.darkblue       { color: rgba(026,042,053,1); }
+.white          { color: rgba(250,252,255,1); }
+.black          { color: rgba(026,010,008,1); }
+
+.bg-red         { background-color: rgba(241,097,074,1); }
+.bg-orange      { background-color: rgba(255,117,044,1); }
+.bg-yellow      { background-color: rgba(255,234,058,1); }
+.bg-lightgreen  { background-color: rgba(201,222,121,1); }
+.bg-darkgreen   { background-color: rgba(040,109,076,1); }
+.bg-blue        { background-color: rgba(000,075,124,1); }
+.bg-darkblue    { background-color: rgba(026,042,053,1); }
+.bg-white       { background-color: rgba(250,252,255,1); }
+.bg-black       { background-color: rgba(026,010,008,1); }
+
+/** margin **/
+.m0             { margin: 0rem; }
+.m1             { margin: 1rem; }
+.m2             { margin: 2rem; }
+.m3             { margin: 3rem; }
+.m4             { margin: 4rem; }
+
+.mt0            { margin-top: 0rem; }
+.mt1            { margin-top: 1rem; }
+.mt2            { margin-top: 2rem; }
+.mt3            { margin-top: 3rem; }
+.mt4            { margin-top: 4rem; }
+
+.mb0            { margin-bottom: 0rem; }
+.mb1            { margin-bottom: 1rem; }
+.mb2            { margin-bottom: 2rem; }
+.mb3            { margin-bottom: 3rem; }
+.mb4            { margin-bottom: 4rem; }
+
+.ml1            { margin-left: 1rem; }
+
+.mlrauto        { margin-left:auto; margin-right: auto;}
+
+/** padding **/
+.p0             { padding: 0rem; }
+.p1             { padding: 1rem; }
+.p2             { padding: 2rem; }
+.p3             { padding: 3rem; }
+.p4             { padding: 4rem; }
+
+.py2            { padding-top: 2rem; padding-bottom: 2rem; }
+
+.pt2            { padding-top: 2rem; }
+
+/** borders? **/
+.b1             { border: 1px solid; }
+.b2             { border: 2px solid; }
+
+.bt3            { border-top: 3px solid; }
+.bb3            { border-bottom: 3px solid; }
+
+/** positioning **/
+.static   { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+a.no-style {
+  color: inherit !important;
+  text-decoration: none;
+}
+a.no-style:hover {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+
+/* miscellany */
+.img-circle {
+    border-radius: 50%;
+}
+
+/** hidden/visible **/
+/* Visibility Classes */
+.show           { display: block !important; }
+.hidden         { display: none !important; }
+.invisible      { visibility: hidden; } /* doesn't show up, but does still live in the DOM */
+
+.visible-lg,
+.visible-60em,
+.hidden-sm {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 60rem) {
+  .visible-60em {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 75rem) {
+  .visible-lg,
+  .hidden-sm {
+    display: block;
+    visibility: visible;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}

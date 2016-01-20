@@ -1,0 +1,28 @@
+{
+  "slideshow": [
+    {
+      "title": "GhostFood",
+      "url": "/programs/projects/ghostfood/",
+      "image": "/img/ghostfood.jpg"
+    },
+    {
+      "quote": "You don’t necessarily change things by having a big impact. Sometimes things change because a lot of small things happen.",
+      "byline": "Coco Fusco, Artist",
+      "extra": "CoHosts: Guest Spot",
+      "url": "https://vimeo.com/84395255",
+      "bg-color": "darkblue"
+    },
+    {
+      "title": "Speaker Series",
+      "blurb": "Our annual Speaker Series, which is held at the Baltimore School for the Arts, features internationally-recognized artists, critics, and art professionals. Each year the theme shifts to reflect contemporary practices and trends. All lectures are free and open to the public.",
+      "url": "/programs/speaker-series/",
+      "image": "/img/tile_1.jpg"
+    },
+    {
+      "title": "Scroll",
+      "blurb": "<em>Scroll</em> is an annual publication that is produced entirely by our intern staff. Each issue of Scroll explores a different cultural topic related to the mission and efforts of the museum and is available, for free, in print and online.",
+      "url": "/programs/scroll/",
+      "image": "/img/tile_2.jpg"
+    }
+  ]
+}

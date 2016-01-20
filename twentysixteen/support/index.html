@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Contemporary : Support</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/css/contempo-grid.css" rel="stylesheet" type="text/css" />
+    <link href="/css/modules.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="bg-white">
+
+    <header class="internal">
+      <div class="container">
+        <div class="clearfix">
+          <h1 class="wordmark pull-left m0"><a class="no-style" href="/">The Contemporary</a></h1>
+
+          <div class="pull-right text-right">
+            <p class="small m0">Baltimore, MD</p>
+          </div>
+        </div>
+
+        <nav>
+          <ul id="main-menu-wrap" class="main-menu list-reset clearfix sticky">
+            <!-- main links are here even if JS doesn't load for some reason -->
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/visit/">Visit</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/about/">About</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/programs/">Programs</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/resources/">Resources</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="/support/">Support</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#shop">Shop</a>
+            </li>
+            <li class="mainlink evenly-spread">
+              <a class="main-link" href="#contact">Contact</a>
+            </li>
+
+            <!-- print out the full menu -->
+            <script id="menu-drawers" type="text/x-mustache-template">
+              {{#menu}}
+                <li class="mainlink evenly-spread drop-down {{mainlink}}">
+                  <a class="main-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{mainlink}}{{/url}}">{{mainlink}}</a>
+                  <div class="drawer bg-white">
+                    <div class="three columns blurb">
+                      <p>{{{primary}}}</p>
+                    </div>
+                    <ul class="eight columns offset-by-one sub-menu list-reset {{^sublink}}hidden{{/sublink}}">
+                      {{#sublink}}
+                        <li class="group">
+                          <p class="four columns">
+                            <a class="sub-link" href="{{#url}}{{url}}{{/url}}{{^url}}#{{title}}{{/url}}">{{title}}</a>
+                          </p>
+                          <p class="eight columns secondary">
+                            {{{secondary}}}
+                          </p>
+                        </li>
+                      {{/sublink}}
+                      {{^sublink}}<!-- nothing here --> {{/sublink}}
+                    </ul>
+                    {{#signup}}
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup" class="eight columns offset-by-one">
+                      <form action="//contemporary.us7.list-manage.com/subscribe/post?u=eff2e5ec224690abbfe4e9f4d&amp;id=9909b16eee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <h4 class="darkblue">Sign up for Contemporary emails</h4>
+                          <div id="mc_embed_signup_scroll" class="group">
+                            <div class="mc-field-group eight columns">
+                              <label class="hidden" for="mce-EMAIL">Email Address </label>
+                              <input type="email" value="" name="EMAIL" class="required email twelve bg-white darkblue" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="hidden">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div clas="hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_eff2e5ec224690abbfe4e9f4d_9909b16eee" tabindex="-1" value=""></div>
+                            <div class="four columns">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button bg-darkblue white btn btn-outline twelve">
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="social eight columns offset-by-one text-right m2">
+                      <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-2x"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-2x"></i></a>
+                    </div>
+                    <!--End mc_embed_signup-->
+                    {{/signup}}
+                    {{^signup}}<!-- nope -->{{/signup}}
+                  </div>
+                </li>
+              {{/menu}}
+            </script>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="container">
+
+        <article id="donate" class="pad-top">
+          <h1>Support.</h1>
+          <h2>Donate.</h2>
+          <div class="row">
+            <section class="five columns">
+              <p class="lead">The Contemporary relies on your donation to keep our operation up and running!</p>
+              <p class="lead">The impact of your gift is major. Contributions of any size can make a huge difference in helping us bring our projects and educational outreach to life. Since your donation will support our mission, it is 100% tax-deductible.</p>
+              <p>&mdash;</p>
+              <p>If your prefer, checks can be mailed to The Contemporary. Please make checks payable to <em>The Contemporary</em> and send to:</p>
+              <p>
+                 The Contemporary<br/>
+                 PO Box 1572<br/>
+                 Baltimore, MD 21203
+              </p>
+            </section>
+
+            <!-- Embedded Wufoo Form for managing Donations -->
+            <section class="seven columns">
+              <div id="wufoo-r1qogfym0ain6fv">
+                To Donate please fill out our <a href="https://ookb.wufoo.com/forms/r1qogfym0ain6fv">online donation form</a>.
+              </div>
+              <script type="text/javascript">var r1qogfym0ain6fv;(function(d, t) {
+              var s = d.createElement(t), options = {
+              'userName':'ookb',
+              'formHash':'r1qogfym0ain6fv',
+              'autoResize':true,
+              'height':'973',
+              'async':true,
+              'host':'wufoo.com',
+              'header':'show',
+              'ssl':true};
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { r1qogfym0ain6fv = new WufooForm();r1qogfym0ain6fv.initialize(options);r1qogfym0ain6fv.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+              })(document, 'script');</script>
+
+              <p>Thank you! Online donations to The Contemporary are processed through Stripe. </p>
+
+            </section>
+            <!-- End Embedded Wufoo Form -->
+
+          </div>
+        </article>
+
+        <article  class="pad-top add-bottom border-top">
+          <section id="membership">
+            <h2>Membership</h2>
+            <div class="group mb4">
+              <p class="six columns" id="membershipTxt"></p>
+              <div class="six columns">
+                <div class="group">
+                  <div class="six columns">
+                    <div class="inner tile imged bg-blue">
+                        <a href="#indMember" class="bigBlock">
+                          <h2>Individual Membership</h2>
+                          <p>$$$$</p>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="six columns">
+                    <div class="inner tile imged bg-darkgreen">
+                        <a href="#teamMember" class="bigBlock">
+                          <h2>Team Membership</h2>
+                          <p>$$$$</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+        <article  class="pad-top add-bottom border-top">
+          <section id="wishlist">
+            <h2>Wishlist</h2>
+            <p class="six mb4" id="wishlistTxt"></p>
+          </section>
+        </article>
+
+        <article id="supporters" class="pad-top add-bottom border-top">
+          <h2>Supporters.</h2>
+          <p>We are immeasurably grateful to those who have made contributions in support of our operations and programming.</p>
+
+          <div class="row">
+            <dl class="four columns">
+              <dt>$50,000+</dt>
+                <dd>The Andy Warhol Foundation for the Visual Arts</dd>
+                <dd>Robert W. Deutsch Foundation</dd>
+
+              <dt class="add-top">$20,000&ndash;$49,999</dt>
+                <dd>The Aaron and Lillie Straus Foundation</dd>
+
+              <dt class="add-top">$10,000&ndash;$19,999</dt>
+                <dd>Anonymous</dd>
+                <dd>Jane Brown & Neil Didriksen</dd>
+<!--                     <dd>The Jacob and Hilda Blaustein Foundation</dd> -->
+                <dd>William G. Baker, Jr. Memorial Fund</dd>
+                <dd>Downtown Partnership of Baltimore</dd>
+                <dd>Jacob and Hilda Blaustein Foundation </dd>
+
+              <dt class="add-top">$5,000&ndash;$9,999</dt>
+                <dd>Aaron B. Cohen Charitable Foundation</dd>
+                <dd>The Davison–Golden Family Philanthropic Fund</dd>
+                <dd>Joanna Golden</dd>
+                <dd>Bodil Ottesen</dd>
+                <dd>Debra Rubino</dd>
+
+              <dt class="add-top">$2,500&ndash;$4,999</dt>
+                <dd>Ray Allen</dd>
+                <dd>Jeffry Cudlin</dd>
+                <dd>Sarva & Veena Girdhar</dd>
+                <dd>William Goldiner</dd>
+                <dd>Stanton Johnson</dd>
+                <dd>Jason Lowy</dd>
+                <dd>Terry Squyres</dd>
+                <dd>Karen Stults</dd>
+                <dd>Lynn Warfield</dd>
+                <dd>Robin Zimelman</dd>
+
+              <dt class="add-top">$1,000&ndash;$2,499</dt>
+                <dd>Glenn &amp; Cindy Anderson</dd>
+                <dd>Douglas Bothner & Jacky Jennings</dd>
+                <dd>George Ciscle</dd>
+                <dd>Charlie Duff</dd>
+                <dd>Lionel Foster</dd>
+                <dd>Neil Friedlander &amp; Virginia Adams</dd>
+                <dd>Deana Haggag</dd>
+                <dd>Jessica Lanzillotti</dd>
+                <dd>Warnock Foundation</dd>
+                <dd>Portia Wood</dd>
+                <dd>Steve Ziger &amp; Jamie Snead</dd>
+            </dl>
+
+            <dl class="four columns">
+              <dt>$100&ndash;$999</dt>
+                <dd>Sandra Abbott</dd>
+                <dd>Seth Adelsberger</dd>
+                <dd>Miriam Arenberg</dd>
+                <dd>Pam &amp; Mark Berman</dd>
+                <dd>Lee Boot & Stacy Arnold</dd>
+                <dd>Elissa Blount Moorhead</dd>
+                <dd>Brendan G. Burns</dd>
+                <dd>Constance R. Caplan</dd>
+                <dd>Sabine Carlson</dd>
+                <dd>Tamar Cloyd</dd>
+                <dd>Kari Connolly</dd>
+                <dd>Dr. Curt &amp; Nancy Civin</dd>
+                <dd>Diane DiSalvo</dd>
+                <dd>Jay Fisher</dd>
+                <dd>Joanne Gold &amp; Andrew Stern</dd>
+                <dd>Hang Art</dd>
+                <dd>Mona & Mokhtar Haggag</dd>
+                <dd>Rosemary Harder</dd>
+                <dd>Jennifer &amp; David Heinemann</dd>
+                <dd>Sandra D. Hess</dd>
+                <dd>Joyce Yu-Jean Lee</dd>
+                <dd>Kimberly Lewis</dd>
+                <dd>Susan McCarter</dd>
+                <dd>Dan Meyers</dd>
+                <dd>Megan Miller</dd>
+                <dd>Jodie Misiak & Rod Malin & Marcel</dd>
+                <dd>Kathy O&rsquo;Dell</dd>
+                <dd>Barbara Portnoy Levine &amp; Leonard Spector</dd>
+                <dd>Wendy Rosen &amp; Richard Weisman</dd>
+                <dd>Stacey & Robert Salazar</dd>
+                <dd>Sarge Salman</dd>
+                <dd>Leslie Shepard</dd>
+                <dd>Piero Spadaro</dd>
+                <dd>Joaneath Spicer</dd>
+                <dd>Ben Stone</dd>
+                <dd>Brian Tate | The Tate Group</dd>
+                <dd>Tony Venne</dd>
+                <dd>Stewart Watson &amp; Jim Vose</dd>
+            </dl>
+
+            <dl class="four columns">
+              <dt>$1&ndash;$99</dt>
+                <dd>Vestal Abbott</dd>
+                <dd>Joshua Abelow</dd>
+                <dd>Charlotte J. Albertson</dd>
+                <dd>Colin Alexander</dd>
+                <dd>Catherine Akins</dd>
+                <dd>Charles Anthony</dd>
+                <dd>Jerrie &amp; Jim Bethel</dd>
+                <dd>Priya Bhayana</dd>
+                <dd>Kristian Bj&oslash;rnard</dd>
+                <dd>Katie Boyts</dd>
+                <dd>Rebecca Chan</dd>
+                <dd>Jessica Damen</dd>
+                <dd>Danielsson-Yung</dd>
+                <dd>Alex Ebstein</dd>
+                <dd>Eman Elkwisni</dd>
+                <dd>Kate Ewald</dd>
+                <dd>Neville Fernandes</dd>
+                <dd>Chris Ford</dd>
+                <dd>Brandon George</dd>
+                <dd>Kathryn Greenbaum</dd>
+                <dd>Geneva Griswold & Aley Thompson</dd>
+                <dd>Chester Gwazda</dd>
+                <dd>Karim Haggag</dd>
+                <dd>Noha Haggag</dd>
+                <dd>Craig Hankin</dd>
+                <dd>Charles Harzer</dd>
+                <dd>Lee Heinemann&rsquo;s Mom</dd>
+                <dd>Aaron Heinsman</dd>
+                <dd>Steven Himmelrich & Eileen Fader</dd>
+                <dd>Sarah Hope</dd>
+                <dd>Brockett Horne</dd>
+                <dd>Brit Huff</dd>
+                <dd>Jessie Hughes</dd>
+                <dd>Briony Hynson</dd>
+                <dd>Hunter Jaffe</dd>
+                <dd>Lou Joseph | ICA Baltimore</dd>
+                <dd>Gwynne Keathley</dd>
+                <dd>Val Karuskevich</dd>
+                <dd>Michelle La Perriere</dd>
+                <dd>Nick Laughton</dd>
+                <dd>Jake Lazovick</dd>
+                <dd>Rosemary Liss</dd>
+                <dd>Margo Malter</dd>
+                <dd>Christine Manganaro</dd>
+                <dd>Claudia McDonough & Michael Harris</dd>
+                <dd>Greg Minah</dd>
+                <dd>Quentin Moseley</dd>
+                <dd>Celia Neustadt</dd>
+                <dd>Timothy Nohe & Lisa Moren</dd>
+                <dd>Cara Ober</dd>
+                <dd>C. Ryan Patterson &amp; Rachel Valsing</dd>
+                <dd>Miranda Pfeiffer</dd>
+                <dd>Ben Piwowar</dd>
+                <dd>Elizabeth Popkin</dd>
+                <dd>Aliya Reich</dd>
+                <dd>The Reinstitute</dd>
+                <dd>J. Rice</dd>
+                <dd>Steven Riddle</dd>
+                <dd>Sanzi</dd>
+                <dd>Fred Scharmen</dd>
+                <dd>Andrew Segedin</dd>
+                <dd>Joseph Shaikewitz</dd>
+                <dd>Ginevra Shay</dd>
+                <dd>Nicole Shiflet</dd>
+                <dd>Paul Shortt</dd>
+                <dd>Mary Kunaniec Skeen</dd>
+                <dd>Matt Stegman</dd>
+                <dd>Phoebe Stein</dd>
+                <dd>Shawn Taylor</dd>
+                <dd>Pulman Vose</dd>
+                <dd>Qianfei Wang</dd>
+                <dd>Hermonie Williams</dd>
+                <dd>Katy Wood</dd>
+                <dd>Matthew Zernhelt</dd>
+                <dd>Lu Zhang</dd>
+            </dl>
+
+          </div>
+          <div class="row">
+
+            <section class="twelve columns">
+              <h5>In-Kind</h5>
+              <p>3 Square Feet, Baltimore School for the Arts, Bismallah Restaurant, Blacksauce Kitchen, Brookshire Suites, Clementine, The Cloyd Group, Colby Keller, Dooby's Coffee, Eddie's Market of Charles Village, GWWO Inc./Architects, Hawks Hill Creamery, Hilton Garden, Hoehn&rsquo;s Bakery, Iggies Pizza, Kinderhook Snacks, The Maryland Institute College of Art, Nancy by SNAC, <!-- The Office of Kristian Bjørnard, --> Oherbals, P&acirc;tisserie Poupon, The Verandah, The Wild Pea</p>
+            </section>
+
+            <section class="twelve columns">
+              <h5>Volunteers</h5>
+              <p>Max Anderson, Miriam Arenberg, Brittney Baltimore, Josiah Bolth, Melissa Campbell,  Audrey Gair, Kimmi Hanauer, Lee Heinemann, Jolie Kumin, Rosemary Liss, Margo Malter (Coordinator), Amanda Metcalf, Marines Montalvo, Allison Ransom, Jordan Shelton, Gillian Waldo, Clara West</p>
+            </section>
+
+          </div>
+
+        </article>
+      </div>
+    </main>
+
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <!-- FOOTER! -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+
+    <footer>
+      <div class="container">
+        <div class=" bt3 pt2">
+          <div class="group">
+            <div class="sponsors twelve columns">
+              <h6 class="mb0">Featured Sponsors</h6>
+              <ul class="m0 list-reset">
+                <li><a href="http://www.warholfoundation.org/"><img src="/img/sponsors/warhol-bw.png"></a></li>
+                <li><a href="http://www.rwdfoundation.org/"><img src="/img/sponsors/rwdf-bw.png"></a></li>
+                <li><a href="http://www.strausfoundation.org/"><img src="/img/sponsors/straus-bw.png"></a></li>
+                <li><a href="http://www.bsfa.org/"><img src="/img/sponsors/bsfta-bw.png"></a></li>
+                <li><a href="http://www.ihg.com/hotelindigo/hotels/us/en/baltimore/balhn/hoteldetail"><img src="/img/sponsors/hotelindigo.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class=" bt3 py2">
+          <div class="group">
+            <p class="four columns">Unless otherwise noted, all work, images, text, etc. is Copyright © 1989–<span class="year dynamic">2016</span> The Contemporary</p>
+            <div class="social four columns offset-by-four text-right">
+              <a href="https://www.facebook.com/thecontemporarymuseum" class="darkblue"><i class="fa fa-facebook-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-instagram fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-twitter-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-tumblr-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-vimeo-square fa-lg"></i></a> <a href="#" class="darkblue"><i class="fa fa-youtube-square fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+    <!-- Javascript Magix happens down here -->
+    <!-- ---------------------------------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- this is jquery, needed for a bunch of stuff -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- this loads mustache.js, required for the templating to happen -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+
+    <!-- I can also get stuff from here: http://dbox.cape.io/7192159/cape/contemporary?render=ezle&merge-data=1&merge-content=1 -->
+
+    <!-- This actually takes the menu.json data and prints it into the site -->
+    <script>
+      /** the stuff for printing things out **/
+      $.getJSON('/json/menu.json', function(data) {
+        console.log( "Menu success" );
+        var template = $('#menu-drawers').html();
+        var info = Mustache.to_html(template, data);
+        $('#main-menu-wrap').html(info);
+        console.log( "You now have a menu." );
+      });
+    </script>
+
+    <script>
+      $('#membershipTxt').load('membership.txt');
+      $('#wishlistTxt').load('wishlist.txt');
+    </script>
+
+    <script>
+      // dynamically update the year in the footer (not the best idea, but this works!...)
+      var d = new Date();
+      var year = d.getFullYear();
+      console.log('It is ' + year + '.');
+      $('footer .year.dynamic').html(year);
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46130583-1', 'contemporary.org');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
