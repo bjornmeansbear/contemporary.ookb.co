@@ -1,0 +1,8 @@
+<h4 class="mb0 mt1">Workspace</h4>
+<p>Team Members can utilize Workspace, which is our main headquarters, to work individually or host team meetings and events. We offer a coworking space equipped with private workstations, group meeting space, a conference room, and library of contemporary art books, magazines, and publications. There is also free Wi-Fi.</p>
+
+<h4 class="mb0 mt1">Artist Database</h4>
+<p>Team Members can access our Artist Database of Artist Members ---</p>
+
+<h4 class="mb0 mt1">Equipment Library</h4>
+<p>Team Members can borrow museum-grade equipment from our library, including projects, monitors, speakers, and more. Team Members are also entitled to submit requested equipment to our Amazon Wishlist, which we will acquire when possible. Non-members can rent equipment for requested fees and should inquire directly.</p>

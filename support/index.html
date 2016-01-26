@@ -162,23 +162,73 @@
           <section id="membership">
             <h2>Membership</h2>
             <div class="group mb4">
-              <p class="six columns" id="membershipTxt"></p>
+              <div class="six columns">
+                <p id="membershipTxt"></p>
+                <p>
+                  <a href="#individual" id="indTxt" class="button">Learn more about Individual Membership</a> <a href="#team" id="teamTxt" class="button">Learn more about Team Membership</a>
+                </p>
+                <div id="current-membership" class="mt1 mb2">
+                  <small>Clicking either of the above would render their "features" into the DOM right here!</small>
+                </div>
+                <p>
+                  Already a member? <a href="TK" class="button">Login here</a>
+                </p>
+              </div>
               <div class="six columns">
                 <div class="group">
                   <div class="six columns">
-                    <div class="inner tile imged bg-blue">
-                        <a href="membership/individual.html" class="bigBlock">
-                          <h2>Individual Membership</h2>
-                          <p>$$$$</p>
-                        </a>
+                    <div class="inner bg-blue white clearfix">
+                      <div class="twelve columns">
+                        <h2 class="mt1">Individual Membership</h2>
+
+                        <form class="membership">
+                          <div class="input-group">
+                            <label>Individual</label>
+                            <input type="radio" value="50"> $50
+                          </div>
+                          <div class="input-group">
+                            <label>Student</label>
+                            <input type="radio" alue="25"> $25
+                          </div>
+                        </form>
+                      </div>
+                      <div class="text-center">
+                        <div class="six columns mt1 mb0 p1 bg-orange white">Join</div>
+                        <div class="six columns mt1 mb0 p1 bg-lightgreen white">Gift</div>
+                      </div>
                     </div>
                   </div>
                   <div class="six columns">
-                    <div class="inner tile imged bg-darkgreen">
-                        <a href="membership/team.html" class="bigBlock">
-                          <h2>Team Membership</h2>
-                          <p>$$$$</p>
-                        </a>
+                    <div class="inner bg-darkgreen white clearfix">
+                      <div class="twelve columns">
+                        <h2 class="mt1">Team Membership</h2>
+                        <form class="membership">
+                          <div class="input-group">
+                            <label>Annual Budget: $1-$49,999</label>
+                            <input type="radio" name=individual value="50"> $50
+                          </div>
+                          <div class="input-group">
+                            <label>Annual Budget: $50,000-$99,999</label>
+                            <input type="radio" name=student value="100"> $100
+                          </div>
+                          <div class="input-group">
+                            <label>Annual Budget: $100,000-$249,999</label>
+                            <input type="radio" name=student value="100"> $250
+                          </div>
+                          <div class="input-group">
+                            <label>Annual Budget: $250,000-$499,999</label>
+                            <input type="radio" name=student value="100"> $500
+                          </div>
+                          <div class="input-group">
+                            <label>Annual Budget: $500,000-$999,999</label>
+                            <input type="radio" name=student value="100"> $1000
+                          </div>
+                        </form>
+                      </div>
+                      <div class="text-center">
+                        <div class="six columns mt1 mb0 p1 bg-orange white">Join</div>
+                        <div class="six columns mt1 mb0 p1 bg-lightgreen white">Gift</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -189,7 +239,16 @@
         <article  class="pad-top add-bottom border-top">
           <section id="wishlist">
             <h2>Wishlist</h2>
-            <p class="six mb4" id="wishlistTxt"></p>
+            <div class="group">
+              <div class="six columns mb4">
+                <p id="wishlistTxt"></p>
+              </div>
+              <div class="six columns mb4">
+                <p>
+                  <a href="https://www.amazon.com/gp/registry/wishlist/ref=cm_wl_search_1?ie=UTF8&cid=ACRNUDSXBTBYZ" class="button">Amazon Wishlist</a>
+                </p>
+              </div>
+            </div>
           </section>
         </article>
 
@@ -450,6 +509,14 @@
     <script>
       $('#membershipTxt').load('membership.txt');
       $('#wishlistTxt').load('wishlist.txt');
+      $('#indTxt').click(function(e) {
+        e.preventDefault();
+        $('#current-membership').load('individual.txt');
+      });
+      $('#teamTxt').click(function(e) {
+        e.preventDefault();
+        $('#current-membership').load('team.txt');
+      });
     </script>
 
     <script>
