@@ -10,19 +10,13 @@
 */
 
 header {
-  height: 450px;
 }
 
 #main-menu-wrap {
   border-width: 3px;
   border-top-style: solid ;
   border-bottom-style: solid ;
-  z-index: 9997;
-  /**/
-  position: absolute;
-  top: 9rem;
-  right: .75rem;
-  width: calc(100% - 180px);
+  z-index: 9998;
   background-color: rgba(250,252,255,1);
 }
 
@@ -134,7 +128,7 @@ a.sub-link {
     position: absolute;
     left: 0;
     right:0;
-    z-index: 9998;
+    z-index: 9997;
     transition: all 400ms;
   }
 

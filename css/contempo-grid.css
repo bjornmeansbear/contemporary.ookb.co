@@ -425,13 +425,19 @@ svg.logo .c {
   fill: rgba(241,97,74,1);
 }
 
+.logo-wrapper { display: none; }
+
 @media (min-width: 60em) {
+.logo-wrapper { display: block; }
+
   main .logo-wrapper .logo {
     width: 90%;
     margin-left: -1.5rem;
     margin-top: 7.5%;
   }
 }
+
+/*TESTING SIZING ON THE SKINNY VIEW*/
 
 /* inside pages have a slightly different header */
 header > .container {
@@ -451,7 +457,7 @@ header #main-menu-wrap {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 99999;
   }
 
   body { padding-top: 90px; }
@@ -474,13 +480,27 @@ header #main-menu-wrap {
   }
 }
 
-@media (min-width: 60rem) {
-  header .logo {
-    margin-left: 20%;
-    width: 20%;
-  }
-
+/** neon sign will really glow!!!! **/
+/*
+svg.logo {
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
+
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 10px rgba(250,252,255,.9),  0 0 25px rgba(255,117,044,.9), 0 0 100px rgba(241,097,074,.9), 0 0 111px rgba(255,234,058,.5);
+  }
+  to {
+    box-shadow: 0 0 5px rgba(250,252,255,.9), 0 0 50px rgba(255,117,044,.9), 0 0 50px rgba(241,097,074,.9), 0 0 150px rgba(255,234,058,.33);
+  }
+}
+*/
+
+/**
+These are some styles related to the crazy homepage solution Connor and Kristian are developing
+**/
 
 /*** testing an idea ***/
 .imged {
@@ -777,4 +797,15 @@ section img {
 
 .email .small {
   font-size: .85em;
+}
+
+/** membership mockup **/
+form.membership,
+form.membership label {
+  display: block;
+}
+
+form.membership .input-group:hover {
+  background-color: rgba(245, 250, 255, .75);
+  color: darkblue;
 }
