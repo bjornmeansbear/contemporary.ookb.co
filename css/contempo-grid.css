@@ -457,7 +457,7 @@ header #main-menu-wrap {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 9998;
   }
 
   body { padding-top: 90px; }
